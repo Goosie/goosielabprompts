@@ -1,237 +1,239 @@
-# 🪿 Build: Ganzenbord — The Living Nostr Board Game
+# 🪿 Build: Game of the Goose — The Living Nostr Board Game
 
-You are building **Ganzenbord**, a multiplayer Game of the Goose that lives
-entirely on Nostr. Players are real Nostr identities. The board is alive:
-when a new Goosie Labs app launches, a new card appears on the board.
+You are building **Game of the Goose** (Ganzenbord), a multiplayer board game
+that lives entirely on Nostr. Players are real Nostr identities. The board is
+alive: when a new Goosie Labs app launches, a new card appears on the board.
 Sats flow via Lightning. Everything is beautiful, animated, and joyful.
 
 ---
 
-## CONTEXT — READ FIRST
+## HOW TO USE THIS PROMPT
 
-This is a Goosie Labs app. The stack is Vite + React + TypeScript.
-All Nostr hooks, auth, and boilerplate are already present (see CLAUDE.md).
-App runs at `/apps/ganzenbord/`. The Goosie relay is the primary relay.
+This is a large project. Build it **one step at a time**.
+Each step ends with: `npm run build` (zero errors) + a git commit.
+Do NOT start the next step until the current one builds cleanly.
+
+Steps in order:
+1. Game logic (pure functions, no UI)
+2. Static board rendering (UI, no Nostr yet)
+3. Nostr game server (backend service)
+4. Lobby (create/join rooms via Nostr)
+5. Game loop (roll → move → animate)
+6. Visual polish (animations, modals, winner screen)
+7. Live board (BoardConfig from Nostr, updates live)
+8. Admin panel (edit board, publish to Nostr)
+9. Lightning (entry fee, sats tracking, payout)
+
+**Start with Step 1. Say "next" to proceed to the next step.**
 
 ---
 
-## GAME RULES — implement exactly
+## CONTEXT
 
-**Board:** 63 squares in a classic spiral. Players start off the board (position 0).
+This is a Goosie Labs app. Stack: Vite + React + TypeScript.
+All Nostr hooks, auth, and boilerplate are already present (see CLAUDE.md).
+App name: `ganzenbord` — runs at `/apps/ganzenbord/`.
+Primary relay: `wss://relay.goosielabs.com`
+
+---
+
+## GAME RULES — full specification
+
+**Board:** 63 squares in a classic spiral. Players start at position 0 (off board).
 
 **Goal:** First to land EXACTLY on square 63 wins.
 
-**Overshoot:** Roll past 63 → bounce back the excess (e.g. at 61, roll 5 → 63+2 back = 61).
+**Overshoot:** Roll past 63 → bounce back the excess.
+Example: at square 61, roll 5 → go to 63, overshoot by 2 → land on 61.
 
-**Goose squares** (5, 9, 14, 18, 23, 27, 32, 36, 41, 45, 50, 54, 59):
-→ "Double your journey!" — move forward again by the same roll.
-→ If the next square is also a Goose, keep going.
+**Goose squares** — numbers: 5, 9, 14, 18, 23, 27, 32, 36, 41, 45, 50, 54, 59
+Effect: "Double your journey!" — move forward again by the same roll amount.
+If the new square is also a Goose, keep going (chain until non-Goose).
 
 **Special hazard squares:**
 | Square | Name | Effect |
 |--------|------|--------|
-| 6 | The Bridge | Jump to square 12 |
-| 19 | The Inn | Miss 1 turn (rest) |
-| 31 | The Well | Stuck until another player lands here and swaps |
+| 6 | The Bridge | Jump immediately to square 12 |
+| 19 | The Inn | Miss your next turn |
+| 31 | The Well | Stuck. Wait until another player lands here — they take your place, you go where they came from |
 | 42 | The Maze | Go back to square 30 |
-| 52 | The Prison | Stuck until another player lands here and swaps |
+| 52 | The Prison | Stuck. Same swap rule as the Well |
 | 58 | Death | Back to square 0, start over |
 
-**First move special rule:**
-- Roll 6+3 on your very first roll → jump to square 26
-- Roll 4+5 on your very first roll → jump to square 53
+**First move special rule** (only applies on each player's very first roll):
+- Roll 6+3 (total 9) → jump to square 26
+- Roll 4+5 (total 9) → jump to square 53
+- Any other total → move normally
 
-**Bump rule:** If you land on a square already occupied → the other player
-goes back to where YOU just came from.
+**Bump rule:** Land on a square already occupied by another player →
+that player moves back to the square you just left.
 
-**Turn order:** Clockwise. Each turn: player rolls 2 dice, moves, effect resolves,
-next player's turn.
+**Turn order:** Clockwise. Each turn: roll 2 dice → move → resolve effect → next player.
 
-**Dice:** Server-side RNG using commit-reveal: server signs the dice result with
-its Nostr keypair. Clients verify the signature. No cheating possible.
-
----
-
-## NOSTR PROTOCOL — event kinds
-
-Use the Goosie relay (`wss://relay.goosielabs.com`) as primary.
-
-```
-kind: 30420  GameRoom (addressable, d=room-id)
-  — host pubkey, player list (pubkeys), status: "waiting|active|finished"
-  — entry_fee_sats, pot_pubkey (Lightning address), max_players (2-6)
-  — Published by host. Replaced on every state change.
-
-kind: 30421  GameState (addressable, d=room-id)
-  — positions: {pubkey: square}, turn: pubkey, round: number
-  — scores: {pubkey: sats_won}, status: "active|finished", winner: pubkey|null
-  — Published by the game server identity after every move resolves.
-
-kind: 20420  JoinRequest (ephemeral)
-  — p: host pubkey, d: room-id
-  — content: Lightning proof (payment hash or zap receipt event id)
-
-kind: 20421  RollRequest (ephemeral)
-  — p: server pubkey, d: room-id
-  — content: player's random seed commitment (SHA256 of a secret number)
-
-kind: 20422  DiceResult (ephemeral, published by server)
-  — p: player pubkey, d: room-id
-  — content: JSON { die1, die2, server_seed, player_seed_reveal,
-                    from_square, to_square, effect, effect_detail }
-  — Server signature proves result is unforgeable.
-
-kind: 20423  GameEvent (ephemeral, published by server)
-  — d: room-id
-  — content: JSON { type: "bump|well_release|prison_release|chat",
-                    player, affected_player, message }
-
-kind: 30422  BoardConfig (addressable, d="ganzenbord-board", author=server)
-  — content: JSON array of 63 square definitions (see Living Board section)
-  — Replace this event to update the board → all clients live-update instantly
-```
-
-**Game server identity:** A dedicated Nostr keypair stored server-side
-(like Blocky). It signs all DiceResult and GameState events.
-Store keypair in `agents/ganzenbord/nostr-key.json` format.
+**Dice fairness:** Server generates dice using commit-reveal.
+Player sends SHA256 commitment of a random secret. Server XORs with its own
+random seed and signs the result. Client verifies signature before accepting.
 
 ---
 
-## THE LIVING BOARD — this is the magic ✨
+## NOSTR PROTOCOL — all event kinds
 
-Every square on the board is configurable via the `BoardConfig` event.
-Each square definition:
+```
+kind: 30420  GameRoom           (addressable, d=room-id, author=host)
+  content: {
+    host, players: [pubkey], status: "waiting|active|finished",
+    entry_fee_sats, max_players, created_at
+  }
 
+kind: 30421  GameState          (addressable, d=room-id, author=server)
+  content: {
+    positions: { [pubkey]: square },
+    turn: pubkey,
+    round: number,
+    balances: { [pubkey]: sats },
+    pot_sats: number,
+    skipped: [pubkey],         ← players missing their turn
+    stuck: { [pubkey]: "well"|"prison" },
+    status: "active"|"finished",
+    winner: pubkey|null,
+    first_roll_done: [pubkey]  ← tracks who has used their first roll
+  }
+
+kind: 20420  JoinRequest        (ephemeral, author=player)
+  tags: [["p", host_pubkey], ["d", room-id]]
+  content: { zap_receipt_id }  ← proof of payment (or empty for free games)
+
+kind: 20421  RollRequest        (ephemeral, author=player)
+  tags: [["p", server_pubkey], ["d", room-id]]
+  content: { commitment: "sha256hex" }
+
+kind: 20422  DiceResult         (ephemeral, author=server)
+  tags: [["p", player_pubkey], ["d", room-id]]
+  content: {
+    die1, die2,
+    server_seed: "hex",
+    from_square, to_square,
+    effect: "none|goose|bridge|inn|well|maze|prison|death|app|bump|win",
+    effect_detail: string,
+    bumped_player: pubkey|null,
+    bumped_to: number|null
+  }
+
+kind: 20423  GameEvent          (ephemeral, author=server)
+  tags: [["d", room-id]]
+  content: {
+    type: "well_release"|"prison_release"|"chat",
+    player, affected_player, message
+  }
+
+kind: 30422  BoardConfig        (addressable, d="ganzenbord-board", author=server)
+  content: JSON array of 63 square objects (see Living Board section)
+  ← Replacing this event updates the board live in ALL active games
+```
+
+**Server identity:** A dedicated Nostr keypair stored at
+`/home/deploy/agents/ganzenbord/nostr-key.json` (same format as Blocky).
+The server signs all DiceResult and GameState events.
+
+---
+
+## THE LIVING BOARD ✨
+
+Every square is configurable via the `BoardConfig` Nostr event.
+Replacing that event updates every active game's board in real time.
+
+Each square object:
 ```json
 {
   "square": 7,
-  "type": "normal|goose|hazard|app",
-  "hazard": null,
+  "type": "normal" | "goose" | "hazard" | "app",
+  "hazard": "bridge" | "inn" | "well" | "maze" | "prison" | "death" | null,
   "app": {
     "name": "CatchZaps",
     "url": "/apps/catchzaps/",
     "icon": "⚡",
     "color": "#f59e0b",
-    "effect": "win_sats",
-    "effect_sats": 10,
-    "description": "You caught a zap! Collect 10 sats from the pot."
+    "effect": "win_sats" | "lose_sats" | "skip_turn" | "teleport_to" | "goose",
+    "effect_value": 21,
+    "description": "You caught a zap! Collect 21 sats from the pot."
   }
 }
 ```
 
-**App square effect types:**
-- `win_sats` — collect N sats from the pot
-- `lose_sats` — pay N sats into the pot
-- `skip_turn` — miss next turn (like Inn)
-- `teleport_to` — jump to another square
-- `goose` — double roll like classic goose squares
-- `challenge` — mini-challenge modal appears (trivia about the app)
+**Default board:** hardcode in `src/lib/defaultBoard.ts`.
+Classic squares + these Goosie Labs app squares spread across the board:
 
-**When Perry launches a new Goosie Labs app:**
-The server (or Perry via the admin panel) publishes a new `kind:30422` BoardConfig
-replacing one "normal" square with the new app card. All active games
-see the change instantly on the next page render.
+| Square | App | Color | Icon | Effect |
+|--------|-----|-------|------|--------|
+| 8 | CatchZaps | #f59e0b | ⚡ | win 21 sats |
+| 15 | ZapHunt | #8b5cf6 | 🗺️ | win 42 sats |
+| 22 | Sofia | #06b6d4 | ✈️ | teleport to 54 |
+| 29 | IDidHere | #10b981 | 📍 | goose (double roll) |
+| 37 | Zinin | #ec4899 | 💫 | lose 10 sats |
+| 44 | Honkference | #6366f1 | 🎙️ | skip turn |
+| 48 | ProofOfMove | #ef4444 | 🏃 | win 5 sats |
+| 3 | [reserved] | #d1d5db | 🪿 | normal |
+| 11 | [reserved] | #d1d5db | 🪿 | normal |
+| 35 | [reserved] | #d1d5db | 🪿 | normal |
+| 51 | [reserved] | #d1d5db | 🪿 | normal |
+| 57 | [reserved] | #d1d5db | 🪿 | normal |
 
-**Default board:** Start with the 63 classic squares + replace ~12 "normal"
-squares with existing Goosie Labs apps (see App Squares section below).
-
----
-
-## APP SQUARES — pre-populate with Goosie Labs apps
-
-Place these on the board by default (spread them out evenly across the spiral):
-
-| App | Color | Icon | Effect | Description shown to player |
-|-----|-------|------|--------|------------------------------|
-| CatchZaps | #f59e0b | ⚡ | win 21 sats | "You caught a zap! +21 sats." |
-| ZapHunt | #8b5cf6 | 🗺️ | win 42 sats | "You found the treasure! +42 sats." |
-| Sofia | #06b6d4 | ✈️ | teleport_to 54 | "Group trip! Fast-forward to 54." |
-| IDidHere | #10b981 | 📍 | goose | "Proof of move! Double your roll." |
-| Zinin | #ec4899 | 💫 | lose 10 sats | "Wrong match. -10 sats." |
-| Honkference | #6366f1 | 🎙️ | skip_turn | "You're presenting. Miss a turn." |
-| ProofOfMove | #ef4444 | 🏃 | win 5 sats | "You trained! +5 sats per square moved." |
-| [empty slot] | #d1d5db | 🪿 | normal | (reserved for next app) |
-| [empty slot] | #d1d5db | 🪿 | normal | (reserved for next app) |
-| [empty slot] | #d1d5db | 🪿 | normal | (reserved for next app) |
-| [empty slot] | #d1d5db | 🪿 | normal | (reserved for next app) |
-| [empty slot] | #d1d5db | 🪿 | normal | (reserved for next app) |
+All other squares follow the standard Goose/hazard/normal pattern.
 
 ---
 
-## LIGHTNING & SATS
-
-**Entry flow:**
-1. Host sets entry fee (default: 21 sats). A Lightning address/invoice is shown.
-2. Player pays → sends `kind:20420 JoinRequest` with zap receipt as proof.
-3. Server verifies zap receipt on relay, then adds player to GameRoom.
-
-**In-game sats:** App squares with `win_sats`/`lose_sats` effects move
-sats between the pot and a player's balance (tracked in GameState).
-
-**Payout:** Winner receives the full pot via Lightning invoice they provide,
-or via NWC (NIP-47) if they've connected a wallet.
-
-**Implementation:** Use LNbits subwallet per game room (same pattern as ZapHunt).
-LNbits config already in server `.env`. API: `http://127.0.0.1:5000`.
-
-**Free mode:** Entry fee = 0 sats is valid. Pure bragging rights.
-
----
-
-## VISUAL DESIGN — make it gorgeous
-
-**Board:**
-- Classic spiral layout, 63 numbered squares in a snaking path from outside-in
-- Each square is a rounded card, ~80px on desktop, ~50px on mobile
-- Goose squares: warm golden background (#f4a261), 🪿 emoji, subtle shimmer
-- Hazard squares: unique illustration per type:
-  - Bridge (6): 🌉 teal (#0d9488)
-  - Inn (19): 🍺 amber (#d97706)
-  - Well (31): 🪣 blue (#2563eb)
-  - Maze (42): 🌀 purple (#7c3aed)
-  - Prison (52): ⛓️ dark gray (#374151)
-  - Death (58): 💀 black + red glow
-- App squares: app's `color` as background, icon + short name
-- Normal squares: parchment (#faf3e0), subtle border
-- Square 63 (center of spiral): large, golden burst, 👑 crown
-- Current player's possible landing square: subtle highlight pulse
-
-**Player tokens:**
-- Each player = their Nostr profile picture in a circle (fallback: colored initial)
-- Unique colored ring per player (amber / teal / rose / violet / lime / sky)
-- Drop shadow. When multiple tokens on same square: fan out with offset
-- Movement: smooth CSS transition along the path, 300ms ease-out per square,
-  chained for multi-square moves
-
-**Dice:**
-- Two large dice using CSS 3D perspective transform (not images)
-- Dice faces use dot pips (SVG), classic white cube with black dots
-- Roll animation: shake + tumble for 600ms, snap to result face
-- Roll button pulses with the current player's ring color when it's your turn
-- Show both dice + sum clearly
-
-**UI layout:**
-- Desktop: board takes 70% width left, right panel 30%
-- Right panel: player list (avatar + name + position + sats), turn indicator
-  (pulsing border on active player), last 8 events in a log, chat input
-- Top bar: room name, round number, pot size in sats ⚡
-- Mobile: board on top (full width), panels as tabs below (Players / Log / Chat)
-
-**Animations & feedback:**
-- Land on goose square → wings flap animation + "DOUBLE! 🪿" toast (green)
-- Land on Death → skull animation + red flash + "Back to start! 💀" toast
-- Land on app square → app card modal slides up with description + effect
-- Land on Bridge → arc animation directly to square 12
-- Someone wins → full-screen confetti (CSS only, no library) + winner avatar
-  grows large + sats amount animates flying to their balance
-- Bump → bumped player token slides back with a "bump!" indicator
+## VISUAL DESIGN
 
 **Color palette:**
-- Base: parchment #faf3e0
-- Board background: aged paper texture via CSS (radial gradient + noise)
-- Accent: forest green #2d6a4f
-- Gold: #f4a261
-- Text: #1c1917
+- Base/board background: parchment `#faf3e0` (aged paper feel via CSS gradient)
+- Accent: forest green `#2d6a4f`
+- Gold: `#f4a261`
+- Text: `#1c1917`
+
+**Board:**
+- Classic spiral layout, squares numbered 1–63 from outer ring to center
+- Square size: ~80px desktop, ~48px mobile
+- Square styles:
+  - Normal: parchment `#faf3e0`, subtle border
+  - Goose: golden `#f4a261`, 🪿 emoji, subtle shimmer animation
+  - Bridge (6): teal `#0d9488`, 🌉
+  - Inn (19): amber `#d97706`, 🍺
+  - Well (31): blue `#2563eb`, 🪣
+  - Maze (42): purple `#7c3aed`, 🌀
+  - Prison (52): dark gray `#374151`, ⛓️
+  - Death (58): black background, red glow, 💀
+  - App square: app's `color` as background, icon + short name label
+  - Square 63 (center): large golden burst, 👑
+- Current turn player's reachable square: pulsing highlight
+
+**Player tokens:**
+- Circle with Nostr profile picture (fallback: colored letter)
+- Each player gets a unique ring color: amber / teal / rose / violet / lime / sky
+- Drop shadow
+- Multiple tokens on same square: fan out with small offset (all visible)
+- Movement animation: 300ms ease-out CSS transition per square, chained
+
+**Dice:**
+- Two CSS 3D dice (perspective transform, NOT images)
+- Faces show SVG pip dots, white cube with black dots
+- Roll animation: shake + spin 600ms, snap to result face
+- Roll button: pulses in current player's ring color when it's your turn
+- Display both dice + their sum
+
+**Layout:**
+- Desktop: board 70% left, right panel 30%
+  - Right panel: player list (avatar + name + square + sats), active turn indicator
+    (pulsing border), last 8 moves in event log, chat input
+  - Top bar: room name, round counter, pot size ⚡
+- Mobile: board full width top, collapsible tabs below (Players / Log / Chat)
+
+**Feedback animations:**
+- Goose square: wings-flap + "DOUBLE! 🪿" green toast
+- Death: red screen flash + skull + "Back to start! 💀"
+- App square: bottom sheet modal slides up (icon + description + effect)
+- Bridge: token arc-animates directly to square 12
+- Win: full-screen CSS confetti + winner avatar grows + sats fly to balance
+- Bump: bumped token slides back with "bump!" badge
 
 ---
 
@@ -240,34 +242,34 @@ LNbits config already in server `.env`. API: `http://127.0.0.1:5000`.
 ```
 src/
   components/
-    Board.tsx            ← spiral board renderer, reads BoardConfig from Nostr
-    Square.tsx           ← individual square, handles all types + hover state
-    PlayerToken.tsx      ← avatar circle with ring color + movement animation
-    Dice.tsx             ← 3D CSS dice with roll animation
-    GameLog.tsx          ← scrollable event log
-    PlayerPanel.tsx      ← right panel: players, turn, sats balances
-    AppSquareModal.tsx   ← bottom sheet when landing on app square
-    LobbyRoom.tsx        ← waiting room: player list, invite link, start button
-    WinnerModal.tsx      ← confetti + winner display + payout button
-    AdminPanel.tsx       ← /admin: board editor, publish BoardConfig
+    Board.tsx            ← spiral renderer, reads BoardConfig
+    Square.tsx           ← single square: all types, hover, highlight
+    PlayerToken.tsx      ← avatar + ring + movement animation
+    Dice.tsx             ← 3D CSS dice + roll animation
+    GameLog.tsx          ← event log (last 8 moves)
+    PlayerPanel.tsx      ← right panel: players, turn indicator, sats
+    AppSquareModal.tsx   ← bottom sheet on app square landing
+    LobbyRoom.tsx        ← waiting room UI
+    WinnerModal.tsx      ← confetti + winner + payout
+    AdminPanel.tsx       ← board editor (/admin route)
   hooks/
     useGameRoom.ts       ← subscribe kind:30420
     useGameState.ts      ← subscribe kind:30421
-    useBoardConfig.ts    ← subscribe kind:30422 (live board updates)
-    useGameServer.ts     ← publish RollRequests, handle DiceResults
-    useLightning.ts      ← LNbits: create invoice, verify payment, payout
+    useBoardConfig.ts    ← subscribe kind:30422 (live updates)
+    useGameServer.ts     ← publish RollRequests, receive DiceResults
+    useLightning.ts      ← LNbits: invoice, verify, payout
   lib/
-    gameLogic.ts         ← pure functions: resolveMove(), applyEffect(),
-                           computeNextPosition(), validateWin(), isGoose()
-    boardLayout.ts       ← spiral coordinate math: square N → {x, y} on grid
-    nostrGame.ts         ← event builders for all game kinds
-    defaultBoard.ts      ← hardcoded default BoardConfig (63 squares)
+    gameLogic.ts         ← resolveMove(), applyEffect(), isGoose(),
+                           computeNextPosition(), validateWin()
+    boardLayout.ts       ← square N → {col, row} for spiral CSS grid
+    nostrGame.ts         ← typed event builders for all game kinds
+    defaultBoard.ts      ← hardcoded default 63-square BoardConfig
   pages/
-    LobbyPage.tsx        ← list of open rooms + create new room button
-    GamePage.tsx         ← main game (Board + panels)
+    LobbyPage.tsx        ← open rooms list + create room
+    GamePage.tsx         ← main game view
     AdminPage.tsx        ← board editor (Perry only)
   server/
-    gameServer.ts        ← Node.js service (see Server section)
+    gameServer.ts        ← Node.js relay listener + game logic runner
     lightningService.ts  ← LNbits API wrapper
 ```
 
@@ -275,83 +277,123 @@ src/
 
 ## SERVER SERVICE
 
-The game server is a Node.js process (`src/server/gameServer.ts`) that:
-1. Connects to relay with `agents/ganzenbord/nostr-key.json` keypair
+Node.js process that runs alongside the app:
+1. Connects to relay as server keypair (`agents/ganzenbord/nostr-key.json`)
 2. Listens for `kind:20421` RollRequest events
-3. Generates dice via commit-reveal XOR (server_seed XOR player_seed)
-4. Resolves full game logic (position, effects, goose chains, bump, well/prison)
+3. XORs server_seed with player commitment → dice values
+4. Runs full game logic (all rules, goose chains, bump, well/prison swap)
 5. Publishes signed `kind:20422 DiceResult`
 6. Publishes updated `kind:30421 GameState`
-7. Detects win condition → publishes final GameState, triggers LNbits payout
+7. On win: publishes final GameState, triggers LNbits payout
 
-**Run:** `node dist/server/gameServer.js`
-**Service name:** `ganzenbord-server`
-**Systemd unit:** `/etc/systemd/system/ganzenbord-server.service`
+Service: `ganzenbord-server`
+Port: 3002
+Systemd: `/etc/systemd/system/ganzenbord-server.service`
 
 ---
 
-## BOARD ADMIN PANEL
+## LIGHTNING
 
-Route: `/apps/ganzenbord/admin` — protected: only Perry's pubkey can access
-(check against `npub14qmyh789hq5t6u32dhr33qhlfm5dx70xf7l5tp8scmcm8ylcqkxqds0r58`).
+Use LNbits subwallet per game room (same pattern as ZapHunt).
+LNbits internal: `http://127.0.0.1:5000` — config already in `.env`.
+
+- Entry: show Lightning invoice → verify zap receipt on relay → add player
+- In-game sats: tracked in GameState `balances` field (no on-chain tx per move)
+- Payout: create LNbits withdrawal or NWC payment to winner's Lightning address
+- Free mode: `entry_fee_sats: 0` skips payment entirely
+
+---
+
+## ADMIN PANEL
+
+Route: `/apps/ganzenbord/admin`
+Guard: only Perry's pubkey may access:
+`npub14qmyh789hq5t6u32dhr33qhlfm5dx70xf7l5tp8scmcm8ylcqkxqds0r58`
 
 Features:
-- Visual grid of all 63 squares, current config displayed
-- Click any square → drawer opens: edit type, app name, url, icon, color, effect
-- "Add new Goosie Labs app" shortcut button at top
-- "Publish to Nostr" → publishes `kind:30422 BoardConfig` from server keypair
-- All active games update their board live within seconds of publishing
+- Visual grid of all 63 squares with current config
+- Click any square → edit drawer: type, app name, url, icon, color, effect
+- "Add new Goosie Labs app" shortcut
+- "Publish to Nostr" → publishes `kind:30422 BoardConfig` → all games update live
 
 ---
 
-## MVP BUILD ORDER
-
-Build in this exact sequence, commit after each step:
-
-1. **Board rendering** — static board, correct spiral layout, all 63 squares
-   styled correctly (goose, hazard, app, normal), responsive
-2. **Game logic** — pure `gameLogic.ts`: all rules, special squares,
-   goose chaining, bounce-back, bump rule — with unit tests
-3. **Nostr game server** — keypair setup, relay connection, event processing,
-   dice generation, GameState publishing
-4. **Lobby** — create room (kind:30420), join room, player list, invite link
-5. **Game loop** — roll button → RollRequest → DiceResult → resolve → animate
-6. **Visual polish** — all token animations, dice animation, app square modals,
-   winner screen, confetti
-7. **Live board** — subscribe to kind:30422, board updates live in all clients
-8. **Admin panel** — board editor, publish BoardConfig to Nostr
-9. **Lightning** — entry fee invoices, sats tracking in GameState, winner payout
-
----
-
-## QUALITY CHECKLIST
+## QUALITY CHECKLIST (verify before calling done)
 
 - [ ] All 63 squares render in correct spiral layout
-- [ ] All hazard squares behave correctly (test each one)
-- [ ] Goose chaining works (multiple consecutive geese)
-- [ ] Overshoot bounce-back from 63 works
-- [ ] Bump rule displaces other player correctly
-- [ ] First-move specials (6+3→26, 4+5→53) work
-- [ ] Well and Prison: stuck until relieved by another player
-- [ ] Server signs all dice results; client can verify signature
-- [ ] BoardConfig subscription updates board live without page refresh
-- [ ] Admin panel only accessible to Perry's pubkey
-- [ ] Mobile layout works correctly
-- [ ] No private keys anywhere in frontend
-- [ ] `npm run build` passes with zero TypeScript errors
-- [ ] `npm audit` clean
+- [ ] All hazard square effects work correctly
+- [ ] Goose chaining works (consecutive geese keep moving)
+- [ ] Overshoot bounce-back from 63 correct
+- [ ] Bump displaces other player to your origin square
+- [ ] First-move specials (6+3→26, 4+5→53) trigger only on first roll
+- [ ] Well/Prison: player stuck until another lands and swaps
+- [ ] Server signature on DiceResult verifiable by client
+- [ ] BoardConfig change propagates live to all clients without refresh
+- [ ] Admin panel rejects non-Perry pubkeys
+- [ ] Mobile layout functional
+- [ ] Zero TypeScript errors (`npm run build`)
+- [ ] No private keys in frontend code
 
 ---
 
 ## THE VISION
 
-This is not just a game. It is a **living map of Goosie Labs**.
+This is not just a game. It's a **living map of Goosie Labs**.
 
 Every app Perry ships becomes a square on the board.
-Players are real people with real Nostr identities.
+Players are real Nostr identities.
 Real sats change hands.
-Victories are published to the Nostr timeline for everyone to see.
-The board grows with the lab.
-When a new app launches, the board changes — in every ongoing game, instantly.
+Wins are published to the Nostr timeline.
+The board grows with the lab — forever.
 
-🪿 Build the most beautiful Ganzenbord ever made.
+🪿 Build the most beautiful Game of the Goose ever made.
+
+---
+
+## ▶ START HERE — STEP 1 of 9
+
+**Build `src/lib/gameLogic.ts` — pure game logic, no UI, no Nostr.**
+
+Implement and export these functions:
+
+```typescript
+// Returns the final square after applying all rules to a roll
+export function computeNextPosition(
+  currentSquare: number,
+  die1: number,
+  die2: number,
+  isFirstRoll: boolean,
+  board: SquareConfig[]
+): MoveResult
+
+// Resolves a single square's effect (called recursively for goose chains)
+export function applyEffect(
+  square: number,
+  roll: number,
+  board: SquareConfig[]
+): EffectResult
+
+// True if square is a Goose square
+export function isGoose(square: number, board: SquareConfig[]): boolean
+
+// True if player has won
+export function validateWin(square: number): boolean
+
+// Apply bump: returns new position for the bumped player
+export function applyBump(
+  landedSquare: number,
+  occupantPreviousSquare: number
+): number
+```
+
+Types to define in `src/lib/gameLogic.ts`:
+- `MoveResult`: `{ finalSquare, effect, effectDetail, gooseChain: number[] }`
+- `EffectResult`: `{ targetSquare, effect, effectDetail }`
+- `SquareConfig`: the 63-square board config shape (import from defaultBoard.ts)
+
+Also create `src/lib/defaultBoard.ts` with the hardcoded 63-square array.
+
+Write the logic for ALL rules from the Game Rules section above.
+
+When done: `npm run build` must pass. Commit: "step 1: game logic".
+Then say **"Step 1 complete — ready for step 2"** and wait.
