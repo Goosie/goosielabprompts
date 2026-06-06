@@ -10,6 +10,8 @@
 
 ### General
 
+- [ ] [2026-06-06] `#server` `#app:mijnapp` **mijnapp verwijderen** — test app, niet nodig meer. Directory verwijderen + nginx block opruimen.
+
 - [ ] [2026-06-06] `#idee` **Ganzenbord game** — Build a Goosie Labs version of the classic board game Ganzenbord (Game of the Goose), with sats, Nostr and geese.
 
 - [ ] [2026-05-29] `#idee` `#server` **Rename "apps" to "Skein"** — A skein is a group of geese flying together: perfect name for the Goosie Labs app collection. Rename the concept, directory (`/apps/` → `/skein/`), nginx paths, tile references, CLAUDE.md, landing page. Big migration — plan carefully before executing.

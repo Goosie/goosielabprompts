@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-06 18:04)
+# Recent Changes — last 7 days (2026-06-06 21:28)
 
 ## Server (home-deploy)
 ```
+61d69158c todo: mijnapp verwijderen toegevoegd
 011fa647d relay policy: open game event kinds for all players
 208bc1030 todo: auth-patronen standaardiseren in newapp workflow
 0d731f2f5 chore: update configs, add tile templates, agent images and gitignore secrets
@@ -31,13 +32,13 @@ dab92c8b3 chore: add commy.md with role description
 84be4f55b feat: rename Communi → Commy across all systems
 ca7327aa2 feat: onboard Supporty — keypair, icon, wallet, NIP-05, whitelist
 04733dd6f chore: add Directory to agents.json and whitelist
-19a38bdee feat(directory): LNbits wallet + Lightning Address
 ```
 
 ## Apps
 
 ### bookwriter
 ```
+fc4a266 docs: add Doel & Gebruik section to CLAUDE.md
 f1156e6 feat: new DALL-E app icon — open book with AI sparks and quill
 2d154ca feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 d14a102 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
@@ -47,7 +48,6 @@ d14a102 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 3014bdd fix: add missing nostr-login dependency after auth sync
 910e802 chore: sync auth components from boilerplate
 92b1d52 security: add *.db *.sqlite to gitignore
-544b3fb security: untrack dvm.key + add to gitignore
 ```
 
 ### catchzaps
@@ -91,22 +91,28 @@ dbd953f fix: add missing nostr-login dependency — blank page on load
 3bb2491 feat: progressive onboarding — remove login wall, add write gate
 ```
 
+### flocks
+```
+57f00f5 docs: add CLAUDE.md with Doel & Gebruik section
+```
+
 ### gameofthegoose
 ```
-2214801 fix: room creation navigates to waiting room immediately (optimistic UI)
-453dbcd step 7: live board — BoardConfig from Nostr updates all games in real time
-89cc394 add guest play flow — instant one-click play without Nostr account
-d61c659 fix login UX: direct extension access, clickable auth triggers in lobby
-03c31fa improve AuthDialog: flat login method selector, all options always visible
-9e2838d step 6: visual polish — animations, overlays, winner screen
-e64dd65 step 5: game loop — roll → Nostr → animate → board update
-8be0c3f step 4: lobby — create/join rooms via Nostr
-1912dbf step 3: nostr game server
-7bec00e step 2: static board rendering — component split + visual polish
+4098e1e feat: publish guest kind:0 with random name on first login
+b1383ad fix: remove duplicate GuestBanner from individual pages
+89b9e0c chore: update tile — new title, description and app URL
+04210fb chore: track all project files + update CLAUDE.md documentation
+f075417 refactor: unique room IDs + explicit close-old-rooms before create
+480a73c fix: NIP-40 expiration on GameRoom events + tighter since window
+df6f791 docs: add relay + room-id rules to CLAUDE.md
+131d91d fix: single relay + immediate room render via navigation state
+c4ce2b8 fix: await GameRoom publish before navigating to waiting room
+4ab6893 fix: deterministic room ID per host pubkey — relay auto-replaces old rooms
 ```
 
 ### georgie
 ```
+a5bfee4 docs: add Doel & Gebruik section to CLAUDE.md
 95e0af7 feat: new DALL-E app icon — Georgia map with trail and landmarks
 8a8c369 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 d30c81b fix(AccountSwitcher): Fragment wrapper voor TSX-fout
@@ -119,6 +125,7 @@ c97193a feat: progressive onboarding — remove login wall, add write gate
 
 ### gooseprogrammer
 ```
+cd4c93d docs: add Doel & Gebruik section to CLAUDE.md
 7196e8f feat: new DALL-E app icon — terminal with code and gear
 f363d6c chore: rename Danky → Devy in agents, backend, CLAUDE.md
 59d6cc5 refactor: rename haitje→ay and tessa→testy references
@@ -128,11 +135,11 @@ f363d6c chore: rename Danky → Devy in agents, backend, CLAUDE.md
 1316266 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 8f3db3a fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 a0e6bd7 feat(auth): boilerplate auth-componenten bijgewerkt
-6aaddda feat: Goosie Programmer — agent control panel
 ```
 
 ### goosiemanager
 ```
+617ec7c docs: add Doel & Gebruik section to CLAUDE.md
 fc09b89 feat: Flocks tile op homepage
 92903fb feat: mobile-friendly layout
 9d497e6 fix: agent grid als default view, bootstrap niet-blokkerend
@@ -154,6 +161,7 @@ a867ea7 fix: WebSocket polyfill voor Node.js 20 + auto-publish badge definitie
 
 ### honkference
 ```
+6e24c97 docs: add Doel & Gebruik section to CLAUDE.md
 421358f feat: new DALL-E icon — conference table, speech bubbles, microphone
 4f29c76 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 5cb5033 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
@@ -163,6 +171,16 @@ a565fdb goosielab update 2026-06-02 15:44
 96f18c2 chore: sync auth components from boilerplate
 35b9a9f security: add *.db *.sqlite to gitignore
 802c4fc feat: progressive onboarding — remove login wall, add write gate
+```
+
+### honkstation
+```
+1262449 docs: add CLAUDE.md with Doel & Gebruik section
+```
+
+### iris
+```
+c31388ec docs: add Doel & Gebruik section to DEVELOPMENT.md
 ```
 
 ### lastwill
@@ -193,6 +211,7 @@ c235d14 feat: progressive onboarding — remove login wall, add write gate
 
 ### newapp
 ```
+a8918bd docs: add Doel & Gebruik section to CLAUDE.md
 1ef1f60 chore: rename Danky → Devy in geese.ts, build.ts, Terminal.tsx, useBuild.ts, CLAUDE.md
 d043e10 rename: tessa → testy
 7441613 rename: fix remaining addLog astrid → assistenty in useBuild.ts
@@ -202,11 +221,11 @@ d043e10 rename: tessa → testy
 e04c719 fix: uitlogknop bij geen toegang zodat je ander account kunt proberen
 b3953dd fix: pubkey checken voor inloggen, directe foutmelding bij verkeerde nsec
 5a808cb fix: nostr-login init() verwijderd — extensie direct via window.nostr
-123713d fix: bridge laat opgeslagen sessie met rust, geen dubbele login meer
 ```
 
 ### onboarding
 ```
+bb6a765 docs: add Doel & Gebruik section to CLAUDE.md
 6ce09f1 feat: new DALL-E app icon — identity card with sigil and key
 11f15a7 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 c13ba97 initialize
@@ -261,6 +280,7 @@ cf3bbca add tile.json en app icons voor homepage
 
 ### vformation
 ```
+3de4fd0 docs: add Doel & Gebruik section to CLAUDE.md
 c7b8ed0 feat: new DALL-E app icon — live V-shape with pulsing nodes
 0e9d87e chore: update Commy role description in gooseConfig.ts
 8a780b7 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
@@ -270,7 +290,6 @@ c4aaef6 feat(auth): boilerplate auth-componenten bijgewerkt
 6c5c2fa feat: Gitea onboarded via Humany newgoose
 e30d55c feat: Gitty onboarded via Humany newgoose
 c86c722 feat: Humany — formation HR goose, register in dashboard
-5cd9730 feat: Chat tab — inter-goose formation messages
 ```
 
 ### weddendat

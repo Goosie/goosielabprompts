@@ -401,6 +401,7 @@ Het session-id staat in de output als je Claude Code afsluit.
 | **Swarm**    | V-formatie dashboard — realtime zien welke ganzen DMs sturen. Gebruik: ga naar /apps/swarm/, log in als Perry (oranje knop onderaan). Klik op een gans → zie hun berichten. Gebruik dit om te testen of ganzen correct communiceren. | LIVE | /apps/swarm |
 | Iris         | Nostr web client (geforkte installatie); ingebouwde Cashu wallet (multi-mint, NWC, WebLN); plek voor addon-features | LIVE | /apps/iris |
 | Routstr      | Nostr identiteitsinfrastructuur voor organisaties                     | LIVE        | goosielabs.com                |
+| **gameofthegoose** | Multiplayer Ganzenbord op Nostr — echte identiteiten, levend bord (apps worden vakjes), sats via Lightning. Stappen 1-7 klaar, 8 (admin) + 9 (Lightning) nog te doen. Server: `ganzenbord-server` poort 3021. Relay: uitsluitend relay.goosielabs.com. | IN BOUW | /apps/gameofthegoose |
 | CatchZaps    | Drop sats op kaart, anderen vangen ze op                              | IN BOUW     | /apps/catchzaps               |
 | ZapHunt      | AI-speurtocht; iedereen→deposit; sats/correct antwoord                | IN BOUW     | /apps/zaphunt                 |
 | Sofia        | Nostr reisapp voor groepstrips — experiment klaar                     | EXPERIMENT  | /apps/sofia                   |
