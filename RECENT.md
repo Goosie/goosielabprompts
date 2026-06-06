@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-06 12:40)
+# Recent Changes — last 7 days (2026-06-06 12:42)
 
 ## Server (home-deploy)
 ```
+0d731f2f5 chore: update configs, add tile templates, agent images and gitignore secrets
 c95157766 todo: add ganzenbord game idea
 8bc6f2dca fix: add 500ms delay between payments to avoid NWC rate limiting on Alby Hub
 93fd0fceb feat: add perry@goosielabs.com Lightning Address
@@ -31,7 +32,6 @@ ca7327aa2 feat: onboard Supporty — keypair, icon, wallet, NIP-05, whitelist
 19a38bdee feat(directory): LNbits wallet + Lightning Address
 325f4f643 fix(directory): regenerate portrait with correct cartoon style
 c403387d8 feat(directory): AI portrait — navy suit, compass, leather portfolio
-ea965a98c feat: add lud16 Lightning Address to agent kind:0 profiles
 ```
 
 ## Apps
