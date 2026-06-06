@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-06 12:32)
+# Recent Changes — last 7 days (2026-06-06 12:40)
 
 ## Server (home-deploy)
 ```
+c95157766 todo: add ganzenbord game idea
 8bc6f2dca fix: add 500ms delay between payments to avoid NWC rate limiting on Alby Hub
 93fd0fceb feat: add perry@goosielabs.com Lightning Address
 b5a7cf5d4 fix: use Lightning Addresses (name@goosielabs.com) in send-sats-to-geese
@@ -31,7 +32,6 @@ ca7327aa2 feat: onboard Supporty — keypair, icon, wallet, NIP-05, whitelist
 325f4f643 fix(directory): regenerate portrait with correct cartoon style
 c403387d8 feat(directory): AI portrait — navy suit, compass, leather portfolio
 ea965a98c feat: add lud16 Lightning Address to agent kind:0 profiles
-92c0a0325 feat: Lightning Addresses for all 14 V-formation agents
 ```
 
 ## Apps
