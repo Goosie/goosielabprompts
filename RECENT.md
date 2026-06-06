@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-06 17:35)
+# Recent Changes — last 7 days (2026-06-06 18:04)
 
 ## Server (home-deploy)
 ```
+011fa647d relay policy: open game event kinds for all players
 208bc1030 todo: auth-patronen standaardiseren in newapp workflow
 0d731f2f5 chore: update configs, add tile templates, agent images and gitignore secrets
 c95157766 todo: add ganzenbord game idea
@@ -31,7 +32,6 @@ dab92c8b3 chore: add commy.md with role description
 ca7327aa2 feat: onboard Supporty — keypair, icon, wallet, NIP-05, whitelist
 04733dd6f chore: add Directory to agents.json and whitelist
 19a38bdee feat(directory): LNbits wallet + Lightning Address
-325f4f643 fix(directory): regenerate portrait with correct cartoon style
 ```
 
 ## Apps
@@ -93,6 +93,8 @@ dbd953f fix: add missing nostr-login dependency — blank page on load
 
 ### gameofthegoose
 ```
+2214801 fix: room creation navigates to waiting room immediately (optimistic UI)
+453dbcd step 7: live board — BoardConfig from Nostr updates all games in real time
 89cc394 add guest play flow — instant one-click play without Nostr account
 d61c659 fix login UX: direct extension access, clickable auth triggers in lobby
 03c31fa improve AuthDialog: flat login method selector, all options always visible
@@ -101,8 +103,6 @@ e64dd65 step 5: game loop — roll → Nostr → animate → board update
 8be0c3f step 4: lobby — create/join rooms via Nostr
 1912dbf step 3: nostr game server
 7bec00e step 2: static board rendering — component split + visual polish
-47e7627 add tile.json and regenerate icon in forest green (#2d6a4f)
-fccda11 step 1: game logic — pure functions + default board
 ```
 
 ### georgie
