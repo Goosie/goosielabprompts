@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-06 12:42)
+# Recent Changes — last 7 days (2026-06-06 17:35)
 
 ## Server (home-deploy)
 ```
+208bc1030 todo: auth-patronen standaardiseren in newapp workflow
 0d731f2f5 chore: update configs, add tile templates, agent images and gitignore secrets
 c95157766 todo: add ganzenbord game idea
 8bc6f2dca fix: add 500ms delay between payments to avoid NWC rate limiting on Alby Hub
@@ -31,7 +32,6 @@ ca7327aa2 feat: onboard Supporty — keypair, icon, wallet, NIP-05, whitelist
 04733dd6f chore: add Directory to agents.json and whitelist
 19a38bdee feat(directory): LNbits wallet + Lightning Address
 325f4f643 fix(directory): regenerate portrait with correct cartoon style
-c403387d8 feat(directory): AI portrait — navy suit, compass, leather portfolio
 ```
 
 ## Apps
@@ -91,6 +91,20 @@ dbd953f fix: add missing nostr-login dependency — blank page on load
 3bb2491 feat: progressive onboarding — remove login wall, add write gate
 ```
 
+### gameofthegoose
+```
+89cc394 add guest play flow — instant one-click play without Nostr account
+d61c659 fix login UX: direct extension access, clickable auth triggers in lobby
+03c31fa improve AuthDialog: flat login method selector, all options always visible
+9e2838d step 6: visual polish — animations, overlays, winner screen
+e64dd65 step 5: game loop — roll → Nostr → animate → board update
+8be0c3f step 4: lobby — create/join rooms via Nostr
+1912dbf step 3: nostr game server
+7bec00e step 2: static board rendering — component split + visual polish
+47e7627 add tile.json and regenerate icon in forest green (#2d6a4f)
+fccda11 step 1: game logic — pure functions + default board
+```
+
 ### georgie
 ```
 95e0af7 feat: new DALL-E app icon — Georgia map with trail and landmarks
@@ -133,6 +147,7 @@ f1f14cc feat: Phase 1 GoosieManager frontend
 
 ### honkbadge
 ```
+809c40d feat: kind:30008 — 'Zet op profiel' knop na badge verdiend
 a867ea7 fix: WebSocket polyfill voor Node.js 20 + auto-publish badge definitie
 768ee4b feat: HonkBadge — NIP-58 badge minting via Lightning
 ```
@@ -196,7 +211,6 @@ b3953dd fix: pubkey checken voor inloggen, directe foutmelding bij verkeerde nse
 11f15a7 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 c13ba97 initialize
 422e027 security: add *.db *.sqlite to gitignore
-864c794 security: move OpenRouter API key server-side via AI proxy (FASE B)
 ```
 
 ### proofofmove

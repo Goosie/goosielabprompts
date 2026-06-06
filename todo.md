@@ -79,3 +79,5 @@
 - [x] [2026-05-21] `#tessa` **Tessa uitgerold** — seed.js per app aanwezig met app-specifieke event kinds.
 - [ ] [2026-06-05] `#testy` Test: DM sturen naar Backy vanaf mobiel (bijv. Amethyst) met 'snapshot' → controleert of Backy reageert en DO snapshot aanmaakt
 - [ ] [2026-06-05] `#testy` Test /help naar Backy sturen vanuit Amethyst (mobiel) → controleer of Backy reageert en of de communicatie zichtbaar is in Swarm dashboard
+
+- [ ] [2026-06-06] `#idee` `#server` **Auth-patronen voor newapp** — Standaardiseer login-keuzes bij nieuwe app-aanmaak. Patronen: A=gast verborgen, B=gast+banner, C=gast+Nostr-keuze, D=progressive disclosure (MKStack standaard), E=login wall, F=anoniem+optioneel, G=Nostr vereist, H=bunker-only. Toevoegen aan: newapp-web formulier (keuze-selector), newapp CLI (vraag bij aanmaak), CLAUDE.md (documentatie per patroon + welke componenten horen erbij), boilerplate-varianten. Eerst documenteren in CLAUDE.md, dan implementeren.

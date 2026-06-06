@@ -420,7 +420,6 @@ Het session-id staat in de output als je Claude Code afsluit.
 | georgie | — beschrijving nog toe te voegen — | IN BOUW | /apps/georgie |
 | rotterdam | — beschrijving nog toe te voegen — | IN BOUW | /apps/rotterdam |
 | gooseprogrammer | — beschrijving nog toe te voegen — | IN BOUW | /apps/gooseprogrammer |
-| helloworld | — beschrijving nog toe te voegen — | IN BOUW | /apps/helloworld |
 | honkbadge | — beschrijving nog toe te voegen — | IN BOUW | /apps/honkbadge |
 | Assistenty   | Deze assistent — fase 1 is dit bestand                                | FASE 1 LIVE | ~/.claude/CLAUDE.md           |
 | Jurry        | juridisch agent; licenties, privacy, betaalregelgeving, aansprakelijkheid | LIVE    | /home/deploy/scripts/jurry/   |
