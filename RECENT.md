@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-07 11:55)
+# Recent Changes — last 7 days (2026-06-07 21:42)
 
 ## Server (home-deploy)
 ```
+af1168493 todo: add Cashu batches
 7668cf721 todo: research LNbits API for QR code in donate modal
 21bf417b7 docs: add newgoose to goosie help command with follow-up steps
 30b2bdbe0 docs: document newgoose command with blockbirth and AGENT_ORDER steps
@@ -31,7 +32,6 @@ c907ae5af rename: tessa → testy across home-deploy
 3fb11177a rename: astrid → assistenty across home-deploy
 47a46544b chore: update all agent tile.html files — nsite links refreshed by publish-agent-pages
 5343ba6fa chore: update tile.html — publish-agent-pages auto-updated nsite link
-4a1d2b2e2 chore: rename Communi → Commy in remaining files
 ```
 
 ## Apps
@@ -46,8 +46,6 @@ f1156e6 feat: new DALL-E app icon — open book with AI sparks and quill
 d14a102 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 418c7d8 feat(auth): boilerplate auth-componenten bijgewerkt
 6a45d1a i18n: translate tile.json description to English
-6b546c3 refactor: remove old login UI, keep modular nostr-login auth
-3014bdd fix: add missing nostr-login dependency after auth sync
 ```
 
 ### catchzaps
@@ -60,8 +58,6 @@ f985520 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 2e4e581 i18n: translate tile.json description to English
 223d47e fix: add missing nostr-login dependency that caused blank page
 a14ed15 fix: handle non-JSON server responses in API requests
-df6bd74 chore: sync auth components from boilerplate
-2fe16d2 security: untrack database + add *.db to gitignore
 ```
 
 ### dilemma
@@ -75,7 +71,6 @@ e37788f feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 ff78908 feat(auth): boilerplate auth-componenten bijgewerkt
 c69e668 i18n: translate tile.json description to English
 38f5d9f fix: add missing nostr-login dependency — blank page on load
-d0b04a1 chore: sync auth components from boilerplate
 ```
 
 ### feedback
@@ -87,8 +82,6 @@ ec34cec feat: add lnbits_inkey to tile.json
 7fdc21e feat(auth): boilerplate auth-componenten bijgewerkt
 0dacd44 i18n: translate tile.json description to English
 dbd953f fix: add missing nostr-login dependency — blank page on load
-4b02448 chore: sync auth components from boilerplate
-28442f4 security: add *.db *.sqlite to gitignore
 ```
 
 ### flocks
@@ -119,8 +112,6 @@ a5bfee4 docs: add Doel & Gebruik section to CLAUDE.md
 d30c81b fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 06cb7cd feat(auth): boilerplate auth-componenten bijgewerkt
 5dea4b9 fix: add missing nostr-login dependency — blank page on load
-99984a1 chore: sync auth components from boilerplate
-23e5108 security: add *.db *.sqlite to gitignore
 ```
 
 ### gooseprogrammer
@@ -173,7 +164,6 @@ a867ea7 fix: WebSocket polyfill voor Node.js 20 + auto-publish badge definitie
 f59e973 feat(auth): boilerplate auth-componenten bijgewerkt
 a565fdb goosielab update 2026-06-02 15:44
 76f20d4 fix: add missing nostr-login dependency — blank page on load
-96f18c2 chore: sync auth components from boilerplate
 ```
 
 ### honkstation
@@ -196,8 +186,6 @@ d44b4bd feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 4bf426c feat(auth): boilerplate auth-componenten bijgewerkt
 fe71996 i18n: translate tile.json description to English
 79c8f08 fix: add missing nostr-login dependency — blank page on load
-55c8b3b chore: sync auth components from boilerplate
-123e0e5 security: add *.db *.sqlite to gitignore
 ```
 
 ### mijnapp
@@ -233,8 +221,6 @@ b3953dd fix: pubkey checken voor inloggen, directe foutmelding bij verkeerde nse
 bb6a765 docs: add Doel & Gebruik section to CLAUDE.md
 6ce09f1 feat: new DALL-E app icon — identity card with sigil and key
 11f15a7 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
-c13ba97 initialize
-422e027 security: add *.db *.sqlite to gitignore
 ```
 
 ### proofofmove
@@ -246,8 +232,6 @@ bfbae7d feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 6cb650f feat(auth): boilerplate auth-componenten bijgewerkt
 f02c3fc i18n: translate tile.json description to English
 0d4e773 fix: remove nostr-login dependency causing blank page on startup
-ceefde9 chore: sync auth components from boilerplate
-7b3cebd security: add *.db *.sqlite to gitignore
 ```
 
 ### proofofread
@@ -274,8 +258,6 @@ cdac2a7 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 f903617 feat(auth): boilerplate auth-componenten bijgewerkt
 94fed5b i18n: translate tile.json description to English
 70b7b87 fix: remove nostr-login dependency causing blank page
-ee8a3bd chore: sync auth components from boilerplate
-76566ff security: add *.db *.sqlite to gitignore
 ```
 
 ### swarm
@@ -314,8 +296,6 @@ d3e0a70 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 19f503a feat(auth): boilerplate auth-componenten bijgewerkt
 eee75e7 i18n: translate tile.json description to English
 b9e2598 fix: add missing nostr-login dependency — blank page on load
-a60ce68 chore: sync auth components from boilerplate
-e834e4d security: add *.db *.sqlite to gitignore
 ```
 
 ### zap-hunt
@@ -344,5 +324,4 @@ d8e1ee1 backy: backup status 20260604_030003 [status=ok]
 3a8b528 feat: new DALL-E app icon — matching speech bubbles with spark
 8edae71 i18n: translate tile.json description to English
 55673f7 chore: add juridischadvies.html
-ea4d2bc security: add .gitignore (was missing entirely)
 ```

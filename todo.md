@@ -10,6 +10,8 @@
 
 ### General
 
+- [ ] [2026-06-08] `#server` **Make Cashu Batches working** — Get the Nutshell Cashu mint batch functionality operational on mint.goosielabs.com.
+
 - [ ] [2026-06-07] `#server` **Research LNbits API for QR code** — LNbits may offer a QR code via the API directly. If so, replace the local qrcode-generator library in donate.js with the LNbits API response.
 
 - [ ] [2026-06-07] `#idee` **Users can create their own welfare goose** — A special flow where any user can register a welfare goose (Nostr identity for a good cause). Others can then route a slice of their app payments to it. Extends the goose blockbirth / lastwill system.
