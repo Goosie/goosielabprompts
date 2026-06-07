@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-07 08:15)
+# Recent Changes — last 7 days (2026-06-07 09:46)
 
 ## Server (home-deploy)
 ```
+30b2bdbe0 docs: document newgoose command with blockbirth and AGENT_ORDER steps
 e9e17e862 todo: add goose lives ideas — blockbirth, welfare goosies, lastwill, revenue split
 dd9ff4ba7 docs: document AGENT_ORDER requirement for homepage visibility
 61d69158c todo: mijnapp verwijderen toegevoegd
@@ -31,7 +32,6 @@ c907ae5af rename: tessa → testy across home-deploy
 4a1d2b2e2 chore: rename Communi → Commy in remaining files
 dab92c8b3 chore: add commy.md with role description
 175f1b307 chore: update Commy description — Community manager, honking wherever I can
-84be4f55b feat: rename Communi → Commy across all systems
 ```
 
 ## Apps

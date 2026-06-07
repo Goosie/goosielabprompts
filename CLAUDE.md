@@ -75,19 +75,29 @@ jq -r '.agents[].pubkey' /home/deploy/agents/agents.json
 
 **Do NOT manually edit:** whitelist.json, nostr.json, swarmAgents.ts, bunkerUris.ts, tile.html — these are generated files.
 
-### Adding a new goose to the homepage
+### Creating a new goose
 
-Creating `agents/<name>/nostr-key.json` is NOT enough to show a goose on the homepage.
-You must also add the name to `AGENT_ORDER` in `/home/deploy/scripts/publish-homepage.mjs`:
-
-```js
-const AGENT_ORDER = ['assistenty','devy','finny', ... , '<new-goose-name>'];
-```
-
-Only geese in `AGENT_ORDER` appear on the V-Formation section. Then republish:
 ```bash
-bash /home/deploy/update-tiles.sh
+goosie humany newgoose <name>
 ```
+
+This automatically:
+- Generates a Nostr keypair
+- Assigns a random **blockbirth** (#721,000–#821,000) — written to `nostr-key.json`
+- Adds the goose to `nostr.json` and `agents.json`
+
+**After creation — two manual steps:**
+
+1. Add the name to `AGENT_ORDER` in `/home/deploy/scripts/publish-homepage.mjs`:
+   ```js
+   const AGENT_ORDER = ['assistenty','devy', ... , '<new-goose-name>'];
+   ```
+   Only geese in `AGENT_ORDER` appear in the V-Formation section on the homepage.
+
+2. Republish the homepage:
+   ```bash
+   bash /home/deploy/update-tiles.sh
+   ```
 
 ### Key rotation
 

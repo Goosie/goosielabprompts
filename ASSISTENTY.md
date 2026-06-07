@@ -86,19 +86,29 @@ sync-configs        # regenereert ALLE afgeleide bestanden automatisch
 Afgeleide bestanden — **nooit handmatig aanpassen:**
 `whitelist.json` · `.well-known/nostr.json` · `swarmAgents.ts` · `bunkerUris.ts` · `tile.html`
 
-### Nieuwe gans op de homepage zetten
+### Nieuwe gans aanmaken
 
-Een `agents/<naam>/nostr-key.json` aanmaken is **niet genoeg** om een gans op de homepage te tonen.
-Je moet de naam ook toevoegen aan `AGENT_ORDER` in `/home/deploy/scripts/publish-homepage.mjs`:
-
-```js
-const AGENT_ORDER = ['assistenty','devy','finny', ... , '<nieuwe-gans-naam>'];
-```
-
-Alleen ganzen in `AGENT_ORDER` verschijnen in de V-Formatie sectie. Daarna herpubliceren:
 ```bash
-bash /home/deploy/update-tiles.sh
+goosie humany newgoose <naam>
 ```
+
+Dit doet automatisch:
+- Nostr keypair genereren
+- Willekeurige **blockbirth** (#721.000–#821.000) toewijzen — opgeslagen in `nostr-key.json`
+- Gans toevoegen aan `nostr.json` en `agents.json`
+
+**Na aanmaken — twee handmatige stappen:**
+
+1. Naam toevoegen aan `AGENT_ORDER` in `/home/deploy/scripts/publish-homepage.mjs`:
+   ```js
+   const AGENT_ORDER = ['assistenty','devy', ... , '<nieuwe-gans-naam>'];
+   ```
+   Alleen ganzen in `AGENT_ORDER` verschijnen in de V-Formatie sectie.
+
+2. Homepage herpubliceren:
+   ```bash
+   bash /home/deploy/update-tiles.sh
+   ```
 
 ### Sleutelrotatie bij compromis
 
