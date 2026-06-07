@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-07 09:47)
+# Recent Changes — last 7 days (2026-06-07 11:55)
 
 ## Server (home-deploy)
 ```
+7668cf721 todo: research LNbits API for QR code in donate modal
 21bf417b7 docs: add newgoose to goosie help command with follow-up steps
 30b2bdbe0 docs: document newgoose command with blockbirth and AGENT_ORDER steps
 e9e17e862 todo: add goose lives ideas — blockbirth, welfare goosies, lastwill, revenue split
@@ -31,13 +32,13 @@ c907ae5af rename: tessa → testy across home-deploy
 47a46544b chore: update all agent tile.html files — nsite links refreshed by publish-agent-pages
 5343ba6fa chore: update tile.html — publish-agent-pages auto-updated nsite link
 4a1d2b2e2 chore: rename Communi → Commy in remaining files
-dab92c8b3 chore: add commy.md with role description
 ```
 
 ## Apps
 
 ### bookwriter
 ```
+31c31c6 feat: add lnbits_inkey to tile.json
 8cb3692 chore: rename tile title to Write Book
 fc4a266 docs: add Doel & Gebruik section to CLAUDE.md
 f1156e6 feat: new DALL-E app icon — open book with AI sparks and quill
@@ -47,11 +48,11 @@ d14a102 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 6a45d1a i18n: translate tile.json description to English
 6b546c3 refactor: remove old login UI, keep modular nostr-login auth
 3014bdd fix: add missing nostr-login dependency after auth sync
-910e802 chore: sync auth components from boilerplate
 ```
 
 ### catchzaps
 ```
+a530f71 feat: add lnbits_inkey to tile.json
 9bb0672 feat: new DALL-E app icon — map pin with lightning bolt and catching hand
 6145425 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 f985520 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
@@ -61,11 +62,11 @@ f985520 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 a14ed15 fix: handle non-JSON server responses in API requests
 df6bd74 chore: sync auth components from boilerplate
 2fe16d2 security: untrack database + add *.db to gitignore
-31e34ec feat: progressive onboarding — remove login wall, add write gate
 ```
 
 ### dilemma
 ```
+92d463d feat: add lnbits_inkey to tile.json
 2a34c90 feat: new DALL-E app icon v2 — balance scale with lightning bounty
 96d3d8f feat: new DALL-E app icon — crossroads with bounty
 6cb2165 rename: scripts/tessa → scripts/testy
@@ -75,11 +76,11 @@ ff78908 feat(auth): boilerplate auth-componenten bijgewerkt
 c69e668 i18n: translate tile.json description to English
 38f5d9f fix: add missing nostr-login dependency — blank page on load
 d0b04a1 chore: sync auth components from boilerplate
-6482796 security: add *.db *.sqlite to gitignore
 ```
 
 ### feedback
 ```
+ec34cec feat: add lnbits_inkey to tile.json
 390fb5a feat: new DALL-E app icon — anonymous mask in speech bubble with lightning
 72a58c0 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 8abba7d fix(AccountSwitcher): Fragment wrapper voor TSX-fout
@@ -88,7 +89,6 @@ d0b04a1 chore: sync auth components from boilerplate
 dbd953f fix: add missing nostr-login dependency — blank page on load
 4b02448 chore: sync auth components from boilerplate
 28442f4 security: add *.db *.sqlite to gitignore
-3bb2491 feat: progressive onboarding — remove login wall, add write gate
 ```
 
 ### flocks
@@ -98,6 +98,7 @@ dbd953f fix: add missing nostr-login dependency — blank page on load
 
 ### gameofthegoose
 ```
+4ccc7a9 feat: add lnbits_inkey to tile.json
 e3c8240 fix: map game status 'active' → 'playing' for PlayerPanel
 4098e1e feat: publish guest kind:0 with random name on first login
 b1383ad fix: remove duplicate GuestBanner from individual pages
@@ -107,11 +108,11 @@ f075417 refactor: unique room IDs + explicit close-old-rooms before create
 480a73c fix: NIP-40 expiration on GameRoom events + tighter since window
 df6f791 docs: add relay + room-id rules to CLAUDE.md
 131d91d fix: single relay + immediate room render via navigation state
-c4ce2b8 fix: await GameRoom publish before navigating to waiting room
 ```
 
 ### georgie
 ```
+aedf417 feat: add lnbits_inkey to tile.json
 a5bfee4 docs: add Doel & Gebruik section to CLAUDE.md
 95e0af7 feat: new DALL-E app icon — Georgia map with trail and landmarks
 8a8c369 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
@@ -120,11 +121,11 @@ d30c81b fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 5dea4b9 fix: add missing nostr-login dependency — blank page on load
 99984a1 chore: sync auth components from boilerplate
 23e5108 security: add *.db *.sqlite to gitignore
-c97193a feat: progressive onboarding — remove login wall, add write gate
 ```
 
 ### gooseprogrammer
 ```
+339e89b feat: add lnbits_inkey to tile.json
 cd4c93d docs: add Doel & Gebruik section to CLAUDE.md
 7196e8f feat: new DALL-E app icon — terminal with code and gear
 f363d6c chore: rename Danky → Devy in agents, backend, CLAUDE.md
@@ -134,11 +135,11 @@ f363d6c chore: rename Danky → Devy in agents, backend, CLAUDE.md
 0012b43 chore: rename Communi → Commy
 1316266 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 8f3db3a fix(AccountSwitcher): Fragment wrapper voor TSX-fout
-a0e6bd7 feat(auth): boilerplate auth-componenten bijgewerkt
 ```
 
 ### goosiemanager
 ```
+25ebed5 feat: add lnbits_inkey to tile.json
 387454a refactor: replace @nostr-dev-kit/ndk with nostr-tools SimplePool
 617ec7c docs: add Doel & Gebruik section to CLAUDE.md
 fc09b89 feat: Flocks tile op homepage
@@ -155,6 +156,7 @@ f1f14cc feat: Phase 1 GoosieManager frontend
 
 ### honkbadge
 ```
+d4200e4 feat: add lnbits_inkey to tile.json
 809c40d feat: kind:30008 — 'Zet op profiel' knop na badge verdiend
 a867ea7 fix: WebSocket polyfill voor Node.js 20 + auto-publish badge definitie
 768ee4b feat: HonkBadge — NIP-58 badge minting via Lightning
@@ -162,6 +164,7 @@ a867ea7 fix: WebSocket polyfill voor Node.js 20 + auto-publish badge definitie
 
 ### honkference
 ```
+1334839 feat: add lnbits_inkey to tile.json
 73b1bec chore: rename tile title to Honkference
 6e24c97 docs: add Doel & Gebruik section to CLAUDE.md
 421358f feat: new DALL-E icon — conference table, speech bubbles, microphone
@@ -171,7 +174,6 @@ f59e973 feat(auth): boilerplate auth-componenten bijgewerkt
 a565fdb goosielab update 2026-06-02 15:44
 76f20d4 fix: add missing nostr-login dependency — blank page on load
 96f18c2 chore: sync auth components from boilerplate
-35b9a9f security: add *.db *.sqlite to gitignore
 ```
 
 ### honkstation
@@ -186,6 +188,7 @@ c31388ec docs: add Doel & Gebruik section to DEVELOPMENT.md
 
 ### lastwill
 ```
+6c31f1c feat: add lnbits_inkey to tile.json
 d6b3aca feat: new app icon — flat cartoon testament/heartbeat/padlock via DALL-E
 ab0f069 rename: scripts/tessa → scripts/testy
 d44b4bd feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
@@ -195,7 +198,6 @@ fe71996 i18n: translate tile.json description to English
 79c8f08 fix: add missing nostr-login dependency — blank page on load
 55c8b3b chore: sync auth components from boilerplate
 123e0e5 security: add *.db *.sqlite to gitignore
-c235d14 feat: progressive onboarding — remove login wall, add write gate
 ```
 
 ### mijnapp
@@ -207,6 +209,7 @@ c235d14 feat: progressive onboarding — remove login wall, add write gate
 
 ### mint
 ```
+4b41e39 feat: add lnbits_inkey to tile.json
 0aba45b feat: Goosie Mint tile — icon, tile.json, links to mint.goosielabs.com
 ```
 
@@ -226,6 +229,7 @@ b3953dd fix: pubkey checken voor inloggen, directe foutmelding bij verkeerde nse
 
 ### onboarding
 ```
+334e49e feat: add lnbits_inkey to tile.json
 bb6a765 docs: add Doel & Gebruik section to CLAUDE.md
 6ce09f1 feat: new DALL-E app icon — identity card with sigil and key
 11f15a7 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
@@ -235,6 +239,7 @@ c13ba97 initialize
 
 ### proofofmove
 ```
+2e8182f feat: add lnbits_inkey to tile.json
 73a2666 feat: new DALL-E app icon — warrior pose with movement shadow and lightning
 bfbae7d feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 36d33a9 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
@@ -243,11 +248,11 @@ f02c3fc i18n: translate tile.json description to English
 0d4e773 fix: remove nostr-login dependency causing blank page on startup
 ceefde9 chore: sync auth components from boilerplate
 7b3cebd security: add *.db *.sqlite to gitignore
-64b0d0a feat: progressive onboarding — remove login wall, add write gate
 ```
 
 ### proofofread
 ```
+1aa06d1 feat: add lnbits_inkey to tile.json
 753d0f2 feat: new DALL-E app icon — book, barcode, badge and lightning
 b642c75 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 9d82c1d feat: tessa script aangemaakt — check + seed
@@ -256,11 +261,13 @@ a4b8030 initial commit
 
 ### satquiz
 ```
+9a55499 feat: add lnbits_inkey to tile.json
 52c832e chore: rename tile title to Satoshi Quiz
 ```
 
 ### sofia
 ```
+d618efd feat: add lnbits_inkey to tile.json
 606d364 feat: new DALL-E app icon — group around map with privacy shield
 d9f5812 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 cdac2a7 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
@@ -269,11 +276,11 @@ f903617 feat(auth): boilerplate auth-componenten bijgewerkt
 70b7b87 fix: remove nostr-login dependency causing blank page
 ee8a3bd chore: sync auth components from boilerplate
 76566ff security: add *.db *.sqlite to gitignore
-282c119 feat: progressive onboarding — remove login wall, add write gate
 ```
 
 ### swarm
 ```
+324b4f9 feat: add lnbits_inkey to tile.json
 07895e5 fix: toon npub i.p.v. hex in agent-detailpaneel
 1528d46 feat: sync all 17 agents — real pubkeys, expanded V-formation
 f1f87ec feat: new DALL-E app icon — V-formation glowing network nodes
@@ -286,6 +293,7 @@ cf3bbca add tile.json en app icons voor homepage
 
 ### vformation
 ```
+b66b21e feat: add lnbits_inkey to tile.json
 3de4fd0 docs: add Doel & Gebruik section to CLAUDE.md
 c7b8ed0 feat: new DALL-E app icon — live V-shape with pulsing nodes
 0e9d87e chore: update Commy role description in gooseConfig.ts
@@ -295,11 +303,11 @@ c4aaef6 feat(auth): boilerplate auth-componenten bijgewerkt
 213773e feat: all role geese in dashboard — Astrid, Danky, Finny, Ruby, Checky, Communi, Designy, Nosty, Admission
 6c5c2fa feat: Gitea onboarded via Humany newgoose
 e30d55c feat: Gitty onboarded via Humany newgoose
-c86c722 feat: Humany — formation HR goose, register in dashboard
 ```
 
 ### weddendat
 ```
+c450414 feat: add lnbits_inkey to tile.json
 1fff08d feat: rename to I Bet That + new DALL-E icon (handshake/lightning/coins)
 d3e0a70 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 54f602b fix(AccountSwitcher): Fragment wrapper voor TSX-fout
@@ -308,7 +316,6 @@ eee75e7 i18n: translate tile.json description to English
 b9e2598 fix: add missing nostr-login dependency — blank page on load
 a60ce68 chore: sync auth components from boilerplate
 e834e4d security: add *.db *.sqlite to gitignore
-6dd3de8 feat: progressive onboarding — remove login wall, add write gate
 ```
 
 ### zap-hunt
@@ -319,6 +326,7 @@ e4278e8 rename: scripts/tessa → scripts/testy
 
 ### zaphunt
 ```
+e0beb46 feat: add lnbits_inkey to tile.json
 742374c backy: backup status 20260607_030000 [status=ok]
 13b91d6 backy: backup status 20260606_030003 [status=ok]
 694cb87 backy: backup status 20260605_030000 [status=ok]
@@ -328,11 +336,11 @@ d8e1ee1 backy: backup status 20260604_030003 [status=ok]
 2e3e3e9 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 3135323 feat(auth): boilerplate auth-componenten bijgewerkt
 28e90fa backy: backup status 20260603_030004 [status=ok]
-6d7f016 backy: backup status 20260602_202323 [status=partial]
 ```
 
 ### zinin
 ```
+89ea2c1 feat: add lnbits_inkey to tile.json
 3a8b528 feat: new DALL-E app icon — matching speech bubbles with spark
 8edae71 i18n: translate tile.json description to English
 55673f7 chore: add juridischadvies.html
