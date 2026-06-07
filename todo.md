@@ -10,6 +10,7 @@
 
 ### General
 
+- [ ] [2026-06-08] `#idee` **FAQ page on goosielabs.com** — Add a FAQ page answering common questions: what is Nostr, what is Bitcoin/Lightning, what are the geese, how do I get started, is this safe, etc.
 - [ ] [2026-06-08] `#idee` **Nostr streams on website** — Embed live Nostr streams on goosielabs.com. Could show a live feed from the relay, or integrate NIP-53 live activities (Honkference sessions, announcements).
 - [ ] [2026-06-08] `#server` **Translate homepage to Dutch** — Add a Dutch version of the homepage (or toggle) so Dutch-speaking visitors get content in their language.
 - [ ] [2026-06-08] `#server` **Make Cashu Batches working** — Get the Nutshell Cashu mint batch functionality operational on mint.goosielabs.com.

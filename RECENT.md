@@ -2,6 +2,7 @@
 
 ## Server (home-deploy)
 ```
+1784b383b todo: FAQ page on goosielabs.com
 c760f4f23 todo: Nostr streams on website
 9c42035bc todo: translate homepage to Dutch
 af1168493 todo: add Cashu batches
@@ -31,7 +32,6 @@ cd7c4aab8 refactor: rename goose haitje → ay (agents dir + CLAUDE.md)
 c907ae5af rename: tessa → testy across home-deploy
 6fb29bc15 rename: fix remaining Astrid references in publish-badges.js and publish-profiles.js
 2c774572d rename: astrid → assistenty across systemsetup scripts
-3fb11177a rename: astrid → assistenty across home-deploy
 ```
 
 ## Apps
