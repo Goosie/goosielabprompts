@@ -2,6 +2,7 @@
 
 ## Server (home-deploy)
 ```
+9c42035bc todo: translate homepage to Dutch
 af1168493 todo: add Cashu batches
 7668cf721 todo: research LNbits API for QR code in donate modal
 21bf417b7 docs: add newgoose to goosie help command with follow-up steps
@@ -31,7 +32,6 @@ c907ae5af rename: tessa → testy across home-deploy
 2c774572d rename: astrid → assistenty across systemsetup scripts
 3fb11177a rename: astrid → assistenty across home-deploy
 47a46544b chore: update all agent tile.html files — nsite links refreshed by publish-agent-pages
-5343ba6fa chore: update tile.html — publish-agent-pages auto-updated nsite link
 ```
 
 ## Apps

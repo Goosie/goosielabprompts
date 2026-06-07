@@ -10,6 +10,7 @@
 
 ### General
 
+- [ ] [2026-06-08] `#server` **Translate homepage to Dutch** — Add a Dutch version of the homepage (or toggle) so Dutch-speaking visitors get content in their language.
 - [ ] [2026-06-08] `#server` **Make Cashu Batches working** — Get the Nutshell Cashu mint batch functionality operational on mint.goosielabs.com.
 
 - [ ] [2026-06-07] `#server` **Research LNbits API for QR code** — LNbits may offer a QR code via the API directly. If so, replace the local qrcode-generator library in donate.js with the LNbits API response.
