@@ -10,6 +10,12 @@
 
 ### General
 
+- [ ] [2026-06-07] `#idee` **Users can create their own welfare goose** — A special flow where any user can register a welfare goose (Nostr identity for a good cause). Others can then route a slice of their app payments to it. Extends the goose blockbirth / lastwill system.
+
+- [ ] [2026-06-07] `#server` **Goose blockbirth + profile** — Add `goose-profile.json` per agent with: `blockbirth` (unique block nr ~2009–2015), `interests`, `lifestoflyto`. Display on homepage goose cards: block age (from Blocky via relay), deathblock (blockbirth + 1,576,800). Client-side JS reads current block from relay (kind 30078, d="vformation-lastrun", Blocky pubkey).
+
+- [ ] [2026-06-07] `#idee` **Welfare goosies** — Special Nostr identities for good causes. Apps split a % of their sat income to selected welfare goosies via Lightning/Cashu. Users see which goosies benefit when they pay.
+
 - [ ] [2026-06-06] `#server` `#app:mijnapp` **mijnapp verwijderen** — test app, niet nodig meer. Directory verwijderen + nginx block opruimen.
 
 - [ ] [2026-06-06] `#idee` **Ganzenbord game** — Build a Goosie Labs version of the classic board game Ganzenbord (Game of the Goose), with sats, Nostr and geese.

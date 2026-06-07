@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-07 07:14)
+# Recent Changes — last 7 days (2026-06-07 08:15)
 
 ## Server (home-deploy)
 ```
+e9e17e862 todo: add goose lives ideas — blockbirth, welfare goosies, lastwill, revenue split
 dd9ff4ba7 docs: document AGENT_ORDER requirement for homepage visibility
 61d69158c todo: mijnapp verwijderen toegevoegd
 011fa647d relay policy: open game event kinds for all players
@@ -31,13 +32,13 @@ c907ae5af rename: tessa → testy across home-deploy
 dab92c8b3 chore: add commy.md with role description
 175f1b307 chore: update Commy description — Community manager, honking wherever I can
 84be4f55b feat: rename Communi → Commy across all systems
-ca7327aa2 feat: onboard Supporty — keypair, icon, wallet, NIP-05, whitelist
 ```
 
 ## Apps
 
 ### bookwriter
 ```
+8cb3692 chore: rename tile title to Write Book
 fc4a266 docs: add Doel & Gebruik section to CLAUDE.md
 f1156e6 feat: new DALL-E app icon — open book with AI sparks and quill
 2d154ca feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
@@ -47,7 +48,6 @@ d14a102 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 6b546c3 refactor: remove old login UI, keep modular nostr-login auth
 3014bdd fix: add missing nostr-login dependency after auth sync
 910e802 chore: sync auth components from boilerplate
-92b1d52 security: add *.db *.sqlite to gitignore
 ```
 
 ### catchzaps
@@ -162,6 +162,7 @@ a867ea7 fix: WebSocket polyfill voor Node.js 20 + auto-publish badge definitie
 
 ### honkference
 ```
+73b1bec chore: rename tile title to Honkference
 6e24c97 docs: add Doel & Gebruik section to CLAUDE.md
 421358f feat: new DALL-E icon — conference table, speech bubbles, microphone
 4f29c76 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
@@ -171,7 +172,6 @@ a565fdb goosielab update 2026-06-02 15:44
 76f20d4 fix: add missing nostr-login dependency — blank page on load
 96f18c2 chore: sync auth components from boilerplate
 35b9a9f security: add *.db *.sqlite to gitignore
-802c4fc feat: progressive onboarding — remove login wall, add write gate
 ```
 
 ### honkstation
@@ -252,6 +252,11 @@ ceefde9 chore: sync auth components from boilerplate
 b642c75 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 9d82c1d feat: tessa script aangemaakt — check + seed
 a4b8030 initial commit
+```
+
+### satquiz
+```
+52c832e chore: rename tile title to Satoshi Quiz
 ```
 
 ### sofia
