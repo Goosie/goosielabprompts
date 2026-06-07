@@ -2,6 +2,7 @@
 
 ## Server (home-deploy)
 ```
+1059afd23 todo: 1500 sats back to Phoenix wallet
 3aff48f39 todo: source code on Git
 1784b383b todo: FAQ page on goosielabs.com
 c760f4f23 todo: Nostr streams on website
@@ -31,7 +32,6 @@ ae8aa7a50 refactor: rename goose admission → docy (agents dir + CLAUDE.md)
 58fe049fd refactor: update server CLAUDE.md for haitje→ay, tessa→testy, astrid→assistenty
 cd7c4aab8 refactor: rename goose haitje → ay (agents dir + CLAUDE.md)
 c907ae5af rename: tessa → testy across home-deploy
-6fb29bc15 rename: fix remaining Astrid references in publish-badges.js and publish-profiles.js
 ```
 
 ## Apps

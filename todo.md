@@ -10,6 +10,7 @@
 
 ### General
 
+- [ ] [2026-06-08] `#finance` **Send 1500 sats back to Phoenix wallet**
 - [ ] [2026-06-08] `#server` **Source code on Git** — Make sure all app repos are pushed and up to date on GitHub. Add links to source code from the homepage tiles or a dedicated page.
 - [ ] [2026-06-08] `#idee` **FAQ page on goosielabs.com** — Add a FAQ page answering common questions: what is Nostr, what is Bitcoin/Lightning, what are the geese, how do I get started, is this safe, etc.
 - [ ] [2026-06-08] `#idee` **Nostr streams on website** — Embed live Nostr streams on goosielabs.com. Could show a live feed from the relay, or integrate NIP-53 live activities (Honkference sessions, announcements).
