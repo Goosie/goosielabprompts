@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-07 21:42)
+# Recent Changes — last 7 days (2026-06-07 21:43)
 
 ## Server (home-deploy)
 ```
+c760f4f23 todo: Nostr streams on website
 9c42035bc todo: translate homepage to Dutch
 af1168493 todo: add Cashu batches
 7668cf721 todo: research LNbits API for QR code in donate modal
@@ -31,7 +32,6 @@ c907ae5af rename: tessa → testy across home-deploy
 6fb29bc15 rename: fix remaining Astrid references in publish-badges.js and publish-profiles.js
 2c774572d rename: astrid → assistenty across systemsetup scripts
 3fb11177a rename: astrid → assistenty across home-deploy
-47a46544b chore: update all agent tile.html files — nsite links refreshed by publish-agent-pages
 ```
 
 ## Apps
