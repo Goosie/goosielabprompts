@@ -86,6 +86,20 @@ sync-configs        # regenereert ALLE afgeleide bestanden automatisch
 Afgeleide bestanden — **nooit handmatig aanpassen:**
 `whitelist.json` · `.well-known/nostr.json` · `swarmAgents.ts` · `bunkerUris.ts` · `tile.html`
 
+### Nieuwe gans op de homepage zetten
+
+Een `agents/<naam>/nostr-key.json` aanmaken is **niet genoeg** om een gans op de homepage te tonen.
+Je moet de naam ook toevoegen aan `AGENT_ORDER` in `/home/deploy/scripts/publish-homepage.mjs`:
+
+```js
+const AGENT_ORDER = ['assistenty','devy','finny', ... , '<nieuwe-gans-naam>'];
+```
+
+Alleen ganzen in `AGENT_ORDER` verschijnen in de V-Formatie sectie. Daarna herpubliceren:
+```bash
+bash /home/deploy/update-tiles.sh
+```
+
 ### Sleutelrotatie bij compromis
 
 ```bash

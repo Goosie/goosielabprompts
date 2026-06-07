@@ -75,6 +75,20 @@ jq -r '.agents[].pubkey' /home/deploy/agents/agents.json
 
 **Do NOT manually edit:** whitelist.json, nostr.json, swarmAgents.ts, bunkerUris.ts, tile.html — these are generated files.
 
+### Adding a new goose to the homepage
+
+Creating `agents/<name>/nostr-key.json` is NOT enough to show a goose on the homepage.
+You must also add the name to `AGENT_ORDER` in `/home/deploy/scripts/publish-homepage.mjs`:
+
+```js
+const AGENT_ORDER = ['assistenty','devy','finny', ... , '<new-goose-name>'];
+```
+
+Only geese in `AGENT_ORDER` appear on the V-Formation section. Then republish:
+```bash
+bash /home/deploy/update-tiles.sh
+```
+
 ### Key rotation
 
 ```bash

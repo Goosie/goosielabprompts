@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-06 21:28)
+# Recent Changes — last 7 days (2026-06-07 07:14)
 
 ## Server (home-deploy)
 ```
+dd9ff4ba7 docs: document AGENT_ORDER requirement for homepage visibility
 61d69158c todo: mijnapp verwijderen toegevoegd
 011fa647d relay policy: open game event kinds for all players
 208bc1030 todo: auth-patronen standaardiseren in newapp workflow
@@ -31,7 +32,6 @@ dab92c8b3 chore: add commy.md with role description
 175f1b307 chore: update Commy description — Community manager, honking wherever I can
 84be4f55b feat: rename Communi → Commy across all systems
 ca7327aa2 feat: onboard Supporty — keypair, icon, wallet, NIP-05, whitelist
-04733dd6f chore: add Directory to agents.json and whitelist
 ```
 
 ## Apps
@@ -98,6 +98,7 @@ dbd953f fix: add missing nostr-login dependency — blank page on load
 
 ### gameofthegoose
 ```
+e3c8240 fix: map game status 'active' → 'playing' for PlayerPanel
 4098e1e feat: publish guest kind:0 with random name on first login
 b1383ad fix: remove duplicate GuestBanner from individual pages
 89b9e0c chore: update tile — new title, description and app URL
@@ -107,7 +108,6 @@ f075417 refactor: unique room IDs + explicit close-old-rooms before create
 df6f791 docs: add relay + room-id rules to CLAUDE.md
 131d91d fix: single relay + immediate room render via navigation state
 c4ce2b8 fix: await GameRoom publish before navigating to waiting room
-4ab6893 fix: deterministic room ID per host pubkey — relay auto-replaces old rooms
 ```
 
 ### georgie
@@ -139,6 +139,7 @@ a0e6bd7 feat(auth): boilerplate auth-componenten bijgewerkt
 
 ### goosiemanager
 ```
+387454a refactor: replace @nostr-dev-kit/ndk with nostr-tools SimplePool
 617ec7c docs: add Doel & Gebruik section to CLAUDE.md
 fc09b89 feat: Flocks tile op homepage
 92903fb feat: mobile-friendly layout
@@ -313,6 +314,7 @@ e4278e8 rename: scripts/tessa → scripts/testy
 
 ### zaphunt
 ```
+742374c backy: backup status 20260607_030000 [status=ok]
 13b91d6 backy: backup status 20260606_030003 [status=ok]
 694cb87 backy: backup status 20260605_030000 [status=ok]
 3bb1257 feat: new DALL-E app icon — treasure map with lightning bolt and magnifying glass
@@ -322,7 +324,6 @@ d8e1ee1 backy: backup status 20260604_030003 [status=ok]
 3135323 feat(auth): boilerplate auth-componenten bijgewerkt
 28e90fa backy: backup status 20260603_030004 [status=ok]
 6d7f016 backy: backup status 20260602_202323 [status=partial]
-d3c063e i18n: translate tile.json description to English
 ```
 
 ### zinin
