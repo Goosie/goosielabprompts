@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-08 19:08)
+# Recent Changes — last 7 days (2026-06-08 19:13)
 
 ## Server (home-deploy)
 ```
+2f977840d todo: Bookwriter epub+webshop roadmap; lessons: publishing model via Nostr+Lightning
 28146d250 LND book: comprehensive channel management research
 69657859a LND book: scaling plan — design for portability, phase 1→2
 202b563e9 LND book: sovereignty vs stability tension — hybrid approach
@@ -31,7 +32,6 @@ d992d32be Add ## Commands section to all geese + fix goosie function/script conf
 6dccca80f Convention: >> prefix voor ganzen (twee vleugels, niet één)
 3d52999c8 CLAUDE.md: add Healthy to V-Formation table
 bc6cf24f5 Docs: Blocky is the timer, healthy goose, live feed on homepage
-08240ca64 Docs: Blocky is the timer — update all relevant prompts and docs
 ```
 
 ## Apps
