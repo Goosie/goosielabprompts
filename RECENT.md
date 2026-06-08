@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-08 13:50)
+# Recent Changes — last 7 days (2026-06-08 14:11)
 
 ## Server (home-deploy)
 ```
+6dccca80f Convention: >> prefix voor ganzen (twee vleugels, niet één)
 3d52999c8 CLAUDE.md: add Healthy to V-Formation table
 bc6cf24f5 Docs: Blocky is the timer, healthy goose, live feed on homepage
 08240ca64 Docs: Blocky is the timer — update all relevant prompts and docs
@@ -31,7 +32,6 @@ fb8c6a93e feat: add Testy script to send 3 sats to all geese
 196b15255 fix: renew LNbits wallet links for all goosies after reinstall
 33c6ade70 chore: add quotes to all goosie agent .md files
 dd70237e9 feat: add full prompt pages for blocky, directory, supporty; tile quotes for all geese
-44dd4dd3a chore: update Assistenty tile description
 ```
 
 ## Apps
@@ -56,7 +56,6 @@ a530f71 feat: add lnbits_inkey to tile.json
 f985520 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 36faf20 feat(auth): boilerplate auth-componenten bijgewerkt
 2e4e581 i18n: translate tile.json description to English
-223d47e fix: add missing nostr-login dependency that caused blank page
 ```
 
 ### dilemma

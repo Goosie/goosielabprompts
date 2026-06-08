@@ -140,19 +140,24 @@ honk-read @<goose>                                  # read DMs for a goose
 - Role geese (Assistenty, Devy, Transy, Finny) have no separate log — they live in Claude Code transcripts
 
 ### @-convention for invoking geese
-When Perry writes `@<goosename>` that is an explicit invocation — Assistenty executes the corresponding `goosie` command directly, no confirmation needed.
+When Perry writes `>><goosename>` that is an explicit invocation — Assistenty executes the corresponding `goosie` command directly, no confirmation needed.
+
+`>>` = two wings. A goose has two wings, not one.
 
 | Perry types | Assistenty executes |
 |---|---|
-| `@jurry overview` | `goosie jurry overview` |
-| `@jurry review dilemma` | `goosie jurry review dilemma` |
-| `@ay check` | `goosie ay check` |
-| `@testy dilemma seed` | `goosie testy dilemma seed` |
-| `@jurry` (no subcommand) | `goosie jurry` (shows usage) |
+| `>>jurry overview` | `goosie jurry overview` |
+| `>>jurry review dilemma` | `goosie jurry review dilemma` |
+| `>>ay check` | `goosie ay check` |
+| `>>testy dilemma seed` | `goosie testy dilemma seed` |
+| `>>healthy check` | `goosie healthy check` |
+| `>>blocky schedule` | `goosie blocky schedule` |
+| `>>jurry` (no subcommand) | `goosie jurry` (shows usage) |
 
-Also works for role geese — `@transy`, `@danky`, `@finny` means: play that role when responding. `@assistenty` is the default (Assistenty is always the assistant).
+Also works for role geese — `>>transy`, `>>finny` means: play that role when responding. `>>assistenty` is the default (Assistenty is always the assistant).
 
-Without `@` it still works ("Jurry check") — the @-convention is a clarity signal, not required syntax.
+Without `>>` it still works ("Jurry check") — the `>>`-convention is a clarity signal, not required syntax.
+`@` still works too for backwards compatibility, but `>>` is preferred going forward.
 
 ### Perry Smit (owner)
 - **Nostr npub (old/zoomer):** npub14qpe36rvq0l6m3crplsntmnkzjm04weqflq0veqc8ra5hz4lpvxqqkdffc
