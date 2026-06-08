@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-08 18:58)
+# Recent Changes — last 7 days (2026-06-08 19:08)
 
 ## Server (home-deploy)
 ```
+28146d250 LND book: comprehensive channel management research
 69657859a LND book: scaling plan — design for portability, phase 1→2
 202b563e9 LND book: sovereignty vs stability tension — hybrid approach
 6c46f920c LND book: add lesson about Umbrel app load + server investigation
@@ -31,7 +32,6 @@ d992d32be Add ## Commands section to all geese + fix goosie function/script conf
 3d52999c8 CLAUDE.md: add Healthy to V-Formation table
 bc6cf24f5 Docs: Blocky is the timer, healthy goose, live feed on homepage
 08240ca64 Docs: Blocky is the timer — update all relevant prompts and docs
-12f68b228 Add Healthy goose — proactive server health monitor
 ```
 
 ## Apps
