@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-08 13:21)
+# Recent Changes — last 7 days (2026-06-08 13:49)
 
 ## Server (home-deploy)
 ```
+bc6cf24f5 Docs: Blocky is the timer, healthy goose, live feed on homepage
 08240ca64 Docs: Blocky is the timer — update all relevant prompts and docs
 12f68b228 Add Healthy goose — proactive server health monitor
 bd6ae0827 whenidie.md: document Umbrel usage, risks and Tailscale access
@@ -31,7 +32,6 @@ fb8c6a93e feat: add Testy script to send 3 sats to all geese
 dd70237e9 feat: add full prompt pages for blocky, directory, supporty; tile quotes for all geese
 44dd4dd3a chore: update Assistenty tile description
 9bd76ae9d chore: rename Danky → Devy — agent dir, images, CLAUDE.md
-cfd91ef28 refactor: rename goose ruby → transy (agents dir + CLAUDE.md)
 ```
 
 ## Apps
