@@ -10,6 +10,7 @@
 
 ### General
 
+- [ ] [2026-06-08] `#idee` **Boek LND afmaken** — Lessen toevoegen naarmate het traject vordert. Onderzoek ook hoe bitcoiners onderling nodes in de lucht houden: node-runners gemeenschappen (LightningNetwork+, Amboss, Plebnet, Ring of Fire), peer-to-peer channel agreements, hoe nodes elkaar helpen met liquiditeit en uptime. Voeg toe als les in ~/lessons/lnd.md. Daarna genereer boek LND opnieuw.
 - [ ] [2026-06-08] `#server` **LND direct op LNbits aansluiten** — Umbrel LND via Tailscale (100.111.14.11:2101) als funding source voor LNbits. Eerst kanaalmanagement op orde (outbound liquiditeit, SCB backup). Vervangt NWC en maakt donate-betalingen instant. Zie whenidie.md voor LND stack details.
 - [ ] [2026-06-08] `#server` **Umbrel kanaalmanagement** — Outbound liquiditeit toevoegen (on-chain storten + kanaal openen of Megalith LSP outbound kopen). Vereiste stap vóór LND→LNbits migratie.
 - [ ] [2026-06-08] `#app:bookwriter` **Bookwriter uitbreiden — epub export + cover + Lightning webshop** — 1) Nostr events lezen als materials (zodat Assistenty lessen van relay kan inladen), 2) epub genereren met cover (auteur = Docy), 3) webshop via LNbits module zodat boeken verkocht kunnen worden via Lightning. Zie ~/lessons/lnd.md voor inspiratie.

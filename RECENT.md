@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-08 19:30)
+# Recent Changes — last 7 days (2026-06-08 19:43)
 
 ## Server (home-deploy)
 ```
+1c58616ff todo: LND boek afmaken + onderzoek node-runner gemeenschappen
 caf7c671f Agent memory files updated
 2f977840d todo: Bookwriter epub+webshop roadmap; lessons: publishing model via Nostr+Lightning
 28146d250 LND book: comprehensive channel management research
@@ -31,7 +32,6 @@ c35e491d0 Backy: add icon, Nostr profile, homepage tile, agents.json description
 d992d32be Add ## Commands section to all geese + fix goosie function/script conflict
 7a0381053 Add /flock slash command + >> alone shows goose overview
 6dccca80f Convention: >> prefix voor ganzen (twee vleugels, niet één)
-3d52999c8 CLAUDE.md: add Healthy to V-Formation table
 ```
 
 ## Apps
