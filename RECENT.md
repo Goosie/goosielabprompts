@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-08 14:39)
+# Recent Changes — last 7 days (2026-06-08 14:45)
 
 ## Server (home-deploy)
 ```
+61e9520ab >>backy snapshot shorthand for honk command
 d992d32be Add ## Commands section to all geese + fix goosie function/script conflict
 7a0381053 Add /flock slash command + >> alone shows goose overview
 6dccca80f Convention: >> prefix voor ganzen (twee vleugels, niet één)
@@ -31,7 +32,6 @@ c95157766 todo: add ganzenbord game idea
 93fd0fceb feat: add perry@goosielabs.com Lightning Address
 b5a7cf5d4 fix: use Lightning Addresses (name@goosielabs.com) in send-sats-to-geese
 fb8c6a93e feat: add Testy script to send 3 sats to all geese
-196b15255 fix: renew LNbits wallet links for all goosies after reinstall
 ```
 
 ## Apps
@@ -68,7 +68,6 @@ e37788f feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 24ee12e fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 ff78908 feat(auth): boilerplate auth-componenten bijgewerkt
 c69e668 i18n: translate tile.json description to English
-38f5d9f fix: add missing nostr-login dependency — blank page on load
 ```
 
 ### feedback
@@ -79,7 +78,6 @@ ec34cec feat: add lnbits_inkey to tile.json
 8abba7d fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 7fdc21e feat(auth): boilerplate auth-componenten bijgewerkt
 0dacd44 i18n: translate tile.json description to English
-dbd953f fix: add missing nostr-login dependency — blank page on load
 ```
 
 ### flocks
@@ -109,7 +107,6 @@ a5bfee4 docs: add Doel & Gebruik section to CLAUDE.md
 8a8c369 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 d30c81b fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 06cb7cd feat(auth): boilerplate auth-componenten bijgewerkt
-5dea4b9 fix: add missing nostr-login dependency — blank page on load
 ```
 
 ### gooseprogrammer
@@ -162,7 +159,6 @@ a867ea7 fix: WebSocket polyfill voor Node.js 20 + auto-publish badge definitie
 5cb5033 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 f59e973 feat(auth): boilerplate auth-componenten bijgewerkt
 a565fdb goosielab update 2026-06-02 15:44
-76f20d4 fix: add missing nostr-login dependency — blank page on load
 ```
 
 ### honkstation
@@ -184,7 +180,6 @@ d44b4bd feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 8f07347 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 4bf426c feat(auth): boilerplate auth-componenten bijgewerkt
 fe71996 i18n: translate tile.json description to English
-79c8f08 fix: add missing nostr-login dependency — blank page on load
 ```
 
 ### mijnapp
@@ -291,7 +286,6 @@ d3e0a70 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 54f602b fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 19f503a feat(auth): boilerplate auth-componenten bijgewerkt
 eee75e7 i18n: translate tile.json description to English
-b9e2598 fix: add missing nostr-login dependency — blank page on load
 ```
 
 ### zap-hunt
