@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-08 17:04)
+# Recent Changes — last 7 days (2026-06-08 17:16)
 
 ## Server (home-deploy)
 ```
+c10c56fc0 whitelist.json: coachy added
 780a959cb Coachy: encouragement goose — amber icon, description, nsite page
 b8358808b CLAUDE.md: full newgoose checklist — automated + manual steps
 a5088c581 Backy: nsite page live, tagline and tile
@@ -31,7 +32,6 @@ dd9ff4ba7 docs: document AGENT_ORDER requirement for homepage visibility
 61d69158c todo: mijnapp verwijderen toegevoegd
 011fa647d relay policy: open game event kinds for all players
 208bc1030 todo: auth-patronen standaardiseren in newapp workflow
-0d731f2f5 chore: update configs, add tile templates, agent images and gitignore secrets
 ```
 
 ## Apps
