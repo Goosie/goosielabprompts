@@ -238,6 +238,7 @@ Full description per goose: `agents/<name>/<name>.md`
 | Ay | AI Configuration Specialist — check configs, guard formation | Script (server) |
 | Secury | Security Goose — nginx logs, fail2ban, open ports, npm vulnerabilities | Script (server) |
 | Docy | Onboarding manager — invite codes, Nostr identity verification, user access | Script (server) |
+| Healthy | Server health monitor — runs every 3 blocks (~30 min) via Blocky, sends Perry a DM + public Nostr post on status change (🟢/🟡/🔴) | Script (server) |
 
 ### Blocky — Bitcoin block scheduler (the V-Formation clock)
 

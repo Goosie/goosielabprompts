@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-08 13:49)
+# Recent Changes — last 7 days (2026-06-08 13:50)
 
 ## Server (home-deploy)
 ```
+3d52999c8 CLAUDE.md: add Healthy to V-Formation table
 bc6cf24f5 Docs: Blocky is the timer, healthy goose, live feed on homepage
 08240ca64 Docs: Blocky is the timer — update all relevant prompts and docs
 12f68b228 Add Healthy goose — proactive server health monitor
@@ -31,7 +32,6 @@ fb8c6a93e feat: add Testy script to send 3 sats to all geese
 33c6ade70 chore: add quotes to all goosie agent .md files
 dd70237e9 feat: add full prompt pages for blocky, directory, supporty; tile quotes for all geese
 44dd4dd3a chore: update Assistenty tile description
-9bd76ae9d chore: rename Danky → Devy — agent dir, images, CLAUDE.md
 ```
 
 ## Apps
