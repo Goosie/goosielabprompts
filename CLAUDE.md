@@ -353,7 +353,10 @@ LNbits pusht een bericht op `wss://lnbits.goosielabs.com/api/v1/ws/<wallet_id>` 
 
 ```javascript
 // Correct: WebSocket — instant push, geen polling
-var ws = new WebSocket('wss://lnbits.goosielabs.com/api/v1/ws/' + walletId);
+// LNbits sends to ws/<inkey>, NOT ws/<wallet_id> — use inkey as the channel
+var ws = new WebSocket('wss://lnbits.goosielabs.com/api/v1/ws/' + inkey);
+// Payload: { wallet_balance: <msat>, payment: { amount, ... } }
+// amount > 0 = incoming, amount < 0 = outgoing — filter on amount > 0
 ws.onmessage = async function() {
   var newBalance = await fetchBalance(inkey);
   if (newBalance > initialBalance) showThankYou(received);
