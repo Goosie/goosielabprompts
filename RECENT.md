@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-08 15:49)
+# Recent Changes — last 7 days (2026-06-08 17:04)
 
 ## Server (home-deploy)
 ```
+780a959cb Coachy: encouragement goose — amber icon, description, nsite page
 b8358808b CLAUDE.md: full newgoose checklist — automated + manual steps
 a5088c581 Backy: nsite page live, tagline and tile
 677c0d358 All geese: add description + blockbirth, Backy blockbirth #779142
@@ -31,7 +32,6 @@ dd9ff4ba7 docs: document AGENT_ORDER requirement for homepage visibility
 011fa647d relay policy: open game event kinds for all players
 208bc1030 todo: auth-patronen standaardiseren in newapp workflow
 0d731f2f5 chore: update configs, add tile templates, agent images and gitignore secrets
-c95157766 todo: add ganzenbord game idea
 ```
 
 ## Apps
