@@ -299,13 +299,15 @@ goosie humany newgoose <name>
 - `agents/<name>/<name>.md` with `description:` placeholder
 - `.claude/agents/<name>.md` template with quote/role/boundaries
 - Nsite page published via `publish-agent-pages.mjs`
-- Homepage tiles updated
+- Added to `AGENT_ORDER` + `AGENT_COLORS` in `publish-homepage.mjs` (gray placeholder)
+- Homepage tiles updated with tile
+- All existing agent prompts updated with new flock member in `## The Flock` table
+- Welcome ceremony: Assistenty, Coachy, Blocky and Healthy post public welcome notes
 
 **Manual after creation:**
 1. Fill in `agents/<name>/<name>.md` — real `description:` (one line, English)
 2. Fill in `.claude/agents/<name>.md` — real `quote:`, role, responsibilities, boundaries
-3. Add to `AGENT_ORDER` + `AGENT_COLORS` in `scripts/publish-homepage.mjs`
-4. Add to `generate-agent-icons.mjs` with real color + symbol → re-run icons
+3. Add to `generate-agent-icons.mjs` with real color + symbol → re-run icons
 5. Run `node scripts/publish-agent-pages.mjs --agent <name>` after filling in quote/role
 6. Add script at `scripts/<name>/index.mjs` if the goose runs tasks
 7. Add to goose-runner `KEYS` + `switch case` → `sudo systemctl restart goose-runner`

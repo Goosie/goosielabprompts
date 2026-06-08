@@ -141,7 +141,10 @@ goosie humany newgoose <naam>
 | `agents/<naam>/<naam>.md` | Aangemaakt met `description:` placeholder |
 | `.claude/agents/<naam>.md` | Template aangemaakt met quote/role/boundaries |
 | Nsite pagina | Gepubliceerd via `publish-agent-pages.mjs` |
-| Homepage tiles | Herpubliceerd |
+| AGENT_ORDER + tile | Toegevoegd aan homepage (grijs placeholder) |
+| Homepage tiles | Herpubliceerd — tile is zichtbaar |
+| Alle gans-prompts | `## The Flock` tabel bijgewerkt in alle `.claude/agents/` bestanden |
+| Welkomstceremonie | Assistenty, Coachy, Blocky en Healthy posten publiek welkomstbericht |
 
 **Na aanmaken — handmatige stappen:**
 
