@@ -2,6 +2,7 @@
 
 ## Server (home-deploy)
 ```
+d24cc2269 Agent memory files updated
 84c34b77e todo: banners alle ganzen — scene per gans, handmatig bouwen
 2a94ff80e Agent memory files updated
 1c58616ff todo: LND boek afmaken + onderzoek node-runner gemeenschappen
@@ -31,7 +32,6 @@ a5088c581 Backy: nsite page live, tagline and tile
 677c0d358 All geese: add description + blockbirth, Backy blockbirth #779142
 c35e491d0 Backy: add icon, Nostr profile, homepage tile, agents.json description
 61e9520ab >>backy snapshot shorthand for honk command
-d992d32be Add ## Commands section to all geese + fix goosie function/script conflict
 ```
 
 ## Apps
