@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-08 17:57)
+# Recent Changes — last 7 days (2026-06-08 18:01)
 
 ## Server (home-deploy)
 ```
+385d5daa7 CLAUDE.md: LNbits WebSocket as standard pattern for payment UX
 386654067 Agent memory files updated
 0cb71d18a Agent memory + whitelist updates (gander added)
 8a7c5fbb8 Gander: news scout goose — long-form articles + ideas to Directory
@@ -31,7 +32,6 @@ bd6ae0827 whenidie.md: document Umbrel usage, risks and Tailscale access
 c760f4f23 todo: Nostr streams on website
 9c42035bc todo: translate homepage to Dutch
 af1168493 todo: add Cashu batches
-7668cf721 todo: research LNbits API for QR code in donate modal
 ```
 
 ## Apps

@@ -345,6 +345,26 @@ goosie humany newgoose <name>
 A directory with an `.archived` file is not shown in app listings or on the landing page.
 When building an app overview: `if [ -f "$app/.archived" ]; then skip; fi`
 
+### Lightning payment UX — standaard patroon
+
+**Regel: sluit altijd een betaal-modal na ontvangst. Gebruik LNbits WebSocket, niet polling.**
+
+LNbits pusht een bericht op `wss://lnbits.goosielabs.com/api/v1/ws/<wallet_id>` zodra een betaling binnenkomt.
+
+```javascript
+// Correct: WebSocket — instant push, geen polling
+var ws = new WebSocket('wss://lnbits.goosielabs.com/api/v1/ws/' + walletId);
+ws.onmessage = async function() {
+  var newBalance = await fetchBalance(inkey);
+  if (newBalance > initialBalance) showThankYou(received);
+};
+
+// Fout: setInterval polling — vertraagd en inefficiënt
+// setInterval(() => fetchBalance(inkey), 2000);  ← NIET DOEN
+```
+
+**Implementatie in `/var/www/goosielabs/goose-balances.js`** — als referentie voor nieuwe betaal-UIs.
+
 ### TODO
 
 Todos voor deze app staan in `~/todo.md` — filter op `#app:<naam>`.
