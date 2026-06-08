@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-08 14:45)
+# Recent Changes — last 7 days (2026-06-08 15:40)
 
 ## Server (home-deploy)
 ```
+c35e491d0 Backy: add icon, Nostr profile, homepage tile, agents.json description
 61e9520ab >>backy snapshot shorthand for honk command
 d992d32be Add ## Commands section to all geese + fix goosie function/script conflict
 7a0381053 Add /flock slash command + >> alone shows goose overview
@@ -31,7 +32,6 @@ c95157766 todo: add ganzenbord game idea
 8bc6f2dca fix: add 500ms delay between payments to avoid NWC rate limiting on Alby Hub
 93fd0fceb feat: add perry@goosielabs.com Lightning Address
 b5a7cf5d4 fix: use Lightning Addresses (name@goosielabs.com) in send-sats-to-geese
-fb8c6a93e feat: add Testy script to send 3 sats to all geese
 ```
 
 ## Apps

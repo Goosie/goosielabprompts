@@ -1,7 +1,8 @@
-# Apps — 2026-06-08 14:45
+# Apps — 2026-06-08 15:40
 
 | App | URL | Git |
 |-----|-----|-----|
+| backy | https://goosielabs.com/apps/backy | no |
 | bookwriter | https://goosielabs.com/apps/bookwriter | yes |
 | catchzaps | https://goosielabs.com/apps/catchzaps | yes |
 | dilemma | https://goosielabs.com/apps/dilemma | yes |
