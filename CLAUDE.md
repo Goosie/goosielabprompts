@@ -239,7 +239,12 @@ Full description per goose: `agents/<name>/<name>.md`
 | Secury | Security Goose — nginx logs, fail2ban, open ports, npm vulnerabilities | Script (server) |
 | Docy | Onboarding manager — invite codes, Nostr identity verification, user access | Script (server) |
 
-### Blocky — Bitcoin block scheduler
+### Blocky — Bitcoin block scheduler (the V-Formation clock)
+
+**Rule: Blocky is the timer. Never use cron for recurring goose tasks.**
+If a goose needs to run periodically, it belongs in Blocky's schedule — not in crontab.
+Cron is only acceptable as a silent fallback for critical monitors (like Healthy) when Blocky itself could be down.
+
 - Service: `sudo systemctl status blocky`
 - Script: `/home/deploy/scripts/blocky/index.mjs`
 - Keypair: `/home/deploy/agents/blocky/nostr-key.json`
@@ -248,8 +253,24 @@ Full description per goose: `agents/<name>/<name>.md`
 - Last-run state on relay: kind 30078, d="vformation-lastrun", author=Blocky pubkey
 - Job requests: kind 5000, j="vformation-run", tags: goose + command + trigger_block
 - No cron — Bitcoin block height is the clock (~10 min per block)
-- Default schedule: testy=144 blocks (~1d), secury=1008 (~1w), jurry=4032 (~4w), ay=2016 (~2w)
-- To change schedule: publish new kind 30078 d="vformation-schedule" from Blocky's key, then restart service
+
+**Current schedule:**
+| Goose   | Interval     | Approx     | Command    |
+|---------|-------------|------------|------------|
+| testy   | 144 blocks  | ~1 day     | run-all    |
+| secury  | 1008 blocks | ~1 week    | check      |
+| jurry   | 4032 blocks | ~4 weeks   | overview   |
+| ay      | 2016 blocks | ~2 weeks   | check      |
+| backy   | 1000 blocks | ~1 week    | snapshot   |
+| healthy | 3 blocks    | ~30 min    | check      |
+
+**Useful commands:**
+```bash
+goosie blocky schedule      # human-readable overview: last run, next run, ETA per goose
+node /home/deploy/scripts/blocky/index.mjs clean-relay   # republish canonical schedule to relay
+```
+
+To change schedule: update DEFAULT_SCHEDULE in `scripts/blocky/index.mjs`, run `clean-relay`, restart service.
 
 ### Existing apps
 - Apps directory: /var/www/goosielabs/apps/

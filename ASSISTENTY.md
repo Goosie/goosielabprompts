@@ -53,6 +53,23 @@ Bereikbaarheid checken:
 curl -s --max-time 3 http://100.111.14.11:3006/api/blocks/tip/height
 ```
 
+## Regel — Blocky is de timer van de V-Formatie
+
+**Gebruik nooit cron voor terugkerende gans-taken.**
+Als een gans periodiek iets moet doen, hoort dat in Blocky's schema — niet in crontab.
+
+| Wat je wil | Hoe |
+|---|---|
+| Gans elke dag triggeren | Blocky: 144 blokken |
+| Gans elke week | Blocky: 1008 blokken |
+| Gans elke ~30 min | Blocky: 3 blokken |
+| Overzicht bekijken | `goosie blocky schedule` |
+| Schema bijwerken | `DEFAULT_SCHEDULE` in `scripts/blocky/index.mjs` → `clean-relay` → `sudo systemctl restart blocky` |
+
+**Enige uitzondering:** een cron als stille fallback is toegestaan voor kritieke monitors (zoals Healthy) waarbij Blocky zelf het probleem kán zijn. Dan cron op een lager interval als noodvangnet, Blocky als primaire trigger.
+
+**Blocky triggert via NIP-90:** publiceert kind 5000 job request op de relay → goose-runner pikt op en voert het script uit → resultaat als kind 6000 terug op de relay.
+
 ## Veiligheidsregel — nsecs NOOIT in de chat
 
 **NOOIT** nsec-sleutels, private keys of seed phrases in de conversatie tonen.
@@ -465,6 +482,8 @@ Het session-id staat in de output als je Claude Code afsluit.
 | gooseprogrammer | — beschrijving nog toe te voegen — | IN BOUW | /apps/gooseprogrammer |
 | honkbadge | — beschrijving nog toe te voegen — | IN BOUW | /apps/honkbadge |
 | Assistenty   | Deze assistent — fase 1 is dit bestand                                | FASE 1 LIVE | ~/.claude/CLAUDE.md           |
+| **Blocky**   | **De klok van de V-Formatie** — triggert alle ganzen op Bitcoin-blokken via NIP-90. Gebruik `goosie blocky schedule` voor overzicht. | LIVE | /home/deploy/scripts/blocky/  |
+| **Healthy**  | Server health monitor — check elke ~30 min (3 blokken via Blocky), stuurt Perry DM + publiek bericht bij statuswijziging | LIVE | /home/deploy/scripts/healthy/ |
 | Jurry        | juridisch agent; licenties, privacy, betaalregelgeving, aansprakelijkheid | LIVE    | /home/deploy/scripts/jurry/   |
 | Ay           | AI-config specialist; checkt ganzen-configuraties; proactief advies   | LIVE        | /home/deploy/scripts/ay/      |
 | Devy         | Developer Gans — git, backup, updates, server-onderhoud               | ROL         | V-Formatie                    |

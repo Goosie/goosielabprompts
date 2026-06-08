@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-08 12:38)
+# Recent Changes — last 7 days (2026-06-08 13:21)
 
 ## Server (home-deploy)
 ```
+08240ca64 Docs: Blocky is the timer — update all relevant prompts and docs
 12f68b228 Add Healthy goose — proactive server health monitor
 bd6ae0827 whenidie.md: document Umbrel usage, risks and Tailscale access
 23015b264 Always use local Umbrel node for Bitcoin/Lightning data
@@ -31,7 +32,6 @@ dd70237e9 feat: add full prompt pages for blocky, directory, supporty; tile quot
 44dd4dd3a chore: update Assistenty tile description
 9bd76ae9d chore: rename Danky → Devy — agent dir, images, CLAUDE.md
 cfd91ef28 refactor: rename goose ruby → transy (agents dir + CLAUDE.md)
-ae8aa7a50 refactor: rename goose admission → docy (agents dir + CLAUDE.md)
 ```
 
 ## Apps
@@ -141,6 +141,7 @@ f1f14cc feat: Phase 1 GoosieManager frontend
 
 ### goosieruntime
 ```
+aeb7b49 feat: add /honk endpoint for agent-signed Nostr publishing
 98bfd66 feat: Phase 1 GoosieRuntime Node.js service
 ```
 
