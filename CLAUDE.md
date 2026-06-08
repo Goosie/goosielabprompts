@@ -283,6 +283,16 @@ node /home/deploy/scripts/blocky/index.mjs clean-relay   # republish canonical s
 
 To change schedule: update DEFAULT_SCHEDULE in `scripts/blocky/index.mjs`, run `clean-relay`, restart service.
 
+### Removing a goose
+
+```bash
+goosie humany deletegoose <name>
+```
+
+Removes the goose from: agents dir, agents.json, whitelist, nostr.json, homepage, goose-runner, Blocky schedule, .claude/agents prompt, all flock sections. Rebuilds homepage + restarts services automatically.
+
+Manual cleanup after: deactivate LNbits wallet if needed.
+
 ### Creating a new goose — full checklist
 
 ```bash

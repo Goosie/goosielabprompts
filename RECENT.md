@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-08 17:24)
+# Recent Changes — last 7 days (2026-06-08 17:26)
 
 ## Server (home-deploy)
 ```
+e84a29ed9 CLAUDE.md: document deletegoose command
 b92c934ca Remove testy2 (test goose)
 9a682029d CLAUDE.md: AGENT_ORDER + tile + flock prompts + ceremony now automated
 c10c56fc0 whitelist.json: coachy added
@@ -31,7 +32,6 @@ af1168493 todo: add Cashu batches
 30b2bdbe0 docs: document newgoose command with blockbirth and AGENT_ORDER steps
 e9e17e862 todo: add goose lives ideas — blockbirth, welfare goosies, lastwill, revenue split
 dd9ff4ba7 docs: document AGENT_ORDER requirement for homepage visibility
-61d69158c todo: mijnapp verwijderen toegevoegd
 ```
 
 ## Apps
