@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-08 17:36)
+# Recent Changes — last 7 days (2026-06-08 17:45)
 
 ## Server (home-deploy)
 ```
+0cb71d18a Agent memory + whitelist updates (gander added)
 8a7c5fbb8 Gander: news scout goose — long-form articles + ideas to Directory
 c9964d9c2 Agent memory files updated (blocky, healthy, humany, assistenty)
 e84a29ed9 CLAUDE.md: document deletegoose command
@@ -31,7 +32,6 @@ c760f4f23 todo: Nostr streams on website
 af1168493 todo: add Cashu batches
 7668cf721 todo: research LNbits API for QR code in donate modal
 21bf417b7 docs: add newgoose to goosie help command with follow-up steps
-30b2bdbe0 docs: document newgoose command with blockbirth and AGENT_ORDER steps
 ```
 
 ## Apps
