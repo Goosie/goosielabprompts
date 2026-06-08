@@ -378,6 +378,29 @@ fetch(LNBITS + '/api/v1/payments', {
 
 **Implementatie in `/var/www/goosielabs/goose-balances.js`** — als referentie voor nieuwe betaal-UIs.
 
+### Lessons Learned — Boeken bijhouden
+
+Perry gebruikt `~/lessons/<naam>.md` om kennis vast te leggen tijdens trajecten.
+
+**Commando's (in dit gesprek):**
+
+| Perry typt | Assistenty doet |
+|---|---|
+| `Zet lessons learned in book <naam>: <les>` | Voegt les toe aan `~/lessons/<naam>.md` met datum |
+| `Toon lessen <naam>` | Toont de inhoud van `~/lessons/<naam>.md` |
+| `Genereer boek <naam>` | Gander synthetiseert alle lessen → publiceert als NIP-23 long-form op relay |
+
+**Actieve boeken:**
+- `~/lessons/lnd.md` — LND direct op LNbits aansluiten
+
+**Formaat per les:**
+```
+### [YYYY-MM-DD] Titel van de les
+Inhoud...
+```
+
+**Bookwriter integratie (TODO):** Bookwriter uitbreiden zodat het Nostr events leest als materials, dan kunnen lessen van de relay direct in de app verschijnen.
+
 ### TODO
 
 Todos voor deze app staan in `~/todo.md` — filter op `#app:<naam>`.

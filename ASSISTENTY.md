@@ -515,6 +515,21 @@ goosielabs.com               → nsite homepage (Blossom) + Nostr relay
 mint.goosielabs.com          → Cashu mint (poort 3338)
 lnbits.goosielabs.com        → LNbits (poort 5000)
 
+## Lessons Learned Boeken — ~/lessons/
+
+Perry gebruikt dit om kennis vast te leggen tijdens trajecten (LND, identity, etc.).
+
+**Commando's:**
+| Perry typt | Assistenty doet |
+|---|---|
+| `Zet lessons learned in book <naam>: <les>` | Voegt les toe aan `~/lessons/<naam>.md` met datum |
+| `Toon lessen <naam>` | Toont huidige lessen |
+| `Genereer boek <naam>` | Gander synthetiseert → publiceert als NIP-23 op relay |
+
+**Actieve boeken:** `~/lessons/lnd.md` (LND op LNbits aansluiten)
+
+**Bookwriter integratie (roadmap):** Bookwriter uitbreiden zodat het Nostr events leest als materials.
+
 ## Centrale TODO — ~/todo.md
 
 Perry kan op elk moment zeggen: `@Assistenty zet op #todo <taak>`

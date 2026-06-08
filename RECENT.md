@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-08 18:43)
+# Recent Changes — last 7 days (2026-06-08 18:50)
 
 ## Server (home-deploy)
 ```
+3ac8306f7 Add lessons learned system + LND book with initial research
 6752d8f7e Agent memory files updated
 c19f17d4e todo: LND direct op LNbits + kanaalmanagement Umbrel
 0d03f2ef0 CLAUDE.md: correct LNbits payment pattern — invoice + payment_hash WS
@@ -31,7 +32,6 @@ bc6cf24f5 Docs: Blocky is the timer, healthy goose, live feed on homepage
 bd6ae0827 whenidie.md: document Umbrel usage, risks and Tailscale access
 23015b264 Always use local Umbrel node for Bitcoin/Lightning data
 1059afd23 todo: 1500 sats back to Phoenix wallet
-3aff48f39 todo: source code on Git
 ```
 
 ## Apps
