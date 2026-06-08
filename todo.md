@@ -10,6 +10,7 @@
 
 ### General
 
+- [ ] [2026-06-08] `#idee` **Banners voor alle ganzen — scene per gans** — Assistenty als voorbeeld: kantoor met bureau, sticky notes, raam met V-formatie ganzen. Elke gans krijgt een scène die zijn rol vertelt. Handmatig prompts schrijven per gans. Aanpak: `gpt-image-1` + `quality: high` + scene-beschrijving. Script: `/home/deploy/scripts/designy/generate-banners.mjs`, scene-functie in `/tmp/assistenty-scene2.mjs` als template. Achtergrondkleur samplen uit portret.jpg van elke gans.
 - [ ] [2026-06-08] `#idee` **Boek LND afmaken** — Lessen toevoegen naarmate het traject vordert. Onderzoek ook hoe bitcoiners onderling nodes in de lucht houden: node-runners gemeenschappen (LightningNetwork+, Amboss, Plebnet, Ring of Fire), peer-to-peer channel agreements, hoe nodes elkaar helpen met liquiditeit en uptime. Voeg toe als les in ~/lessons/lnd.md. Daarna genereer boek LND opnieuw.
 - [ ] [2026-06-08] `#server` **LND direct op LNbits aansluiten** — Umbrel LND via Tailscale (100.111.14.11:2101) als funding source voor LNbits. Eerst kanaalmanagement op orde (outbound liquiditeit, SCB backup). Vervangt NWC en maakt donate-betalingen instant. Zie whenidie.md voor LND stack details.
 - [ ] [2026-06-08] `#server` **Umbrel kanaalmanagement** — Outbound liquiditeit toevoegen (on-chain storten + kanaal openen of Megalith LSP outbound kopen). Vereiste stap vóór LND→LNbits migratie.
