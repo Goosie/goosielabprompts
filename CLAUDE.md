@@ -153,6 +153,7 @@ When Perry writes `>><goosename>` that is an explicit invocation — Assistenty 
 | `>>healthy check` | `goosie healthy check` |
 | `>>blocky schedule` | `goosie blocky schedule` |
 | `>>backy snapshot` | `honk from @perry "snapshot" to @backy` |
+| `>>gander scout "topic"` | `goosie gander scout "topic"` |
 | `>>jurry` (no subcommand) | `goosie jurry` (shows usage) |
 
 Also works for role geese — `>>transy`, `>>finny` means: play that role when responding. `>>assistenty` is the default (Assistenty is always the assistant).
