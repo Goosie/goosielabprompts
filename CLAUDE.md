@@ -283,6 +283,34 @@ node /home/deploy/scripts/blocky/index.mjs clean-relay   # republish canonical s
 
 To change schedule: update DEFAULT_SCHEDULE in `scripts/blocky/index.mjs`, run `clean-relay`, restart service.
 
+### Creating a new goose — full checklist
+
+```bash
+goosie humany newgoose <name>
+```
+
+**Automated by humany:**
+- Nostr keypair + blockbirth → `nostr-key.json`
+- nostr.json, agents.json, whitelist entries
+- Icon (placeholder), portrait
+- LNbits wallet + Lightning Address
+- Kind:0 Nostr profile published
+- NIP-58 badge awarded
+- `agents/<name>/<name>.md` with `description:` placeholder
+- `.claude/agents/<name>.md` template with quote/role/boundaries
+- Nsite page published via `publish-agent-pages.mjs`
+- Homepage tiles updated
+
+**Manual after creation:**
+1. Fill in `agents/<name>/<name>.md` — real `description:` (one line, English)
+2. Fill in `.claude/agents/<name>.md` — real `quote:`, role, responsibilities, boundaries
+3. Add to `AGENT_ORDER` + `AGENT_COLORS` in `scripts/publish-homepage.mjs`
+4. Add to `generate-agent-icons.mjs` with real color + symbol → re-run icons
+5. Run `node scripts/publish-agent-pages.mjs --agent <name>` after filling in quote/role
+6. Add script at `scripts/<name>/index.mjs` if the goose runs tasks
+7. Add to goose-runner `KEYS` + `switch case` → `sudo systemctl restart goose-runner`
+8. Add to Blocky `DEFAULT_SCHEDULE` if periodic → `clean-relay` + restart blocky
+
 ### Existing apps
 - Apps directory: /var/www/goosielabs/apps/
 - List live apps: `ls /var/www/goosielabs/apps/`

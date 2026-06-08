@@ -127,23 +127,32 @@ Afgeleide bestanden — **nooit handmatig aanpassen:**
 goosie humany newgoose <naam>
 ```
 
-Dit doet automatisch:
-- Nostr keypair genereren
-- Willekeurige **blockbirth** (#721.000–#821.000) toewijzen — opgeslagen in `nostr-key.json`
-- Gans toevoegen aan `nostr.json` en `agents.json`
+**Automatisch (humany doet dit):**
+| Stap | Wat |
+|---|---|
+| Nostr keypair | Gegenereerd + opgeslagen in `nostr-key.json` |
+| Blockbirth | Willekeurig #721.000–#821.000 |
+| nostr.json + agents.json | Gans toegevoegd |
+| Icon | Placeholder gegenereerd via `generate-agent-icons.mjs` |
+| Portrait | Gegenereerd |
+| LNbits wallet | Aangemaakt + Lightning Address live |
+| Kind:0 profiel | Gepubliceerd op 4 relays |
+| NIP-58 badge | Uitgereikt |
+| `agents/<naam>/<naam>.md` | Aangemaakt met `description:` placeholder |
+| `.claude/agents/<naam>.md` | Template aangemaakt met quote/role/boundaries |
+| Nsite pagina | Gepubliceerd via `publish-agent-pages.mjs` |
+| Homepage tiles | Herpubliceerd |
 
-**Na aanmaken — twee handmatige stappen:**
+**Na aanmaken — handmatige stappen:**
 
-1. Naam toevoegen aan `AGENT_ORDER` in `/home/deploy/scripts/publish-homepage.mjs`:
-   ```js
-   const AGENT_ORDER = ['assistenty','devy', ... , '<nieuwe-gans-naam>'];
-   ```
-   Alleen ganzen in `AGENT_ORDER` verschijnen in de V-Formatie sectie.
-
-2. Homepage herpubliceren:
-   ```bash
-   bash /home/deploy/update-tiles.sh
-   ```
+1. `agents/<naam>/<naam>.md` — vul `description:` in (één regel, Engels)
+2. `.claude/agents/<naam>.md` — vul `quote:`, rol, verantwoordelijkheden en grenzen in
+3. Naam toevoegen aan `AGENT_ORDER` in `scripts/publish-homepage.mjs`
+4. Icon aanpassen: kleur + symbool in `generate-agent-icons.mjs` → hergeneren
+5. Script schrijven op `scripts/<naam>/index.mjs` als de gans taken uitvoert
+6. Toevoegen aan goose-runner `KEYS` + `switch case` → herstarten
+7. Toevoegen aan Blocky `DEFAULT_SCHEDULE` als periodieke taken nodig zijn
+8. Nsite pagina herpubliceren na invullen quote/rol: `node scripts/publish-agent-pages.mjs --agent <naam>`
 
 ### Sleutelrotatie bij compromis
 
