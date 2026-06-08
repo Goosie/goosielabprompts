@@ -156,8 +156,12 @@ When Perry writes `>><goosename>` that is an explicit invocation — Assistenty 
 
 Also works for role geese — `>>transy`, `>>finny` means: play that role when responding. `>>assistenty` is the default (Assistenty is always the assistant).
 
+`>>` alone (no goose name) → Assistenty shows the full flock overview with all geese and commands.
+
 Without `>>` it still works ("Jurry check") — the `>>`-convention is a clarity signal, not required syntax.
 `@` still works too for backwards compatibility, but `>>` is preferred going forward.
+
+Slash command: `/flock` → same overview, accessible via Claude Code's command menu.
 
 ### Perry Smit (owner)
 - **Nostr npub (old/zoomer):** npub14qpe36rvq0l6m3crplsntmnkzjm04weqflq0veqc8ra5hz4lpvxqqkdffc

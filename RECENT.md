@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-08 14:11)
+# Recent Changes — last 7 days (2026-06-08 14:17)
 
 ## Server (home-deploy)
 ```
+7a0381053 Add /flock slash command + >> alone shows goose overview
 6dccca80f Convention: >> prefix voor ganzen (twee vleugels, niet één)
 3d52999c8 CLAUDE.md: add Healthy to V-Formation table
 bc6cf24f5 Docs: Blocky is the timer, healthy goose, live feed on homepage
@@ -31,7 +32,6 @@ b5a7cf5d4 fix: use Lightning Addresses (name@goosielabs.com) in send-sats-to-gee
 fb8c6a93e feat: add Testy script to send 3 sats to all geese
 196b15255 fix: renew LNbits wallet links for all goosies after reinstall
 33c6ade70 chore: add quotes to all goosie agent .md files
-dd70237e9 feat: add full prompt pages for blocky, directory, supporty; tile quotes for all geese
 ```
 
 ## Apps
@@ -255,7 +255,6 @@ d9f5812 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 cdac2a7 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 f903617 feat(auth): boilerplate auth-componenten bijgewerkt
 94fed5b i18n: translate tile.json description to English
-70b7b87 fix: remove nostr-login dependency causing blank page
 ```
 
 ### swarm
