@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-08 10:13)
+# Recent Changes — last 7 days (2026-06-08 10:16)
 
 ## Server (home-deploy)
 ```
+bd6ae0827 whenidie.md: document Umbrel usage, risks and Tailscale access
 23015b264 Always use local Umbrel node for Bitcoin/Lightning data
 1059afd23 todo: 1500 sats back to Phoenix wallet
 3aff48f39 todo: source code on Git
@@ -31,7 +32,6 @@ dd70237e9 feat: add full prompt pages for blocky, directory, supporty; tile quot
 cfd91ef28 refactor: rename goose ruby → transy (agents dir + CLAUDE.md)
 ae8aa7a50 refactor: rename goose admission → docy (agents dir + CLAUDE.md)
 58fe049fd refactor: update server CLAUDE.md for haitje→ay, tessa→testy, astrid→assistenty
-cd7c4aab8 refactor: rename goose haitje → ay (agents dir + CLAUDE.md)
 ```
 
 ## Apps
