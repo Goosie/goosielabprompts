@@ -10,6 +10,8 @@
 
 ### General
 
+- [ ] [2026-06-08] `#server` **LND direct op LNbits aansluiten** — Umbrel LND via Tailscale (100.111.14.11:2101) als funding source voor LNbits. Eerst kanaalmanagement op orde (outbound liquiditeit, SCB backup). Vervangt NWC en maakt donate-betalingen instant. Zie whenidie.md voor LND stack details.
+- [ ] [2026-06-08] `#server` **Umbrel kanaalmanagement** — Outbound liquiditeit toevoegen (on-chain storten + kanaal openen of Megalith LSP outbound kopen). Vereiste stap vóór LND→LNbits migratie.
 - [ ] [2026-06-08] `#finance` **Send 1500 sats back to Phoenix wallet**
 - [ ] [2026-06-08] `#server` **Source code on Git** — Make sure all app repos are pushed and up to date on GitHub. Add links to source code from the homepage tiles or a dedicated page.
 - [ ] [2026-06-08] `#idee` **FAQ page on goosielabs.com** — Add a FAQ page answering common questions: what is Nostr, what is Bitcoin/Lightning, what are the geese, how do I get started, is this safe, etc.
