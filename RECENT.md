@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-08 18:56)
+# Recent Changes — last 7 days (2026-06-08 18:58)
 
 ## Server (home-deploy)
 ```
+69657859a LND book: scaling plan — design for portability, phase 1→2
 202b563e9 LND book: sovereignty vs stability tension — hybrid approach
 6c46f920c LND book: add lesson about Umbrel app load + server investigation
 3ac8306f7 Add lessons learned system + LND book with initial research
@@ -31,7 +32,6 @@ d992d32be Add ## Commands section to all geese + fix goosie function/script conf
 bc6cf24f5 Docs: Blocky is the timer, healthy goose, live feed on homepage
 08240ca64 Docs: Blocky is the timer — update all relevant prompts and docs
 12f68b228 Add Healthy goose — proactive server health monitor
-bd6ae0827 whenidie.md: document Umbrel usage, risks and Tailscale access
 ```
 
 ## Apps
