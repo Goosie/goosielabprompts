@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-08 14:17)
+# Recent Changes — last 7 days (2026-06-08 14:39)
 
 ## Server (home-deploy)
 ```
+d992d32be Add ## Commands section to all geese + fix goosie function/script conflict
 7a0381053 Add /flock slash command + >> alone shows goose overview
 6dccca80f Convention: >> prefix voor ganzen (twee vleugels, niet één)
 3d52999c8 CLAUDE.md: add Healthy to V-Formation table
@@ -31,7 +32,6 @@ c95157766 todo: add ganzenbord game idea
 b5a7cf5d4 fix: use Lightning Addresses (name@goosielabs.com) in send-sats-to-geese
 fb8c6a93e feat: add Testy script to send 3 sats to all geese
 196b15255 fix: renew LNbits wallet links for all goosies after reinstall
-33c6ade70 chore: add quotes to all goosie agent .md files
 ```
 
 ## Apps
@@ -230,7 +230,6 @@ bfbae7d feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 36d33a9 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 6cb650f feat(auth): boilerplate auth-componenten bijgewerkt
 f02c3fc i18n: translate tile.json description to English
-0d4e773 fix: remove nostr-login dependency causing blank page on startup
 ```
 
 ### proofofread
