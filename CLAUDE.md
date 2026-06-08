@@ -349,21 +349,31 @@ When building an app overview: `if [ -f "$app/.archived" ]; then skip; fi`
 
 **Regel: sluit altijd een betaal-modal na ontvangst. Gebruik LNbits WebSocket, niet polling.**
 
-LNbits pusht een bericht op `wss://lnbits.goosielabs.com/api/v1/ws/<wallet_id>` zodra een betaling binnenkomt.
+**Bewezen patroon (uit `/var/www/goosielabs/donate.js` en `goose-balances.js`):**
+
+1. Genereer een invoice via `POST /api/v1/payments` met de wallet `inkey`
+2. Toon QR van `payment_request`
+3. Luister op `wss://lnbits.goosielabs.com/api/v1/ws/<payment_hash>`
+4. LNbits stuurt `{"pending": false, "status": "success"}` → toon thank you → sluit modal
 
 ```javascript
-// Correct: WebSocket — instant push, geen polling
-// LNbits sends to ws/<inkey>, NOT ws/<wallet_id> — use inkey as the channel
-var ws = new WebSocket('wss://lnbits.goosielabs.com/api/v1/ws/' + inkey);
-// Payload: { wallet_balance: <msat>, payment: { amount, ... } }
-// amount > 0 = incoming, amount < 0 = outgoing — filter on amount > 0
-ws.onmessage = async function() {
-  var newBalance = await fetchBalance(inkey);
-  if (newBalance > initialBalance) showThankYou(received);
-};
+// CORRECT: invoice genereren + luisteren op payment_hash
+fetch(LNBITS + '/api/v1/payments', {
+  method: 'POST',
+  headers: { 'X-Api-Key': inkey, 'Content-Type': 'application/json' },
+  body: JSON.stringify({ out: false, amount: 21, memo: 'Donate' })
+}).then(r => r.json()).then(data => {
+  showQR(data.payment_request);
+  var ws = new WebSocket('wss://lnbits.goosielabs.com/api/v1/ws/' + data.payment_hash);
+  ws.onmessage = e => {
+    var msg = JSON.parse(e.data);
+    if (msg.status === 'success' || msg.pending === false) showThankYou();
+  };
+});
 
-// Fout: setInterval polling — vertraagd en inefficiënt
-// setInterval(() => fetchBalance(inkey), 2000);  ← NIET DOEN
+// FOUT: wallet-level WebSocket of polling — onbetrouwbaar voor payment confirmation
+// ws/<inkey>  ← geeft wallet events, niet invoice-specifieke bevestiging
+// setInterval(() => fetchBalance(inkey), 2000)  ← NIET DOEN
 ```
 
 **Implementatie in `/var/www/goosielabs/goose-balances.js`** — als referentie voor nieuwe betaal-UIs.

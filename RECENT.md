@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-08 18:05)
+# Recent Changes — last 7 days (2026-06-08 18:09)
 
 ## Server (home-deploy)
 ```
+0d03f2ef0 CLAUDE.md: correct LNbits payment pattern — invoice + payment_hash WS
 9d2cf3a5a CLAUDE.md: fix LNbits WS URL — use inkey not wallet_id
 385d5daa7 CLAUDE.md: LNbits WebSocket as standard pattern for payment UX
 386654067 Agent memory files updated
@@ -31,7 +32,6 @@ bd6ae0827 whenidie.md: document Umbrel usage, risks and Tailscale access
 3aff48f39 todo: source code on Git
 1784b383b todo: FAQ page on goosielabs.com
 c760f4f23 todo: Nostr streams on website
-9c42035bc todo: translate homepage to Dutch
 ```
 
 ## Apps
