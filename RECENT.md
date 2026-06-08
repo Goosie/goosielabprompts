@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-07 21:43)
+# Recent Changes — last 7 days (2026-06-08 10:13)
 
 ## Server (home-deploy)
 ```
+23015b264 Always use local Umbrel node for Bitcoin/Lightning data
 1059afd23 todo: 1500 sats back to Phoenix wallet
 3aff48f39 todo: source code on Git
 1784b383b todo: FAQ page on goosielabs.com
@@ -31,7 +32,6 @@ cfd91ef28 refactor: rename goose ruby → transy (agents dir + CLAUDE.md)
 ae8aa7a50 refactor: rename goose admission → docy (agents dir + CLAUDE.md)
 58fe049fd refactor: update server CLAUDE.md for haitje→ay, tessa→testy, astrid→assistenty
 cd7c4aab8 refactor: rename goose haitje → ay (agents dir + CLAUDE.md)
-c907ae5af rename: tessa → testy across home-deploy
 ```
 
 ## Apps
@@ -57,7 +57,6 @@ f985520 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 36faf20 feat(auth): boilerplate auth-componenten bijgewerkt
 2e4e581 i18n: translate tile.json description to English
 223d47e fix: add missing nostr-login dependency that caused blank page
-a14ed15 fix: handle non-JSON server responses in API requests
 ```
 
 ### dilemma
@@ -240,7 +239,6 @@ f02c3fc i18n: translate tile.json description to English
 753d0f2 feat: new DALL-E app icon — book, barcode, badge and lightning
 b642c75 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 9d82c1d feat: tessa script aangemaakt — check + seed
-a4b8030 initial commit
 ```
 
 ### satquiz
@@ -306,6 +304,7 @@ e4278e8 rename: scripts/tessa → scripts/testy
 
 ### zaphunt
 ```
+8e4a416 backy: backup status 20260608_030002 [status=ok]
 e0beb46 feat: add lnbits_inkey to tile.json
 742374c backy: backup status 20260607_030000 [status=ok]
 13b91d6 backy: backup status 20260606_030003 [status=ok]
@@ -315,7 +314,6 @@ d8e1ee1 backy: backup status 20260604_030003 [status=ok]
 2d5d04f feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 2e3e3e9 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 3135323 feat(auth): boilerplate auth-componenten bijgewerkt
-28e90fa backy: backup status 20260603_030004 [status=ok]
 ```
 
 ### zinin
@@ -323,5 +321,4 @@ d8e1ee1 backy: backup status 20260604_030003 [status=ok]
 89ea2c1 feat: add lnbits_inkey to tile.json
 3a8b528 feat: new DALL-E app icon — matching speech bubbles with spark
 8edae71 i18n: translate tile.json description to English
-55673f7 chore: add juridischadvies.html
 ```

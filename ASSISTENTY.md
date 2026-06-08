@@ -32,8 +32,26 @@ Perry werkt zoals ganzen vliegen:
 **LNbits:** lnbits.goosielabs.com (poort 5000)
 **Lightning:** Alby Hub op Umbrel, NWC voor app-integraties
 **Lightning address:** zoomer@getalby.com
+**Umbrel node (Tailscale):** `100.111.14.11` — altijd de lokale node gebruiken, zie regel hieronder
 **Nostr npub (oud/zoomer):** npub14qpe36rvq0l6m3crplsntmnkzjm04weqflq0veqc8ra5hz4lpvxqqkdffc
 **Nostr npub (actief, DMs):** npub14qmyh789hq5t6u32dhr33qhlfm5dx70xf7l5tp8scmcm8ylcqkxqds0r58
+
+## Regel — Bitcoin & Lightning: altijd de lokale node
+
+Perry heeft een eigen Bitcoin/Lightning node op Umbrel, bereikbaar via Tailscale.
+**Gebruik altijd de lokale node als er Bitcoin- of Lightning-data nodig is.**
+Externe services (mempool.space, blockstream.info, etc.) zijn alleen een fallback als de lokale node onbereikbaar is.
+
+| Dienst | Tailscale URL | Gebruik voor |
+|--------|--------------|--------------|
+| Mempool | `http://100.111.14.11:3006` | Blockchain data, adres lookups, fee estimates, tx broadcast |
+| Alby Hub | `http://100.111.14.11:59000` | Lightning betalingen, kanaaloverzicht |
+| LND gRPC | `100.111.14.11:2101` | Directe LND API |
+
+Bereikbaarheid checken:
+```bash
+curl -s --max-time 3 http://100.111.14.11:3006/api/blocks/tip/height
+```
 
 ## Veiligheidsregel — nsecs NOOIT in de chat
 

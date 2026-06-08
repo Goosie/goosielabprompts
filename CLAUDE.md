@@ -285,6 +285,21 @@ B1|newapp/server hangs|OOM not CPU; 4 sessions+no swap→94Mi free→OOM during 
 B2|datetime-local input error|`.toISOString()` → format rejected by browser|∀ datetime-local: `.slice(0,16)` → `new Date().toISOString().slice(0,16)`|—
 B3|API auth fails|admin PIN sent in body not header|`X-Admin-Pin` header; check `req.headers['x-admin-pin']`|—
 
+**Umbrel Node — altijd eerst gebruiken**
+
+Perry heeft een eigen Bitcoin/Lightning node op Umbrel, bereikbaar via Tailscale.
+**Regel: gebruik altijd de lokale node als er een Bitcoin- of Lightning-gerelateerde dienst nodig is.**
+Gebruik externe services (mempool.space, blockstream.info, etc.) alleen als fallback als de lokale node onbereikbaar is.
+
+| Dienst | Tailscale URL | Waarvoor |
+|--------|--------------|----------|
+| Mempool | `http://100.111.14.11:3006` | Blockchain data, adres lookups, fee estimates, tx broadcast |
+| LND / Alby Hub | `http://100.111.14.11:59000` | Lightning betalingen, kanalen |
+| LND gRPC | `100.111.14.11:2101` | Directe LND API |
+
+Tailscale IP Umbrel: `100.111.14.11` (stabiel, verandert niet).
+Bereikbaarheid checken: `curl -s --max-time 3 http://100.111.14.11:3006/api/blocks/tip/height`
+
 **Lightning Stack (Umbrel)**
 - LND: 0.20.1-beta — umbrel.local:2101 (Lightning Node app)
 - Alby Hub: umbrel.local:59000 — beheersinterface voor LND
