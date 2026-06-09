@@ -48,6 +48,80 @@ All goose identity data lives in one place and is queried dynamically:
 | **2. Geese** | All AI agents | `agents/<name>/nostr-key.json` — single source of truth |
 | **3. Apps** | Per-app identity | TBD — not yet implemented |
 
+---
+
+## 🗝️ API KEY MANAGEMENT — CONVENTION
+
+### Rule: one central file for shared keys
+
+All server-level and shared API keys live in ONE place:
+
+```
+/home/deploy/.env.services
+```
+
+**Do NOT put shared keys in:** `.bashrc.local`, individual app `.env` files, service `Environment=` inline, or source code.
+
+### When to use which file
+
+| File | What goes here |
+|---|---|
+| `/home/deploy/.env.services` | Shared keys: Anthropic, OpenAI, DigitalOcean, Gitea, any key used by >1 service |
+| `/var/www/goosielabs/apps/<name>/.env` | App-specific keys only: LNbits wallet keys, per-app nsecs, ENCRYPTION_KEY |
+| `/home/deploy/.bashrc.local` | Perry's personal nsec (interactive shell only — never for services) |
+
+### How services load keys
+
+Services that need shared keys use two `EnvironmentFile=` lines — shared first, app-specific second:
+
+```ini
+EnvironmentFile=/home/deploy/.env.services
+EnvironmentFile=/var/www/goosielabs/apps/<name>/.env
+```
+
+If only shared keys are needed (no app-specific env):
+
+```ini
+EnvironmentFile=/home/deploy/.env.services
+```
+
+### How scripts load keys
+
+Scripts run via `goosie` or the shell automatically get `.env.services` keys because `~/.bashrc.d/paths.sh` sources the file. No explicit loading needed.
+
+For scripts run via systemd (daemons), the `EnvironmentFile=` in the service handles it.
+
+### Adding a new API key
+
+1. Add it to `/home/deploy/.env.services` (format: `KEY=value`, no `export`)
+2. Update the inventory table below
+3. If a new service needs it: add `EnvironmentFile=/home/deploy/.env.services` to the `.service` file
+4. Reload: `sudo systemctl daemon-reload && sudo systemctl restart <service>`
+
+**Never put a new API key anywhere else first.** One place, always.
+
+---
+
+## 📋 API KEY INVENTORY — Perry's services
+
+> This table exists so someone can take over if Perry is unavailable.
+> Key values are never stored here — only where to find them and what they're for.
+> All values are in `/home/deploy/.env.services` unless noted otherwise.
+
+| Variable | Provider | Where purchased | Used by | Notes |
+|---|---|---|---|---|
+| `ANTHROPIC_API_KEY` | Anthropic | console.anthropic.com | dm-listener, bookwriter-agent, zaphunt backend, newapp backend | Claude Haiku for AI replies |
+| `OPENAI_API_KEY` | OpenAI | platform.openai.com | generate-agent-portraits, humany portrait generation | Portrait/image generation |
+| `DO_API_TOKEN` | DigitalOcean | cloud.digitalocean.com | backy (weekly snapshots) | Server snapshot automation |
+| `DO_DROPLET_ID` | DigitalOcean | cloud.digitalocean.com | backy | ID of the VPS droplet |
+| `GITEA_TOKEN` | Self-hosted | git.goosielabs.com (Perry's Gitea) | gitty, gitea goose | Repo management |
+| `GITEA_HOST/PORT/USER` | Self-hosted | git.goosielabs.com | gitty, gitea goose | Gitea connection config |
+| `OPENROUTER_API_KEY` | OpenRouter | openrouter.ai | onboarding backend | AI model routing — in `apps/onboarding/backend/.env` |
+| `LNBITS_ADMIN_KEY` | Self-hosted | lnbits.goosielabs.com | zaphunt, satquiz backends | Per-app wallet keys — stay in app `.env` |
+| `ENCRYPTION_KEY` | Generated | — | catchzaps, zap-hunt APIs | Per-app — stay in app `.env` |
+
+**Emergency access:** All service files are in `/etc/systemd/system/`. The server runs on DigitalOcean, SSH access via the `deploy` user. DigitalOcean console access requires Perry's account at cloud.digitalocean.com.
+
 ### Querying goose information
 
 ```bash

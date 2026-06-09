@@ -53,6 +53,42 @@ Bereikbaarheid checken:
 curl -s --max-time 3 http://100.111.14.11:3006/api/blocks/tip/height
 ```
 
+## Regel — API Keys: altijd op één plek
+
+**Alle gedeelde server-level API keys staan in:** `~/.env.services`
+
+Nooit elders neerzetten. Nooit in broncode, nooit in `.bashrc.local`, nooit per-service dupliceren.
+
+| Wat | Bestand |
+|---|---|
+| Gedeelde keys (Anthropic, OpenAI, DigitalOcean, Gitea) | `~/.env.services` |
+| App-eigen keys (LNbits wallet, ENCRYPTION_KEY, app-nsec) | `/apps/<naam>/.env` (blijft per app) |
+| Perry's nsec (alleen interactief) | `~/.bashrc.local` |
+
+**Als een service een gedeelde key nodig heeft:** voeg `EnvironmentFile=/home/deploy/.env.services` toe als EERSTE regel in de `.service` file. App-eigen env daarna als tweede regel.
+
+**Als er een nieuwe API wordt aangeschaft:**
+1. Key toevoegen aan `~/.env.services`
+2. Tabel hieronder bijwerken (provider + waarvoor)
+3. Service updaten als nodig
+4. `sudo systemctl daemon-reload && sudo systemctl restart <service>`
+
+### API Key Inventory — Perry's services
+
+> Geen waarden hier — alleen waar, waarvoor en wie aangeschaft heeft.
+> Waarden staan in `~/.env.services`.
+
+| Variabele | Provider | Website | Waarvoor |
+|---|---|---|---|
+| `ANTHROPIC_API_KEY` | Anthropic | console.anthropic.com | Claude AI — DM-dialoog (Healthy), bookwriter, zaphunt, newapp |
+| `OPENAI_API_KEY` | OpenAI | platform.openai.com | Portret- en icon-generatie voor ganzen |
+| `DO_API_TOKEN` | DigitalOcean | cloud.digitalocean.com | Server snapshots via Backy |
+| `DO_DROPLET_ID` | DigitalOcean | cloud.digitalocean.com | ID van de VPS (bij DO_API_TOKEN) |
+| `GITEA_TOKEN` | Zelf-gehost | git.goosielabs.com | Repo-beheer via Gitty/Gitea gans |
+| `OPENROUTER_API_KEY` | OpenRouter | openrouter.ai | AI model routing — alleen onboarding backend (`apps/onboarding/backend/.env`) |
+
+**Noodtoegang:** server draait op DigitalOcean, SSH als `deploy`. DigitalOcean console via Perry's account. Alle services in `/etc/systemd/system/`.
+
 ## Regel — Blocky is de timer van de V-Formatie
 
 **Gebruik nooit cron voor terugkerende gans-taken.**
@@ -414,7 +450,8 @@ Geïnstalleerde pakketten voor icon-workflow: `fonttools`, `Pillow`
 | Shell-functie met interactieve input (`read`, tmux-switch) | `~/.bashrc.d/goosie.sh` |
 | PATH export of omgevingsvariabele | `~/.bashrc.d/paths.sh` |
 | Standalone commando zonder shell-state | `~/.local/bin/<naam>` als uitvoerbaar script |
-| Geheimen / API keys | `~/.bashrc.local` (niet gecommit) |
+| Gedeelde API keys (Anthropic, OpenAI, DO, Gitea) | `~/.env.services` — de enige centrale plek |
+| Persoonsgebonden nsec (interactief shell) | `~/.bashrc.local` (niet gecommit, nooit voor services) |
 
 **Waarom dit onderscheid?**
 Scripts in `~/.local/bin/` werken automatisch in **oude tmux sessies** — `$PATH` is al gezet bij sessie-start.
