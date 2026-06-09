@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-09 01:32)
+# Recent Changes — last 7 days (2026-06-09 02:16)
 
 ## Server (home-deploy)
 ```
+b28f8eb53 feat: add canadian theme to template.css
 7b0676181 feat: add Cssy — CSS design system goose
 d24cc2269 Agent memory files updated
 84c34b77e todo: banners alle ganzen — scene per gans, handmatig bouwen
@@ -31,7 +32,6 @@ c10c56fc0 whitelist.json: coachy added
 b8358808b CLAUDE.md: full newgoose checklist — automated + manual steps
 a5088c581 Backy: nsite page live, tagline and tile
 677c0d358 All geese: add description + blockbirth, Backy blockbirth #779142
-c35e491d0 Backy: add icon, Nostr profile, homepage tile, agents.json description
 ```
 
 ## Apps
