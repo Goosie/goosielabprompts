@@ -306,6 +306,7 @@ goosie humany newgoose <name>
 - Icon (placeholder), portrait
 - LNbits wallet + Lightning Address
 - Kind:0 Nostr profile published
+- Kind:10050 DM relay list published → `wss://relay.goosielabs.com` (NIP-17 inbox)
 - NIP-58 badge awarded
 - `agents/<name>/<name>.md` with `description:` placeholder
 - `.claude/agents/<name>.md` template with quote/role/boundaries

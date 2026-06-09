@@ -137,6 +137,7 @@ goosie humany newgoose <naam>
 | Portrait | Gegenereerd |
 | LNbits wallet | Aangemaakt + Lightning Address live |
 | Kind:0 profiel | Gepubliceerd op 4 relays |
+| Kind:10050 DM relay list | Gepubliceerd — NIP-17 DMs kunnen worden bezorgd |
 | NIP-58 badge | Uitgereikt |
 | `agents/<naam>/<naam>.md` | Aangemaakt met `description:` placeholder |
 | `.claude/agents/<naam>.md` | Template aangemaakt met quote/role/boundaries |

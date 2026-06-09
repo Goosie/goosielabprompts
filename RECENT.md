@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-09 07:47)
+# Recent Changes — last 7 days (2026-06-09 09:59)
 
 ## Server (home-deploy)
 ```
+348081713 docs: add kind:10050 DM relay list to newgoose checklist
 a29b4a62f todo: 18 apps login wall → progressive onboarding
 7bc711f2b docs: Perry uses Aka for NIP-07 login, not Alby
 de5b610f3 Update boilerplate submodule: tile.json + DonateButton toegevoegd
@@ -31,13 +32,14 @@ c9964d9c2 Agent memory files updated (blocky, healthy, humany, assistenty)
 e84a29ed9 CLAUDE.md: document deletegoose command
 b92c934ca Remove testy2 (test goose)
 9a682029d CLAUDE.md: AGENT_ORDER + tile + flock prompts + ceremony now automated
-c10c56fc0 whitelist.json: coachy added
 ```
 
 ## Apps
 
 ### bookwriter
 ```
+8001b61 fix: remove nostr-login init() — eliminates double login modal
+91dfda8 fix: don't auto-trigger Nostr extension on page load
 31c31c6 feat: add lnbits_inkey to tile.json
 8cb3692 chore: rename tile title to Write Book
 fc4a266 docs: add Doel & Gebruik section to CLAUDE.md
@@ -50,6 +52,9 @@ d14a102 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 
 ### catchzaps
 ```
+dda3a65 fix: remove nostr-login init() — eliminates double login modal
+59dd40d fix: don't auto-trigger Nostr extension on page load
+cd588ac fix: theme-aware colors + clean login
 a530f71 feat: add lnbits_inkey to tile.json
 9bb0672 feat: new DALL-E app icon — map pin with lightning bolt and catching hand
 6145425 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
@@ -60,6 +65,9 @@ f985520 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 
 ### dilemma
 ```
+e128e70 fix: remove nostr-login init() — eliminates double login modal
+75997b6 fix: don't auto-trigger Nostr extension on page load
+1918dff fix: theme-aware colors — bg-background/card, text-foreground/muted
 92d463d feat: add lnbits_inkey to tile.json
 2a34c90 feat: new DALL-E app icon v2 — balance scale with lightning bounty
 96d3d8f feat: new DALL-E app icon — crossroads with bounty
@@ -67,11 +75,13 @@ f985520 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 e37788f feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 24ee12e fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 ff78908 feat(auth): boilerplate auth-componenten bijgewerkt
-c69e668 i18n: translate tile.json description to English
 ```
 
 ### feedback
 ```
+9582d7c fix: remove nostr-login init() — eliminates double login modal
+23594d2 fix: don't auto-trigger Nostr extension on page load
+525bba6 fix: theme-aware colors — bg-background/card, text-foreground/muted
 ec34cec feat: add lnbits_inkey to tile.json
 390fb5a feat: new DALL-E app icon — anonymous mask in speech bubble with lightning
 72a58c0 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
@@ -82,11 +92,17 @@ ec34cec feat: add lnbits_inkey to tile.json
 
 ### flocks
 ```
+2f14725 fix: remove nostr-login init() — eliminates double login modal
+f1bbade fix: don't auto-trigger Nostr extension on page load
+d64fe97 fix: theme-aware colors — bg-background/card, text-foreground/muted
 57f00f5 docs: add CLAUDE.md with Doel & Gebruik section
 ```
 
 ### gameofthegoose
 ```
+1be6e11 fix: remove nostr-login init() — eliminates double login modal
+9380dca fix: don't auto-trigger Nostr extension on page load
+711ec38 fix: theme-aware colors — bg-background/card/muted, text-foreground/muted
 4ccc7a9 feat: add lnbits_inkey to tile.json
 e3c8240 fix: map game status 'active' → 'playing' for PlayerPanel
 4098e1e feat: publish guest kind:0 with random name on first login
@@ -94,13 +110,13 @@ b1383ad fix: remove duplicate GuestBanner from individual pages
 89b9e0c chore: update tile — new title, description and app URL
 04210fb chore: track all project files + update CLAUDE.md documentation
 f075417 refactor: unique room IDs + explicit close-old-rooms before create
-480a73c fix: NIP-40 expiration on GameRoom events + tighter since window
-df6f791 docs: add relay + room-id rules to CLAUDE.md
-131d91d fix: single relay + immediate room render via navigation state
 ```
 
 ### georgie
 ```
+837b2fa fix: remove nostr-login init() — eliminates double login modal
+015704f fix: don't auto-trigger Nostr extension on page load
+1aeb772 fix: theme-aware colors + progressive onboarding in MemoriesPage
 aedf417 feat: add lnbits_inkey to tile.json
 a5bfee4 docs: add Doel & Gebruik section to CLAUDE.md
 95e0af7 feat: new DALL-E app icon — Georgia map with trail and landmarks
@@ -111,6 +127,9 @@ d30c81b fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 
 ### gooseprogrammer
 ```
+368bffe fix: remove nostr-login init() — eliminates double login modal
+de221bf fix: don't auto-trigger Nostr extension on page load
+8bf1184 fix: theme-aware colors + clean up unauthorized screen
 339e89b feat: add lnbits_inkey to tile.json
 cd4c93d docs: add Doel & Gebruik section to CLAUDE.md
 7196e8f feat: new DALL-E app icon — terminal with code and gear
@@ -118,13 +137,13 @@ f363d6c chore: rename Danky → Devy in agents, backend, CLAUDE.md
 59d6cc5 refactor: rename haitje→ay and tessa→testy references
 3999cd6 rename: tessa → testy
 3ab6819 rename: astrid → assistenty
-0012b43 chore: rename Communi → Commy
-1316266 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
-8f3db3a fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 ```
 
 ### goosiemanager
 ```
+ef02c8c fix: remove nostr-login init() — eliminates double login modal
+98c2f5f fix: don't auto-trigger Nostr extension on page load
+b3b966a fix: theme-aware colors — bg-background/muted, text-foreground/muted
 25ebed5 feat: add lnbits_inkey to tile.json
 387454a refactor: replace @nostr-dev-kit/ndk with nostr-tools SimplePool
 617ec7c docs: add Doel & Gebruik section to CLAUDE.md
@@ -132,7 +151,6 @@ fc09b89 feat: Flocks tile op homepage
 92903fb feat: mobile-friendly layout
 9d497e6 fix: agent grid als default view, bootstrap niet-blokkerend
 cb3fc2e feat: agents laden met echte npub/pubkey velden
-f1f14cc feat: Phase 1 GoosieManager frontend
 ```
 
 ### goosieruntime
@@ -143,6 +161,9 @@ aeb7b49 feat: add /honk endpoint for agent-signed Nostr publishing
 
 ### honkbadge
 ```
+52a7e9b fix: remove nostr-login init() — eliminates double login modal
+4f24c62 fix: don't auto-trigger Nostr extension on page load
+b6ac30a fix: theme-aware colors — bg-background/card, text-foreground/muted
 d4200e4 feat: add lnbits_inkey to tile.json
 809c40d feat: kind:30008 — 'Zet op profiel' knop na badge verdiend
 a867ea7 fix: WebSocket polyfill voor Node.js 20 + auto-publish badge definitie
@@ -151,6 +172,10 @@ a867ea7 fix: WebSocket polyfill voor Node.js 20 + auto-publish badge definitie
 
 ### honkensus
 ```
+4a55c11 fix: remove nostr-login init() — eliminates double login modal
+759eaf0 fix: theme-aware colors (zinc→semantic) + no extension auto-popup
+8f88607 fix: don't auto-trigger Nostr extension on page load
+668e6e4 fix: theme-aware colors — bg-background/card, text-foreground/muted
 80bebc9 Voeg donate button toe, update tile.json en CLAUDE.md
 3e2e447 Maak tile aan en update app metadata
 c4061fa Voeg mobiele bottom nav toe
@@ -161,6 +186,9 @@ dc78663 Initial commit — Honkensus async consensus app
 
 ### honkference
 ```
+e9361a4 fix: remove nostr-login init() — eliminates double login modal
+44cada7 fix: don't auto-trigger Nostr extension on page load
+bf51683 fix: theme-aware colors — bg-background/card, text-foreground/muted
 1334839 feat: add lnbits_inkey to tile.json
 73b1bec chore: rename tile title to Honkference
 6e24c97 docs: add Doel & Gebruik section to CLAUDE.md
@@ -168,11 +196,13 @@ dc78663 Initial commit — Honkensus async consensus app
 4f29c76 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 5cb5033 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 f59e973 feat(auth): boilerplate auth-componenten bijgewerkt
-a565fdb goosielab update 2026-06-02 15:44
 ```
 
 ### honkstation
 ```
+1517810 fix: remove nostr-login init() — eliminates double login modal
+f09ce8a fix: don't auto-trigger Nostr extension on page load
+3dab804 fix: theme-aware colors — bg-background/card, text-foreground/muted
 1262449 docs: add CLAUDE.md with Doel & Gebruik section
 ```
 
@@ -183,6 +213,9 @@ c31388ec docs: add Doel & Gebruik section to DEVELOPMENT.md
 
 ### lastwill
 ```
+23baa18 fix: remove nostr-login init() — eliminates double login modal
+4df6666 fix: don't auto-trigger Nostr extension on page load
+9d36c36 fix: theme-aware colors — bg-background/card, text-foreground/muted
 6c31f1c feat: add lnbits_inkey to tile.json
 d6b3aca feat: new app icon — flat cartoon testament/heartbeat/padlock via DALL-E
 ab0f069 rename: scripts/tessa → scripts/testy
@@ -229,6 +262,9 @@ bb6a765 docs: add Doel & Gebruik section to CLAUDE.md
 
 ### proofofmove
 ```
+6fed014 fix: remove nostr-login init() — eliminates double login modal
+e4dcbb0 fix: don't auto-trigger Nostr extension on page load
+43f7d0e fix: theme-aware colors — bg-background/card, text-foreground/muted
 2e8182f feat: add lnbits_inkey to tile.json
 73a2666 feat: new DALL-E app icon — warrior pose with movement shadow and lightning
 bfbae7d feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
@@ -247,12 +283,17 @@ b642c75 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 
 ### satquiz
 ```
+a3dc5e5 fix: remove nostr-login init() — eliminates double login modal
+8c59ac5 fix: don't auto-trigger Nostr extension on page load
 9a55499 feat: add lnbits_inkey to tile.json
 52c832e chore: rename tile title to Satoshi Quiz
 ```
 
 ### sofia
 ```
+a821b97 fix: remove nostr-login init() — eliminates double login modal
+4b77a4b fix: don't auto-trigger Nostr extension on page load
+98fc190 fix: theme-aware colors — bg-background/card, text-foreground/muted
 d618efd feat: add lnbits_inkey to tile.json
 606d364 feat: new DALL-E app icon — group around map with privacy shield
 d9f5812 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
@@ -263,6 +304,8 @@ f903617 feat(auth): boilerplate auth-componenten bijgewerkt
 
 ### swarm
 ```
+48ea111 fix: remove nostr-login init() — eliminates double login modal
+c688977 fix: theme-aware colors — bg-background/card, text-foreground/muted
 324b4f9 feat: add lnbits_inkey to tile.json
 07895e5 fix: toon npub i.p.v. hex in agent-detailpaneel
 1528d46 feat: sync all 17 agents — real pubkeys, expanded V-formation
@@ -271,11 +314,12 @@ f1f87ec feat: new DALL-E app icon — V-formation glowing network nodes
 1074361 feat: grotere tiles met DM-activiteit per gans in V-formatie
 75fe074 fix: alle ESLint-fouten opgelost, alle tests groen
 cf3bbca add tile.json en app icons voor homepage
-417e94a feat: Swarm V-formatie dashboard met live Nostr DM visualisatie
 ```
 
 ### vformation
 ```
+46f2de8 fix: remove nostr-login init() — eliminates double login modal
+8ec38c7 fix: don't auto-trigger Nostr extension on page load
 b66b21e feat: add lnbits_inkey to tile.json
 3de4fd0 docs: add Doel & Gebruik section to CLAUDE.md
 c7b8ed0 feat: new DALL-E app icon — live V-shape with pulsing nodes
@@ -284,12 +328,13 @@ c7b8ed0 feat: new DALL-E app icon — live V-shape with pulsing nodes
 be9f0c0 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 c4aaef6 feat(auth): boilerplate auth-componenten bijgewerkt
 213773e feat: all role geese in dashboard — Astrid, Danky, Finny, Ruby, Checky, Communi, Designy, Nosty, Admission
-6c5c2fa feat: Gitea onboarded via Humany newgoose
-e30d55c feat: Gitty onboarded via Humany newgoose
 ```
 
 ### weddendat
 ```
+721fb33 fix: remove nostr-login init() — eliminates double login modal
+bad51ab fix: don't auto-trigger Nostr extension on page load
+ae41dcb fix: theme-aware colors — bg-background/card, text-foreground/muted
 c450414 feat: add lnbits_inkey to tile.json
 1fff08d feat: rename to I Bet That + new DALL-E icon (handshake/lightning/coins)
 d3e0a70 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
@@ -306,6 +351,9 @@ e4278e8 rename: scripts/tessa → scripts/testy
 
 ### zaphunt
 ```
+5f7dadb fix: remove nostr-login init() — eliminates double login modal
+217c579 fix: don't auto-trigger Nostr extension on page load
+c39a6ed fix: theme-aware colors + remove dashboard login wall
 5b3c188 backy: backup status 20260609_030002 [status=ok]
 8e4a416 backy: backup status 20260608_030002 [status=ok]
 e0beb46 feat: add lnbits_inkey to tile.json
@@ -313,9 +361,6 @@ e0beb46 feat: add lnbits_inkey to tile.json
 13b91d6 backy: backup status 20260606_030003 [status=ok]
 694cb87 backy: backup status 20260605_030000 [status=ok]
 3bb1257 feat: new DALL-E app icon — treasure map with lightning bolt and magnifying glass
-d8e1ee1 backy: backup status 20260604_030003 [status=ok]
-2d5d04f feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
-2e3e3e9 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 ```
 
 ### zinin
