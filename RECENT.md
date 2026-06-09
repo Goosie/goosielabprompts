@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-09 14:07)
+# Recent Changes — last 7 days (2026-06-09 19:54)
 
 ## Server (home-deploy)
 ```
+201baf9fd Voeg theme-regel toe: altijd CSS variabelen, nooit hardcoded hex
 1141aa66a chore: day summary — config, aliases, memory updates
 52d9a7d12 todo: split wallet — donaties aan Perry verdelen over alle ganzen
 236827691 cleanup: remove perry_zoomer — single Nostr identity (perry_goosie)
@@ -31,7 +32,6 @@ caf7c671f Agent memory files updated
 6752d8f7e Agent memory files updated
 c19f17d4e todo: LND direct op LNbits + kanaalmanagement Umbrel
 0d03f2ef0 CLAUDE.md: correct LNbits payment pattern — invoice + payment_hash WS
-9d2cf3a5a CLAUDE.md: fix LNbits WS URL — use inkey not wallet_id
 ```
 
 ## Apps
@@ -172,6 +172,8 @@ a867ea7 fix: WebSocket polyfill voor Node.js 20 + auto-publish badge definitie
 
 ### honkensus
 ```
+f9fa21f Voeg theme-support toe: inline kleuren vervangen door CSS variabelen
+2490bac Fix publish crash: gebruik mutateAsync ipv publish op UseMutationResult
 4a55c11 fix: remove nostr-login init() — eliminates double login modal
 759eaf0 fix: theme-aware colors (zinc→semantic) + no extension auto-popup
 8f88607 fix: don't auto-trigger Nostr extension on page load
@@ -180,12 +182,13 @@ a867ea7 fix: WebSocket polyfill voor Node.js 20 + auto-publish badge definitie
 3e2e447 Maak tile aan en update app metadata
 c4061fa Voeg mobiele bottom nav toe
 4ca0f07 Voeg profielfoto's en display names toe via AuthorAvatar component
-13cef11 Voeg ontbrekende core features toe aan Honkensus
-dc78663 Initial commit — Honkensus async consensus app
 ```
 
 ### honkference
 ```
+edbb0d5 feat: Join Room opens HiveTalk directly in new tab — no iframe, no double login
+4d2c310 fix: remove LoginArea from header — only HiveTalk login needed
+1985bf9 fix: remove CSP + add manifest.json — NIP-07 extension blocked, manifest missing
 e9361a4 fix: remove nostr-login init() — eliminates double login modal
 44cada7 fix: don't auto-trigger Nostr extension on page load
 bf51683 fix: theme-aware colors — bg-background/card, text-foreground/muted
@@ -193,9 +196,6 @@ bf51683 fix: theme-aware colors — bg-background/card, text-foreground/muted
 73b1bec chore: rename tile title to Honkference
 6e24c97 docs: add Doel & Gebruik section to CLAUDE.md
 421358f feat: new DALL-E icon — conference table, speech bubbles, microphone
-4f29c76 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
-5cb5033 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
-f59e973 feat(auth): boilerplate auth-componenten bijgewerkt
 ```
 
 ### honkstation
@@ -278,7 +278,6 @@ f02c3fc i18n: translate tile.json description to English
 1aa06d1 feat: add lnbits_inkey to tile.json
 753d0f2 feat: new DALL-E app icon — book, barcode, badge and lightning
 b642c75 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
-9d82c1d feat: tessa script aangemaakt — check + seed
 ```
 
 ### satquiz

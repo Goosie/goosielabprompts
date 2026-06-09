@@ -583,6 +583,36 @@ Bereikbaarheid checken: `curl -s --max-time 3 http://100.111.14.11:3006/api/bloc
 3. CLAUDE.md        → app-specifieke brief bovenaan toevoegen
 ```
 
+### Kleuren & theming — ALTIJD CSS variabelen, nooit hardcoded hex
+
+De globale theme-switcher (nginx injectie) past `.dark` class toe op `<html>` voor dark/bitcoin themes en verwijdert hem voor lichte themes. De boilerplate `index.css` heeft `:root` (licht) en `.dark` (donker) al correct ingesteld.
+
+**Regel: gebruik nooit hardcoded hex-kleuren in `style={}` props of inline CSS.**
+
+Als je kleuren nodig hebt, gebruik altijd:
+- Tailwind utility classes: `bg-background`, `text-foreground`, `bg-card`, `border-border`, `text-muted-foreground`, `bg-muted`
+- Of CSS variabelen als inline style onvermijdelijk is: `var(--background)`, `var(--foreground)`, `var(--card)`, `var(--border)`, `var(--muted-foreground)`
+
+| Gebruik voor | Tailwind class | CSS variabele |
+|---|---|---|
+| Pagina-achtergrond | `bg-background` | `var(--background)` |
+| Tekst | `text-foreground` | `var(--foreground)` |
+| Card/panel bg | `bg-card` | `var(--card)` |
+| Subtiele bg | `bg-muted` | `var(--muted)` |
+| Subtiele tekst | `text-muted-foreground` | `var(--muted-foreground)` |
+| Rand | `border-border` | `var(--border)` |
+| Brand/accent kleur | `bg-primary text-primary-foreground` | `var(--primary)` |
+
+**App-eigen brandkleur** (bijv. geel bij Honkensus) mag als hardcoded hex — maar dan alleen voor die specifieke merkkleur, niet voor achtergronden/tekst/randen.
+
+**App is dark by default?** Zet in `src/index.css`:
+```css
+/* :root overriden naar donker voor deze app */
+:root { --background: #0f0f0f; --foreground: #f0f0f0; /* etc */ }
+/* Licht als de theme-switcher een niet-dark theme kiest */
+html:not(.dark) { --background: #ffffff; --foreground: #111827; /* etc */ }
+```
+
 Daarna icon hergeneren met de juiste kleur + symbool:
 ```bash
 node /var/www/goosielabs/generate-icons.mjs <naam> <#kleur> [emoji-glyph]
