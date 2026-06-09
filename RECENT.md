@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-09 12:48)
+# Recent Changes — last 7 days (2026-06-09 12:55)
 
 ## Server (home-deploy)
 ```
+52d9a7d12 todo: split wallet — donaties aan Perry verdelen over alle ganzen
 236827691 cleanup: remove perry_zoomer — single Nostr identity (perry_goosie)
 582037c24 fix: add kind:1060 (NIP-17 seal) to OPEN_KINDS in relay write policy
 6b64f6a85 fix: add kind:10050 and kind:10002 to OPEN_KINDS in relay write policy
@@ -31,7 +32,6 @@ c19f17d4e todo: LND direct op LNbits + kanaalmanagement Umbrel
 0d03f2ef0 CLAUDE.md: correct LNbits payment pattern — invoice + payment_hash WS
 9d2cf3a5a CLAUDE.md: fix LNbits WS URL — use inkey not wallet_id
 385d5daa7 CLAUDE.md: LNbits WebSocket as standard pattern for payment UX
-386654067 Agent memory files updated
 ```
 
 ## Apps

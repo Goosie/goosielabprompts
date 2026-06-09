@@ -10,6 +10,8 @@
 
 ### General
 
+- [ ] [2026-06-09] `#idee` **Split wallet bij donatie aan Perry** — als iemand naar perry@goosielabs.com doneert, automatisch verdelen over alle ganzen (LNbits split payments). Elke gans krijgt een evenredig deel op z'n eigen Lightning Address.
+
 - [ ] [2026-06-09] `#idee` **Bekijk plaatjes voor ganzen-portretten/brand** — Designy inspiratie van Claude: https://claude.ai/design/p/f5e6e8df-acd0-413d-9875-22329a8de89c?file=components%2Fbrand%2Fportraits.card.html
 
 - [ ] [2026-06-09] `#server` **18 apps: progressive onboarding i.p.v. login wall** — Alle apps hieronder hebben nog `if (!user) return <LoginArea />` als login wall. Vervangen door progressive onboarding: app rendert altijd, write actions gaan via TryItOutModal (al aanwezig in alle apps). Aanpak per app: 1) verwijder `if (!user) return <LoginArea>` blok uit pagina's, 2) zet `<LoginArea>` in de nav header (klein, max-w-40), 3) write actions gaan via `useNostrPublish` (opent TryItOut automatisch) of `useWriteGate().openModal()`. Daarna ook: CSS variabelen gebruiken ipv hardcoded Tailwind kleuren zodat themes werken.
