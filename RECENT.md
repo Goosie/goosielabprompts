@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-09 02:55)
+# Recent Changes — last 7 days (2026-06-09 06:12)
 
 ## Server (home-deploy)
 ```
+de5b610f3 Update boilerplate submodule: tile.json + DonateButton toegevoegd
 23a6c4843 Agent memory files + Cssy onboarded (CSS design system goose)
 b28f8eb53 feat: add canadian theme to template.css
 7b0676181 feat: add Cssy — CSS design system goose
@@ -31,7 +32,6 @@ b92c934ca Remove testy2 (test goose)
 c10c56fc0 whitelist.json: coachy added
 780a959cb Coachy: encouragement goose — amber icon, description, nsite page
 b8358808b CLAUDE.md: full newgoose checklist — automated + manual steps
-a5088c581 Backy: nsite page live, tagline and tile
 ```
 
 ## Apps
@@ -147,6 +147,16 @@ d4200e4 feat: add lnbits_inkey to tile.json
 809c40d feat: kind:30008 — 'Zet op profiel' knop na badge verdiend
 a867ea7 fix: WebSocket polyfill voor Node.js 20 + auto-publish badge definitie
 768ee4b feat: HonkBadge — NIP-58 badge minting via Lightning
+```
+
+### honkensus
+```
+80bebc9 Voeg donate button toe, update tile.json en CLAUDE.md
+3e2e447 Maak tile aan en update app metadata
+c4061fa Voeg mobiele bottom nav toe
+4ca0f07 Voeg profielfoto's en display names toe via AuthorAvatar component
+13cef11 Voeg ontbrekende core features toe aan Honkensus
+dc78663 Initial commit — Honkensus async consensus app
 ```
 
 ### honkference
@@ -296,6 +306,7 @@ e4278e8 rename: scripts/tessa → scripts/testy
 
 ### zaphunt
 ```
+5b3c188 backy: backup status 20260609_030002 [status=ok]
 8e4a416 backy: backup status 20260608_030002 [status=ok]
 e0beb46 feat: add lnbits_inkey to tile.json
 742374c backy: backup status 20260607_030000 [status=ok]
@@ -305,7 +316,6 @@ e0beb46 feat: add lnbits_inkey to tile.json
 d8e1ee1 backy: backup status 20260604_030003 [status=ok]
 2d5d04f feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 2e3e3e9 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
-3135323 feat(auth): boilerplate auth-componenten bijgewerkt
 ```
 
 ### zinin

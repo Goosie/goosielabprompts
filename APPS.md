@@ -1,4 +1,4 @@
-# Apps — 2026-06-09 02:55
+# Apps — 2026-06-09 06:12
 
 | App | URL | Git |
 |-----|-----|-----|
@@ -14,6 +14,7 @@
 | goosiemanager | https://goosielabs.com/apps/goosiemanager | yes |
 | goosieruntime | https://goosielabs.com/apps/goosieruntime | yes |
 | honkbadge | https://goosielabs.com/apps/honkbadge | yes |
+| honkensus | https://goosielabs.com/apps/honkensus | yes |
 | honkference | https://goosielabs.com/apps/honkference | yes |
 | honkstation | https://goosielabs.com/apps/honkstation | yes |
 | iris | https://goosielabs.com/apps/iris | yes |
