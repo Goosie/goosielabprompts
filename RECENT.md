@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-09 11:22)
+# Recent Changes — last 7 days (2026-06-09 11:43)
 
 ## Server (home-deploy)
 ```
+6b64f6a85 fix: add kind:10050 and kind:10002 to OPEN_KINDS in relay write policy
 ea8af319e todo: bekijk Claude design plaatjes voor ganzen-portretten
 50c4601b3 docs: add nano /home/deploy/.env.services path everywhere it's referenced
 02b8b79db docs: API key management convention + inventory in CLAUDE.md
@@ -31,7 +32,6 @@ c19f17d4e todo: LND direct op LNbits + kanaalmanagement Umbrel
 386654067 Agent memory files updated
 0cb71d18a Agent memory + whitelist updates (gander added)
 8a7c5fbb8 Gander: news scout goose — long-form articles + ideas to Directory
-c9964d9c2 Agent memory files updated (blocky, healthy, humany, assistenty)
 ```
 
 ## Apps
