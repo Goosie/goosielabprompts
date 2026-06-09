@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-09 06:12)
+# Recent Changes — last 7 days (2026-06-09 06:53)
 
 ## Server (home-deploy)
 ```
+7bc711f2b docs: Perry uses Aka for NIP-07 login, not Alby
 de5b610f3 Update boilerplate submodule: tile.json + DonateButton toegevoegd
 23a6c4843 Agent memory files + Cssy onboarded (CSS design system goose)
 b28f8eb53 feat: add canadian theme to template.css
@@ -31,7 +32,6 @@ b92c934ca Remove testy2 (test goose)
 9a682029d CLAUDE.md: AGENT_ORDER + tile + flock prompts + ceremony now automated
 c10c56fc0 whitelist.json: coachy added
 780a959cb Coachy: encouragement goose — amber icon, description, nsite page
-b8358808b CLAUDE.md: full newgoose checklist — automated + manual steps
 ```
 
 ## Apps

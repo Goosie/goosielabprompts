@@ -634,7 +634,7 @@ When this project is opened without further instructions:
 - No
 
 ### [D] Login method?
-- **NIP-07** browser extension (Alby, nos2x, Flamingo) — **always the default**
+- **NIP-07** browser extension (Aka, nos2x, Flamingo) — **always the default**. Perry uses **Aka** for Nostr login. Alby is only used for Lightning payments (via Alby Hub / NWC), never for NIP-07 signing.
 - NIP-46 remote signer / bunker
 - Read-only, no login needed
 

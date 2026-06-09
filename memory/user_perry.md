@@ -11,6 +11,8 @@ Perry Smit is de eigenaar van Goosie Labs. Hij bouwt op gevoel en intuïtie — 
 
 **Stack en domein:** Nostr, Bitcoin/Lightning, Cashu, React+TypeScript+Vite, Node.js/Express, WordPress. Denkt sterk vanuit het Nostr-protocol (NIPs) en decentralisatie.
 
+**Nostr login:** Perry gebruikt **Aka** als NIP-07 browser-extensie voor Nostr signing. Alby wordt alleen gebruikt voor Lightning-betalingen (Alby Hub / NWC) — nooit voor NIP-07 signing.
+
 **Overtuigingen:** Austrian Economics, kleinere overheid, zelfsoevereine identiteit (SSI). Staat open voor tegenargumenten als hij het fout heeft.
 
 **Werkstijl:** Communiceer in het Nederlands. Gebruik concrete voorbeelden, geen jargon. Perry werkt op Linux (Ubuntu/KDE) en via tmux op de server. Hij vergeet soms op te ruimen — Astrid doet dat.
