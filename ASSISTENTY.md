@@ -57,6 +57,10 @@ curl -s --max-time 3 http://100.111.14.11:3006/api/blocks/tip/height
 
 **Alle gedeelde server-level API keys staan in:** `~/.env.services`
 
+```bash
+nano /home/deploy/.env.services   # bekijken of bewerken
+```
+
 Nooit elders neerzetten. Nooit in broncode, nooit in `.bashrc.local`, nooit per-service dupliceren.
 
 | Wat | Bestand |
@@ -77,6 +81,8 @@ Nooit elders neerzetten. Nooit in broncode, nooit in `.bashrc.local`, nooit per-
 
 > Geen waarden hier — alleen waar, waarvoor en wie aangeschaft heeft.
 > Waarden staan in `~/.env.services`.
+
+Bestand bewerken: `nano /home/deploy/.env.services`
 
 | Variabele | Provider | Website | Waarvoor |
 |---|---|---|---|
@@ -450,7 +456,7 @@ Geïnstalleerde pakketten voor icon-workflow: `fonttools`, `Pillow`
 | Shell-functie met interactieve input (`read`, tmux-switch) | `~/.bashrc.d/goosie.sh` |
 | PATH export of omgevingsvariabele | `~/.bashrc.d/paths.sh` |
 | Standalone commando zonder shell-state | `~/.local/bin/<naam>` als uitvoerbaar script |
-| Gedeelde API keys (Anthropic, OpenAI, DO, Gitea) | `~/.env.services` — de enige centrale plek |
+| Gedeelde API keys (Anthropic, OpenAI, DO, Gitea) | `nano /home/deploy/.env.services` |
 | Persoonsgebonden nsec (interactief shell) | `~/.bashrc.local` (niet gecommit, nooit voor services) |
 
 **Waarom dit onderscheid?**

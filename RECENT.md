@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-09 10:49)
+# Recent Changes — last 7 days (2026-06-09 10:52)
 
 ## Server (home-deploy)
 ```
+50c4601b3 docs: add nano /home/deploy/.env.services path everywhere it's referenced
 02b8b79db docs: API key management convention + inventory in CLAUDE.md
 348081713 docs: add kind:10050 DM relay list to newgoose checklist
 a29b4a62f todo: 18 apps login wall → progressive onboarding
@@ -31,7 +32,6 @@ c19f17d4e todo: LND direct op LNbits + kanaalmanagement Umbrel
 8a7c5fbb8 Gander: news scout goose — long-form articles + ideas to Directory
 c9964d9c2 Agent memory files updated (blocky, healthy, humany, assistenty)
 e84a29ed9 CLAUDE.md: document deletegoose command
-b92c934ca Remove testy2 (test goose)
 ```
 
 ## Apps

@@ -56,8 +56,8 @@ All goose identity data lives in one place and is queried dynamically:
 
 All server-level and shared API keys live in ONE place:
 
-```
-/home/deploy/.env.services
+```bash
+nano /home/deploy/.env.services   # view or edit
 ```
 
 **Do NOT put shared keys in:** `.bashrc.local`, individual app `.env` files, service `Environment=` inline, or source code.
@@ -106,7 +106,7 @@ For scripts run via systemd (daemons), the `EnvironmentFile=` in the service han
 
 > This table exists so someone can take over if Perry is unavailable.
 > Key values are never stored here — only where to find them and what they're for.
-> All values are in `/home/deploy/.env.services` unless noted otherwise.
+> **Edit keys:** `nano /home/deploy/.env.services`
 
 | Variable | Provider | Where purchased | Used by | Notes |
 |---|---|---|---|---|
