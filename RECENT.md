@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-09 02:16)
+# Recent Changes — last 7 days (2026-06-09 02:55)
 
 ## Server (home-deploy)
 ```
+23a6c4843 Agent memory files + Cssy onboarded (CSS design system goose)
 b28f8eb53 feat: add canadian theme to template.css
 7b0676181 feat: add Cssy — CSS design system goose
 d24cc2269 Agent memory files updated
@@ -31,7 +32,6 @@ c10c56fc0 whitelist.json: coachy added
 780a959cb Coachy: encouragement goose — amber icon, description, nsite page
 b8358808b CLAUDE.md: full newgoose checklist — automated + manual steps
 a5088c581 Backy: nsite page live, tagline and tile
-677c0d358 All geese: add description + blockbirth, Backy blockbirth #779142
 ```
 
 ## Apps
