@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-09 10:52)
+# Recent Changes — last 7 days (2026-06-09 11:22)
 
 ## Server (home-deploy)
 ```
+ea8af319e todo: bekijk Claude design plaatjes voor ganzen-portretten
 50c4601b3 docs: add nano /home/deploy/.env.services path everywhere it's referenced
 02b8b79db docs: API key management convention + inventory in CLAUDE.md
 348081713 docs: add kind:10050 DM relay list to newgoose checklist
@@ -31,7 +32,6 @@ c19f17d4e todo: LND direct op LNbits + kanaalmanagement Umbrel
 0cb71d18a Agent memory + whitelist updates (gander added)
 8a7c5fbb8 Gander: news scout goose — long-form articles + ideas to Directory
 c9964d9c2 Agent memory files updated (blocky, healthy, humany, assistenty)
-e84a29ed9 CLAUDE.md: document deletegoose command
 ```
 
 ## Apps
