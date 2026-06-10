@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-10 20:17)
+# Recent Changes — last 7 days (2026-06-10 20:23)
 
 ## Server (home-deploy)
 ```
+e48884bff docs: clarify how to use PERRY_NSEC from bashrc.local for publishing scripts
 c00e243e7 cleanup: remove Ganzenbord as separate goose, logic stays in app
 addd82576 mark todo items complete: #2 #7 #8 #26
 a468a911a refactor: number all todo items for easier tracking
@@ -31,7 +32,6 @@ a29b4a62f todo: 18 apps login wall → progressive onboarding
 7bc711f2b docs: Perry uses Aka for NIP-07 login, not Alby
 de5b610f3 Update boilerplate submodule: tile.json + DonateButton toegevoegd
 23a6c4843 Agent memory files + Cssy onboarded (CSS design system goose)
-b28f8eb53 feat: add canadian theme to template.css
 ```
 
 ## Apps

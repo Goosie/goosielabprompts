@@ -70,6 +70,8 @@ nano /home/deploy/.env.services   # view or edit
 | `/var/www/goosielabs/apps/<name>/.env` | App-specific keys only: LNbits wallet keys, per-app nsecs, ENCRYPTION_KEY |
 | `/home/deploy/.bashrc.local` | Perry's personal nsec (interactive shell only — never for services) |
 
+**For publishing scripts that need PERRY_NSEC:** Source `~/.bashrc.local` before running — e.g., `source ~/.bashrc.local && node /home/deploy/scripts/publish-homepage.mjs`. This makes `PERRY_NSEC` available for signing without exposing it in logs.
+
 ### How services load keys
 
 Services that need shared keys use two `EnvironmentFile=` lines — shared first, app-specific second:
