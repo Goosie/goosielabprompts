@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-10 18:39)
+# Recent Changes — last 7 days (2026-06-10 19:13)
 
 ## Server (home-deploy)
 ```
+a468a911a refactor: number all todo items for easier tracking
 7d6c4b18d docs: document sync-agents script for keeping agent prompts in sync
 38aea013d feat: add sync-agents script to keep agent prompts in sync with agents.json
 66deae5dd docs: update backup documentation — LNbits + offsite Umbrel copy
@@ -31,7 +32,6 @@ de5b610f3 Update boilerplate submodule: tile.json + DonateButton toegevoegd
 b28f8eb53 feat: add canadian theme to template.css
 7b0676181 feat: add Cssy — CSS design system goose
 d24cc2269 Agent memory files updated
-84c34b77e todo: banners alle ganzen — scene per gans, handmatig bouwen
 ```
 
 ## Apps
@@ -46,7 +46,6 @@ fc4a266 docs: add Doel & Gebruik section to CLAUDE.md
 f1156e6 feat: new DALL-E app icon — open book with AI sparks and quill
 2d154ca feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 d14a102 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
-418c7d8 feat(auth): boilerplate auth-componenten bijgewerkt
 ```
 
 ### catchzaps
@@ -74,7 +73,6 @@ e128e70 fix: remove nostr-login init() — eliminates double login modal
 6cb2165 rename: scripts/tessa → scripts/testy
 e37788f feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 24ee12e fix(AccountSwitcher): Fragment wrapper voor TSX-fout
-ff78908 feat(auth): boilerplate auth-componenten bijgewerkt
 ```
 
 ### feedback
@@ -86,7 +84,6 @@ ec34cec feat: add lnbits_inkey to tile.json
 390fb5a feat: new DALL-E app icon — anonymous mask in speech bubble with lightning
 72a58c0 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 8abba7d fix(AccountSwitcher): Fragment wrapper voor TSX-fout
-7fdc21e feat(auth): boilerplate auth-componenten bijgewerkt
 ```
 
 ### flocks
@@ -121,7 +118,6 @@ a5bfee4 docs: add Doel & Gebruik section to CLAUDE.md
 95e0af7 feat: new DALL-E app icon — Georgia map with trail and landmarks
 8a8c369 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 d30c81b fix(AccountSwitcher): Fragment wrapper voor TSX-fout
-06cb7cd feat(auth): boilerplate auth-componenten bijgewerkt
 ```
 
 ### gooseprogrammer
@@ -220,14 +216,12 @@ d6b3aca feat: new app icon — flat cartoon testament/heartbeat/padlock via DALL
 ab0f069 rename: scripts/tessa → scripts/testy
 d44b4bd feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 8f07347 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
-4bf426c feat(auth): boilerplate auth-componenten bijgewerkt
 ```
 
 ### mijnapp
 ```
 22dd41b feat: initiële commit mijnapp
 17ed149 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
-18acc47 feat(auth): boilerplate auth-componenten bijgewerkt
 ```
 
 ### mint
@@ -267,7 +261,6 @@ e4dcbb0 fix: don't auto-trigger Nostr extension on page load
 73a2666 feat: new DALL-E app icon — warrior pose with movement shadow and lightning
 bfbae7d feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 36d33a9 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
-6cb650f feat(auth): boilerplate auth-componenten bijgewerkt
 ```
 
 ### proofofread
@@ -294,7 +287,6 @@ d618efd feat: add lnbits_inkey to tile.json
 606d364 feat: new DALL-E app icon — group around map with privacy shield
 d9f5812 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 cdac2a7 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
-f903617 feat(auth): boilerplate auth-componenten bijgewerkt
 ```
 
 ### swarm
@@ -321,7 +313,6 @@ c7b8ed0 feat: new DALL-E app icon — live V-shape with pulsing nodes
 0e9d87e chore: update Commy role description in gooseConfig.ts
 8a780b7 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 be9f0c0 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
-c4aaef6 feat(auth): boilerplate auth-componenten bijgewerkt
 ```
 
 ### weddendat
@@ -333,7 +324,6 @@ c450414 feat: add lnbits_inkey to tile.json
 1fff08d feat: rename to I Bet That + new DALL-E icon (handshake/lightning/coins)
 d3e0a70 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 54f602b fix(AccountSwitcher): Fragment wrapper voor TSX-fout
-19f503a feat(auth): boilerplate auth-componenten bijgewerkt
 ```
 
 ### zap-hunt

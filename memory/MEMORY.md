@@ -16,4 +16,5 @@
 - [Rename goose checklist](project_rename_goose.md) — what renamegoose automates vs manual follow-up; lessons from Communi→Commy and Astrid→Assistenty renames
 - [Blocky is the time source](feedback_blocky_time_source.md) — always read block height from relay (kind 30078, d="vformation-lastrun"), never external APIs
 - [Goose invocation convention](feedback_goose_convention.md) — `>>` prefix for geese (two wings), not `@`; `>>jurry overview`, `>>healthy check` etc.
+- [Model switching guidelines](feedback_model_switching.md) — Haiku for simple edits/audits, Sonnet for architecture/reasoning; Assistenty watches and suggests switches
 - [Goose Lives idea](idea_gooselives.md) — block-based goose identity, age, lastwill, welfare goosies, app revenue splitting; build order defined
