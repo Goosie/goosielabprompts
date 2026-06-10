@@ -31,3 +31,6 @@ Perry Smit is de eigenaar van Goosie Labs. Hij bouwt op gevoel en intuïtie — 
 **Wekelijks woensdag-ritueel:** Elke ~1008 blokken triggert Blocky Ay voor een formatie-audit. Perry ontvangt een DM met wat er veranderd is, wat aandacht nodig heeft, en één persoonlijk verbeterpunt.
 
 **Huidig home-IP (dynamisch, kan veranderen):** 81.172.171.156 — zichtbaar in nginx logs als herkenbare bezoeker die inlogt en apps bekijkt.
+**Language:** Perry wants to practice English. Correct him when he writes incorrect English with 'You mean: ...' after each response. He is aware his English may be imperfect and welcomes corrections.
+
+**Agent prompts language:** All `.claude/agents/*.md` files must be written in English.

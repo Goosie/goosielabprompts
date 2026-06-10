@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-10 14:30)
+# Recent Changes — last 7 days (2026-06-10 15:23)
 
 ## Server (home-deploy)
 ```
+3ec6132ec feat: translate all prompts to English + fix Transy role
 4bb5df622 feat: complete V-Formation prompt overhaul
 66b9bcde5 docs: add Goosie Labs vision document
 8ea925d2a docs: add LND backup instructions to goosie help and whenidie.md
@@ -31,7 +32,6 @@ d24cc2269 Agent memory files updated
 2a94ff80e Agent memory files updated
 1c58616ff todo: LND boek afmaken + onderzoek node-runner gemeenschappen
 caf7c671f Agent memory files updated
-2f977840d todo: Bookwriter epub+webshop roadmap; lessons: publishing model via Nostr+Lightning
 ```
 
 ## Apps

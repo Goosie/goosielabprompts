@@ -130,3 +130,6 @@
 - [ ] [2026-06-05] `#testy` Test /help naar Backy sturen vanuit Amethyst (mobiel) → controleer of Backy reageert en of de communicatie zichtbaar is in Swarm dashboard
 
 - [ ] [2026-06-06] `#idee` `#server` **Auth-patronen voor newapp** — Standaardiseer login-keuzes bij nieuwe app-aanmaak. Patronen: A=gast verborgen, B=gast+banner, C=gast+Nostr-keuze, D=progressive disclosure (MKStack standaard), E=login wall, F=anoniem+optioneel, G=Nostr vereist, H=bunker-only. Toevoegen aan: newapp-web formulier (keuze-selector), newapp CLI (vraag bij aanmaak), CLAUDE.md (documentatie per patroon + welke componenten horen erbij), boilerplate-varianten. Eerst documenteren in CLAUDE.md, dan implementeren.
+
+- [ ] [2026-06-10] `#idee` Create Tweety goose — posts on Twitter/X (target: 2026-09-01, social media V-Formation launch)
+- [ ] [2026-06-10] `#idee` Create Linky goose — posts on LinkedIn (target: 2026-09-01, social media V-Formation launch)
