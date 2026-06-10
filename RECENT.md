@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-10 18:22)
+# Recent Changes — last 7 days (2026-06-10 18:39)
 
 ## Server (home-deploy)
 ```
+38aea013d feat: add sync-agents script to keep agent prompts in sync with agents.json
 66deae5dd docs: update backup documentation — LNbits + offsite Umbrel copy
 3ec6132ec feat: translate all prompts to English + fix Transy role
 4bb5df622 feat: complete V-Formation prompt overhaul
@@ -31,7 +32,6 @@ b28f8eb53 feat: add canadian theme to template.css
 d24cc2269 Agent memory files updated
 84c34b77e todo: banners alle ganzen — scene per gans, handmatig bouwen
 2a94ff80e Agent memory files updated
-1c58616ff todo: LND boek afmaken + onderzoek node-runner gemeenschappen
 ```
 
 ## Apps
