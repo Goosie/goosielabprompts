@@ -285,9 +285,20 @@ Script for sending NIP-17 DMs: `/home/deploy/scripts/astrid-dm.mjs`
 - DB user: wp_identity_user
 
 ### Backup
+
+**Daily (Blocky ~144 blocks) — LND + LNbits:**
+- Script: `goosie scb-backup backup`
+- LND `channel.backup` → `/home/deploy/backups/lnd-scb/` (14 versions)
+- LNbits databases (6x), `.env`, cert, macaroon → `/home/deploy/backups/lnbits/` (14 versions)
+- Offsite copy → `umbrel@100.111.14.11:/home/umbrel/lnbits-backup/` (second physical location)
+
+**Weekly (Blocky ~1000 blocks) — Full server snapshot:**
+- Backy triggers DigitalOcean snapshot via API
+- Restore: DO dashboard → Snapshots → Create Droplet from snapshot
+
+**Before big changes:**
 - Command: `/home/deploy/backup.sh`
-- **Always run BEFORE making changes**
-- Saves: git snapshot + uploads rsync + MariaDB dump
+- Saves: git snapshot + ZapHunt SQLite
 
 ### Nginx
 - Config: /etc/nginx/sites-enabled/goosielabs.com

@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-10 15:23)
+# Recent Changes — last 7 days (2026-06-10 18:22)
 
 ## Server (home-deploy)
 ```
+66deae5dd docs: update backup documentation — LNbits + offsite Umbrel copy
 3ec6132ec feat: translate all prompts to English + fix Transy role
 4bb5df622 feat: complete V-Formation prompt overhaul
 66b9bcde5 docs: add Goosie Labs vision document
@@ -31,7 +32,6 @@ d24cc2269 Agent memory files updated
 84c34b77e todo: banners alle ganzen — scene per gans, handmatig bouwen
 2a94ff80e Agent memory files updated
 1c58616ff todo: LND boek afmaken + onderzoek node-runner gemeenschappen
-caf7c671f Agent memory files updated
 ```
 
 ## Apps
@@ -51,14 +51,16 @@ d14a102 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 
 ### catchzaps
 ```
+c33e82f fix: always copy locales to dist after build — Vite doesn't re-copy static assets on content-only changes
+3dd7335 fix: translate all remaining Dutch strings in CatchZaps
+8ad2962 fix: load catchzaps namespace in i18n config
+7d6f636 fix: translate remaining Dutch strings in CatchZaps
+0ea9ade fix: add LanguageSwitcher to visible pages
+31b9d34 feat: add i18n — EN/NL/DE/ES translations (Transy)
 dda3a65 fix: remove nostr-login init() — eliminates double login modal
 59dd40d fix: don't auto-trigger Nostr extension on page load
 cd588ac fix: theme-aware colors + clean login
 a530f71 feat: add lnbits_inkey to tile.json
-9bb0672 feat: new DALL-E app icon — map pin with lightning bolt and catching hand
-6145425 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
-f985520 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
-36faf20 feat(auth): boilerplate auth-componenten bijgewerkt
 ```
 
 ### dilemma
@@ -342,16 +344,16 @@ e4278e8 rename: scripts/tessa → scripts/testy
 
 ### zaphunt
 ```
+71458e5 fix: always copy locales to dist after build
+13d7bf1 fix: load zaphunt namespace in i18n config
+8123ef2 fix: complete i18n coverage — all Dutch strings replaced
+e2aff84 feat: add LanguageSwitcher to Index and HuntPlay headers
+8e71272 feat: add i18n — EN/NL/DE/ES translations (Transy)
 6a37d29 backy: backup status 20260610_030000 [status=ok]
 5f7dadb fix: remove nostr-login init() — eliminates double login modal
 217c579 fix: don't auto-trigger Nostr extension on page load
 c39a6ed fix: theme-aware colors + remove dashboard login wall
 5b3c188 backy: backup status 20260609_030002 [status=ok]
-8e4a416 backy: backup status 20260608_030002 [status=ok]
-e0beb46 feat: add lnbits_inkey to tile.json
-742374c backy: backup status 20260607_030000 [status=ok]
-13b91d6 backy: backup status 20260606_030003 [status=ok]
-694cb87 backy: backup status 20260605_030000 [status=ok]
 ```
 
 ### zinin
