@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-10 19:16)
+# Recent Changes — last 7 days (2026-06-10 20:17)
 
 ## Server (home-deploy)
 ```
+c00e243e7 cleanup: remove Ganzenbord as separate goose, logic stays in app
 addd82576 mark todo items complete: #2 #7 #8 #26
 a468a911a refactor: number all todo items for easier tracking
 7d6c4b18d docs: document sync-agents script for keeping agent prompts in sync
@@ -31,7 +32,6 @@ a29b4a62f todo: 18 apps login wall → progressive onboarding
 de5b610f3 Update boilerplate submodule: tile.json + DonateButton toegevoegd
 23a6c4843 Agent memory files + Cssy onboarded (CSS design system goose)
 b28f8eb53 feat: add canadian theme to template.css
-7b0676181 feat: add Cssy — CSS design system goose
 ```
 
 ## Apps
@@ -45,7 +45,6 @@ b28f8eb53 feat: add canadian theme to template.css
 fc4a266 docs: add Doel & Gebruik section to CLAUDE.md
 f1156e6 feat: new DALL-E app icon — open book with AI sparks and quill
 2d154ca feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
-d14a102 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 ```
 
 ### catchzaps
@@ -72,7 +71,6 @@ e128e70 fix: remove nostr-login init() — eliminates double login modal
 96d3d8f feat: new DALL-E app icon — crossroads with bounty
 6cb2165 rename: scripts/tessa → scripts/testy
 e37788f feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
-24ee12e fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 ```
 
 ### feedback
@@ -83,7 +81,6 @@ e37788f feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 ec34cec feat: add lnbits_inkey to tile.json
 390fb5a feat: new DALL-E app icon — anonymous mask in speech bubble with lightning
 72a58c0 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
-8abba7d fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 ```
 
 ### flocks
@@ -117,7 +114,6 @@ aedf417 feat: add lnbits_inkey to tile.json
 a5bfee4 docs: add Doel & Gebruik section to CLAUDE.md
 95e0af7 feat: new DALL-E app icon — Georgia map with trail and landmarks
 8a8c369 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
-d30c81b fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 ```
 
 ### gooseprogrammer
@@ -215,13 +211,11 @@ c31388ec docs: add Doel & Gebruik section to DEVELOPMENT.md
 d6b3aca feat: new app icon — flat cartoon testament/heartbeat/padlock via DALL-E
 ab0f069 rename: scripts/tessa → scripts/testy
 d44b4bd feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
-8f07347 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 ```
 
 ### mijnapp
 ```
 22dd41b feat: initiële commit mijnapp
-17ed149 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 ```
 
 ### mint
@@ -260,7 +254,6 @@ e4dcbb0 fix: don't auto-trigger Nostr extension on page load
 2e8182f feat: add lnbits_inkey to tile.json
 73a2666 feat: new DALL-E app icon — warrior pose with movement shadow and lightning
 bfbae7d feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
-36d33a9 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 ```
 
 ### proofofread
@@ -286,7 +279,6 @@ a821b97 fix: remove nostr-login init() — eliminates double login modal
 d618efd feat: add lnbits_inkey to tile.json
 606d364 feat: new DALL-E app icon — group around map with privacy shield
 d9f5812 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
-cdac2a7 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 ```
 
 ### swarm
@@ -312,7 +304,6 @@ b66b21e feat: add lnbits_inkey to tile.json
 c7b8ed0 feat: new DALL-E app icon — live V-shape with pulsing nodes
 0e9d87e chore: update Commy role description in gooseConfig.ts
 8a780b7 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
-be9f0c0 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 ```
 
 ### weddendat
@@ -323,7 +314,6 @@ ae41dcb fix: theme-aware colors — bg-background/card, text-foreground/muted
 c450414 feat: add lnbits_inkey to tile.json
 1fff08d feat: rename to I Bet That + new DALL-E icon (handshake/lightning/coins)
 d3e0a70 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
-54f602b fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 ```
 
 ### zap-hunt
