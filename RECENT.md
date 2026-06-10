@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-09 19:54)
+# Recent Changes — last 7 days (2026-06-10 06:02)
 
 ## Server (home-deploy)
 ```
+ad1fc3a0a feat: add Thinky — creative sparring partner goose
 201baf9fd Voeg theme-regel toe: altijd CSS variabelen, nooit hardcoded hex
 1141aa66a chore: day summary — config, aliases, memory updates
 52d9a7d12 todo: split wallet — donaties aan Perry verdelen over alle ganzen
@@ -31,7 +32,6 @@ caf7c671f Agent memory files updated
 3ac8306f7 Add lessons learned system + LND book with initial research
 6752d8f7e Agent memory files updated
 c19f17d4e todo: LND direct op LNbits + kanaalmanagement Umbrel
-0d03f2ef0 CLAUDE.md: correct LNbits payment pattern — invoice + payment_hash WS
 ```
 
 ## Apps
@@ -47,7 +47,6 @@ f1156e6 feat: new DALL-E app icon — open book with AI sparks and quill
 2d154ca feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 d14a102 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 418c7d8 feat(auth): boilerplate auth-componenten bijgewerkt
-6a45d1a i18n: translate tile.json description to English
 ```
 
 ### catchzaps
@@ -60,7 +59,6 @@ a530f71 feat: add lnbits_inkey to tile.json
 6145425 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 f985520 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 36faf20 feat(auth): boilerplate auth-componenten bijgewerkt
-2e4e581 i18n: translate tile.json description to English
 ```
 
 ### dilemma
@@ -87,7 +85,6 @@ ec34cec feat: add lnbits_inkey to tile.json
 72a58c0 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 8abba7d fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 7fdc21e feat(auth): boilerplate auth-componenten bijgewerkt
-0dacd44 i18n: translate tile.json description to English
 ```
 
 ### flocks
@@ -100,16 +97,16 @@ d64fe97 fix: theme-aware colors — bg-background/card, text-foreground/muted
 
 ### gameofthegoose
 ```
+843950d feat: translate all Dutch UI text to English
+77fba07 fix: translate loading states to English
+1205e89 fix: simplify lobby subtitle to English
+2ffb8d3 fix: replace Ganzenbord with Game of the Goose in UI and HTML
+8068018 fix: translate empty lobby state to English
+9844624 fix: rename "Nieuwe kamer" → "New Game" in lobby
+737a3cd feat: replace hardcoded colors with CSS variables for theme support
 1be6e11 fix: remove nostr-login init() — eliminates double login modal
 9380dca fix: don't auto-trigger Nostr extension on page load
 711ec38 fix: theme-aware colors — bg-background/card/muted, text-foreground/muted
-4ccc7a9 feat: add lnbits_inkey to tile.json
-e3c8240 fix: map game status 'active' → 'playing' for PlayerPanel
-4098e1e feat: publish guest kind:0 with random name on first login
-b1383ad fix: remove duplicate GuestBanner from individual pages
-89b9e0c chore: update tile — new title, description and app URL
-04210fb chore: track all project files + update CLAUDE.md documentation
-f075417 refactor: unique room IDs + explicit close-old-rooms before create
 ```
 
 ### georgie
@@ -222,7 +219,6 @@ ab0f069 rename: scripts/tessa → scripts/testy
 d44b4bd feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 8f07347 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 4bf426c feat(auth): boilerplate auth-componenten bijgewerkt
-fe71996 i18n: translate tile.json description to English
 ```
 
 ### mijnapp
@@ -270,7 +266,6 @@ e4dcbb0 fix: don't auto-trigger Nostr extension on page load
 bfbae7d feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 36d33a9 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 6cb650f feat(auth): boilerplate auth-componenten bijgewerkt
-f02c3fc i18n: translate tile.json description to English
 ```
 
 ### proofofread
@@ -298,7 +293,6 @@ d618efd feat: add lnbits_inkey to tile.json
 d9f5812 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 cdac2a7 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 f903617 feat(auth): boilerplate auth-componenten bijgewerkt
-94fed5b i18n: translate tile.json description to English
 ```
 
 ### swarm
@@ -339,7 +333,6 @@ c450414 feat: add lnbits_inkey to tile.json
 d3e0a70 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 54f602b fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 19f503a feat(auth): boilerplate auth-componenten bijgewerkt
-eee75e7 i18n: translate tile.json description to English
 ```
 
 ### zap-hunt
@@ -350,6 +343,7 @@ e4278e8 rename: scripts/tessa → scripts/testy
 
 ### zaphunt
 ```
+6a37d29 backy: backup status 20260610_030000 [status=ok]
 5f7dadb fix: remove nostr-login init() — eliminates double login modal
 217c579 fix: don't auto-trigger Nostr extension on page load
 c39a6ed fix: theme-aware colors + remove dashboard login wall
@@ -359,12 +353,10 @@ e0beb46 feat: add lnbits_inkey to tile.json
 742374c backy: backup status 20260607_030000 [status=ok]
 13b91d6 backy: backup status 20260606_030003 [status=ok]
 694cb87 backy: backup status 20260605_030000 [status=ok]
-3bb1257 feat: new DALL-E app icon — treasure map with lightning bolt and magnifying glass
 ```
 
 ### zinin
 ```
 89ea2c1 feat: add lnbits_inkey to tile.json
 3a8b528 feat: new DALL-E app icon — matching speech bubbles with spark
-8edae71 i18n: translate tile.json description to English
 ```
