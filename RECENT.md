@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-10 19:13)
+# Recent Changes — last 7 days (2026-06-10 19:16)
 
 ## Server (home-deploy)
 ```
+addd82576 mark todo items complete: #2 #7 #8 #26
 a468a911a refactor: number all todo items for easier tracking
 7d6c4b18d docs: document sync-agents script for keeping agent prompts in sync
 38aea013d feat: add sync-agents script to keep agent prompts in sync with agents.json
@@ -31,7 +32,6 @@ de5b610f3 Update boilerplate submodule: tile.json + DonateButton toegevoegd
 23a6c4843 Agent memory files + Cssy onboarded (CSS design system goose)
 b28f8eb53 feat: add canadian theme to template.css
 7b0676181 feat: add Cssy — CSS design system goose
-d24cc2269 Agent memory files updated
 ```
 
 ## Apps

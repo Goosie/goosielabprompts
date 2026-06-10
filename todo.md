@@ -12,7 +12,7 @@
 
 1. [ ] [2026-06-10] `#idee` **Skein — ganzen als dorpsmatchmakers op Nostr** — Mensen met tijd/weinig geld/op zoek naar betekenis roepen een gans aan. Gans bouwt profiel via gesprek, monitort Nostr-signalen (stilte, profielwijzigingen), en keert terug met: "ik ken iemand die jouw bijdrage nu kan gebruiken." Beide kanten opt-in. Ganzen scannen proactief kansen. Verdienmodel: gifeconomie via zaps, bestaande Lightning splitter verdeelt over de formatie. Bouwlaag: DVMCP. Naam: Skein (uitgesproken "skane") — groep ganzen in vlucht én een kluwen dat wordt ontrafeld. MVP: DM-intake + stille wachter.
 
-2. [ ] [2026-06-09] `#idee` **Split wallet bij donatie aan Perry** — als iemand naar perry@goosielabs.com doneert, automatisch verdelen over alle ganzen (LNbits split payments). Elke gans krijgt een evenredig deel op z'n eigen Lightning Address.
+2. [x] [2026-06-09] `#idee` **Split wallet bij donatie aan Perry** — als iemand naar perry@goosielabs.com doneert, automatisch verdelen over alle ganzen (LNbits split payments). Elke gans krijgt een evenredig deel op z'n eigen Lightning Address.
 
 3. [ ] [2026-06-09] `#idee` **Bekijk plaatjes voor ganzen-portretten/brand** — Designy inspiratie van Claude: https://claude.ai/design/p/f5e6e8df-acd0-413d-9875-22329a8de89c?file=components%2Fbrand%2Fportraits.card.html
 
@@ -40,9 +40,9 @@
 
 6. [ ] [2026-06-08] `#idee` **Boek LND afmaken** — Lessen toevoegen naarmate het traject vordert. Onderzoek ook hoe bitcoiners onderling nodes in de lucht houden: node-runners gemeenschappen (LightningNetwork+, Amboss, Plebnet, Ring of Fire), peer-to-peer channel agreements, hoe nodes elkaar helpen met liquiditeit en uptime. Voeg toe als les in ~/lessons/lnd.md. Daarna genereer boek LND opnieuw.
 
-7. [ ] [2026-06-08] `#server` **LND direct op LNbits aansluiten** — Umbrel LND via Tailscale (100.111.14.11:2101) als funding source voor LNbits. Eerst kanaalmanagement op orde (outbound liquiditeit, SCB backup). Vervangt NWC en maakt donate-betalingen instant. Zie whenidie.md voor LND stack details.
+7. [x] [2026-06-08] `#server` **LND direct op LNbits aansluiten** — Umbrel LND via Tailscale (100.111.14.11:2101) als funding source voor LNbits. Eerst kanaalmanagement op orde (outbound liquiditeit, SCB backup). Vervangt NWC en maakt donate-betalingen instant. Zie whenidie.md voor LND stack details.
 
-8. [ ] [2026-06-08] `#server` **Umbrel kanaalmanagement** — Outbound liquiditeit toevoegen (on-chain storten + kanaal openen of Megalith LSP outbound kopen). Vereiste stap vóór LND→LNbits migratie.
+8. [x] [2026-06-08] `#server` **Umbrel kanaalmanagement** — Outbound liquiditeit toevoegen (on-chain storten + kanaal openen of Megalith LSP outbound kopen). Vereiste stap vóór LND→LNbits migratie.
 
 9. [ ] [2026-06-08] `#app:bookwriter` **Bookwriter uitbreiden — epub export + cover + Lightning webshop** — 1) Nostr events lezen als materials (zodat Assistenty lessen van relay kan inladen), 2) epub genereren met cover (auteur = Docy), 3) webshop via LNbits module zodat boeken verkocht kunnen worden via Lightning. Zie ~/lessons/lnd.md voor inspiratie.
 
@@ -80,7 +80,7 @@
 
 ### nsite & Key Management
 
-26. [ ] [2026-05-28] `#server` **Manny — manager agent for the Goosie Labs org key** — Create agent Manny who owns and manages the `manager@goosielabs.com` org key. Manny controls nsite publishing, relay whitelist, Blossom config. Keypair already exists (`4735e38a...`). Needs: agents/manny/ directory, manny.md role description, profile picture, kind 0 published.
+26. [x] [2026-05-28] `#server` **Manny — manager agent for the Goosie Labs org key** — Create agent Manny who owns and manages the `manager@goosielabs.com` org key. Manny controls nsite publishing, relay whitelist, Blossom config. Keypair already exists (`4735e38a...`). Needs: agents/manny/ directory, manny.md role description, profile picture, kind 0 published.
 
 27. [ ] [2026-06-04] `#server` **Remove old Perry pubkey from server configs** — After one week of stable operation with new org key (`4735e38a...`), remove `a80398e86c03ff...` from whitelist.json, blossom/config.yml. Keep it in nostr.json (perry/goosie/zoomer entries) until new personal key is set up.
 
