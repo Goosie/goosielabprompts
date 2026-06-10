@@ -10,6 +10,8 @@
 
 ### General
 
+- [ ] [2026-06-10] `#idee` **Purpose Connector — ganzen als dorpsmatchmakers op Nostr** — Mensen met tijd/weinig geld/op zoek naar betekenis roepen een gans aan. Gans bouwt profiel via gesprek, monitort Nostr-signalen (stilte, profielwijzigingen), en keert terug met: "ik ken iemand die jouw bijdrage nu kan gebruiken." Beide kanten opt-in. Ganzen scannen proactief kansen. Verdienmodel: gifeconomie via zaps, bestaande Lightning splitter verdeelt over de formatie. Bouwlaag: DVMCP. Open vragen: bewust klein houden?, succes-signaal op Nostr?, welke gans welke rol?
+
 - [ ] [2026-06-09] `#idee` **Split wallet bij donatie aan Perry** — als iemand naar perry@goosielabs.com doneert, automatisch verdelen over alle ganzen (LNbits split payments). Elke gans krijgt een evenredig deel op z'n eigen Lightning Address.
 
 - [ ] [2026-06-09] `#idee` **Bekijk plaatjes voor ganzen-portretten/brand** — Designy inspiratie van Claude: https://claude.ai/design/p/f5e6e8df-acd0-413d-9875-22329a8de89c?file=components%2Fbrand%2Fportraits.card.html

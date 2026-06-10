@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-10 06:35)
+# Recent Changes — last 7 days (2026-06-10 06:42)
 
 ## Server (home-deploy)
 ```
+e373ce27c todo: add Purpose Connector idea — geese as village matchmakers on Nostr
 4638a3857 feat: add Creaty + multi-goose >> / << sparring convention
 ce17f048f feat: add Thinky as sparring gate — new ideas go through Thinky first
 ad1fc3a0a feat: add Thinky — creative sparring partner goose
@@ -31,7 +32,6 @@ caf7c671f Agent memory files updated
 69657859a LND book: scaling plan — design for portability, phase 1→2
 202b563e9 LND book: sovereignty vs stability tension — hybrid approach
 6c46f920c LND book: add lesson about Umbrel app load + server investigation
-3ac8306f7 Add lessons learned system + LND book with initial research
 ```
 
 ## Apps
