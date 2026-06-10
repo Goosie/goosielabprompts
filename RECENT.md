@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-10 13:40)
+# Recent Changes — last 7 days (2026-06-10 14:30)
 
 ## Server (home-deploy)
 ```
+4bb5df622 feat: complete V-Formation prompt overhaul
 66b9bcde5 docs: add Goosie Labs vision document
 8ea925d2a docs: add LND backup instructions to goosie help and whenidie.md
 dbbb075a5 todo: rename Purpose Connector to Skein, add MVP direction and name origin
@@ -31,7 +32,6 @@ d24cc2269 Agent memory files updated
 1c58616ff todo: LND boek afmaken + onderzoek node-runner gemeenschappen
 caf7c671f Agent memory files updated
 2f977840d todo: Bookwriter epub+webshop roadmap; lessons: publishing model via Nostr+Lightning
-28146d250 LND book: comprehensive channel management research
 ```
 
 ## Apps
