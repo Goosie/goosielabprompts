@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-10 06:42)
+# Recent Changes — last 7 days (2026-06-10 07:04)
 
 ## Server (home-deploy)
 ```
+dbbb075a5 todo: rename Purpose Connector to Skein, add MVP direction and name origin
 e373ce27c todo: add Purpose Connector idea — geese as village matchmakers on Nostr
 4638a3857 feat: add Creaty + multi-goose >> / << sparring convention
 ce17f048f feat: add Thinky as sparring gate — new ideas go through Thinky first
@@ -31,7 +32,6 @@ caf7c671f Agent memory files updated
 28146d250 LND book: comprehensive channel management research
 69657859a LND book: scaling plan — design for portability, phase 1→2
 202b563e9 LND book: sovereignty vs stability tension — hybrid approach
-6c46f920c LND book: add lesson about Umbrel app load + server investigation
 ```
 
 ## Apps
