@@ -141,13 +141,27 @@ jq -r '.agents[].pubkey' /home/deploy/agents/agents.json
 ### When you need to update goose identity
 
 1. Edit only `agents/<name>/nostr-key.json` (and `bunker.env` for bunker secret)
-2. Run `sync-configs` — regenerates ALL derived files automatically:
-   - `whitelist.json` · `.well-known/nostr.json` · `agents.json`
-   - `swarmAgents.ts` · `bunkerUris.ts` · `gooseConfig.ts`
-   - All `tile.html` files (from `tile.template.html`)
-3. Build affected apps, restart bunker
+2. For keypair/blockbirth changes: syncing is automatic
+3. For description/role changes: see "Syncing agent prompts" section below
 
 **Do NOT manually edit:** whitelist.json, nostr.json, swarmAgents.ts, bunkerUris.ts, tile.html — these are generated files.
+
+### Syncing agent prompts to agents.json
+
+When you update a goose's description or role in `~/.claude/agents/<name>.md`, run:
+
+```bash
+sync-agents          # Update agents.json + regenerate nsite pages + homepage
+sync-agents --dry-run # Preview changes before applying
+```
+
+This script:
+1. Reads `description:` field from all `~/.claude/agents/*.md` prompt files
+2. Updates `agents.json` with these descriptions (source of truth for public display)
+3. Regenerates nsite profile pages via `publish-agent-pages.mjs`
+4. Updates homepage tiles
+
+The `.claude/agents/*.md` files are the canonical source of truth for agent roles. Editing them automatically keeps the public description in sync.
 
 ### Creating a new goose
 

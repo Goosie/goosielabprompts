@@ -2,6 +2,7 @@
 
 ## Server (home-deploy)
 ```
+7d6c4b18d docs: document sync-agents script for keeping agent prompts in sync
 38aea013d feat: add sync-agents script to keep agent prompts in sync with agents.json
 66deae5dd docs: update backup documentation — LNbits + offsite Umbrel copy
 3ec6132ec feat: translate all prompts to English + fix Transy role
@@ -31,7 +32,6 @@ b28f8eb53 feat: add canadian theme to template.css
 7b0676181 feat: add Cssy — CSS design system goose
 d24cc2269 Agent memory files updated
 84c34b77e todo: banners alle ganzen — scene per gans, handmatig bouwen
-2a94ff80e Agent memory files updated
 ```
 
 ## Apps
