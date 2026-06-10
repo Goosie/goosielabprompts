@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-10 07:04)
+# Recent Changes — last 7 days (2026-06-10 13:21)
 
 ## Server (home-deploy)
 ```
+8ea925d2a docs: add LND backup instructions to goosie help and whenidie.md
 dbbb075a5 todo: rename Purpose Connector to Skein, add MVP direction and name origin
 e373ce27c todo: add Purpose Connector idea — geese as village matchmakers on Nostr
 4638a3857 feat: add Creaty + multi-goose >> / << sparring convention
@@ -31,7 +32,6 @@ caf7c671f Agent memory files updated
 2f977840d todo: Bookwriter epub+webshop roadmap; lessons: publishing model via Nostr+Lightning
 28146d250 LND book: comprehensive channel management research
 69657859a LND book: scaling plan — design for portability, phase 1→2
-202b563e9 LND book: sovereignty vs stability tension — hybrid approach
 ```
 
 ## Apps
@@ -320,7 +320,6 @@ c7b8ed0 feat: new DALL-E app icon — live V-shape with pulsing nodes
 8a780b7 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 be9f0c0 fix(AccountSwitcher): Fragment wrapper voor TSX-fout
 c4aaef6 feat(auth): boilerplate auth-componenten bijgewerkt
-213773e feat: all role geese in dashboard — Astrid, Danky, Finny, Ruby, Checky, Communi, Designy, Nosty, Admission
 ```
 
 ### weddendat

@@ -1,4 +1,4 @@
-# Apps — 2026-06-10 07:04
+# Apps — 2026-06-10 13:21
 
 | App | URL | Git |
 |-----|-----|-----|
@@ -26,6 +26,7 @@
 | proofofmove | https://goosielabs.com/apps/proofofmove | yes |
 | proofofread | https://goosielabs.com/apps/proofofread | yes |
 | satquiz | https://goosielabs.com/apps/satquiz | yes |
+| skein | https://goosielabs.com/apps/skein | no |
 | sofia | https://goosielabs.com/apps/sofia | yes |
 | swarm | https://goosielabs.com/apps/swarm | yes |
 | vformation | https://goosielabs.com/apps/vformation | yes |
