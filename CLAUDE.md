@@ -314,6 +314,7 @@ Full description per goose: `agents/<name>/<name>.md`
 | Goose | Role | Type |
 |-------|------|------|
 | Assistenty | Personal lab assistant — overview, todos, memory | CLAUDE.md |
+| Thinky | Creative sparring partner — challenges ideas before they become tasks. Invoke before building anything new. | Role |
 | Blocky | Bitcoin block scheduler — triggers other geese via NIP-90 on the relay | Daemon (systemd) |
 | Devy | DevOps Goose — git, backup, updates | Role |
 | Transy | Chief Reality Officer — hard questions | Role |
