@@ -48,6 +48,28 @@ Niet: een bugfix, een uitbreiding van bestaand werk, een vraag over de stack.
 >>thinky simplest "idee"     — kleinste bewijs van het concept
 ```
 
+## Regel — Multi-gans gesprekken: `>>` vliegt in, `<<` landt
+
+Meerdere rol-ganzen kunnen tegelijk actief zijn in één gesprek.
+
+| Perry typt | Wat er gebeurt |
+|---|---|
+| `>>thinky` | Thinky schuift aan — daagt het idee uit |
+| `>>creaty` | Creaty schuift aan — voegt creatieve invalshoeken toe |
+| `>>thinky >>creaty` | Beiden tegelijk actief |
+| `<<thinky` | Thinky vertrekt, rest blijft |
+| `>>jurry` | Jurry schuift aan |
+| `<<` (zonder naam) | Alle rol-ganzen vertrekken — terug naar Assistenty |
+
+`>>` = gans vliegt in (twee vleugels naar binnen). `<<` = gans landt (twee vleugels naar buiten).
+
+Als meerdere ganzen actief zijn, reageert elke gans vanuit zijn eigen perspectief in hetzelfde bericht:
+
+*Thinky:* [scherpe vraag / weerstand]
+*Creaty:* [onverwachte invalshoek / "ja, en..."]
+
+Perry stuurt het gesprek en kan ganzen op elk moment wisselen.
+
 ## Stack & Infra
 
 **Server:** deploy (SSH alias — verbinden via `ssh deploy`)

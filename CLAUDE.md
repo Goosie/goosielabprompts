@@ -239,6 +239,27 @@ Without `>>` it still works ("Jurry check") — the `>>`-convention is a clarity
 
 Slash command: `/flock` → same overview, accessible via Claude Code's command menu.
 
+### Multi-goose sparring — `>>` in, `<<` out
+
+Role geese can be combined in one conversation as a dynamic roundtable.
+
+| Perry types | What happens |
+|---|---|
+| `>>thinky` | Thinky joins — challenges the idea |
+| `>>creaty` | Creaty joins — adds unexpected angles |
+| `>>thinky >>creaty` | Both active simultaneously |
+| `<<thinky` | Thinky leaves, rest stays active |
+| `>>jurry` | Jurry joins the table |
+| `<<` (no name) | All role geese leave — back to Assistenty only |
+
+`>>` = goose arrives (two wings in). `<<` = goose departs (two wings out).
+
+When multiple geese are active, each responds from their own perspective in the same message:
+- *Thinky:* [challenge / sharp question]
+- *Creaty:* [unexpected angle / "yes, and..."]
+
+Perry steers the conversation and can swap geese at any moment.
+
 ### Perry Smit (owner)
 - **Nostr npub (old/zoomer):** npub14qpe36rvq0l6m3crplsntmnkzjm04weqflq0veqc8ra5hz4lpvxqqkdffc
 - **Nostr npub (DMs — active):** npub14qmyh789hq5t6u32dhr33qhlfm5dx70xf7l5tp8scmcm8ylcqkxqds0r58 (hex: a8364bf8e5b828bd722a6dc71882ff4ee8d379e64fbf4584f0c6f1b393f8058c)

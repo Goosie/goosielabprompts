@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-10 06:06)
+# Recent Changes — last 7 days (2026-06-10 06:35)
 
 ## Server (home-deploy)
 ```
+4638a3857 feat: add Creaty + multi-goose >> / << sparring convention
 ce17f048f feat: add Thinky as sparring gate — new ideas go through Thinky first
 ad1fc3a0a feat: add Thinky — creative sparring partner goose
 201baf9fd Voeg theme-regel toe: altijd CSS variabelen, nooit hardcoded hex
@@ -31,7 +32,6 @@ caf7c671f Agent memory files updated
 202b563e9 LND book: sovereignty vs stability tension — hybrid approach
 6c46f920c LND book: add lesson about Umbrel app load + server investigation
 3ac8306f7 Add lessons learned system + LND book with initial research
-6752d8f7e Agent memory files updated
 ```
 
 ## Apps
