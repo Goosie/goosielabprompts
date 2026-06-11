@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-11 14:45)
+# Recent Changes — last 7 days (2026-06-11 14:49)
 
 ## Server (home-deploy)
 ```
+bdc2beaff Update QR codes to use nostr: URI scheme
 8f74cac79 Add QR codes to all geese tiles and pages
 f661b0d2b Add Toddy TODO CLI to goosie help and fix alias path
 e48884bff docs: clarify how to use PERRY_NSEC from bashrc.local for publishing scripts
@@ -31,7 +32,6 @@ ea8af319e todo: bekijk Claude design plaatjes voor ganzen-portretten
 02b8b79db docs: API key management convention + inventory in CLAUDE.md
 348081713 docs: add kind:10050 DM relay list to newgoose checklist
 a29b4a62f todo: 18 apps login wall → progressive onboarding
-7bc711f2b docs: Perry uses Aka for NIP-07 login, not Alby
 ```
 
 ## Apps
