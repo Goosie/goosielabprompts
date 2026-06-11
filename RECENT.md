@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-11 20:00)
+# Recent Changes — last 7 days (2026-06-11 20:01)
 
 ## Server (home-deploy)
 ```
+fd4f9ce0a Cartoon portraits for Toddy and Weathery
 cf90424b4 Cartoon portraits for Thinky and Prompty
 e1a94085a Add backy terminal command + update docs
 4ade31992 Document goose portrait generation process
@@ -31,7 +32,6 @@ e373ce27c todo: add Purpose Connector idea — geese as village matchmakers on N
 4638a3857 feat: add Creaty + multi-goose >> / << sparring convention
 ce17f048f feat: add Thinky as sparring gate — new ideas go through Thinky first
 ad1fc3a0a feat: add Thinky — creative sparring partner goose
-201baf9fd Voeg theme-regel toe: altijd CSS variabelen, nooit hardcoded hex
 ```
 
 ## Apps
