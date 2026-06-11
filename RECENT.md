@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-11 14:49)
+# Recent Changes — last 7 days (2026-06-11 15:52)
 
 ## Server (home-deploy)
 ```
+235358625 Add Toddy commands to goosie help
 bdc2beaff Update QR codes to use nostr: URI scheme
 8f74cac79 Add QR codes to all geese tiles and pages
 f661b0d2b Add Toddy TODO CLI to goosie help and fix alias path
@@ -31,7 +32,6 @@ ea8af319e todo: bekijk Claude design plaatjes voor ganzen-portretten
 50c4601b3 docs: add nano /home/deploy/.env.services path everywhere it's referenced
 02b8b79db docs: API key management convention + inventory in CLAUDE.md
 348081713 docs: add kind:10050 DM relay list to newgoose checklist
-a29b4a62f todo: 18 apps login wall → progressive onboarding
 ```
 
 ## Apps
