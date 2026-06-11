@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-11 19:31)
+# Recent Changes — last 7 days (2026-06-11 19:34)
 
 ## Server (home-deploy)
 ```
+9c030a7bf Generate Coachy and Creaty's cartoon goose portraits
 574ce6325 Cssy's proper cartoon goose portrait
 c709ba42a Simplify Cssy's DALL-E icon prompt for consistency
 172f554d8 Refine Cssy's DALL-E icon for visual consistency
@@ -31,7 +32,6 @@ ad1fc3a0a feat: add Thinky — creative sparring partner goose
 1141aa66a chore: day summary — config, aliases, memory updates
 52d9a7d12 todo: split wallet — donaties aan Perry verdelen over alle ganzen
 236827691 cleanup: remove perry_zoomer — single Nostr identity (perry_goosie)
-582037c24 fix: add kind:1060 (NIP-17 seal) to OPEN_KINDS in relay write policy
 ```
 
 ## Apps
