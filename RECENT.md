@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-11 19:25)
+# Recent Changes — last 7 days (2026-06-11 19:29)
 
 ## Server (home-deploy)
 ```
+c709ba42a Simplify Cssy's DALL-E icon prompt for consistency
 172f554d8 Refine Cssy's DALL-E icon for visual consistency
 6b833baaa Add Cssy's DALL-E generated icon via Designy
 4cce9e64c Restore unique portrait images for 8 geese
@@ -31,7 +32,6 @@ ad1fc3a0a feat: add Thinky — creative sparring partner goose
 236827691 cleanup: remove perry_zoomer — single Nostr identity (perry_goosie)
 582037c24 fix: add kind:1060 (NIP-17 seal) to OPEN_KINDS in relay write policy
 6b64f6a85 fix: add kind:10050 and kind:10002 to OPEN_KINDS in relay write policy
-ea8af319e todo: bekijk Claude design plaatjes voor ganzen-portretten
 ```
 
 ## Apps
