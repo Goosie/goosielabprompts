@@ -448,6 +448,65 @@ goosie humany newgoose <name>
 7. Add to goose-runner `KEYS` + `switch case` → `sudo systemctl restart goose-runner`
 8. Add to Blocky `DEFAULT_SCHEDULE` if periodic → `clean-relay` + restart blocky
 
+### Goose Portrait Generation — How to create/update agent icons
+
+**Standard approach: Cartoon goose portraits via `generate-agent-portraits.mjs`**
+
+All goose portraits are flat 2D cartoon geese with specific outfits that represent their role. This ensures visual consistency across the V-Formation.
+
+**Script location:**
+```bash
+/home/deploy/systemsetup/scripts/generate-agent-portraits.mjs
+```
+
+**How it works:**
+1. Script uses OpenAI's `gpt-image-1` model
+2. `BASE_STYLE` enforces consistent cartoon look (thick outlines, cel shading, orange beak/feet, warm cream background)
+3. Each goose has a specific `prompt` describing their outfit + accessories + personality
+
+**When you need a new/updated portrait:**
+
+1. **Find or create the goose's prompt** in `generate-agent-portraits.mjs`:
+   ```javascript
+   {
+     name: 'newgoose',
+     prompt: `${BASE_STYLE}. Describe outfit, what they're holding, their expression/personality.`
+   }
+   ```
+
+2. **Outfit description format** (follow the pattern):
+   - ONE main outfit element (e.g., lab coat, hard hat, suit, robes)
+   - ONE or two accessories they hold (clipboard, wrench, coin, gavel)
+   - One sentence describing their personality/expression
+
+3. **Generate the portrait:**
+   ```bash
+   source ~/.bashrc.local
+   node /home/deploy/systemsetup/scripts/generate-agent-portraits.mjs <goosename>
+   ```
+   Creates: `/home/deploy/agents/<goosename>/adult_<goosename>.jpg`
+
+4. **Copy to all locations:**
+   ```bash
+   cp /home/deploy/agents/<goosename>/adult_<goosename>.jpg /home/deploy/agents/<goosename>/<goosename>.jpg
+   cp /home/deploy/agents/<goosename>/adult_<goosename>.jpg /var/www/goosielabs/agents/<goosename>/<goosename>.jpg
+   ```
+
+5. **Republish homepage:**
+   ```bash
+   bash /home/deploy/scripts/update-tiles.sh
+   ```
+
+**Example portraits (look at these for style reference):**
+- **Assistenty:** lab coat, stethoscope, clipboard, glasses → wise researcher
+- **Devy:** hard hat, tool belt, wrench → gruff engineer
+- **Finny:** three-piece suit, top hat, monocle, Bitcoin coin → financier
+- **Cssy:** mint-green tech outfit, color palette, design token → CSS architect
+- **Coachy:** golden coach jacket, whistle, encouragement clipboard → warm motivator
+- **Creaty:** rainbow paint smock, paintbrush, idea lightbulb → playful creative
+
+**Do NOT use:** Realistic portraits, 3D renders, photos, cinematic banners. Those are for Designy's DALL-E banner generator only (separate workflow).
+
 ### Existing apps
 - Apps directory: /var/www/goosielabs/apps/
 - List live apps: `ls /var/www/goosielabs/apps/`
