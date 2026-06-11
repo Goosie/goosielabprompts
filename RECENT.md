@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-11 20:01)
+# Recent Changes — last 7 days (2026-06-11 20:03)
 
 ## Server (home-deploy)
 ```
+c02547593 Sync adult portraits and whitelist
 fd4f9ce0a Cartoon portraits for Toddy and Weathery
 cf90424b4 Cartoon portraits for Thinky and Prompty
 e1a94085a Add backy terminal command + update docs
@@ -31,7 +32,6 @@ dbbb075a5 todo: rename Purpose Connector to Skein, add MVP direction and name or
 e373ce27c todo: add Purpose Connector idea — geese as village matchmakers on Nostr
 4638a3857 feat: add Creaty + multi-goose >> / << sparring convention
 ce17f048f feat: add Thinky as sparring gate — new ideas go through Thinky first
-ad1fc3a0a feat: add Thinky — creative sparring partner goose
 ```
 
 ## Apps
