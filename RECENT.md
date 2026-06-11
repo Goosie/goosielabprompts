@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-11 15:52)
+# Recent Changes — last 7 days (2026-06-11 19:15)
 
 ## Server (home-deploy)
 ```
+4cce9e64c Restore unique portrait images for 8 geese
 235358625 Add Toddy commands to goosie help
 bdc2beaff Update QR codes to use nostr: URI scheme
 8f74cac79 Add QR codes to all geese tiles and pages
@@ -31,7 +32,6 @@ ad1fc3a0a feat: add Thinky — creative sparring partner goose
 ea8af319e todo: bekijk Claude design plaatjes voor ganzen-portretten
 50c4601b3 docs: add nano /home/deploy/.env.services path everywhere it's referenced
 02b8b79db docs: API key management convention + inventory in CLAUDE.md
-348081713 docs: add kind:10050 DM relay list to newgoose checklist
 ```
 
 ## Apps
@@ -68,7 +68,6 @@ e128e70 fix: remove nostr-login init() — eliminates double login modal
 92d463d feat: add lnbits_inkey to tile.json
 2a34c90 feat: new DALL-E app icon v2 — balance scale with lightning bounty
 96d3d8f feat: new DALL-E app icon — crossroads with bounty
-6cb2165 rename: scripts/tessa → scripts/testy
 ```
 
 ### feedback
@@ -121,9 +120,6 @@ de221bf fix: don't auto-trigger Nostr extension on page load
 cd4c93d docs: add Doel & Gebruik section to CLAUDE.md
 7196e8f feat: new DALL-E app icon — terminal with code and gear
 f363d6c chore: rename Danky → Devy in agents, backend, CLAUDE.md
-59d6cc5 refactor: rename haitje→ay and tessa→testy references
-3999cd6 rename: tessa → testy
-3ab6819 rename: astrid → assistenty
 ```
 
 ### goosiemanager
@@ -205,7 +201,6 @@ c31388ec docs: add Doel & Gebruik section to DEVELOPMENT.md
 9d36c36 fix: theme-aware colors — bg-background/card, text-foreground/muted
 6c31f1c feat: add lnbits_inkey to tile.json
 d6b3aca feat: new app icon — flat cartoon testament/heartbeat/padlock via DALL-E
-ab0f069 rename: scripts/tessa → scripts/testy
 ```
 
 ### mint
@@ -219,10 +214,6 @@ ab0f069 rename: scripts/tessa → scripts/testy
 2c0da66 cost: optimize Claude calls — Opus for generation, Haiku for refinement
 a8918bd docs: add Doel & Gebruik section to CLAUDE.md
 1ef1f60 chore: rename Danky → Devy in geese.ts, build.ts, Terminal.tsx, useBuild.ts, CLAUDE.md
-d043e10 rename: tessa → testy
-7441613 rename: fix remaining addLog astrid → assistenty in useBuild.ts
-46a8ffc rename: astrid → assistenty
-8e53640 chore: rename Communi → Commy
 ```
 
 ### onboarding
@@ -272,7 +263,6 @@ c688977 fix: theme-aware colors — bg-background/card, text-foreground/muted
 07895e5 fix: toon npub i.p.v. hex in agent-detailpaneel
 1528d46 feat: sync all 17 agents — real pubkeys, expanded V-formation
 f1f87ec feat: new DALL-E app icon — V-formation glowing network nodes
-453a67d chore: rename Communi → Commy
 ```
 
 ### vformation
@@ -282,7 +272,6 @@ f1f87ec feat: new DALL-E app icon — V-formation glowing network nodes
 b66b21e feat: add lnbits_inkey to tile.json
 3de4fd0 docs: add Doel & Gebruik section to CLAUDE.md
 c7b8ed0 feat: new DALL-E app icon — live V-shape with pulsing nodes
-0e9d87e chore: update Commy role description in gooseConfig.ts
 ```
 
 ### weddendat
@@ -292,12 +281,6 @@ bad51ab fix: don't auto-trigger Nostr extension on page load
 ae41dcb fix: theme-aware colors — bg-background/card, text-foreground/muted
 c450414 feat: add lnbits_inkey to tile.json
 1fff08d feat: rename to I Bet That + new DALL-E icon (handshake/lightning/coins)
-```
-
-### zap-hunt
-```
-e4278e8 rename: scripts/tessa → scripts/testy
-47b1094 feat: add Tessa test agent
 ```
 
 ### zaphunt
