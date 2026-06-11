@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-11 19:54)
+# Recent Changes — last 7 days (2026-06-11 20:00)
 
 ## Server (home-deploy)
 ```
+cf90424b4 Cartoon portraits for Thinky and Prompty
 e1a94085a Add backy terminal command + update docs
 4ade31992 Document goose portrait generation process
 9c030a7bf Generate Coachy and Creaty's cartoon goose portraits
@@ -31,7 +32,6 @@ e373ce27c todo: add Purpose Connector idea — geese as village matchmakers on N
 ce17f048f feat: add Thinky as sparring gate — new ideas go through Thinky first
 ad1fc3a0a feat: add Thinky — creative sparring partner goose
 201baf9fd Voeg theme-regel toe: altijd CSS variabelen, nooit hardcoded hex
-1141aa66a chore: day summary — config, aliases, memory updates
 ```
 
 ## Apps
@@ -119,7 +119,6 @@ de221bf fix: don't auto-trigger Nostr extension on page load
 339e89b feat: add lnbits_inkey to tile.json
 cd4c93d docs: add Doel & Gebruik section to CLAUDE.md
 7196e8f feat: new DALL-E app icon — terminal with code and gear
-f363d6c chore: rename Danky → Devy in agents, backend, CLAUDE.md
 ```
 
 ### goosiemanager
@@ -213,7 +212,6 @@ d6b3aca feat: new app icon — flat cartoon testament/heartbeat/padlock via DALL
 ```
 2c0da66 cost: optimize Claude calls — Opus for generation, Haiku for refinement
 a8918bd docs: add Doel & Gebruik section to CLAUDE.md
-1ef1f60 chore: rename Danky → Devy in geese.ts, build.ts, Terminal.tsx, useBuild.ts, CLAUDE.md
 ```
 
 ### onboarding
