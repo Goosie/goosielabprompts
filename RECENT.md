@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-11 19:21)
+# Recent Changes — last 7 days (2026-06-11 19:25)
 
 ## Server (home-deploy)
 ```
+172f554d8 Refine Cssy's DALL-E icon for visual consistency
 6b833baaa Add Cssy's DALL-E generated icon via Designy
 4cce9e64c Restore unique portrait images for 8 geese
 235358625 Add Toddy commands to goosie help
@@ -31,7 +32,6 @@ ad1fc3a0a feat: add Thinky — creative sparring partner goose
 582037c24 fix: add kind:1060 (NIP-17 seal) to OPEN_KINDS in relay write policy
 6b64f6a85 fix: add kind:10050 and kind:10002 to OPEN_KINDS in relay write policy
 ea8af319e todo: bekijk Claude design plaatjes voor ganzen-portretten
-50c4601b3 docs: add nano /home/deploy/.env.services path everywhere it's referenced
 ```
 
 ## Apps
