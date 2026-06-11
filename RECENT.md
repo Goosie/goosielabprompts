@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-11 19:35)
+# Recent Changes — last 7 days (2026-06-11 19:54)
 
 ## Server (home-deploy)
 ```
+e1a94085a Add backy terminal command + update docs
 4ade31992 Document goose portrait generation process
 9c030a7bf Generate Coachy and Creaty's cartoon goose portraits
 574ce6325 Cssy's proper cartoon goose portrait
@@ -31,7 +32,6 @@ ce17f048f feat: add Thinky as sparring gate — new ideas go through Thinky firs
 ad1fc3a0a feat: add Thinky — creative sparring partner goose
 201baf9fd Voeg theme-regel toe: altijd CSS variabelen, nooit hardcoded hex
 1141aa66a chore: day summary — config, aliases, memory updates
-52d9a7d12 todo: split wallet — donaties aan Perry verdelen over alle ganzen
 ```
 
 ## Apps

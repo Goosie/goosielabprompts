@@ -242,7 +242,7 @@ When Perry writes `>><goosename>` that is an explicit invocation — Assistenty 
 | `>>testy dilemma seed` | `goosie testy dilemma seed` |
 | `>>healthy check` | `goosie healthy check` |
 | `>>blocky schedule` | `goosie blocky schedule` |
-| `>>backy snapshot` | `honk from @perry "snapshot" to @backy` |
+| `>>backy snapshot` | `backy snapshot` |
 | `>>gander scout "topic"` | `goosie gander scout "topic"` |
 | `>>jurry` (no subcommand) | `goosie jurry` (shows usage) |
 
