@@ -1,4 +1,4 @@
-# Apps — 2026-06-10 20:23
+# Apps — 2026-06-11 09:41
 
 | App | URL | Git |
 |-----|-----|-----|
@@ -29,6 +29,7 @@
 | skein | https://goosielabs.com/apps/skein | no |
 | sofia | https://goosielabs.com/apps/sofia | yes |
 | swarm | https://goosielabs.com/apps/swarm | yes |
+| toddy | https://goosielabs.com/apps/toddy | yes |
 | vformation | https://goosielabs.com/apps/vformation | yes |
 | weddendat | https://goosielabs.com/apps/weddendat | yes |
 | zap-hunt | https://goosielabs.com/apps/zap-hunt | yes |

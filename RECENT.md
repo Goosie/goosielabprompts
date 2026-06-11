@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-10 20:23)
+# Recent Changes — last 7 days (2026-06-11 09:41)
 
 ## Server (home-deploy)
 ```
+f661b0d2b Add Toddy TODO CLI to goosie help and fix alias path
 e48884bff docs: clarify how to use PERRY_NSEC from bashrc.local for publishing scripts
 c00e243e7 cleanup: remove Ganzenbord as separate goose, logic stays in app
 addd82576 mark todo items complete: #2 #7 #8 #26
@@ -31,7 +32,6 @@ ea8af319e todo: bekijk Claude design plaatjes voor ganzen-portretten
 a29b4a62f todo: 18 apps login wall → progressive onboarding
 7bc711f2b docs: Perry uses Aka for NIP-07 login, not Alby
 de5b610f3 Update boilerplate submodule: tile.json + DonateButton toegevoegd
-23a6c4843 Agent memory files + Cssy onboarded (CSS design system goose)
 ```
 
 ## Apps
@@ -44,7 +44,6 @@ de5b610f3 Update boilerplate submodule: tile.json + DonateButton toegevoegd
 8cb3692 chore: rename tile title to Write Book
 fc4a266 docs: add Doel & Gebruik section to CLAUDE.md
 f1156e6 feat: new DALL-E app icon — open book with AI sparks and quill
-2d154ca feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 ```
 
 ### catchzaps
@@ -70,7 +69,6 @@ e128e70 fix: remove nostr-login init() — eliminates double login modal
 2a34c90 feat: new DALL-E app icon v2 — balance scale with lightning bounty
 96d3d8f feat: new DALL-E app icon — crossroads with bounty
 6cb2165 rename: scripts/tessa → scripts/testy
-e37788f feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 ```
 
 ### feedback
@@ -80,7 +78,6 @@ e37788f feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 525bba6 fix: theme-aware colors — bg-background/card, text-foreground/muted
 ec34cec feat: add lnbits_inkey to tile.json
 390fb5a feat: new DALL-E app icon — anonymous mask in speech bubble with lightning
-72a58c0 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 ```
 
 ### flocks
@@ -113,7 +110,6 @@ d64fe97 fix: theme-aware colors — bg-background/card, text-foreground/muted
 aedf417 feat: add lnbits_inkey to tile.json
 a5bfee4 docs: add Doel & Gebruik section to CLAUDE.md
 95e0af7 feat: new DALL-E app icon — Georgia map with trail and landmarks
-8a8c369 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 ```
 
 ### gooseprogrammer
@@ -210,12 +206,6 @@ c31388ec docs: add Doel & Gebruik section to DEVELOPMENT.md
 6c31f1c feat: add lnbits_inkey to tile.json
 d6b3aca feat: new app icon — flat cartoon testament/heartbeat/padlock via DALL-E
 ab0f069 rename: scripts/tessa → scripts/testy
-d44b4bd feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
-```
-
-### mijnapp
-```
-22dd41b feat: initiële commit mijnapp
 ```
 
 ### mint
@@ -226,16 +216,13 @@ d44b4bd feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 
 ### newapp
 ```
+2c0da66 cost: optimize Claude calls — Opus for generation, Haiku for refinement
 a8918bd docs: add Doel & Gebruik section to CLAUDE.md
 1ef1f60 chore: rename Danky → Devy in geese.ts, build.ts, Terminal.tsx, useBuild.ts, CLAUDE.md
 d043e10 rename: tessa → testy
 7441613 rename: fix remaining addLog astrid → assistenty in useBuild.ts
 46a8ffc rename: astrid → assistenty
 8e53640 chore: rename Communi → Commy
-2177698 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
-e04c719 fix: uitlogknop bij geen toegang zodat je ander account kunt proberen
-b3953dd fix: pubkey checken voor inloggen, directe foutmelding bij verkeerde nsec
-5a808cb fix: nostr-login init() verwijderd — extensie direct via window.nostr
 ```
 
 ### onboarding
@@ -243,7 +230,6 @@ b3953dd fix: pubkey checken voor inloggen, directe foutmelding bij verkeerde nse
 334e49e feat: add lnbits_inkey to tile.json
 bb6a765 docs: add Doel & Gebruik section to CLAUDE.md
 6ce09f1 feat: new DALL-E app icon — identity card with sigil and key
-11f15a7 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 ```
 
 ### proofofmove
@@ -253,14 +239,12 @@ e4dcbb0 fix: don't auto-trigger Nostr extension on page load
 43f7d0e fix: theme-aware colors — bg-background/card, text-foreground/muted
 2e8182f feat: add lnbits_inkey to tile.json
 73a2666 feat: new DALL-E app icon — warrior pose with movement shadow and lightning
-bfbae7d feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 ```
 
 ### proofofread
 ```
 1aa06d1 feat: add lnbits_inkey to tile.json
 753d0f2 feat: new DALL-E app icon — book, barcode, badge and lightning
-b642c75 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 ```
 
 ### satquiz
@@ -278,7 +262,6 @@ a821b97 fix: remove nostr-login init() — eliminates double login modal
 98fc190 fix: theme-aware colors — bg-background/card, text-foreground/muted
 d618efd feat: add lnbits_inkey to tile.json
 606d364 feat: new DALL-E app icon — group around map with privacy shield
-d9f5812 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 ```
 
 ### swarm
@@ -290,9 +273,6 @@ c688977 fix: theme-aware colors — bg-background/card, text-foreground/muted
 1528d46 feat: sync all 17 agents — real pubkeys, expanded V-formation
 f1f87ec feat: new DALL-E app icon — V-formation glowing network nodes
 453a67d chore: rename Communi → Commy
-1074361 feat: grotere tiles met DM-activiteit per gans in V-formatie
-75fe074 fix: alle ESLint-fouten opgelost, alle tests groen
-cf3bbca add tile.json en app icons voor homepage
 ```
 
 ### vformation
@@ -303,7 +283,6 @@ b66b21e feat: add lnbits_inkey to tile.json
 3de4fd0 docs: add Doel & Gebruik section to CLAUDE.md
 c7b8ed0 feat: new DALL-E app icon — live V-shape with pulsing nodes
 0e9d87e chore: update Commy role description in gooseConfig.ts
-8a780b7 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 ```
 
 ### weddendat
@@ -313,7 +292,6 @@ bad51ab fix: don't auto-trigger Nostr extension on page load
 ae41dcb fix: theme-aware colors — bg-background/card, text-foreground/muted
 c450414 feat: add lnbits_inkey to tile.json
 1fff08d feat: rename to I Bet That + new DALL-E icon (handshake/lightning/coins)
-d3e0a70 feat: relay URL bijgewerkt naar wss://relay.goosielabs.com
 ```
 
 ### zap-hunt
@@ -324,6 +302,7 @@ e4278e8 rename: scripts/tessa → scripts/testy
 
 ### zaphunt
 ```
+4ff7348 backy: backup status 20260611_030002 [status=ok]
 71458e5 fix: always copy locales to dist after build
 13d7bf1 fix: load zaphunt namespace in i18n config
 8123ef2 fix: complete i18n coverage — all Dutch strings replaced
@@ -333,7 +312,6 @@ e2aff84 feat: add LanguageSwitcher to Index and HuntPlay headers
 5f7dadb fix: remove nostr-login init() — eliminates double login modal
 217c579 fix: don't auto-trigger Nostr extension on page load
 c39a6ed fix: theme-aware colors + remove dashboard login wall
-5b3c188 backy: backup status 20260609_030002 [status=ok]
 ```
 
 ### zinin
