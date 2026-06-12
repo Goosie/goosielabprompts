@@ -1,4 +1,4 @@
-# Apps — 2026-06-11 20:03
+# Apps — 2026-06-12 09:26
 
 | App | URL | Git |
 |-----|-----|-----|
@@ -32,6 +32,7 @@
 | toddy | https://goosielabs.com/apps/toddy | yes |
 | vformation | https://goosielabs.com/apps/vformation | yes |
 | weddendat | https://goosielabs.com/apps/weddendat | yes |
+| welcome | https://goosielabs.com/apps/welcome | no |
 | zap-hunt | https://goosielabs.com/apps/zap-hunt | yes |
 | zaphunt | https://goosielabs.com/apps/zaphunt | yes |
 | zinin | https://goosielabs.com/apps/zinin | yes |
