@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-12 13:08)
+# Recent Changes — last 7 days (2026-06-12 13:34)
 
 ## Server (home-deploy)
 ```
+03dcbd8ec Add transparent PNG portraits for all geese
 705115387 Update listener and Finny logs after ProofOfRead flow testing
 ce1f39174 Add Welcome goose — first contact for #goosielabs mentions on Nostr
 c02547593 Sync adult portraits and whitelist
@@ -31,7 +32,6 @@ a468a911a refactor: number all todo items for easier tracking
 66b9bcde5 docs: add Goosie Labs vision document
 8ea925d2a docs: add LND backup instructions to goosie help and whenidie.md
 dbbb075a5 todo: rename Purpose Connector to Skein, add MVP direction and name origin
-e373ce27c todo: add Purpose Connector idea — geese as village matchmakers on Nostr
 ```
 
 ## Apps
@@ -216,6 +216,7 @@ e4dcbb0 fix: don't auto-trigger Nostr extension on page load
 
 ### proofofread
 ```
+70d9a3b Clean up tessa scripts, update icons, add publish-honk script
 54d34a1 Add badge.svg — dark green seal with goose, shown on njump.me badge awards
 7655a02 Publish badges via WebSocket to public relays — HTTP doesn't work there
 d1c17b2 Speed up quiz + add direct badge URL
@@ -225,7 +226,6 @@ d1c17b2 Speed up quiz + add direct badge URL
 9800700 Use hex pubkey in URLs instead of npub — Amethyst intercepts npub1...
 5b7670a Pre-fill Lightning address on claim page + wallet suggestions
 fb6e51b Pass npub through entire flow — pre-filled on claim page
-442406b Claim page: add npub field to issue badge to user's real Nostr profile
 ```
 
 ### satquiz
