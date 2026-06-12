@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-12 13:34)
+# Recent Changes — last 7 days (2026-06-12 13:40)
 
 ## Server (home-deploy)
 ```
+c01ec68f1 Load PERRY_NSEC from ~/.perry-nsec keyfile in update-tiles.sh
 03dcbd8ec Add transparent PNG portraits for all geese
 705115387 Update listener and Finny logs after ProofOfRead flow testing
 ce1f39174 Add Welcome goose — first contact for #goosielabs mentions on Nostr
@@ -31,7 +32,6 @@ a468a911a refactor: number all todo items for easier tracking
 4bb5df622 feat: complete V-Formation prompt overhaul
 66b9bcde5 docs: add Goosie Labs vision document
 8ea925d2a docs: add LND backup instructions to goosie help and whenidie.md
-dbbb075a5 todo: rename Purpose Connector to Skein, add MVP direction and name origin
 ```
 
 ## Apps
