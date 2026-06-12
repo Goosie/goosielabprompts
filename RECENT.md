@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-12 09:26)
+# Recent Changes — last 7 days (2026-06-12 13:08)
 
 ## Server (home-deploy)
 ```
+705115387 Update listener and Finny logs after ProofOfRead flow testing
 ce1f39174 Add Welcome goose — first contact for #goosielabs mentions on Nostr
 c02547593 Sync adult portraits and whitelist
 fd4f9ce0a Cartoon portraits for Toddy and Weathery
@@ -31,7 +32,6 @@ a468a911a refactor: number all todo items for easier tracking
 8ea925d2a docs: add LND backup instructions to goosie help and whenidie.md
 dbbb075a5 todo: rename Purpose Connector to Skein, add MVP direction and name origin
 e373ce27c todo: add Purpose Connector idea — geese as village matchmakers on Nostr
-4638a3857 feat: add Creaty + multi-goose >> / << sparring convention
 ```
 
 ## Apps
@@ -216,7 +216,16 @@ e4dcbb0 fix: don't auto-trigger Nostr extension on page load
 
 ### proofofread
 ```
-1aa06d1 feat: add lnbits_inkey to tile.json
+54d34a1 Add badge.svg — dark green seal with goose, shown on njump.me badge awards
+7655a02 Publish badges via WebSocket to public relays — HTTP doesn't work there
+d1c17b2 Speed up quiz + add direct badge URL
+8542ee0 Handle HTML response on claim — show wallet-check message instead of JSON error
+80ce72f Lowercase Lightning address before LNURL lookup — fixes Transy@ vs transy@
+08d0833 Improve error messages when payment fails
+9800700 Use hex pubkey in URLs instead of npub — Amethyst intercepts npub1...
+5b7670a Pre-fill Lightning address on claim page + wallet suggestions
+fb6e51b Pass npub through entire flow — pre-filled on claim page
+442406b Claim page: add npub field to issue badge to user's real Nostr profile
 ```
 
 ### satquiz
@@ -240,8 +249,6 @@ d618efd feat: add lnbits_inkey to tile.json
 48ea111 fix: remove nostr-login init() — eliminates double login modal
 c688977 fix: theme-aware colors — bg-background/card, text-foreground/muted
 324b4f9 feat: add lnbits_inkey to tile.json
-07895e5 fix: toon npub i.p.v. hex in agent-detailpaneel
-1528d46 feat: sync all 17 agents — real pubkeys, expanded V-formation
 ```
 
 ### vformation
