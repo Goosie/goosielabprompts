@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-12 13:40)
+# Recent Changes — last 7 days (2026-06-12 14:33)
 
 ## Server (home-deploy)
 ```
+aa983bd79 Fix transparent PNGs for all geese + auto-regenerate on publish
 c01ec68f1 Load PERRY_NSEC from ~/.perry-nsec keyfile in update-tiles.sh
 03dcbd8ec Add transparent PNG portraits for all geese
 705115387 Update listener and Finny logs after ProofOfRead flow testing
@@ -31,7 +32,6 @@ a468a911a refactor: number all todo items for easier tracking
 3ec6132ec feat: translate all prompts to English + fix Transy role
 4bb5df622 feat: complete V-Formation prompt overhaul
 66b9bcde5 docs: add Goosie Labs vision document
-8ea925d2a docs: add LND backup instructions to goosie help and whenidie.md
 ```
 
 ## Apps
