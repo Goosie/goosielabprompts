@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-13 20:51)
+# Recent Changes — last 7 days (2026-06-13 20:57)
 
 ## Server (home-deploy)
 ```
+73a05b7af Session resume 2026-06-13 — relay expansion + NIP-04 fallback + wallet consolidation
 b773a148b Update nostr-listener runtime logs — processed/rewarded state
 6355af8b8 Update runtime logs — nostr-listener processed/rewarded state, finny usage
 ea5aba54e Update agent tiles, portraits, and flock after Welcome goose addition
@@ -31,7 +32,6 @@ addd82576 mark todo items complete: #2 #7 #8 #26
 a468a911a refactor: number all todo items for easier tracking
 7d6c4b18d docs: document sync-agents script for keeping agent prompts in sync
 38aea013d feat: add sync-agents script to keep agent prompts in sync with agents.json
-66deae5dd docs: update backup documentation — LNbits + offsite Umbrel copy
 ```
 
 ## Apps
