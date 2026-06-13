@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-12 14:33)
+# Recent Changes — last 7 days (2026-06-13 19:58)
 
 ## Server (home-deploy)
 ```
+ea5aba54e Update agent tiles, portraits, and flock after Welcome goose addition
 aa983bd79 Fix transparent PNGs for all geese + auto-regenerate on publish
 c01ec68f1 Load PERRY_NSEC from ~/.perry-nsec keyfile in update-tiles.sh
 03dcbd8ec Add transparent PNG portraits for all geese
@@ -31,7 +32,6 @@ a468a911a refactor: number all todo items for easier tracking
 66deae5dd docs: update backup documentation — LNbits + offsite Umbrel copy
 3ec6132ec feat: translate all prompts to English + fix Transy role
 4bb5df622 feat: complete V-Formation prompt overhaul
-66b9bcde5 docs: add Goosie Labs vision document
 ```
 
 ## Apps
@@ -136,9 +136,6 @@ aeb7b49 feat: add /honk endpoint for agent-signed Nostr publishing
 4f24c62 fix: don't auto-trigger Nostr extension on page load
 b6ac30a fix: theme-aware colors — bg-background/card, text-foreground/muted
 d4200e4 feat: add lnbits_inkey to tile.json
-809c40d feat: kind:30008 — 'Zet op profiel' knop na badge verdiend
-a867ea7 fix: WebSocket polyfill voor Node.js 20 + auto-publish badge definitie
-768ee4b feat: HonkBadge — NIP-58 badge minting via Lightning
 ```
 
 ### honkensus
@@ -269,6 +266,7 @@ c450414 feat: add lnbits_inkey to tile.json
 
 ### zaphunt
 ```
+0437c72 backy: backup status 20260613_030001 [status=ok]
 716c7bd backy: backup status 20260612_030000 [status=ok]
 4ff7348 backy: backup status 20260611_030002 [status=ok]
 71458e5 fix: always copy locales to dist after build
@@ -278,7 +276,6 @@ e2aff84 feat: add LanguageSwitcher to Index and HuntPlay headers
 8e71272 feat: add i18n — EN/NL/DE/ES translations (Transy)
 6a37d29 backy: backup status 20260610_030000 [status=ok]
 5f7dadb fix: remove nostr-login init() — eliminates double login modal
-217c579 fix: don't auto-trigger Nostr extension on page load
 ```
 
 ### zinin
