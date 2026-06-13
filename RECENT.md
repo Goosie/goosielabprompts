@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-13 19:58)
+# Recent Changes — last 7 days (2026-06-13 20:29)
 
 ## Server (home-deploy)
 ```
+6355af8b8 Update runtime logs — nostr-listener processed/rewarded state, finny usage
 ea5aba54e Update agent tiles, portraits, and flock after Welcome goose addition
 aa983bd79 Fix transparent PNGs for all geese + auto-regenerate on publish
 c01ec68f1 Load PERRY_NSEC from ~/.perry-nsec keyfile in update-tiles.sh
@@ -31,7 +32,6 @@ a468a911a refactor: number all todo items for easier tracking
 38aea013d feat: add sync-agents script to keep agent prompts in sync with agents.json
 66deae5dd docs: update backup documentation — LNbits + offsite Umbrel copy
 3ec6132ec feat: translate all prompts to English + fix Transy role
-4bb5df622 feat: complete V-Formation prompt overhaul
 ```
 
 ## Apps
