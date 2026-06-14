@@ -581,7 +581,6 @@ Het session-id staat in de output als je Claude Code afsluit.
 | dilemma      | dilemma+sat-bounty; advies→upvote→jij kiest→Lightning                | IN BOUW     | /apps/dilemma                 |
 | Feedback     | anonieme feedback op Nostr; sats via Cashu/Lightning; template+/f/:id; FeedbackButton herbruikbaar | IN BOUW | /apps/feedback |
 | bookwriter   | thriller via AI; flarden inspiratie→boek; publiceer op Nostr          | IN BOUW     | /apps/bookwriter              |
-| onboarding   | visuele producten van npub; deterministisch; BIP-39 claim; badge→sats | IN BOUW    | /apps/onboarding              |
 | honkference  | Nostr-conferentie; presenter=split view, deelnemers=theater; video-stack open | IN BOUW | /apps/honkference     |
 | test         | — beschrijving nog toe te voegen —                                    | IN BOUW     | /apps/test                    |
 | georgie | — beschrijving nog toe te voegen — | IN BOUW | /apps/georgie |

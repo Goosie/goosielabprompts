@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-13 20:57)
+# Recent Changes — last 7 days (2026-06-14 14:02)
 
 ## Server (home-deploy)
 ```
+9160dcc88 deleteapp: drain LNbits wallet to Perry before deleting
 73a05b7af Session resume 2026-06-13 — relay expansion + NIP-04 fallback + wallet consolidation
 b773a148b Update nostr-listener runtime logs — processed/rewarded state
 6355af8b8 Update runtime logs — nostr-listener processed/rewarded state, finny usage
@@ -31,7 +32,6 @@ c00e243e7 cleanup: remove Ganzenbord as separate goose, logic stays in app
 addd82576 mark todo items complete: #2 #7 #8 #26
 a468a911a refactor: number all todo items for easier tracking
 7d6c4b18d docs: document sync-agents script for keeping agent prompts in sync
-38aea013d feat: add sync-agents script to keep agent prompts in sync with agents.json
 ```
 
 ## Apps
@@ -40,9 +40,6 @@ a468a911a refactor: number all todo items for easier tracking
 ```
 8001b61 fix: remove nostr-login init() — eliminates double login modal
 91dfda8 fix: don't auto-trigger Nostr extension on page load
-31c31c6 feat: add lnbits_inkey to tile.json
-8cb3692 chore: rename tile title to Write Book
-fc4a266 docs: add Doel & Gebruik section to CLAUDE.md
 ```
 
 ### catchzaps
@@ -56,7 +53,6 @@ c33e82f fix: always copy locales to dist after build — Vite doesn't re-copy st
 dda3a65 fix: remove nostr-login init() — eliminates double login modal
 59dd40d fix: don't auto-trigger Nostr extension on page load
 cd588ac fix: theme-aware colors + clean login
-a530f71 feat: add lnbits_inkey to tile.json
 ```
 
 ### dilemma
@@ -64,7 +60,6 @@ a530f71 feat: add lnbits_inkey to tile.json
 e128e70 fix: remove nostr-login init() — eliminates double login modal
 75997b6 fix: don't auto-trigger Nostr extension on page load
 1918dff fix: theme-aware colors — bg-background/card, text-foreground/muted
-92d463d feat: add lnbits_inkey to tile.json
 ```
 
 ### feedback
@@ -72,7 +67,6 @@ e128e70 fix: remove nostr-login init() — eliminates double login modal
 9582d7c fix: remove nostr-login init() — eliminates double login modal
 23594d2 fix: don't auto-trigger Nostr extension on page load
 525bba6 fix: theme-aware colors — bg-background/card, text-foreground/muted
-ec34cec feat: add lnbits_inkey to tile.json
 ```
 
 ### flocks
@@ -80,7 +74,6 @@ ec34cec feat: add lnbits_inkey to tile.json
 2f14725 fix: remove nostr-login init() — eliminates double login modal
 f1bbade fix: don't auto-trigger Nostr extension on page load
 d64fe97 fix: theme-aware colors — bg-background/card, text-foreground/muted
-57f00f5 docs: add CLAUDE.md with Doel & Gebruik section
 ```
 
 ### gameofthegoose
@@ -102,8 +95,6 @@ d64fe97 fix: theme-aware colors — bg-background/card, text-foreground/muted
 837b2fa fix: remove nostr-login init() — eliminates double login modal
 015704f fix: don't auto-trigger Nostr extension on page load
 1aeb772 fix: theme-aware colors + progressive onboarding in MemoriesPage
-aedf417 feat: add lnbits_inkey to tile.json
-a5bfee4 docs: add Doel & Gebruik section to CLAUDE.md
 ```
 
 ### gooseprogrammer
@@ -111,8 +102,6 @@ a5bfee4 docs: add Doel & Gebruik section to CLAUDE.md
 368bffe fix: remove nostr-login init() — eliminates double login modal
 de221bf fix: don't auto-trigger Nostr extension on page load
 8bf1184 fix: theme-aware colors + clean up unauthorized screen
-339e89b feat: add lnbits_inkey to tile.json
-cd4c93d docs: add Doel & Gebruik section to CLAUDE.md
 ```
 
 ### goosiemanager
@@ -120,9 +109,6 @@ cd4c93d docs: add Doel & Gebruik section to CLAUDE.md
 ef02c8c fix: remove nostr-login init() — eliminates double login modal
 98c2f5f fix: don't auto-trigger Nostr extension on page load
 b3b966a fix: theme-aware colors — bg-background/muted, text-foreground/muted
-25ebed5 feat: add lnbits_inkey to tile.json
-387454a refactor: replace @nostr-dev-kit/ndk with nostr-tools SimplePool
-617ec7c docs: add Doel & Gebruik section to CLAUDE.md
 ```
 
 ### goosieruntime
@@ -135,7 +121,6 @@ aeb7b49 feat: add /honk endpoint for agent-signed Nostr publishing
 52a7e9b fix: remove nostr-login init() — eliminates double login modal
 4f24c62 fix: don't auto-trigger Nostr extension on page load
 b6ac30a fix: theme-aware colors — bg-background/card, text-foreground/muted
-d4200e4 feat: add lnbits_inkey to tile.json
 ```
 
 ### honkensus
@@ -160,9 +145,6 @@ edbb0d5 feat: Join Room opens HiveTalk directly in new tab — no iframe, no dou
 e9361a4 fix: remove nostr-login init() — eliminates double login modal
 44cada7 fix: don't auto-trigger Nostr extension on page load
 bf51683 fix: theme-aware colors — bg-background/card, text-foreground/muted
-1334839 feat: add lnbits_inkey to tile.json
-73b1bec chore: rename tile title to Honkference
-6e24c97 docs: add Doel & Gebruik section to CLAUDE.md
 ```
 
 ### honkstation
@@ -170,12 +152,6 @@ bf51683 fix: theme-aware colors — bg-background/card, text-foreground/muted
 1517810 fix: remove nostr-login init() — eliminates double login modal
 f09ce8a fix: don't auto-trigger Nostr extension on page load
 3dab804 fix: theme-aware colors — bg-background/card, text-foreground/muted
-1262449 docs: add CLAUDE.md with Doel & Gebruik section
-```
-
-### iris
-```
-c31388ec docs: add Doel & Gebruik section to DEVELOPMENT.md
 ```
 
 ### lastwill
@@ -183,24 +159,11 @@ c31388ec docs: add Doel & Gebruik section to DEVELOPMENT.md
 23baa18 fix: remove nostr-login init() — eliminates double login modal
 4df6666 fix: don't auto-trigger Nostr extension on page load
 9d36c36 fix: theme-aware colors — bg-background/card, text-foreground/muted
-6c31f1c feat: add lnbits_inkey to tile.json
-```
-
-### mint
-```
-4b41e39 feat: add lnbits_inkey to tile.json
 ```
 
 ### newapp
 ```
 2c0da66 cost: optimize Claude calls — Opus for generation, Haiku for refinement
-a8918bd docs: add Doel & Gebruik section to CLAUDE.md
-```
-
-### onboarding
-```
-334e49e feat: add lnbits_inkey to tile.json
-bb6a765 docs: add Doel & Gebruik section to CLAUDE.md
 ```
 
 ### proofofmove
@@ -208,7 +171,6 @@ bb6a765 docs: add Doel & Gebruik section to CLAUDE.md
 6fed014 fix: remove nostr-login init() — eliminates double login modal
 e4dcbb0 fix: don't auto-trigger Nostr extension on page load
 43f7d0e fix: theme-aware colors — bg-background/card, text-foreground/muted
-2e8182f feat: add lnbits_inkey to tile.json
 ```
 
 ### proofofread
@@ -229,8 +191,6 @@ fb6e51b Pass npub through entire flow — pre-filled on claim page
 ```
 a3dc5e5 fix: remove nostr-login init() — eliminates double login modal
 8c59ac5 fix: don't auto-trigger Nostr extension on page load
-9a55499 feat: add lnbits_inkey to tile.json
-52c832e chore: rename tile title to Satoshi Quiz
 ```
 
 ### sofia
@@ -238,22 +198,18 @@ a3dc5e5 fix: remove nostr-login init() — eliminates double login modal
 a821b97 fix: remove nostr-login init() — eliminates double login modal
 4b77a4b fix: don't auto-trigger Nostr extension on page load
 98fc190 fix: theme-aware colors — bg-background/card, text-foreground/muted
-d618efd feat: add lnbits_inkey to tile.json
 ```
 
 ### swarm
 ```
 48ea111 fix: remove nostr-login init() — eliminates double login modal
 c688977 fix: theme-aware colors — bg-background/card, text-foreground/muted
-324b4f9 feat: add lnbits_inkey to tile.json
 ```
 
 ### vformation
 ```
 46f2de8 fix: remove nostr-login init() — eliminates double login modal
 8ec38c7 fix: don't auto-trigger Nostr extension on page load
-b66b21e feat: add lnbits_inkey to tile.json
-3de4fd0 docs: add Doel & Gebruik section to CLAUDE.md
 ```
 
 ### weddendat
@@ -261,11 +217,11 @@ b66b21e feat: add lnbits_inkey to tile.json
 721fb33 fix: remove nostr-login init() — eliminates double login modal
 bad51ab fix: don't auto-trigger Nostr extension on page load
 ae41dcb fix: theme-aware colors — bg-background/card, text-foreground/muted
-c450414 feat: add lnbits_inkey to tile.json
 ```
 
 ### zaphunt
 ```
+2b1798e backy: backup status 20260614_030001 [status=ok]
 0437c72 backy: backup status 20260613_030001 [status=ok]
 716c7bd backy: backup status 20260612_030000 [status=ok]
 4ff7348 backy: backup status 20260611_030002 [status=ok]
@@ -275,10 +231,4 @@ c450414 feat: add lnbits_inkey to tile.json
 e2aff84 feat: add LanguageSwitcher to Index and HuntPlay headers
 8e71272 feat: add i18n — EN/NL/DE/ES translations (Transy)
 6a37d29 backy: backup status 20260610_030000 [status=ok]
-5f7dadb fix: remove nostr-login init() — eliminates double login modal
-```
-
-### zinin
-```
-89ea2c1 feat: add lnbits_inkey to tile.json
 ```
