@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-14 14:02)
+# Recent Changes — last 7 days (2026-06-14 14:30)
 
 ## Server (home-deploy)
 ```
+249711884 deleteapp: add systemd service, todo, CLAUDE.md and project memory cleanup
 9160dcc88 deleteapp: drain LNbits wallet to Perry before deleting
 73a05b7af Session resume 2026-06-13 — relay expansion + NIP-04 fallback + wallet consolidation
 b773a148b Update nostr-listener runtime logs — processed/rewarded state
@@ -31,7 +32,6 @@ e48884bff docs: clarify how to use PERRY_NSEC from bashrc.local for publishing s
 c00e243e7 cleanup: remove Ganzenbord as separate goose, logic stays in app
 addd82576 mark todo items complete: #2 #7 #8 #26
 a468a911a refactor: number all todo items for easier tracking
-7d6c4b18d docs: document sync-agents script for keeping agent prompts in sync
 ```
 
 ## Apps
@@ -69,13 +69,6 @@ e128e70 fix: remove nostr-login init() — eliminates double login modal
 525bba6 fix: theme-aware colors — bg-background/card, text-foreground/muted
 ```
 
-### flocks
-```
-2f14725 fix: remove nostr-login init() — eliminates double login modal
-f1bbade fix: don't auto-trigger Nostr extension on page load
-d64fe97 fix: theme-aware colors — bg-background/card, text-foreground/muted
-```
-
 ### gameofthegoose
 ```
 843950d feat: translate all Dutch UI text to English
@@ -102,13 +95,6 @@ d64fe97 fix: theme-aware colors — bg-background/card, text-foreground/muted
 368bffe fix: remove nostr-login init() — eliminates double login modal
 de221bf fix: don't auto-trigger Nostr extension on page load
 8bf1184 fix: theme-aware colors + clean up unauthorized screen
-```
-
-### goosiemanager
-```
-ef02c8c fix: remove nostr-login init() — eliminates double login modal
-98c2f5f fix: don't auto-trigger Nostr extension on page load
-b3b966a fix: theme-aware colors — bg-background/muted, text-foreground/muted
 ```
 
 ### goosieruntime

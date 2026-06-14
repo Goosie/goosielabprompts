@@ -1,4 +1,4 @@
-# Apps — 2026-06-14 14:02
+# Apps — 2026-06-14 14:30
 
 | App | URL | Git |
 |-----|-----|-----|
@@ -7,11 +7,9 @@
 | catchzaps | https://goosielabs.com/apps/catchzaps | yes |
 | dilemma | https://goosielabs.com/apps/dilemma | yes |
 | feedback | https://goosielabs.com/apps/feedback | yes |
-| flocks | https://goosielabs.com/apps/flocks | yes |
 | gameofthegoose | https://goosielabs.com/apps/gameofthegoose | yes |
 | georgie | https://goosielabs.com/apps/georgie | yes |
 | gooseprogrammer | https://goosielabs.com/apps/gooseprogrammer | yes |
-| goosiemanager | https://goosielabs.com/apps/goosiemanager | yes |
 | goosieruntime | https://goosielabs.com/apps/goosieruntime | yes |
 | honkbadge | https://goosielabs.com/apps/honkbadge | yes |
 | honkensus | https://goosielabs.com/apps/honkensus | yes |

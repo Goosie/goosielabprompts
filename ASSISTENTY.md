@@ -142,7 +142,7 @@ Bestand bewerken: `nano /home/deploy/.env.services`
 | `DO_API_TOKEN` | DigitalOcean | cloud.digitalocean.com | Server snapshots via Backy |
 | `DO_DROPLET_ID` | DigitalOcean | cloud.digitalocean.com | ID van de VPS (bij DO_API_TOKEN) |
 | `GITEA_TOKEN` | Zelf-gehost | git.goosielabs.com | Repo-beheer via Gitty/Gitea gans |
-| `OPENROUTER_API_KEY` | OpenRouter | openrouter.ai | AI model routing — alleen onboarding backend (`apps/onboarding/backend/.env`) |
+| `OPENROUTER_API_KEY` | OpenRouter | openrouter.ai | AI model routing |
 
 **Noodtoegang:** server draait op DigitalOcean, SSH als `deploy`. DigitalOcean console via Perry's account. Alle services in `/etc/systemd/system/`.
 
