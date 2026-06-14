@@ -170,3 +170,5 @@
 58. [ ] [2026-06-10] `#idee` Create Tweety goose — posts on Twitter/X (target: 2026-09-01, social media V-Formation launch)
 
 59. [ ] [2026-06-10] `#idee` Create Linky goose — posts on LinkedIn (target: 2026-09-01, social media V-Formation launch)
+
+- [ ] [2026-06-14] `#app:proofofread` **Rebuild proofofread using newapp structure** — App was built before the standard newapp template existed. Has old layout: `frontend/` subfolder for Vite, separate `api/` dir, root `dist/` for static files. Modern apps have Vite at root with `dist/`, single nginx block, no `frontend/` subfolder. When rebuilding: run `newapp proofofread` pattern, migrate `api/` backend, use boilerplate auth/Nostr hooks. Icon fixed (nginx icons rule added to goosielabs.com block — was only on nsite block before).

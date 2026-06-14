@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-14 14:30)
+# Recent Changes — last 7 days (2026-06-14 14:44)
 
 ## Server (home-deploy)
 ```
+e2a3a893d Note proofofread rebuild needed (old pre-newapp structure)
 249711884 deleteapp: add systemd service, todo, CLAUDE.md and project memory cleanup
 9160dcc88 deleteapp: drain LNbits wallet to Perry before deleting
 73a05b7af Session resume 2026-06-13 — relay expansion + NIP-04 fallback + wallet consolidation
@@ -31,7 +32,6 @@ f661b0d2b Add Toddy TODO CLI to goosie help and fix alias path
 e48884bff docs: clarify how to use PERRY_NSEC from bashrc.local for publishing scripts
 c00e243e7 cleanup: remove Ganzenbord as separate goose, logic stays in app
 addd82576 mark todo items complete: #2 #7 #8 #26
-a468a911a refactor: number all todo items for easier tracking
 ```
 
 ## Apps
@@ -161,6 +161,7 @@ e4dcbb0 fix: don't auto-trigger Nostr extension on page load
 
 ### proofofread
 ```
+bca1340 Restore correct icon: dark green #065f46 with book emoji
 70d9a3b Clean up tessa scripts, update icons, add publish-honk script
 54d34a1 Add badge.svg — dark green seal with goose, shown on njump.me badge awards
 7655a02 Publish badges via WebSocket to public relays — HTTP doesn't work there
@@ -170,7 +171,6 @@ d1c17b2 Speed up quiz + add direct badge URL
 08d0833 Improve error messages when payment fails
 9800700 Use hex pubkey in URLs instead of npub — Amethyst intercepts npub1...
 5b7670a Pre-fill Lightning address on claim page + wallet suggestions
-fb6e51b Pass npub through entire flow — pre-filled on claim page
 ```
 
 ### satquiz
