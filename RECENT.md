@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-14 16:52)
+# Recent Changes — last 7 days (2026-06-14 16:56)
 
 ## Server (home-deploy)
 ```
+ebf985022 deleteapp: suppress bleed-through output, dot spinner during nsite publish
 6cd88a603 deleteapp: numbered steps with progress messages, prompt returns cleanly
 e2a3a893d Note proofofread rebuild needed (old pre-newapp structure)
 249711884 deleteapp: add systemd service, todo, CLAUDE.md and project memory cleanup
@@ -31,7 +32,6 @@ bdc2beaff Update QR codes to use nostr: URI scheme
 8f74cac79 Add QR codes to all geese tiles and pages
 f661b0d2b Add Toddy TODO CLI to goosie help and fix alias path
 e48884bff docs: clarify how to use PERRY_NSEC from bashrc.local for publishing scripts
-c00e243e7 cleanup: remove Ganzenbord as separate goose, logic stays in app
 ```
 
 ## Apps
@@ -93,14 +93,6 @@ bd972b1 Update icon: AI-generated board game landscape (top-down view, no goose)
 837b2fa fix: remove nostr-login init() — eliminates double login modal
 015704f fix: don't auto-trigger Nostr extension on page load
 1aeb772 fix: theme-aware colors + progressive onboarding in MemoriesPage
-```
-
-### gooseprogrammer
-```
-9b445a1 Update icon: AI bird's-eye destination illustration (gpt-image-1)
-368bffe fix: remove nostr-login init() — eliminates double login modal
-de221bf fix: don't auto-trigger Nostr extension on page load
-8bf1184 fix: theme-aware colors + clean up unauthorized screen
 ```
 
 ### goosieruntime
@@ -204,13 +196,6 @@ d5ce12b Update icon: AI bird's-eye destination illustration (gpt-image-1)
 a821b97 fix: remove nostr-login init() — eliminates double login modal
 4b77a4b fix: don't auto-trigger Nostr extension on page load
 98fc190 fix: theme-aware colors — bg-background/card, text-foreground/muted
-```
-
-### swarm
-```
-54ddd43 Update icon: AI bird's-eye destination illustration (gpt-image-1)
-48ea111 fix: remove nostr-login init() — eliminates double login modal
-c688977 fix: theme-aware colors — bg-background/card, text-foreground/muted
 ```
 
 ### toddy

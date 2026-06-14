@@ -1,4 +1,4 @@
-# Apps — 2026-06-14 16:52
+# Apps — 2026-06-14 16:56
 
 | App | URL | Git |
 |-----|-----|-----|
@@ -9,7 +9,6 @@
 | feedback | https://goosielabs.com/apps/feedback | yes |
 | gameofthegoose | https://goosielabs.com/apps/gameofthegoose | yes |
 | georgie | https://goosielabs.com/apps/georgie | yes |
-| gooseprogrammer | https://goosielabs.com/apps/gooseprogrammer | yes |
 | goosieruntime | https://goosielabs.com/apps/goosieruntime | yes |
 | honkbadge | https://goosielabs.com/apps/honkbadge | yes |
 | honkensus | https://goosielabs.com/apps/honkensus | yes |
@@ -25,7 +24,6 @@
 | proofofread | https://goosielabs.com/apps/proofofread | yes |
 | satquiz | https://goosielabs.com/apps/satquiz | yes |
 | sofia | https://goosielabs.com/apps/sofia | yes |
-| swarm | https://goosielabs.com/apps/swarm | yes |
 | toddy | https://goosielabs.com/apps/toddy | yes |
 | vformation | https://goosielabs.com/apps/vformation | yes |
 | weddendat | https://goosielabs.com/apps/weddendat | yes |

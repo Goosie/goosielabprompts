@@ -585,7 +585,6 @@ Het session-id staat in de output als je Claude Code afsluit.
 | test         | — beschrijving nog toe te voegen —                                    | IN BOUW     | /apps/test                    |
 | georgie | — beschrijving nog toe te voegen — | IN BOUW | /apps/georgie |
 | rotterdam | — beschrijving nog toe te voegen — | IN BOUW | /apps/rotterdam |
-| gooseprogrammer | — beschrijving nog toe te voegen — | IN BOUW | /apps/gooseprogrammer |
 | honkbadge | — beschrijving nog toe te voegen — | IN BOUW | /apps/honkbadge |
 | Assistenty   | Deze assistent — fase 1 is dit bestand                                | FASE 1 LIVE | ~/.claude/CLAUDE.md           |
 | **Blocky**   | **De klok van de V-Formatie** — triggert alle ganzen op Bitcoin-blokken via NIP-90. Gebruik `goosie blocky schedule` voor overzicht. | LIVE | /home/deploy/scripts/blocky/  |
