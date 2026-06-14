@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-14 14:44)
+# Recent Changes — last 7 days (2026-06-14 16:52)
 
 ## Server (home-deploy)
 ```
+6cd88a603 deleteapp: numbered steps with progress messages, prompt returns cleanly
 e2a3a893d Note proofofread rebuild needed (old pre-newapp structure)
 249711884 deleteapp: add systemd service, todo, CLAUDE.md and project memory cleanup
 9160dcc88 deleteapp: drain LNbits wallet to Perry before deleting
@@ -31,19 +32,20 @@ bdc2beaff Update QR codes to use nostr: URI scheme
 f661b0d2b Add Toddy TODO CLI to goosie help and fix alias path
 e48884bff docs: clarify how to use PERRY_NSEC from bashrc.local for publishing scripts
 c00e243e7 cleanup: remove Ganzenbord as separate goose, logic stays in app
-addd82576 mark todo items complete: #2 #7 #8 #26
 ```
 
 ## Apps
 
 ### bookwriter
 ```
+b44d15e Update icon: AI bird's-eye destination illustration (gpt-image-1)
 8001b61 fix: remove nostr-login init() — eliminates double login modal
 91dfda8 fix: don't auto-trigger Nostr extension on page load
 ```
 
 ### catchzaps
 ```
+4bbb916 Update icon: AI bird's-eye destination illustration (gpt-image-1)
 c33e82f fix: always copy locales to dist after build — Vite doesn't re-copy static assets on content-only changes
 3dd7335 fix: translate all remaining Dutch strings in CatchZaps
 8ad2962 fix: load catchzaps namespace in i18n config
@@ -57,6 +59,7 @@ cd588ac fix: theme-aware colors + clean login
 
 ### dilemma
 ```
+0fa07ba Update icon: AI bird's-eye forking path landscape
 e128e70 fix: remove nostr-login init() — eliminates double login modal
 75997b6 fix: don't auto-trigger Nostr extension on page load
 1918dff fix: theme-aware colors — bg-background/card, text-foreground/muted
@@ -64,6 +67,7 @@ e128e70 fix: remove nostr-login init() — eliminates double login modal
 
 ### feedback
 ```
+8873459 Update icon: AI bird's-eye destination illustration (gpt-image-1)
 9582d7c fix: remove nostr-login init() — eliminates double login modal
 23594d2 fix: don't auto-trigger Nostr extension on page load
 525bba6 fix: theme-aware colors — bg-background/card, text-foreground/muted
@@ -71,6 +75,7 @@ e128e70 fix: remove nostr-login init() — eliminates double login modal
 
 ### gameofthegoose
 ```
+bd972b1 Update icon: AI-generated board game landscape (top-down view, no goose)
 843950d feat: translate all Dutch UI text to English
 77fba07 fix: translate loading states to English
 1205e89 fix: simplify lobby subtitle to English
@@ -80,11 +85,11 @@ e128e70 fix: remove nostr-login init() — eliminates double login modal
 737a3cd feat: replace hardcoded colors with CSS variables for theme support
 1be6e11 fix: remove nostr-login init() — eliminates double login modal
 9380dca fix: don't auto-trigger Nostr extension on page load
-711ec38 fix: theme-aware colors — bg-background/card/muted, text-foreground/muted
 ```
 
 ### georgie
 ```
+32ea18b Update icon: AI bird's-eye destination illustration (gpt-image-1)
 837b2fa fix: remove nostr-login init() — eliminates double login modal
 015704f fix: don't auto-trigger Nostr extension on page load
 1aeb772 fix: theme-aware colors + progressive onboarding in MemoriesPage
@@ -92,6 +97,7 @@ e128e70 fix: remove nostr-login init() — eliminates double login modal
 
 ### gooseprogrammer
 ```
+9b445a1 Update icon: AI bird's-eye destination illustration (gpt-image-1)
 368bffe fix: remove nostr-login init() — eliminates double login modal
 de221bf fix: don't auto-trigger Nostr extension on page load
 8bf1184 fix: theme-aware colors + clean up unauthorized screen
@@ -104,6 +110,8 @@ aeb7b49 feat: add /honk endpoint for agent-signed Nostr publishing
 
 ### honkbadge
 ```
+58fb408 Update icon: AI bird's-eye destination illustration (gpt-image-1)
+d6c1d44 Fix icon: proper color+emoji, update tile.json icon_bg
 52a7e9b fix: remove nostr-login init() — eliminates double login modal
 4f24c62 fix: don't auto-trigger Nostr extension on page load
 b6ac30a fix: theme-aware colors — bg-background/card, text-foreground/muted
@@ -111,6 +119,7 @@ b6ac30a fix: theme-aware colors — bg-background/card, text-foreground/muted
 
 ### honkensus
 ```
+734d7e2 Update icon: AI bird's-eye destination illustration (gpt-image-1)
 f9fa21f Voeg theme-support toe: inline kleuren vervangen door CSS variabelen
 2490bac Fix publish crash: gebruik mutateAsync ipv publish op UseMutationResult
 4a55c11 fix: remove nostr-login init() — eliminates double login modal
@@ -120,11 +129,11 @@ f9fa21f Voeg theme-support toe: inline kleuren vervangen door CSS variabelen
 80bebc9 Voeg donate button toe, update tile.json en CLAUDE.md
 3e2e447 Maak tile aan en update app metadata
 c4061fa Voeg mobiele bottom nav toe
-4ca0f07 Voeg profielfoto's en display names toe via AuthorAvatar component
 ```
 
 ### honkference
 ```
+af9d45b Update icon: AI bird's-eye destination illustration (gpt-image-1)
 edbb0d5 feat: Join Room opens HiveTalk directly in new tab — no iframe, no double login
 4d2c310 fix: remove LoginArea from header — only HiveTalk login needed
 1985bf9 fix: remove CSP + add manifest.json — NIP-07 extension blocked, manifest missing
@@ -142,18 +151,26 @@ f09ce8a fix: don't auto-trigger Nostr extension on page load
 
 ### lastwill
 ```
+73563f3 Update icon: AI bird's-eye destination illustration (gpt-image-1)
 23baa18 fix: remove nostr-login init() — eliminates double login modal
 4df6666 fix: don't auto-trigger Nostr extension on page load
 9d36c36 fix: theme-aware colors — bg-background/card, text-foreground/muted
 ```
 
+### mint
+```
+4379a46 Update icon: AI bird's-eye destination illustration (gpt-image-1)
+```
+
 ### newapp
 ```
+580b94d newapp-web: pass emojiGlyph option through to generate-icons, sync icons/ dir
 2c0da66 cost: optimize Claude calls — Opus for generation, Haiku for refinement
 ```
 
 ### proofofmove
 ```
+1b5e98e Update icon: AI bird's-eye destination illustration (gpt-image-1)
 6fed014 fix: remove nostr-login init() — eliminates double login modal
 e4dcbb0 fix: don't auto-trigger Nostr extension on page load
 43f7d0e fix: theme-aware colors — bg-background/card, text-foreground/muted
@@ -161,6 +178,7 @@ e4dcbb0 fix: don't auto-trigger Nostr extension on page load
 
 ### proofofread
 ```
+1e1e7d3 Update icon: AI bird's-eye destination illustration (gpt-image-1)
 bca1340 Restore correct icon: dark green #065f46 with book emoji
 70d9a3b Clean up tessa scripts, update icons, add publish-honk script
 54d34a1 Add badge.svg — dark green seal with goose, shown on njump.me badge awards
@@ -170,17 +188,19 @@ d1c17b2 Speed up quiz + add direct badge URL
 80ce72f Lowercase Lightning address before LNURL lookup — fixes Transy@ vs transy@
 08d0833 Improve error messages when payment fails
 9800700 Use hex pubkey in URLs instead of npub — Amethyst intercepts npub1...
-5b7670a Pre-fill Lightning address on claim page + wallet suggestions
 ```
 
 ### satquiz
 ```
+3e3b7fc Update icon: AI bird's-eye destination illustration (gpt-image-1)
+ed73b52 Fix icon: proper color+emoji, update tile.json icon_bg
 a3dc5e5 fix: remove nostr-login init() — eliminates double login modal
 8c59ac5 fix: don't auto-trigger Nostr extension on page load
 ```
 
 ### sofia
 ```
+d5ce12b Update icon: AI bird's-eye destination illustration (gpt-image-1)
 a821b97 fix: remove nostr-login init() — eliminates double login modal
 4b77a4b fix: don't auto-trigger Nostr extension on page load
 98fc190 fix: theme-aware colors — bg-background/card, text-foreground/muted
@@ -188,18 +208,27 @@ a821b97 fix: remove nostr-login init() — eliminates double login modal
 
 ### swarm
 ```
+54ddd43 Update icon: AI bird's-eye destination illustration (gpt-image-1)
 48ea111 fix: remove nostr-login init() — eliminates double login modal
 c688977 fix: theme-aware colors — bg-background/card, text-foreground/muted
 ```
 
+### toddy
+```
+c33afb5 Update icon: AI bird's-eye destination illustration (gpt-image-1)
+57b2252 Fix icon: proper color+emoji, update tile.json icon_bg
+```
+
 ### vformation
 ```
+501ec55 Update icon: AI bird's-eye destination illustration (gpt-image-1)
 46f2de8 fix: remove nostr-login init() — eliminates double login modal
 8ec38c7 fix: don't auto-trigger Nostr extension on page load
 ```
 
 ### weddendat
 ```
+3f41a69 Update icon: AI bird's-eye destination illustration (gpt-image-1)
 721fb33 fix: remove nostr-login init() — eliminates double login modal
 bad51ab fix: don't auto-trigger Nostr extension on page load
 ae41dcb fix: theme-aware colors — bg-background/card, text-foreground/muted
@@ -207,6 +236,7 @@ ae41dcb fix: theme-aware colors — bg-background/card, text-foreground/muted
 
 ### zaphunt
 ```
+5db659d Update icon: AI bird's-eye destination illustration (gpt-image-1)
 2b1798e backy: backup status 20260614_030001 [status=ok]
 0437c72 backy: backup status 20260613_030001 [status=ok]
 716c7bd backy: backup status 20260612_030000 [status=ok]
@@ -216,5 +246,9 @@ ae41dcb fix: theme-aware colors — bg-background/card, text-foreground/muted
 8123ef2 fix: complete i18n coverage — all Dutch strings replaced
 e2aff84 feat: add LanguageSwitcher to Index and HuntPlay headers
 8e71272 feat: add i18n — EN/NL/DE/ES translations (Transy)
-6a37d29 backy: backup status 20260610_030000 [status=ok]
+```
+
+### zinin
+```
+5c1015a Update icon: AI bird's-eye destination illustration (gpt-image-1)
 ```
