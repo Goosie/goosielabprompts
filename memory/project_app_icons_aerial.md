@@ -39,9 +39,13 @@ flat 2D cartoon illustration, thick black outlines, cel shading, vector art styl
 
 ## TODO
 - [ ] Do remaining apps one by one (Perry wants to review each before moving to next)
-- [ ] **Wire AERIAL into `newapp`** — on app creation, ask Perry for a one-line scene description, then run `generate-app-icons-ai.mjs` with `${AERIAL} <scene>` prompt instead of the default goose-on-indigo placeholder. Add the new app's entry to the `apps` array in `generate-app-icons-ai.mjs` automatically.
-- [ ] **Wire into `newapp-web`** — add a "Scene description" field to the browser form, show the generated icon as preview, allow regenerate-button before confirming.
+- [ ] **Optional: scene-preview UI in newapp-web** — currently scene is auto-derived from the first sentence of `description`. A field with the derived text pre-filled + regenerate-button would give more control.
 - [ ] After each icon: `bash /home/deploy/update-tiles.sh` to publish to homepage
+
+## Done — newapp wiring (2026-06-16)
+- `generate-app-icons-ai.mjs` accepts ad-hoc invocation: `--name <n> --scene "<one-line>"` → builds `${AERIAL} The scene: <scene>` on the fly, no need to add to the `apps` array first.
+- `newapp.sh` 2nd arg is now `SCENE` (was emoji glyph; emoji glyph moved to 3rd arg). If scene + `OPENAI_API_KEY` set → AERIAL icon; else fallback to emoji placeholder.
+- `newapp-web` (backend `build.ts`): step 6 uses AERIAL with `shortDescription(description)` as scene when `OPENAI_API_KEY` available; falls back to emoji on failure. Tile description = `shortDescription(description)` too — first non-empty non-heading line of the build brief, capped at 250 chars. No more multi-page briefs in tile descriptions.
 
 ## Done
 - [x] 2026-06-15 — zaphunt icon (treasure map, red X, dotted route, gold coins, V-formation shadow top-left)

@@ -8,6 +8,8 @@
 
 ## Open
 
+- [ ] [2026-06-16] `#app:skein` NIP-17 upgrade — booking + callback berichten als gift-wrapped DM (kind 14 in kind 1059) i.p.v. publiek `kind:1`. Nu lekt elk slot/contact via de relay. Vereist nostrify NIP-44/NIP-59 helpers in de visitor flow.
+
 ### General
 
 1. [ ] [2026-06-10] `#idee` **Skein — ganzen als dorpsmatchmakers op Nostr** — Mensen met tijd/weinig geld/op zoek naar betekenis roepen een gans aan. Gans bouwt profiel via gesprek, monitort Nostr-signalen (stilte, profielwijzigingen), en keert terug met: "ik ken iemand die jouw bijdrage nu kan gebruiken." Beide kanten opt-in. Ganzen scannen proactief kansen. Verdienmodel: gifeconomie via zaps, bestaande Lightning splitter verdeelt over de formatie. Bouwlaag: DVMCP. Naam: Skein (uitgesproken "skane") — groep ganzen in vlucht én een kluwen dat wordt ontrafeld. MVP: DM-intake + stille wachter.

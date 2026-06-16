@@ -1,4 +1,4 @@
-# Apps — 2026-06-16 08:29
+# Apps — 2026-06-16 14:42
 
 | App | URL | Git |
 |-----|-----|-----|
@@ -22,6 +22,7 @@
 | proofofmove | https://goosielabs.com/apps/proofofmove | yes |
 | proofofread | https://goosielabs.com/apps/proofofread | yes |
 | satquiz | https://goosielabs.com/apps/satquiz | yes |
+| skein | https://goosielabs.com/apps/skein | yes |
 | toddy | https://goosielabs.com/apps/toddy | yes |
 | welcome | https://goosielabs.com/apps/welcome | no |
 | zap-hunt | https://goosielabs.com/apps/zap-hunt | yes |

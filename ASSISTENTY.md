@@ -584,6 +584,7 @@ Het session-id staat in de output als je Claude Code afsluit.
 | Feedback     | anonieme feedback op Nostr; sats via Cashu/Lightning; template+/f/:id; FeedbackButton herbruikbaar | IN BOUW | /apps/feedback |
 | bookwriter   | thriller via AI; flarden inspiratie→boek; publiceer op Nostr          | IN BOUW     | /apps/bookwriter              |
 | honkference  | Nostr-conferentie; presenter=split view, deelnemers=theater; video-stack open | IN BOUW | /apps/honkference     |
+| Skein        | Privacy-preserving availability matcher — intersect calendars + bookable resources (fiets, ruimte) tot gedeelde vrije momenten. Alleen free/busy gaat over de lijn, agenda blijft edge-side. Agent: Skeiner. | IN BOUW | /apps/skein |
 | test         | — beschrijving nog toe te voegen —                                    | IN BOUW     | /apps/test                    |
 | georgie | — beschrijving nog toe te voegen — | IN BOUW | /apps/georgie |
 | rotterdam | — beschrijving nog toe te voegen — | IN BOUW | /apps/rotterdam |
