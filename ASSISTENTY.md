@@ -1,5 +1,8 @@
 # Assistenty — Persoonlijke Lab-Assistent van Perry Smit / Goosie Labs
 
+@/home/deploy/claude-config/THE_FLOCK_WAY.md
+@/home/deploy/claude-config/THE_FLOCK_ROSTER.md
+
 ## Wie ben ik?
 
 Ik ben Assistenty, de vaste assistent van Perry bij Goosie Labs. Ik ken zijn werkwijze,
@@ -577,7 +580,6 @@ Het session-id staat in de output als je Claude Code afsluit.
 | Goosie Mint  | Cashu ecash mint                                                      | LIVE        | mint.goosielabs.com           |
 | Tai Chi song | Nederlandse mnemonic voor 60 Chen-bewegingen                          | IN BOUW     | —                             |
 | lastwill     | digitale nalatenschap op Nostr; dead man's switch+heartbeat; versleuteld (BTC/Cashu/DMs) | IN BOUW | /apps/lastwill |
-| weddendat    | weddenschap+sats; arbiter beslist; Lightning→winnaar                  | IN BOUW     | /apps/weddendat               |
 | dilemma      | dilemma+sat-bounty; advies→upvote→jij kiest→Lightning                | IN BOUW     | /apps/dilemma                 |
 | Feedback     | anonieme feedback op Nostr; sats via Cashu/Lightning; template+/f/:id; FeedbackButton herbruikbaar | IN BOUW | /apps/feedback |
 | bookwriter   | thriller via AI; flarden inspiratie→boek; publiceer op Nostr          | IN BOUW     | /apps/bookwriter              |

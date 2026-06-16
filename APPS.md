@@ -1,10 +1,9 @@
-# Apps — 2026-06-14 16:56
+# Apps — 2026-06-16 08:29
 
 | App | URL | Git |
 |-----|-----|-----|
 | backy | https://goosielabs.com/apps/backy | no |
 | bookwriter | https://goosielabs.com/apps/bookwriter | yes |
-| catchzaps | https://goosielabs.com/apps/catchzaps | yes |
 | dilemma | https://goosielabs.com/apps/dilemma | yes |
 | feedback | https://goosielabs.com/apps/feedback | yes |
 | gameofthegoose | https://goosielabs.com/apps/gameofthegoose | yes |
@@ -23,10 +22,7 @@
 | proofofmove | https://goosielabs.com/apps/proofofmove | yes |
 | proofofread | https://goosielabs.com/apps/proofofread | yes |
 | satquiz | https://goosielabs.com/apps/satquiz | yes |
-| sofia | https://goosielabs.com/apps/sofia | yes |
 | toddy | https://goosielabs.com/apps/toddy | yes |
-| vformation | https://goosielabs.com/apps/vformation | yes |
-| weddendat | https://goosielabs.com/apps/weddendat | yes |
 | welcome | https://goosielabs.com/apps/welcome | no |
 | zap-hunt | https://goosielabs.com/apps/zap-hunt | yes |
 | zaphunt | https://goosielabs.com/apps/zaphunt | yes |

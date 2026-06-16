@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-14 16:56)
+# Recent Changes — last 7 days (2026-06-16 08:29)
 
 ## Server (home-deploy)
 ```
+c64367bbf deleteapp: strip icon-script + docs/config entries; clean stale refs to deleted apps
 ebf985022 deleteapp: suppress bleed-through output, dot spinner during nsite publish
 6cd88a603 deleteapp: numbered steps with progress messages, prompt returns cleanly
 e2a3a893d Note proofofread rebuild needed (old pre-newapp structure)
@@ -31,7 +32,6 @@ c709ba42a Simplify Cssy's DALL-E icon prompt for consistency
 bdc2beaff Update QR codes to use nostr: URI scheme
 8f74cac79 Add QR codes to all geese tiles and pages
 f661b0d2b Add Toddy TODO CLI to goosie help and fix alias path
-e48884bff docs: clarify how to use PERRY_NSEC from bashrc.local for publishing scripts
 ```
 
 ## Apps
@@ -41,20 +41,6 @@ e48884bff docs: clarify how to use PERRY_NSEC from bashrc.local for publishing s
 b44d15e Update icon: AI bird's-eye destination illustration (gpt-image-1)
 8001b61 fix: remove nostr-login init() — eliminates double login modal
 91dfda8 fix: don't auto-trigger Nostr extension on page load
-```
-
-### catchzaps
-```
-4bbb916 Update icon: AI bird's-eye destination illustration (gpt-image-1)
-c33e82f fix: always copy locales to dist after build — Vite doesn't re-copy static assets on content-only changes
-3dd7335 fix: translate all remaining Dutch strings in CatchZaps
-8ad2962 fix: load catchzaps namespace in i18n config
-7d6f636 fix: translate remaining Dutch strings in CatchZaps
-0ea9ade fix: add LanguageSwitcher to visible pages
-31b9d34 feat: add i18n — EN/NL/DE/ES translations (Transy)
-dda3a65 fix: remove nostr-login init() — eliminates double login modal
-59dd40d fix: don't auto-trigger Nostr extension on page load
-cd588ac fix: theme-aware colors + clean login
 ```
 
 ### dilemma
@@ -95,11 +81,6 @@ bd972b1 Update icon: AI-generated board game landscape (top-down view, no goose)
 1aeb772 fix: theme-aware colors + progressive onboarding in MemoriesPage
 ```
 
-### goosieruntime
-```
-aeb7b49 feat: add /honk endpoint for agent-signed Nostr publishing
-```
-
 ### honkbadge
 ```
 58fb408 Update icon: AI bird's-eye destination illustration (gpt-image-1)
@@ -118,9 +99,6 @@ f9fa21f Voeg theme-support toe: inline kleuren vervangen door CSS variabelen
 759eaf0 fix: theme-aware colors (zinc→semantic) + no extension auto-popup
 8f88607 fix: don't auto-trigger Nostr extension on page load
 668e6e4 fix: theme-aware colors — bg-background/card, text-foreground/muted
-80bebc9 Voeg donate button toe, update tile.json en CLAUDE.md
-3e2e447 Maak tile aan en update app metadata
-c4061fa Voeg mobiele bottom nav toe
 ```
 
 ### honkference
@@ -190,37 +168,16 @@ a3dc5e5 fix: remove nostr-login init() — eliminates double login modal
 8c59ac5 fix: don't auto-trigger Nostr extension on page load
 ```
 
-### sofia
-```
-d5ce12b Update icon: AI bird's-eye destination illustration (gpt-image-1)
-a821b97 fix: remove nostr-login init() — eliminates double login modal
-4b77a4b fix: don't auto-trigger Nostr extension on page load
-98fc190 fix: theme-aware colors — bg-background/card, text-foreground/muted
-```
-
 ### toddy
 ```
 c33afb5 Update icon: AI bird's-eye destination illustration (gpt-image-1)
 57b2252 Fix icon: proper color+emoji, update tile.json icon_bg
 ```
 
-### vformation
-```
-501ec55 Update icon: AI bird's-eye destination illustration (gpt-image-1)
-46f2de8 fix: remove nostr-login init() — eliminates double login modal
-8ec38c7 fix: don't auto-trigger Nostr extension on page load
-```
-
-### weddendat
-```
-3f41a69 Update icon: AI bird's-eye destination illustration (gpt-image-1)
-721fb33 fix: remove nostr-login init() — eliminates double login modal
-bad51ab fix: don't auto-trigger Nostr extension on page load
-ae41dcb fix: theme-aware colors — bg-background/card, text-foreground/muted
-```
-
 ### zaphunt
 ```
+5865769 backy: backup status 20260616_030001 [status=ok]
+c134675 backy: backup status 20260615_030001 [status=ok]
 5db659d Update icon: AI bird's-eye destination illustration (gpt-image-1)
 2b1798e backy: backup status 20260614_030001 [status=ok]
 0437c72 backy: backup status 20260613_030001 [status=ok]
@@ -229,8 +186,6 @@ ae41dcb fix: theme-aware colors — bg-background/card, text-foreground/muted
 71458e5 fix: always copy locales to dist after build
 13d7bf1 fix: load zaphunt namespace in i18n config
 8123ef2 fix: complete i18n coverage — all Dutch strings replaced
-e2aff84 feat: add LanguageSwitcher to Index and HuntPlay headers
-8e71272 feat: add i18n — EN/NL/DE/ES translations (Transy)
 ```
 
 ### zinin

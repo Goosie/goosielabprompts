@@ -17,21 +17,16 @@
 3. [ ] [2026-06-09] `#idee` **Bekijk plaatjes voor ganzen-portretten/brand** — Designy inspiratie van Claude: https://claude.ai/design/p/f5e6e8df-acd0-413d-9875-22329a8de89c?file=components%2Fbrand%2Fportraits.card.html
 
 4. [ ] [2026-06-09] `#server` **18 apps: progressive onboarding i.p.v. login wall** — Alle apps hieronder hebben nog `if (!user) return <LoginArea />` als login wall. Vervangen door progressive onboarding: app rendert altijd, write actions gaan via TryItOutModal (al aanwezig in alle apps). Aanpak per app: 1) verwijder `if (!user) return <LoginArea>` blok uit pagina's, 2) zet `<LoginArea>` in de nav header (klein, max-w-40), 3) write actions gaan via `useNostrPublish` (opent TryItOut automatisch) of `useWriteGate().openModal()`. Daarna ook: CSS variabelen gebruiken ipv hardcoded Tailwind kleuren zodat themes werken.
-   - 4a. [ ] catchzaps — LoginArea in OnboardingPage + Index (2 bestanden)
    - 4b. [ ] dilemma — LoginArea in Index
    - 4c. [ ] feedback — LoginArea in Index
    - 4e. [ ] gameofthegoose — LoginArea in Index
    - 4f. [ ] georgie — LoginArea in 2 bestanden
-   - 4g. [ ] gooseprogrammer — LoginArea in Index
    - 4i. [ ] honkbadge — LoginArea in Index
    - 4j. [ ] honkensus — LoginArea in Index
    - 4k. [ ] honkference — LoginArea in Index
    - 4l. [ ] honkstation — LoginArea in Index
    - 4m. [ ] lastwill — LoginArea in Index
    - 4n. [ ] proofofmove — LoginArea in 2 bestanden
-   - 4o. [ ] sofia — LoginArea in 2 bestanden
-   - 4p. [ ] swarm — LoginArea + !user pattern in Index
-   - 4q. [ ] weddendat — LoginArea in Index
    - 4r. [ ] zaphunt — `if (!user) return <LoginArea>` login wall in Dashboard.tsx
 
 5. [ ] [2026-06-08] `#idee` **Banners voor alle ganzen — scene per gans** — Assistenty als voorbeeld: kantoor met bureau, sticky notes, raam met V-formatie ganzen. Elke gans krijgt een scène die zijn rol vertelt. Handmatig prompts schrijven per gans. Aanpak: `gpt-image-1` + `quality: high` + scene-beschrijving. Script: `/home/deploy/scripts/designy/generate-banners.mjs`, scene-functie in `/tmp/assistenty-scene2.mjs` als template. Achtergrondkleur samplen uit portret.jpg van elke gans.

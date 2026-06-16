@@ -19,3 +19,4 @@
 - [Model switching guidelines](feedback_model_switching.md) — Haiku for simple edits/audits, Sonnet for architecture/reasoning; Assistenty watches and suggests switches
 - [Goose Lives idea](idea_gooselives.md) — block-based goose identity, age, lastwill, welfare goosies, app revenue splitting; build order defined
 - [Toddy status](project_toddy_status.md) — werkt technisch maar moet zich nog bewijzen in dagelijks gebruik; niet te hard op bouwen
+- [App icons aerial series](project_app_icons_aerial.md) — AERIAL prompt recipe, goedgekeurd gameofthegoose icon, resterende apps + newapp integratie als todo
