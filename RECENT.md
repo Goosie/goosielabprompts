@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-16 19:41)
+# Recent Changes — last 7 days (2026-06-16 20:29)
 
 ## Server (home-deploy)
 ```
+e857d985b lnbits wallet helper: fix owner user + timestamp format
 c11389bfa policy: allow guest kind:1 if t:skein-* + p-tag to a host
 8af260c6e todo: skein NIP-17 upgrade for booking/callback privacy
 c64367bbf deleteapp: strip icon-script + docs/config entries; clean stale refs to deleted apps
@@ -31,7 +32,6 @@ c709ba42a Simplify Cssy's DALL-E icon prompt for consistency
 6b833baaa Add Cssy's DALL-E generated icon via Designy
 4cce9e64c Restore unique portrait images for 8 geese
 235358625 Add Toddy commands to goosie help
-bdc2beaff Update QR codes to use nostr: URI scheme
 ```
 
 ## Apps
@@ -56,12 +56,6 @@ b44d15e Update icon: AI bird's-eye destination illustration (gpt-image-1)
 65d0495 icons: regenerate with AERIAL style
 bd972b1 Update icon: AI-generated board game landscape (top-down view, no goose)
 843950d feat: translate all Dutch UI text to English
-77fba07 fix: translate loading states to English
-1205e89 fix: simplify lobby subtitle to English
-2ffb8d3 fix: replace Ganzenbord with Game of the Goose in UI and HTML
-8068018 fix: translate empty lobby state to English
-9844624 fix: rename "Nieuwe kamer" → "New Game" in lobby
-737a3cd feat: replace hardcoded colors with CSS variables for theme support
 ```
 
 ### georgie
@@ -81,7 +75,6 @@ d6c1d44 Fix icon: proper color+emoji, update tile.json icon_bg
 ```
 97a76d0 icons: regenerate with AERIAL style
 734d7e2 Update icon: AI bird's-eye destination illustration (gpt-image-1)
-f9fa21f Voeg theme-support toe: inline kleuren vervangen door CSS variabelen
 ```
 
 ### honkference
@@ -137,6 +130,7 @@ ed73b52 Fix icon: proper color+emoji, update tile.json icon_bg
 
 ### skein
 ```
+008aeea tile: add lnbits_inkey so donate button appears on homepage
 e595799 tile: tighter copy — 'right people and resources… your data stays yours'
 9cd6ac1 tile: clearer description — emphasise event + privacy of personal info
 d5a1710 auth: drop nostr-login (the 3rd-party overlay) entirely
@@ -146,11 +140,11 @@ b5f5d83 static QR landing pages for sharing the booking flows
 0336340 footer: discrete Host link as login entry
 1a0ddfb hide LoginArea from public view — host login only via ?host=1
 6deb298 host check: accept both zoomer (old) and active npub as Perry
-cbf0c61 host view: render and download QR codes for both flows
 ```
 
 ### toddy
 ```
+2c0c87f tile: add lnbits_inkey so donate button appears on homepage
 6b4a8da icons: regenerate with AERIAL style
 c33afb5 Update icon: AI bird's-eye destination illustration (gpt-image-1)
 57b2252 Fix icon: proper color+emoji, update tile.json icon_bg
