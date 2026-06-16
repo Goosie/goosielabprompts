@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-16 14:42)
+# Recent Changes — last 7 days (2026-06-16 19:41)
 
 ## Server (home-deploy)
 ```
+c11389bfa policy: allow guest kind:1 if t:skein-* + p-tag to a host
 8af260c6e todo: skein NIP-17 upgrade for booking/callback privacy
 c64367bbf deleteapp: strip icon-script + docs/config entries; clean stale refs to deleted apps
 ebf985022 deleteapp: suppress bleed-through output, dot spinner during nsite publish
@@ -31,7 +32,6 @@ c709ba42a Simplify Cssy's DALL-E icon prompt for consistency
 4cce9e64c Restore unique portrait images for 8 geese
 235358625 Add Toddy commands to goosie help
 bdc2beaff Update QR codes to use nostr: URI scheme
-8f74cac79 Add QR codes to all geese tiles and pages
 ```
 
 ## Apps
@@ -82,7 +82,6 @@ d6c1d44 Fix icon: proper color+emoji, update tile.json icon_bg
 97a76d0 icons: regenerate with AERIAL style
 734d7e2 Update icon: AI bird's-eye destination illustration (gpt-image-1)
 f9fa21f Voeg theme-support toe: inline kleuren vervangen door CSS variabelen
-2490bac Fix publish crash: gebruik mutateAsync ipv publish op UseMutationResult
 ```
 
 ### honkference
@@ -138,15 +137,16 @@ ed73b52 Fix icon: proper color+emoji, update tile.json icon_bg
 
 ### skein
 ```
+e595799 tile: tighter copy — 'right people and resources… your data stays yours'
+9cd6ac1 tile: clearer description — emphasise event + privacy of personal info
+d5a1710 auth: drop nostr-login (the 3rd-party overlay) entirely
+9a14db4 logout: signal nostr-login + clear guest nsec so re-login works
 94b20a6 booking: real 60/90-min candidate slots + visitor name & contact
 b5f5d83 static QR landing pages for sharing the booking flows
 0336340 footer: discrete Host link as login entry
 1a0ddfb hide LoginArea from public view — host login only via ?host=1
 6deb298 host check: accept both zoomer (old) and active npub as Perry
 cbf0c61 host view: render and download QR codes for both flows
-503d8ae v0.1: QR-flow with two contexts, privacy-safe public view
-68367d2 Index: working v0 — resources + proposed skeins on fixture data
-e493909 Initial commit: Skein — privacy-preserving availability matcher
 ```
 
 ### toddy
