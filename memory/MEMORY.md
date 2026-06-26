@@ -21,3 +21,4 @@
 - [Toddy status](project_toddy_status.md) — werkt technisch maar moet zich nog bewijzen in dagelijks gebruik; niet te hard op bouwen
 - [Mint setup reference](reference_mint_setup.md) — Cashu/Nutshell funding, nginx websocket fix, v2-keyset wallet incompatibility
 - [App icons aerial series](project_app_icons_aerial.md) — AERIAL prompt recipe, goedgekeurd gameofthegoose icon, resterende apps + newapp integratie als todo
+- [ProofOfRead beginner onboarding](project_proofofread_onboarding.md) — /start no-Nostr front door, three-tier 21-sat reward, custodial earmarks + clawback, onboarding@goosielabs.com pool

@@ -372,7 +372,7 @@ Full description per goose: `agents/<name>/<name>.md`
 | Ay | AI Configuration Specialist — check configs, guard formation | Script (server) |
 | Secury | Security Goose — nginx logs, fail2ban, open ports, npm vulnerabilities | Script (server) |
 | Docy | Onboarding manager — invite codes, Nostr identity verification, user access | Script (server) |
-| Healthy | Server health monitor — runs every 3 blocks (~30 min) via Blocky, sends Perry a DM + public Nostr post on status change (🟢/🟡/🔴) | Script (server) |
+| Healthy | Server health monitor — runs every 4 blocks (~40 min) via Blocky, sends Perry a DM + public Nostr post on status change (🟢/🟡/🔴) | Script (server) |
 
 ### Blocky — Bitcoin block scheduler (the V-Formation clock)
 
@@ -397,7 +397,7 @@ Cron is only acceptable as a silent fallback for critical monitors (like Healthy
 | jurry   | 4032 blocks | ~4 weeks   | overview   |
 | ay      | 2016 blocks | ~2 weeks   | check      |
 | backy   | 1000 blocks | ~1 week    | snapshot   |
-| healthy | 3 blocks    | ~30 min    | check      |
+| healthy | 4 blocks    | ~40 min    | check      |
 
 **Useful commands:**
 ```bash

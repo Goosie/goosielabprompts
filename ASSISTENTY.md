@@ -591,7 +591,7 @@ Het session-id staat in de output als je Claude Code afsluit.
 | honkbadge | — beschrijving nog toe te voegen — | IN BOUW | /apps/honkbadge |
 | Assistenty   | Deze assistent — fase 1 is dit bestand                                | FASE 1 LIVE | ~/.claude/CLAUDE.md           |
 | **Blocky**   | **De klok van de V-Formatie** — triggert alle ganzen op Bitcoin-blokken via NIP-90. Gebruik `goosie blocky schedule` voor overzicht. | LIVE | /home/deploy/scripts/blocky/  |
-| **Healthy**  | Server health monitor — check elke ~30 min (3 blokken via Blocky), stuurt Perry DM + publiek bericht bij statuswijziging | LIVE | /home/deploy/scripts/healthy/ |
+| **Healthy**  | Server health monitor — check elke ~40 min (4 blokken via Blocky), stuurt Perry DM + publiek bericht bij statuswijziging | LIVE | /home/deploy/scripts/healthy/ |
 | Jurry        | juridisch agent; licenties, privacy, betaalregelgeving, aansprakelijkheid | LIVE    | /home/deploy/scripts/jurry/   |
 | Ay           | AI-config specialist; checkt ganzen-configuraties; proactief advies   | LIVE        | /home/deploy/scripts/ay/      |
 | Devy         | Developer Gans — git, backup, updates, server-onderhoud               | ROL         | V-Formatie                    |
