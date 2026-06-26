@@ -86,7 +86,7 @@ Perry stuurt het gesprek en kan ganzen op elk moment wisselen.
 **Lightning:** LNbits verbonden direct met LND via Tailscale (LndRestWallet, geen NWC meer)
 **Lightning address:** zoomer@getalby.com
 **Umbrel node (Tailscale):** `100.111.14.11` — altijd de lokale node gebruiken, zie regel hieronder
-**Backups (dagelijks via Blocky):** LND channel.backup + alle LNbits databases → server + offsite naar Umbrel (`/home/umbrel/lnbits-backup/`)
+**Backups (dagelijks via Blocky):** LND channel.backup + alle LNbits databases + Cashu mint ledger (`nutshell/data/mint/mint.sqlite3`) → server + offsite naar Umbrel (`/home/umbrel/lnbits-backup/`). Mint-ledger verlies = alle uitgegeven Cashu-tokens onbruikbaar.
 **Nostr npub (oud/zoomer):** npub14qpe36rvq0l6m3crplsntmnkzjm04weqflq0veqc8ra5hz4lpvxqqkdffc
 **Nostr npub (actief, DMs):** npub14qmyh789hq5t6u32dhr33qhlfm5dx70xf7l5tp8scmcm8ylcqkxqds0r58
 

@@ -302,11 +302,12 @@ Script for sending NIP-17 DMs: `/home/deploy/scripts/astrid-dm.mjs`
 
 ### Backup
 
-**Daily (Blocky ~144 blocks) — LND + LNbits:**
+**Daily (Blocky ~144 blocks) — LND + LNbits + Cashu mint:**
 - Script: `goosie scb-backup backup`
 - LND `channel.backup` → `/home/deploy/backups/lnd-scb/` (14 versions)
 - LNbits databases (6x), `.env`, cert, macaroon → `/home/deploy/backups/lnbits/` (14 versions)
-- Offsite copy → `umbrel@100.111.14.11:/home/umbrel/lnbits-backup/` (second physical location)
+- Cashu mint ledger `nutshell/data/mint/mint.sqlite3` → `/home/deploy/backups/nutshell/` (14 versions). Holds every outstanding ecash liability (Welcome tokens, onboarding rewards) + the mint signing keys — if lost, all issued Cashu tokens are unredeemable.
+- Offsite copy → `umbrel@100.111.14.11:/home/umbrel/lnbits-backup/` (second physical location; includes `nutshell-mint.sqlite3`)
 
 **Weekly (Blocky ~1000 blocks) — Full server snapshot:**
 - Backy triggers DigitalOcean snapshot via API
