@@ -1,18 +1,18 @@
-# Recent Changes — last 7 days (2026-06-29 12:54)
+# Recent Changes — last 7 days (2026-06-29 13:04)
 
 ## Server (home-deploy)
 ```
-6caf5c4fe security: stop tracking lnbits-wallet.json (adminkeys) + add pre-commit secret guard
-4f5d48bb6 agents.json: replace 'role to be defined' with real descriptions (welcome, toddy, linky)
-544d06ccb agents.json: backfill welcome + linky npub/pubkey (roster now complete, 0 null npubs)
-ba22bbe8a docs: drop removed apps from project lists (vformation/swarm/catchzaps/sofia/test/ididhere/mobile/testtrip/rotterdam)
-9b72d9479 Skeiny: fill in role (Skein availability-weaver) + logo; Splitty new portrait
-5d044bc44 splitty: tile quote → 'Splitty will split his donations always over all the goosies'
-6fb1e15db Splitty: flock sat-distribution hub; Perry wallet back to personal
-c6f1d3859 docs: backup section now includes the Cashu mint ledger
-9956f8c31 todo: Badgy — credential goose for flock-wide badge issuance
-60f041c2b docs: sync Healthy interval to reality (4 blocks / ~40 min)
-705ffc8fa lnaddress: give the onboarding reward pool a Lightning address
+898ea80c chore: stop tracking go/ GOPATH cache (go/pkg + go/bin) — 27.8k files, regenerable
+51a7b139 security: stop tracking lnbits-wallet.json (adminkeys) + add pre-commit secret guard
+aa46886b agents.json: replace 'role to be defined' with real descriptions (welcome, toddy, linky)
+f3123239 agents.json: backfill welcome + linky npub/pubkey (roster now complete, 0 null npubs)
+c8840955 docs: drop removed apps from project lists (vformation/swarm/catchzaps/sofia/test/ididhere/mobile/testtrip/rotterdam)
+4d39971b Skeiny: fill in role (Skein availability-weaver) + logo; Splitty new portrait
+b9620a3f splitty: tile quote → 'Splitty will split his donations always over all the goosies'
+b7001114 Splitty: flock sat-distribution hub; Perry wallet back to personal
+6b5f442d docs: backup section now includes the Cashu mint ledger
+c8ed03a7 todo: Badgy — credential goose for flock-wide badge issuance
+d89cd7cd docs: sync Healthy interval to reality (4 blocks / ~40 min)
 ```
 
 ## Apps

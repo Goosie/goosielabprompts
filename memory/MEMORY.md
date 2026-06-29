@@ -8,7 +8,7 @@
 - [Commit strategie](feedback_commit_strategy.md) — bij uncommitted werk van vorige sessie: vraag eerst, niet stilzwijgend bundelen
 - [Geen slotwensen](feedback_geen_slotwensen.md) — geen "fijne avond"/"welterusten"/"goede thuiskomst" aan eind van responses
 - [Lean dependencies-architectuur](feedback_lean_deps_architecture.md) — dunne zelf-bezeten laag boven zware deps; provider-agnostisch; koekjesvorm licht
-- [/home/deploy git geen remote](feedback_home_deploy_git.md) — bewust geen GitHub remote, nooit voorstellen
+- [/home/deploy git push](feedback_home_deploy_git.md) — private GitHub origin (push OK); never commit wallet/nsec secrets — pre-commit hook + gitignore guard
 - [Gate/mentor structure](feedback_gate_mentor.md) — don't add new things until current gate is mastered; Perry needs mentoring, one concept at a time
 - [English language switch](feedback_english_language.md) — all Claude communication and CLAUDE.md files in English; correct Perry's English with "You mean: ..." after each prompt
 - [nsite migration plan](project_nsite_migration.md) — full decentralization roadmap: nsite replaces WordPress, ngit replaces GitHub; branch-by-branch plan
