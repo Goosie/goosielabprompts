@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-29 13:15)
+# Recent Changes — last 7 days (2026-06-29 13:22)
 
 ## Server (home-deploy)
 ```
+f13c17be gitignore: de-dupe (drop double strfry/ + redundant lnbits glob; collapse go/pkg+go/bin → go/)
 9f4d782f docs: add git-secrets security rules to CLAUDE.md (never commit wallet/nsec keys; pre-commit hook; private origin)
 a9d17e3b memory: correct /home/deploy git note (has private GitHub origin; never commit secrets)
 c97b2c0d chore: stop tracking go/ GOPATH cache (go/pkg + go/bin) — 27.8k files, regenerable
