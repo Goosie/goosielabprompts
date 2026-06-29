@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-29 12:42)
+# Recent Changes — last 7 days (2026-06-29 12:44)
 
 ## Server (home-deploy)
 ```
+4f5d48bb6 agents.json: replace 'role to be defined' with real descriptions (welcome, toddy, linky)
 544d06ccb agents.json: backfill welcome + linky npub/pubkey (roster now complete, 0 null npubs)
 ba22bbe8a docs: drop removed apps from project lists (vformation/swarm/catchzaps/sofia/test/ididhere/mobile/testtrip/rotterdam)
 9b72d9479 Skeiny: fill in role (Skein availability-weaver) + logo; Splitty new portrait
