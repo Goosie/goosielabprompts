@@ -279,7 +279,9 @@ contacten, leveranciers, documenten, agenda, todo's, history.
 | `30950` | Link/edge events |
 | `30951` | Schema-/config event (veldlabels, vocabulaire, key-field namen) |
 | `30952` | Saved views / filters (per gebruiker) |
-| `5` (NIP-09) | Deletes (entiteit of edge intrekken) |
+| `30960` | Consent/grant event (AVG-rechtsgrond, door betrokkene ondertekend) — zie §8 |
+| `30961` | Key-vault event (versleutelde custodial nsec per record) — zie §8 |
+| `5` (NIP-09) | Deletes (entiteit, edge of PII intrekken) |
 
 Allemaal binnen de addressable range zodat edits/replace werken.
 
@@ -401,9 +403,131 @@ CRM-data is gevoelig. Drie lagen:
 `author` op een event = wie het schreef (audit trail in History). Voor gedeelde
 encryptie deel je één symmetrische CRM-sleutel (out-of-band, of via NIP-44 DM).
 
+> **Let op:** §8 breidt dit privacymodel fundamenteel uit. Omdat Company- en
+> Contact-records eigen sleutels krijgen, wordt NIP-44-encryptie van PII
+> (subject → controller) **kern** in plaats van optioneel. Lees §8 als de
+> definitieve privacy-/AVG-architectuur; deze §7 is de basislaag eronder.
+
 ---
 
-## 8. Technische stack (voorstel, lean — past bij de lab-conventies)
+## 8. Self-sovereign records & AVG/GDPR-naleving
+
+> **Dit is de kerngedachte die NostrM onderscheidt van een gewoon CRM.** Elke
+> Company- en Contact-record *is* een eigen Nostr-identiteit (keypair). De
+> controle over een record kan naar de echte persoon/organisatie verhuizen, en
+> de betrokkene houdt de sleutels tot zijn eigen persoonsgegevens. Daardoor kan
+> een bedrijf optimaal aan de AVG voldoen: privacy & beheer *by design*.
+
+### 8.1 Kernprincipe
+
+Niet de CRM-eigenaar schrijft de persoonsgegevens, maar de **sleutel van het
+record zelf**. De CRM beheert dat record in eerste instantie custodiaal (houdt
+de nsec versleuteld in een kluis) en kan het op een gegeven moment overdragen
+aan de persoon — of meteen koppelen aan een npub die de persoon zelf aanlevert.
+
+### 8.2 Twee datalagen per record
+
+De cruciale scheiding die AVG-naleving mogelijk maakt:
+
+| Laag | Auteur (signing key) | Inhoud | Kinds |
+|------|----------------------|--------|-------|
+| **Subject-laag** (PII) | de **record-sleutel** zelf | naam, adres, telefoon, e-mail, socials | 30900/30901 + 30907 (Details die een persoon betreffen) |
+| **Controller-laag** (business) | de **CRM/bedrijfssleutel** | relatietypes (edges), interne notities, History, segment, key1-4 | 30950, 30905, 30951, business-Details |
+
+- De betrokkene **bestuurt zijn PII** (subject-laag) en kan die intrekken/verbergen.
+- Het bedrijf houdt zijn **eigen legitieme dossier** (controller-laag) — apart
+  wisbaar op verzoek, met eigen rechtsgrond.
+- Details "volgen hun subject": telefoon/e-mail van een persoon = subject-laag
+  (onder de persoonssleutel); prijs van een product = controller-laag.
+
+### 8.3 Identiteits-verwijzing in edges
+
+Voor records mét sleutel (Company, Contact) is de identiteit de **pubkey**.
+Edges verwijzen er dan naar met een `["p", <pubkey>, "<relay>", "<rol>"]`-tag
++ `["k","30901"]`, in plaats van een `a`-coördinaat. Records zónder sleutel
+(Document, Agenda, Todo, History, Product, controller-Details) blijven via
+`a`-coördinaat onder de controller-sleutel verwijzen (zoals §3.2).
+
+### 8.4 Custody-levenscyclus
+
+```
+  ┌─ custodial ──┐ CRM genereerde keypair, houdt nsec versleuteld in kluis (§8.5)
+  │              │ CRM publiceert PII namens de betrokkene
+  ▼              │
+ linked ◀────────┘ persoon levert eigen npub aan → nooit custodiaal (§8.7)
+  │
+  ▼
+ transferred ─── nsec overgedragen aan persoon, CRM vernietigt zijn kopie (§8.6)
+  │
+  ▼
+ withdrawn ───── betrokkene wist/verbergt PII; alleen controller-dossier blijft
+```
+
+De status leeft als veld op het controller-laag record (of een klein
+status-event), zodat de UI custodial / linked / transferred / withdrawn toont.
+
+### 8.5 Sleutelkluis — `kind 30961`
+
+Elke custodial nsec wordt opgeslagen als **NIP-44-versleuteld kluis-event**,
+versleuteld náár de controller-pubkey, met `d = <record-pubkey>`, op de
+afgeschermde relay (zo back-upt het mee met de rest). Alleen de controller-key
+kan ontsleutelen. Bij overdracht wordt het kluis-event met NIP-09 verwijderd.
+
+> **Veiligheid (conform CLAUDE.md):** nsecs nooit in chat/logs/commits. De
+> kluis is altijd versleuteld; een platte nsec bestaat alleen vluchtig in
+> geheugen tijdens een overdracht.
+
+### 8.6 Overdracht-ceremonie (custodial → persoon)
+
+1. Persoon levert een doel-pubkey aan (eigen/nieuwe sleutel) of scant een claim-QR.
+2. CRM stuurt de record-nsec via een **NIP-17 gift-wrapped DM** naar een kanaal
+   dat alleen de persoon kan openen — óf als **NIP-49 `ncryptsec`** met een
+   wachtwoord dat out-of-band gedeeld wordt.
+3. Persoon importeert → bestuurt voortaan de record-sleutel.
+4. CRM verwijdert het kluis-event (30961) en zet status = `transferred`.
+
+### 8.7 Bestaande identiteit ontvangen (link existing)
+
+1. Persoon deelt zijn npub (of NIP-05).
+2. **Challenge:** persoon ondertekent een nonce → bewijst sleutelcontrole.
+3. CRM koppelt het record aan die pubkey en abonneert op diens PII. Geen custody.
+
+### 8.8 AVG-mechanismen concreet
+
+| AVG-recht | Mechanisme in NostrM |
+|-----------|----------------------|
+| **Inzage / portabiliteit** (art. 15/20) | betrokkene houdt PII onder eigen sleutel → inherent draagbaar; export triviaal |
+| **Wissing / "vergeten"** (art. 17) | betrokkene publiceert NIP-09 deletes van zijn PII-events; strfry-relay laat ze vallen → CRM-view valt weg |
+| **Beperking / verbergen** (art. 18) | betrokkene stopt met versleutelen van nieuwe PII naar de controller + delete van oude versies → bedrijf verliest leesbare toegang |
+| **Toestemming & rechtsgrond** (art. 6/7) | **consent-event `kind 30960`** (door betrokkene ondertekend): controller-pubkey, doel, scope, status (granted/withdrawn), timestamp → auditbaar spoor |
+| **Intrekken toestemming** | ondertekend withdrawal-event + delete |
+
+### 8.9 Eerlijke caveat — wissen is best-effort
+
+Nostr-deletes zijn een *verzoek*: data die al door derden of andere relays is
+gekopieerd/gecached kun je niet forceren te vergeten. De architectuur
+minimaliseert blootstelling (encryptie, afgeschermde relay, minimaal delen),
+maar **garandeert geen verwijdering bij derden**. Documenteer dit restrisico in
+je AVG-register; verkoop "gegarandeerd wissen" niet.
+
+### 8.10 Relay-toegangsmodel
+
+Aanbevolen: de afgeschermde nostrm-relay geeft elke record-pubkey **schrijf- +
+delete-recht** (NIP-42-allowlist beheerd door de CRM), met leesrecht beperkt tot
+controller + de betrokkene zelf. Betrokkenen publiceren hun (versleutelde) PII
+daar; intrekken = zij verwijderen het daar. Eén relay die het bedrijf kan
+auditen, met echte controle + wisrecht voor de betrokkene.
+
+### 8.11 Gevolg voor het ontwerp
+
+Encryptie (NIP-44, subject → controller) is hierdoor **kern**, niet meer een
+optionele late fase. De oude "Phase 5 encryptie-at-rest" uit §7 wordt hierdoor
+vervangen: PII is versleuteld vanaf het moment dat een record een eigen sleutel
+heeft.
+
+---
+
+## 9. Technische stack (voorstel, lean — past bij de lab-conventies)
 
 - **Frontend:** statische SPA (vanilla of lichte framework), serveerbaar onder
   `https://goosielabs.com/apps/nostrm` — geen build-zwaarte, RAM-vriendelijk.
@@ -420,28 +544,40 @@ encryptie deel je één symmetrische CRM-sleutel (out-of-band, of via NIP-44 DM)
 
 ---
 
-## 9. Bouwfasering (roadmap)
+## 10. Bouwfasering (roadmap)
 
 | Fase | Inhoud |
 |------|--------|
 | **0 — Relay** | LNbits Nostr Relay aanzetten, NIP-42 allowlist, app-keypair |
-| **1 — Entiteiten** | CRUD voor Companies + Contacts (kinds 30900/30901), hiërarchie-boom, secties 2–5 |
-| **2 — Edges** | Link-events (30950), relatietype-picker, n→n + zelf-relaties |
+| **1 — Entiteiten (keyed)** | CRUD voor Companies + Contacts (30900/30901); elk record krijgt meteen een eigen keypair; hiërarchie-boom, secties 2–5 |
+| **2 — Edges** | Link-events (30950), relatietype-picker, n→n + zelf-relaties; `p`-tag verwijzing voor keyed records |
 | **3 — Overige categorieën** | Documents, Agenda, Todo, Products, Details, History → sectie 6 |
-| **4 — Config & search** | Schema-event (30951), key-veld-labels, lokale full-text search |
-| **5 — Privacy** | NIP-44 encryptie-at-rest, multi-user allowlist |
+| **4 — Sovereignty & AVG** | Sleutelkluis (30961), NIP-44 PII-encryptie subject→controller, consent-events (30960), overdracht-ceremonie + link-existing, custody-statussen |
+| **5 — Config & search** | Schema-event (30951), key-veld-labels, lokale full-text search, multi-user allowlist |
 | **6 — Extra's** | NIP-52 agenda-export, Lightning (zaps/betaalde docs), badges, import/export |
+
+> Zie §8.11: PII-encryptie is geen losse late fase meer maar hoort bij het
+> moment dat records sleutels krijgen. Of dat al in Fase 1 gebeurt of pas in
+> Fase 4 is een bouwvolgorde-keuze (zie §11.1).
 
 ---
 
-## 10. Open beslissingen (graag jouw keuze)
+## 11. Open beslissingen (graag jouw keuze)
 
-1. **Encryptie v1:** NIP-44-at-rest meteen aan (privacy) of eerst plain om
-   sneller te bouwen? → *aanbeveling: aan.*
-2. **Multi-user nu of later:** single-key (jij) of direct team-allowlist?
-3. **Agenda:** eigen kind `30903` met NIP-52-export, of meteen native NIP-52?
-4. **Documenten-opslag:** Blossom (self-host op de server) vs nostr.build?
-5. **Key-veld labels:** vaste set of volledig per-CRM configureerbaar via
+1. **Bouwvolgorde sovereignty:** records meteen vanaf Fase 1 keyed + versleuteld
+   (AVG-correct vanaf dag 1, grotere eerste bouw), óf eerst de werkende CRM
+   (Fase 1–3, controller-authored) en sovereignty als Fase 4 erin vlechten
+   (sneller eerste demo, migratie nodig)? → *aanbeveling: hybride — records
+   krijgen meteen een sleutel (Fase 1, geen latere refactor van auteurschap),
+   maar kluis/consent/overdracht-ceremonie komt in Fase 4.*
+2. **Default custody:** records standaard custodiaal aanmaken (CRM genereert +
+   houdt sleutel, later overdragen) of standaard linken aan een aangeleverde
+   npub? → *aanbeveling: custodiaal als default, link-existing als optie.*
+3. **Sleutelkluis-opslag:** versleutelde kluis-events (30961) op de relay
+   (back-upt mee) vs app-side encrypted DB? → *aanbeveling: relay.*
+4. **Agenda:** eigen kind `30903` met NIP-52-export, of meteen native NIP-52?
+5. **Documenten-opslag:** Blossom (self-host op de server) vs nostr.build?
+6. **Key-veld labels:** vaste set of volledig per-CRM configureerbaar via
    `30951` (aanbevolen)?
 
 ---
@@ -450,8 +586,8 @@ encryptie deel je één symmetrische CRM-sleutel (out-of-band, of via NIP-44 DM)
 
 ```
 Entiteiten (addressable, kind:pubkey:d)
-  30900 Company   ── name, address1-3, state, zip, city, country, key1-4
-  30901 Contact   ── first/mid/lastname, address1-3, state, zip, country
+  30900 Company   ── KEYED: eigen sleutel, overdraagbaar │ name, address1-3, state, zip, city, country, key1-4
+  30901 Contact   ── KEYED: eigen sleutel, overdraagbaar │ first/mid/lastname, address1-3, state, zip, country
   30902 Document  ── title, kind, url, hash, body
   30903 Agenda    ── title, start, end, location, notes
   30904 Todo      ── title, status, due, priority
@@ -462,9 +598,16 @@ Entiteiten (addressable, kind:pubkey:d)
 Edges (first-class)
   30950 Link  ── a:from, a:to, rel, inv, dir(directed|mutual), k-tags, content{role,since,weight}
 
-Config
-  30951 Schema ── key-veld labels, relatie-vocabulaire, detail-velden
-  30952 View   ── opgeslagen filters/weergaven
+Config & sovereignty (§8)
+  30951 Schema  ── key-veld labels, relatie-vocabulaire, detail-velden
+  30952 View    ── opgeslagen filters/weergaven
+  30960 Consent ── door betrokkene getekend: controller, doel, scope, status — AVG-rechtsgrond
+  30961 Vault   ── NIP-44-versleutelde custodial nsec per record (d = record-pubkey)
+
+Twee datalagen (§8.2)
+  Subject-laag    ── PII, getekend door de RECORD-sleutel, versleuteld naar controller
+  Controller-laag ── business/relaties/history, getekend door de CRM-sleutel
 ```
 
-Alles n→n, alles getypeerd, alles op één eigen relay.
+Alles n→n, alles getypeerd, alles op één eigen relay — en elk Company/Contact
+record is een eigen, overdraagbare identiteit (AVG by design).
