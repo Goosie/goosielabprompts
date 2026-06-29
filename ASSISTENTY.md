@@ -609,6 +609,7 @@ Het session-id staat in de output als je Claude Code afsluit.
 ## Subdomeinen
 
 goosielabs.com               → nsite homepage (Blossom) + Nostr relay
+start.goosielabs.com         → 302-redirect naar de onboarding (/apps/proofofread/start). Eigen Let's Encrypt cert, auto-renew. Config: /etc/nginx/sites-enabled/start.goosielabs.com
 mint.goosielabs.com          → Cashu mint (poort 3338)
 lnbits.goosielabs.com        → LNbits (poort 5000)
 

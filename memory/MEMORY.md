@@ -22,3 +22,5 @@
 - [Mint setup reference](reference_mint_setup.md) — Cashu/Nutshell funding, nginx websocket fix, v2-keyset wallet incompatibility
 - [App icons aerial series](project_app_icons_aerial.md) — AERIAL prompt recipe, goedgekeurd gameofthegoose icon, resterende apps + newapp integratie als todo
 - [ProofOfRead beginner onboarding](project_proofofread_onboarding.md) — /start no-Nostr front door, three-tier 21-sat reward, custodial earmarks + clawback, onboarding@goosielabs.com pool
+- [LNbits NWC provider setup](reference_lnbits_nwc_setup.md) — nwcprovider + nostrclient + "Expose Public Websocket" + public relay; fixes "wallet request time out" for Amethyst zaps
+- [Wallet architecture](project_wallet_architecture.md) — Splitty = sat-distribution hub, Perry = personal wallet; humany auto-adds geese to Splitty's split

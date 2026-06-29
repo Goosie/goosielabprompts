@@ -617,8 +617,9 @@ Bereikbaarheid checken: `curl -s --max-time 3 http://100.111.14.11:3006/api/bloc
 - Lightning address: zoomer@getalby.com
 - Kanalen: 1 actief (Megalith LSP)
   - Inbound liquiditeit: 499K sats
-  - Outbound liquiditeit: ~600 sats (top-up nodig voor meer zenden)
-- NWC: apps verbinden via Alby Hub → NWC strings
+  - Outbound liquiditeit: dynamisch (fluctueert per betaling) — check actueel via LND:
+    `curl -s --cacert <tls.cert> -H "Grpc-Metadata-macaroon: <hex>" https://umbrel.local:8080/v1/balance/channels` (cert/macaroon uit `/home/deploy/lnbits/.env`). Of via Alby Hub op `100.111.14.11:59000`.
+- NWC: twee routes. (a) Alby Hub op Umbrel → NWC strings. (b) LNbits zelf als NWC-provider via `nwcprovider` + `nostrclient` extensies — zie geheugen `reference_lnbits_nwc_setup.md`. Voor zappen uit Amethyst gebruikt Perry route (b) met de "Perry"-wallet.
 - On-chain wallet: 0 sats (top-up nodig voor Taproot Assets minten)
 
 **LNbits**

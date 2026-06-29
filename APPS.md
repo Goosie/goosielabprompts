@@ -1,4 +1,4 @@
-# Apps — 2026-06-26 16:05
+# Apps — 2026-06-29 06:44
 
 | App | URL | Git |
 |-----|-----|-----|
@@ -19,6 +19,7 @@
 | mint | https://goosielabs.com/apps/mint | yes |
 | newapp | https://goosielabs.com/apps/newapp | yes |
 | nospass | https://goosielabs.com/apps/nospass | no |
+| nosterin | https://goosielabs.com/apps/nosterin | yes |
 | proofofmove | https://goosielabs.com/apps/proofofmove | yes |
 | proofofread | https://goosielabs.com/apps/proofofread | yes |
 | satquiz | https://goosielabs.com/apps/satquiz | yes |
