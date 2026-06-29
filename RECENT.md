@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-29 06:44)
+# Recent Changes — last 7 days (2026-06-29 07:03)
 
 ## Server (home-deploy)
 ```
+5d044bc44 splitty: tile quote → 'Splitty will split his donations always over all the goosies'
 6fb1e15db Splitty: flock sat-distribution hub; Perry wallet back to personal
 c6f1d3859 docs: backup section now includes the Cashu mint ledger
 9956f8c31 todo: Badgy — credential goose for flock-wide badge issuance
