@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-29 13:44)
+# Recent Changes — last 7 days (2026-06-29 14:15)
 
 ## Server (home-deploy)
 ```
+fd09efcf memory: log decision to park the roster manifest-generator (detection-first via drift-detector)
 6f6457c0 goosie help: add Ay block with 'ay drift' (roster drift-check)
 b39cd9da icons: add gitea/gitty/humany goose icons (close roster drift-detector gaps)
 f13c17be gitignore: de-dupe (drop double strfry/ + redundant lnbits glob; collapse go/pkg+go/bin → go/)

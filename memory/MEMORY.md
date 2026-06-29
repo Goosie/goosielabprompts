@@ -24,3 +24,4 @@
 - [ProofOfRead beginner onboarding](project_proofofread_onboarding.md) — /start no-Nostr front door, three-tier 21-sat reward, custodial earmarks + clawback, onboarding@goosielabs.com pool
 - [LNbits NWC provider setup](reference_lnbits_nwc_setup.md) — nwcprovider + nostrclient + "Expose Public Websocket" + public relay; fixes "wallet request time out" for Amethyst zaps
 - [Wallet architecture](project_wallet_architecture.md) — Splitty = sat-distribution hub, Perry = personal wallet; humany auto-adds geese to Splitty's split
+- [Roster manifest parked](project_roster_manifest_parked.md) — chose detection (drift-detector via Ay) over a single-manifest generator; don't build generation until drift proves recurring
