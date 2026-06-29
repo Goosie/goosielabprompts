@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-29 12:29)
+# Recent Changes — last 7 days (2026-06-29 12:42)
 
 ## Server (home-deploy)
 ```
+544d06ccb agents.json: backfill welcome + linky npub/pubkey (roster now complete, 0 null npubs)
 ba22bbe8a docs: drop removed apps from project lists (vformation/swarm/catchzaps/sofia/test/ididhere/mobile/testtrip/rotterdam)
 9b72d9479 Skeiny: fill in role (Skein availability-weaver) + logo; Splitty new portrait
 5d044bc44 splitty: tile quote → 'Splitty will split his donations always over all the goosies'
@@ -13,6 +14,12 @@ c6f1d3859 docs: backup section now includes the Cashu mint ledger
 ```
 
 ## Apps
+
+### gameofthegoose
+```
+c1c6544 gooseAgents: complete the flock roster — refresh descriptions + add welcome, linky, Splitty, Skeiny
+23bb2ed board: repoint removed-app squares — CatchZaps→Welcome, Sofia→Skein
+```
 
 ### proofofread
 ```
