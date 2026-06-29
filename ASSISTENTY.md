@@ -567,13 +567,10 @@ Het session-id staat in de output als je Claude Code afsluit.
 
 | Project      | Omschrijving                                                          | Status      | Locatie                       |
 |--------------|-----------------------------------------------------------------------|-------------|-------------------------------|
-| **Swarm**    | V-formatie dashboard — realtime zien welke ganzen DMs sturen. Gebruik: ga naar /apps/swarm/, log in als Perry (oranje knop onderaan). Klik op een gans → zie hun berichten. Gebruik dit om te testen of ganzen correct communiceren. | LIVE | /apps/swarm |
 | Iris         | Nostr web client (geforkte installatie); ingebouwde Cashu wallet (multi-mint, NWC, WebLN); plek voor addon-features | LIVE | /apps/iris |
 | Routstr      | Nostr identiteitsinfrastructuur voor organisaties                     | LIVE        | goosielabs.com                |
 | **gameofthegoose** | Multiplayer Ganzenbord op Nostr — echte identiteiten, levend bord (apps worden vakjes), sats via Lightning. Stappen 1-7 klaar, 8 (admin) + 9 (Lightning) nog te doen. Server: `ganzenbord-server` poort 3021. Relay: uitsluitend relay.goosielabs.com. | IN BOUW | /apps/gameofthegoose |
-| CatchZaps    | Drop sats op kaart, anderen vangen ze op                              | IN BOUW     | /apps/catchzaps               |
 | ZapHunt      | AI-speurtocht; iedereen→deposit; sats/correct antwoord                | IN BOUW     | /apps/zaphunt                 |
-| Sofia        | Nostr reisapp voor groepstrips — experiment klaar                     | EXPERIMENT  | /apps/sofia                   |
 | ProofOfRead  | scan ISBN, betaal 5 sats, AI-quiz→Nostr badge; API:3002, .env vereist | IN BOUW    | /apps/proofofread             |
 | ProofOfMove  | schaduw→avatar realtime correctie; ∀ beweging correct→sats           | EXPERIMENT  | /apps/proofofmove             |
 | ZinIn        | 2 mensen, zelfde zin op zelfde moment→match                           | IN BOUW     | /apps/zinin                   |
@@ -584,10 +581,8 @@ Het session-id staat in de output als je Claude Code afsluit.
 | Feedback     | anonieme feedback op Nostr; sats via Cashu/Lightning; template+/f/:id; FeedbackButton herbruikbaar | IN BOUW | /apps/feedback |
 | bookwriter   | thriller via AI; flarden inspiratie→boek; publiceer op Nostr          | IN BOUW     | /apps/bookwriter              |
 | honkference  | Nostr-conferentie; presenter=split view, deelnemers=theater; video-stack open | IN BOUW | /apps/honkference     |
-| Skein        | Privacy-preserving availability matcher — intersect calendars + bookable resources (fiets, ruimte) tot gedeelde vrije momenten. Alleen free/busy gaat over de lijn, agenda blijft edge-side. Agent: Skeiner. | IN BOUW | /apps/skein |
-| test         | — beschrijving nog toe te voegen —                                    | IN BOUW     | /apps/test                    |
+| Skein        | Privacy-preserving availability matcher — intersect calendars + bookable resources (fiets, ruimte) tot gedeelde vrije momenten. Alleen free/busy gaat over de lijn, agenda blijft edge-side. Agent: Skeiny. | IN BOUW | /apps/skein |
 | georgie | — beschrijving nog toe te voegen — | IN BOUW | /apps/georgie |
-| rotterdam | — beschrijving nog toe te voegen — | IN BOUW | /apps/rotterdam |
 | honkbadge | — beschrijving nog toe te voegen — | IN BOUW | /apps/honkbadge |
 | Assistenty   | Deze assistent — fase 1 is dit bestand                                | FASE 1 LIVE | ~/.claude/CLAUDE.md           |
 | **Blocky**   | **De klok van de V-Formatie** — triggert alle ganzen op Bitcoin-blokken via NIP-90. Gebruik `goosie blocky schedule` voor overzicht. | LIVE | /home/deploy/scripts/blocky/  |

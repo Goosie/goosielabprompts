@@ -517,11 +517,8 @@ All goose portraits are flat 2D cartoon geese with specific outfits that represe
 |-----|--------|-------------|
 | zaphunt | IN PROGRESS | Create your own scavenger hunt (let AI help you), let anyone deposit sats. Players earn sats for every correct answer. |
 | proofofmove | EXPERIMENT | Train your movements: your shadow over a virtual avatar corrects you in real time — green is good, red means move that body part. All movements correct? Earn sats. Record your own training sessions and earn from them. |
-| ididhere | IN PROGRESS | Opposite of IWasHere: bucket list of what you want to do and where. Prove what you've done as a NIP-58 badge in your Nostr identity — inspires others to do the same. On its own subdomain. |
 | zinin | IN PROGRESS | When two people feel like doing the same thing at the same moment without knowing it, this app brings them together. Walk? Philosophical conversation? Game? Indicate it and you might get matched. |
 | honkference | IN PROGRESS | Nostr conference app. Presenter gets split view, participants get theater/fullscreen view. Role determined via NIP-30311 host-pubkey. Video stack MVP still open (WebRTC / LiveKit / screenshare embed). |
-| mobile | ARCHIVE | Old test app, not active — directory contains `.archived` |
-| testtrip | ARCHIVE | Old test app, not active — directory contains `.archived` |
 
 **Archived app convention:**
 A directory with an `.archived` file is not shown in app listings or on the landing page.
