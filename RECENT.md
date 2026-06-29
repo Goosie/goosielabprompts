@@ -1,18 +1,19 @@
-# Recent Changes — last 7 days (2026-06-29 13:04)
+# Recent Changes — last 7 days (2026-06-29 13:12)
 
 ## Server (home-deploy)
 ```
-898ea80c chore: stop tracking go/ GOPATH cache (go/pkg + go/bin) — 27.8k files, regenerable
-51a7b139 security: stop tracking lnbits-wallet.json (adminkeys) + add pre-commit secret guard
-aa46886b agents.json: replace 'role to be defined' with real descriptions (welcome, toddy, linky)
-f3123239 agents.json: backfill welcome + linky npub/pubkey (roster now complete, 0 null npubs)
-c8840955 docs: drop removed apps from project lists (vformation/swarm/catchzaps/sofia/test/ididhere/mobile/testtrip/rotterdam)
-4d39971b Skeiny: fill in role (Skein availability-weaver) + logo; Splitty new portrait
-b9620a3f splitty: tile quote → 'Splitty will split his donations always over all the goosies'
-b7001114 Splitty: flock sat-distribution hub; Perry wallet back to personal
-6b5f442d docs: backup section now includes the Cashu mint ledger
-c8ed03a7 todo: Badgy — credential goose for flock-wide badge issuance
-d89cd7cd docs: sync Healthy interval to reality (4 blocks / ~40 min)
+a9d17e3b memory: correct /home/deploy git note (has private GitHub origin; never commit secrets)
+c97b2c0d chore: stop tracking go/ GOPATH cache (go/pkg + go/bin) — 27.8k files, regenerable
+600c1677 security: stop tracking lnbits-wallet.json (adminkeys) + add pre-commit secret guard
+f3fdad6c agents.json: replace 'role to be defined' with real descriptions (welcome, toddy, linky)
+59056971 agents.json: backfill welcome + linky npub/pubkey (roster now complete, 0 null npubs)
+bfb9f202 docs: drop removed apps from project lists (vformation/swarm/catchzaps/sofia/test/ididhere/mobile/testtrip/rotterdam)
+b8d757dd Skeiny: fill in role (Skein availability-weaver) + logo; Splitty new portrait
+334d6cf4 splitty: tile quote → 'Splitty will split his donations always over all the goosies'
+99caaa70 Splitty: flock sat-distribution hub; Perry wallet back to personal
+2efd8323 docs: backup section now includes the Cashu mint ledger
+5628f19c todo: Badgy — credential goose for flock-wide badge issuance
+c8b962cf docs: sync Healthy interval to reality (4 blocks / ~40 min)
 ```
 
 ## Apps
