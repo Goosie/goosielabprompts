@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-29 14:15)
+# Recent Changes — last 7 days (2026-06-29 21:02)
 
 ## Server (home-deploy)
 ```
+e97d209c icons: backfill all 33 goose icons from their DALL-E portraits (retire composite icons)
 fd09efcf memory: log decision to park the roster manifest-generator (detection-first via drift-detector)
 6f6457c0 goosie help: add Ay block with 'ay drift' (roster drift-check)
 b39cd9da icons: add gitea/gitty/humany goose icons (close roster drift-detector gaps)
