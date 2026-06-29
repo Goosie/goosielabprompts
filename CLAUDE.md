@@ -356,6 +356,15 @@ Functies/aliases vereisen `reload` in een bestaande sessie.
 - Repos: https://github.com/Goosie
 - Credentials: ~/.git-credentials (HTTPS tokens)
 
+### 🔒 Secrets in git — NEVER commit wallet/identity keys
+`/home/deploy` is pushed to a **private** GitHub repo (`origin → Goosie/home-deploy`). Pushing is fine — but the repo must stay secret-free.
+
+**Never commit:** `lnbits-wallet.json` (LNbits adminkey + inkey), `nostr-key.json` (nsec), `bunker.env`, `.env*`. All are gitignored. The wallet files live **untracked on disk** (services read them) — do NOT `git add -f` them.
+
+A **`.git/hooks/pre-commit`** hook blocks adding any wallet/nsec file or a literal adminkey/nsec value (deletions are allowed). Do not bypass it.
+
+> History note (2026-06-29): 32 `lnbits-wallet.json` adminkeys had leaked into git history and were scrubbed with `git filter-repo` + force-push; the Go GOPATH cache (`go/pkg`, `go/bin`) was scrubbed too. ⚠️ `git filter-repo` does a `reset --hard` — commit working changes BEFORE running it, or they are lost.
+
 ### 🪿 V-Formation — AI team
 
 Full description per goose: `agents/<name>/<name>.md`

@@ -365,6 +365,8 @@ git remote set-url origin https://github.com/Goosie/<repo>.git
 Na een `npm run build` zijn dist-wijzigingen tijdelijk. Kopieer bestanden die live moeten zijn
 (bijv. icons) handmatig: `cp public/icons/* dist/icons/`
 
+**🔒 Geheimen NOOIT committen.** `/home/deploy` pusht naar een **privé** GitHub-repo (`origin → Goosie/home-deploy`), maar moet secret-vrij blijven. Nooit committen: `lnbits-wallet.json` (LNbits adminkey + inkey), `nostr-key.json` (nsec), `bunker.env`, `.env*` — allemaal gitignored. De wallet-bestanden staan **untracked op schijf** (services lezen ze); niet met `git add -f` forceren. Een **pre-commit-hook** (`.git/hooks/pre-commit`) weigert het toevoegen van wallet/nsec-bestanden of een adminkey/nsec-waarde (verwijderen mag) — niet omzeilen. ⚠️ `git filter-repo` doet een `reset --hard` die niet-gecommitte tracked wijzigingen wist: **commit eerst**. (Op 29-06-2026 zijn gelekte adminkeys + de Go-cache uit de historie gescrubd.)
+
 ## App Types — Twee varianten
 
 ### Type A: Vite/React app (standaard via `newapp`)
