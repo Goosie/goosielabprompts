@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-29 13:39)
+# Recent Changes — last 7 days (2026-06-29 13:44)
 
 ## Server (home-deploy)
 ```
+6f6457c0 goosie help: add Ay block with 'ay drift' (roster drift-check)
 b39cd9da icons: add gitea/gitty/humany goose icons (close roster drift-detector gaps)
 f13c17be gitignore: de-dupe (drop double strfry/ + redundant lnbits glob; collapse go/pkg+go/bin → go/)
 9f4d782f docs: add git-secrets security rules to CLAUDE.md (never commit wallet/nsec keys; pre-commit hook; private origin)
