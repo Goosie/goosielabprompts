@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-29 13:22)
+# Recent Changes — last 7 days (2026-06-29 13:39)
 
 ## Server (home-deploy)
 ```
+b39cd9da icons: add gitea/gitty/humany goose icons (close roster drift-detector gaps)
 f13c17be gitignore: de-dupe (drop double strfry/ + redundant lnbits glob; collapse go/pkg+go/bin → go/)
 9f4d782f docs: add git-secrets security rules to CLAUDE.md (never commit wallet/nsec keys; pre-commit hook; private origin)
 a9d17e3b memory: correct /home/deploy git note (has private GitHub origin; never commit secrets)
