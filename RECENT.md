@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-29 07:03)
+# Recent Changes — last 7 days (2026-06-29 07:53)
 
 ## Server (home-deploy)
 ```
+9b72d9479 Skeiny: fill in role (Skein availability-weaver) + logo; Splitty new portrait
 5d044bc44 splitty: tile quote → 'Splitty will split his donations always over all the goosies'
 6fb1e15db Splitty: flock sat-distribution hub; Perry wallet back to personal
 c6f1d3859 docs: backup section now includes the Cashu mint ledger
