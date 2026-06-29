@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-29 12:44)
+# Recent Changes — last 7 days (2026-06-29 12:54)
 
 ## Server (home-deploy)
 ```
+6caf5c4fe security: stop tracking lnbits-wallet.json (adminkeys) + add pre-commit secret guard
 4f5d48bb6 agents.json: replace 'role to be defined' with real descriptions (welcome, toddy, linky)
 544d06ccb agents.json: backfill welcome + linky npub/pubkey (roster now complete, 0 null npubs)
 ba22bbe8a docs: drop removed apps from project lists (vformation/swarm/catchzaps/sofia/test/ididhere/mobile/testtrip/rotterdam)
