@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 18:30)
+# Recent Changes — last 7 days (2026-06-30 18:55)
 
 ## Server (home-deploy)
 ```
+965e9e21 flock: merge Gitea into Gitty — Gitty now owns GitHub + the self-hosted Gitea mirror; deletegoose gitea (30→29)
 f4fe2a6f flock: retire Weathery, Linky, Supporty (right-sizing no-brainers) — remove identities, regen flock tables (33→30)
 9ca5bf6b memory: Perry welcomes proactive advice to prune/merge goosies toward a leaner professional setup
 7d8bf79b prompts: mechanical sweep across all goosie bodies — @<goose>→>><goose>, Assistenty(orchestrator)→the Conductor (body-only; flock tables + assistenty/toddy/transy/nosty preserved); agents.json about aligned
@@ -31,7 +32,6 @@ dd626e3a prompts: fix + regenerate the flock tables — add Humany 'flock' comma
 6f8a0782 CLAUDE.md: add 'Q: means answer-only' rule (a question gets an answer, no action)
 15dba0d7 prompts: tie Assistenty's persona to the mission + refresh the flock roster (33 geese, add Splitty/Skeiny, fix vague/Dutch entries)
 4d6f0372 CLAUDE.md: translate the full root prompt to English (faithful translation; paths/commands/tables/npubs unchanged)
-e70e21dd CLAUDE.md: switch to English + add 'English coaching' rule (act on intent, then a short ✍️ English note)
 ```
 
 ## Apps
