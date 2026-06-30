@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 09:12)
+# Recent Changes — last 7 days (2026-06-30 09:28)
 
 ## Server (home-deploy)
 ```
+958e2f20 prompts: clean agent descriptions — Astrid→Assistenty everywhere, translate Toddy + Ay (+backy/transy) to English, sync agents.json
 70bf8c6c CLAUDE.md: add 'AI coaching' rule — teach AI in context + 🤖 AI tips (Perry's 2nd mission: become a strong AI manager)
 6f8a0782 CLAUDE.md: add 'Q: means answer-only' rule (a question gets an answer, no action)
 15dba0d7 prompts: tie Assistenty's persona to the mission + refresh the flock roster (33 geese, add Splitty/Skeiny, fix vague/Dutch entries)
