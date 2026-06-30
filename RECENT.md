@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 13:29)
+# Recent Changes — last 7 days (2026-06-30 13:32)
 
 ## Server (home-deploy)
 ```
+334d9fa1 whenidie.md: sweep discontinued apps from the rest of the doc — service example, file tree, juridical list, and fix broken catchzaps→skein code-import paths
 a2fc4a0a whenidie.md: V-formatie table — keep curated 9 (now accurate) + add '~33 total' count note
 9d78c71a whenidie.md: reframe homepage WordPress→nsite/Blossom + sweep Astrid→Assistenty + drop dead IDidHere subdomain
 e054ba0a whenidie.md: reconcile app list with reality — add Iris/gameofthegoose/proofofread/bookwriter/honkference/skein, drop discontinued (CatchZaps/IDidHere/Weddendat/Sofia)
@@ -31,7 +32,6 @@ a9d17e3b memory: correct /home/deploy git note (has private GitHub origin; never
 c97b2c0d chore: stop tracking go/ GOPATH cache (go/pkg + go/bin) — 27.8k files, regenerable
 600c1677 security: stop tracking lnbits-wallet.json (adminkeys) + add pre-commit secret guard
 f3fdad6c agents.json: replace 'role to be defined' with real descriptions (welcome, toddy, linky)
-59056971 agents.json: backfill welcome + linky npub/pubkey (roster now complete, 0 null npubs)
 ```
 
 ## Apps
