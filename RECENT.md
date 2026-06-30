@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 09:43)
+# Recent Changes — last 7 days (2026-06-30 09:44)
 
 ## Server (home-deploy)
 ```
+d5003e17 transy.md: fix heading too (Chief Reality Officer → Translation & Localisation)
 717929f4 CLAUDE.md: resolve Transy role conflict — Transy is the Translation goose, not 'Chief Reality Officer' (matches its prompt + agents.json + flock tables)
 dd626e3a prompts: fix + regenerate the flock tables — add Humany 'flock' command, fill missing source descriptions (gitea/gitty/weathery/prompty/toddy), correct Transy + Healthy
 958e2f20 prompts: clean agent descriptions — Astrid→Assistenty everywhere, translate Toddy + Ay (+backy/transy) to English, sync agents.json
