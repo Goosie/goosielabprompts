@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 08:04)
+# Recent Changes — last 7 days (2026-06-30 08:55)
 
 ## Server (home-deploy)
 ```
+4d6f0372 CLAUDE.md: translate the full root prompt to English (faithful translation; paths/commands/tables/npubs unchanged)
 e70e21dd CLAUDE.md: switch to English + add 'English coaching' rule (act on intent, then a short ✍️ English note)
 2c1aa123 CLAUDE.md: add Mission & Purpose at the top (undismissible working demos; learn-by-doing KPI)
 0f8010b8 memory: record decision to keep Healthy's RAM alarm sensitive (don't relax it)
