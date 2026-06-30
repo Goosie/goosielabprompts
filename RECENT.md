@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 19:47)
+# Recent Changes — last 7 days (2026-06-30 19:59)
 
 ## Server (home-deploy)
 ```
+406b209d docs: GitHub auth is now via the gh CLI (gh auth setup-git), not ~/.git-credentials — update CLAUDE.md + whenidie.md; removed the empty credentials file + store helper
 97238a1f audit: 'judge by runtime, not file layout' rule — Ay + prune-goosies memory (a missing scripts/ dir is weak; a live service is strong, e.g. Welcome in nostr-listener)
 6dd38105 directory: add Level-1 proactive triggers ('Acts on its own when' — focus-drift, Gander scouting, idea clears Thinky's gate)
 eb9ac032 prompts: tighten Directory — keep as the long-horizon/strategy lens, drop the Formation-Health overlap (that's Ay/Conductor)
@@ -31,7 +32,6 @@ a46dd77b CLAUDE.md: add Handover rule — keep whenidie.md current for Perry's f
 e0a4963b git: rewrite Git Discipline to match reality (branch for features, main for tiny fixes) + add Git coaching rule + gs/gd/gnew aliases
 d5003e17 transy.md: fix heading too (Chief Reality Officer → Translation & Localisation)
 717929f4 CLAUDE.md: resolve Transy role conflict — Transy is the Translation goose, not 'Chief Reality Officer' (matches its prompt + agents.json + flock tables)
-dd626e3a prompts: fix + regenerate the flock tables — add Humany 'flock' command, fill missing source descriptions (gitea/gitty/weathery/prompty/toddy), correct Transy + Healthy
 ```
 
 ## Apps

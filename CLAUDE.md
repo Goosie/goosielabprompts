@@ -357,7 +357,7 @@ Match git effort to the work. **Tiny fix** (one file) → commit straight to `ma
 ### GitHub
 - Organisation: Goosie
 - Repos: https://github.com/Goosie
-- Credentials: ~/.git-credentials (HTTPS tokens)
+- Credentials: GitHub auth runs through the `gh` CLI (`gh auth setup-git` wires git to it; token lives in `~/.config/gh/`). Check with `gh auth status`. No `~/.git-credentials`.
 
 ### 🔒 Secrets in git — NEVER commit wallet/identity keys
 `/home/deploy` is pushed to a **private** GitHub repo (`origin → Goosie/home-deploy`). Pushing is fine — but the repo must stay secret-free.
