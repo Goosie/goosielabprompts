@@ -26,3 +26,4 @@
 - [Wallet architecture](project_wallet_architecture.md) — Splitty = sat-distribution hub, Perry = personal wallet; humany auto-adds geese to Splitty's split
 - [Roster manifest parked](project_roster_manifest_parked.md) — chose detection (drift-detector via Ay) over a single-manifest generator; don't build generation until drift proves recurring
 - [Healthy RAM alarm](feedback_healthy_ram_alarm.md) — leave RAM check sensitive, never relax it (RAM is the real constraint); load/swap were tuned, RAM stays
+- [AI coaching](feedback_ai_coaching.md) — Perry's 2nd mission: become a strong AI manager; teach AI in context + coach his instructions with a 🤖 AI tip

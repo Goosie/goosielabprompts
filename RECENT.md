@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 09:06)
+# Recent Changes — last 7 days (2026-06-30 09:12)
 
 ## Server (home-deploy)
 ```
+70bf8c6c CLAUDE.md: add 'AI coaching' rule — teach AI in context + 🤖 AI tips (Perry's 2nd mission: become a strong AI manager)
 6f8a0782 CLAUDE.md: add 'Q: means answer-only' rule (a question gets an answer, no action)
 15dba0d7 prompts: tie Assistenty's persona to the mission + refresh the flock roster (33 geese, add Splitty/Skeiny, fix vague/Dutch entries)
 4d6f0372 CLAUDE.md: translate the full root prompt to English (faithful translation; paths/commands/tables/npubs unchanged)
