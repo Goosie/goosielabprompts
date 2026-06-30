@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 19:39)
+# Recent Changes — last 7 days (2026-06-30 19:47)
 
 ## Server (home-deploy)
 ```
+97238a1f audit: 'judge by runtime, not file layout' rule — Ay + prune-goosies memory (a missing scripts/ dir is weak; a live service is strong, e.g. Welcome in nostr-listener)
 6dd38105 directory: add Level-1 proactive triggers ('Acts on its own when' — focus-drift, Gander scouting, idea clears Thinky's gate)
 eb9ac032 prompts: tighten Directory — keep as the long-horizon/strategy lens, drop the Formation-Health overlap (that's Ay/Conductor)
 8f8c9d68 flock: merge Prompty into Ay — Ay now audits AND refines prompts; idea→brief script kept as the 'ideabrief' tool; deletegoose prompty (28→27)
@@ -31,7 +32,6 @@ e0a4963b git: rewrite Git Discipline to match reality (branch for features, main
 d5003e17 transy.md: fix heading too (Chief Reality Officer → Translation & Localisation)
 717929f4 CLAUDE.md: resolve Transy role conflict — Transy is the Translation goose, not 'Chief Reality Officer' (matches its prompt + agents.json + flock tables)
 dd626e3a prompts: fix + regenerate the flock tables — add Humany 'flock' command, fill missing source descriptions (gitea/gitty/weathery/prompty/toddy), correct Transy + Healthy
-958e2f20 prompts: clean agent descriptions — Astrid→Assistenty everywhere, translate Toddy + Ay (+backy/transy) to English, sync agents.json
 ```
 
 ## Apps
