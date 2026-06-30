@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 20:35)
+# Recent Changes — last 7 days (2026-06-30 20:47)
 
 ## Server (home-deploy)
 ```
+60843ea4 Nosty: real per-goosie key model, not fabricated AWS-signing; park Docy idea
 d4862847 flock: rename Docy → Admitty (the admission gatekeeper) — identity, prompt, flock tables, agents.json
 406b209d docs: GitHub auth is now via the gh CLI (gh auth setup-git), not ~/.git-credentials — update CLAUDE.md + whenidie.md; removed the empty credentials file + store helper
 97238a1f audit: 'judge by runtime, not file layout' rule — Ay + prune-goosies memory (a missing scripts/ dir is weak; a live service is strong, e.g. Welcome in nostr-listener)
@@ -31,7 +32,6 @@ e054ba0a whenidie.md: reconcile app list with reality — add Iris/gameofthegoos
 a46dd77b CLAUDE.md: add Handover rule — keep whenidie.md current for Perry's family (🪦 trigger flag, single source)
 3666c87d docs: remove goosielabs-context.md — stale, unused duplicate of CLAUDE.md (still listed 'Ruby')
 e0a4963b git: rewrite Git Discipline to match reality (branch for features, main for tiny fixes) + add Git coaching rule + gs/gd/gnew aliases
-d5003e17 transy.md: fix heading too (Chief Reality Officer → Translation & Localisation)
 ```
 
 ## Apps

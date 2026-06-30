@@ -724,6 +724,7 @@ When Perry asks for a tidy-up, the Conductor dispatches **Assistenty** (the synt
 - Termux mobile workflow via Tailscale
 - Nostr-based private social travel app (Sofia)
 - Mountain bike trip web app with live location (Bulgaria trip)
+- **Docy** (docs goose, parked): a scribe that captures the *why* at build-time into each app's `## Doel & Gebruik`; smallest proof = fill the empty ones (georgie, honkbadge). Build when there's a real reader + trigger.
 
 ## Perry's Beliefs
 
