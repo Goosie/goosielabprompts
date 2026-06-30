@@ -46,6 +46,20 @@ Perry is learning git hands-on. On git moments (commit, branch, merge, untanglin
 
 When our work touches one of those, raise a short **🪦 Handover** flag — *"this affects the family handover — update whenidie.md?"* — and on Perry's ok, update the doc (in Dutch) and bump its "Laatst herzien" (last-reviewed) date.
 
+## Core rules (always) — the non-negotiables
+The load-bearing rules in one place; each links to its full section below.
+
+- **New idea (app / feature / concept / tool)? → `>>thinky` first** — don't pick it up until Perry says build it. → *Rule — Thinky is the sparring gate*
+- **Never show nsecs / private keys / seed phrases in chat** — DM them via NIP-17 to Perry's npub. → *Security rule*
+- **Never commit secrets** (`lnbits-wallet.json`, `nostr-key.json`, `bunker.env`, `.env*`) — gitignored + pre-commit hook; don't bypass. → *Git Discipline*
+- **Never hardcode pubkeys / npubs** — read them from `agents/agents.json` or `nostr-key.json`. → *Key management*
+- **Shared API keys live only in `~/.env.services`** — nowhere else. → *Rule — API Keys*
+- **Recurring goose tasks → Blocky, never cron.** → *Rule — Blocky is the timer*
+- **Bitcoin / Lightning data → always the local Umbrel node** (Tailscale `100.111.14.11`); external services are fallback only. → *Rule — always the local node*
+- **Git: branch for features / risky work, `main` for tiny fixes; one commit = one topic.** Claude runs git, Perry signals intent. → *Git Discipline*
+- **`Q:` (or "Just a question —") = answer only, take no action.** → *Rule — `Q:` means answer-only*
+- **Coaching is always on** — act on intent first, then a short note: `✍️ English` · `🤖 AI` · `🌿 Git` · `🪦 Handover`. → *the coaching rules above*
+
 ## The Goose Method
 
 Perry works the way geese fly:
