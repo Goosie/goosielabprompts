@@ -8,6 +8,7 @@
 
 ## Open
 
+- [ ] [2026-06-30] `#server` **Review nosty.md body** — its prompt describes a *fabricated* AWS-signing architecture ("…uses AWS to sign events / coordinates signing"). Rewrite to the real key model: per-goosie `nostr-key.json`, `sync-configs` (derived files), `rotatekey` (rotation), `bunker.env`. Part of the per-goosie prompt-body review.
 - [ ] [2026-06-26] `#idee` `#app:proofofread` **Badgy — credential-gans** — Maak een eigen gans die NIP-58 badges uitreikt voor de hele formatie (ProofOfRead, ididhere, toekomstige apps), i.p.v. een anonieme app-key. Tijdelijke fix nu: `proofofread_badge_issuer` (bb540ab1…) staat in `WHITELIST_PERMANENT` in `sync-configs`. Bij bouw van Badgy: die regel verwijderen en ProofOfRead laten signen met Badgy's sleutel. **Ontwerpkeuze eerst via Thinky:** Badgy als losse identiteit (nsec verspreidt over alle apps — sleutel-proliferatie) vs. Badgy als signing-service (apps vragen een badge aan, Badgy tekent centraal — schoner maar meer werk).
 - [ ] [2026-06-16] `#app:skein` NIP-17 upgrade — booking + callback berichten als gift-wrapped DM (kind 14 in kind 1059) i.p.v. publiek `kind:1`. Nu lekt elk slot/contact via de relay. Vereist nostrify NIP-44/NIP-59 helpers in de visitor flow.
 
