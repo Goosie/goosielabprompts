@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 18:55)
+# Recent Changes — last 7 days (2026-06-30 19:05)
 
 ## Server (home-deploy)
 ```
+ed8afba1 flock: merge Checky into the Conductor — coordination/routing/triage is the main session's job; deletegoose checky (29→28); Ay handoff updated
 965e9e21 flock: merge Gitea into Gitty — Gitty now owns GitHub + the self-hosted Gitea mirror; deletegoose gitea (30→29)
 f4fe2a6f flock: retire Weathery, Linky, Supporty (right-sizing no-brainers) — remove identities, regen flock tables (33→30)
 9ca5bf6b memory: Perry welcomes proactive advice to prune/merge goosies toward a leaner professional setup
@@ -31,7 +32,6 @@ dd626e3a prompts: fix + regenerate the flock tables — add Humany 'flock' comma
 70bf8c6c CLAUDE.md: add 'AI coaching' rule — teach AI in context + 🤖 AI tips (Perry's 2nd mission: become a strong AI manager)
 6f8a0782 CLAUDE.md: add 'Q: means answer-only' rule (a question gets an answer, no action)
 15dba0d7 prompts: tie Assistenty's persona to the mission + refresh the flock roster (33 geese, add Splitty/Skeiny, fix vague/Dutch entries)
-4d6f0372 CLAUDE.md: translate the full root prompt to English (faithful translation; paths/commands/tables/npubs unchanged)
 ```
 
 ## Apps
