@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 10:49)
+# Recent Changes — last 7 days (2026-06-30 10:53)
 
 ## Server (home-deploy)
 ```
+584c1f34 whenidie.md: refresh high-confidence stale facts (Transy=translation, Astrid→Assistenty, Healthy ~40min, relay URL, reviewed date) — keep personal wording
 a46dd77b CLAUDE.md: add Handover rule — keep whenidie.md current for Perry's family (🪦 trigger flag, single source)
 3666c87d docs: remove goosielabs-context.md — stale, unused duplicate of CLAUDE.md (still listed 'Ruby')
 e0a4963b git: rewrite Git Discipline to match reality (branch for features, main for tiny fixes) + add Git coaching rule + gs/gd/gnew aliases
@@ -31,7 +32,6 @@ bfb9f202 docs: drop removed apps from project lists (vformation/swarm/catchzaps/
 b8d757dd Skeiny: fill in role (Skein availability-weaver) + logo; Splitty new portrait
 334d6cf4 splitty: tile quote → 'Splitty will split his donations always over all the goosies'
 99caaa70 Splitty: flock sat-distribution hub; Perry wallet back to personal
-2efd8323 docs: backup section now includes the Cashu mint ledger
 ```
 
 ## Apps
