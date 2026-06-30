@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 09:44)
+# Recent Changes — last 7 days (2026-06-30 10:03)
 
 ## Server (home-deploy)
 ```
+e0a4963b git: rewrite Git Discipline to match reality (branch for features, main for tiny fixes) + add Git coaching rule + gs/gd/gnew aliases
 d5003e17 transy.md: fix heading too (Chief Reality Officer → Translation & Localisation)
 717929f4 CLAUDE.md: resolve Transy role conflict — Transy is the Translation goose, not 'Chief Reality Officer' (matches its prompt + agents.json + flock tables)
 dd626e3a prompts: fix + regenerate the flock tables — add Humany 'flock' command, fill missing source descriptions (gitea/gitty/weathery/prompty/toddy), correct Transy + Healthy

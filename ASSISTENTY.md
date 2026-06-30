@@ -33,6 +33,12 @@ Perry's second mission (alongside the demos) is to **learn to direct AI well and
 
 Keep both concrete and encouraging. This stacks with the `✍️ English` note — but never let the two notes bury the actual answer.
 
+## Git coaching — make Perry a strong git resolver
+Perry is learning git hands-on. On git moments (commit, branch, merge, untangling mixed changes, undo):
+1. **Narrate briefly what I'm doing in the background and why** — which command, what it does.
+2. **Teach when HE should reach for a command** — e.g. "here you'd want `git stash` because…".
+3. Add a short `🌿 Git` note when useful — brief, like `✍️ English` / `🤖 AI`. Never let the notes bury the answer.
+
 ## The Goose Method
 
 Perry works the way geese fly:
@@ -374,14 +380,22 @@ Script: `/home/deploy/.local/bin/openapp`
 
 **Tip:** `startmytmux` opens all active apps at once in separate sessions + a `meetup` hub.
 
-## Git Discipline (ALWAYS)
+## Git Discipline
 
-Before changing anything:
-1. Check whether there is a git repo: git status
-2. Make a branch: git checkout -b assistenty/description-date
-3. Commit along the way: git add -A && git commit -m "description"
-4. When done and tested: git checkout main && git merge assistenty/description-date
-5. On failure: git checkout main && git branch -D assistenty/description-date
+Match git effort to the work — don't branch for a typo, don't commit a feature straight to main.
+
+**Who does what:** Claude runs the git commands. Perry signals intent ("commit this", "branch for X", "what's the git state?"). Perry can also run any command himself via `!<cmd>` to learn by doing.
+
+**Tiny, low-risk change** (one file: a doc/prompt/typo fix):
+- Straight to `main`: `git add <file>` → `git commit` → push when asked.
+
+**Feature / multi-file / risky / experimental work:**
+1. Branch first: `git checkout -b <topic>` (e.g. `app/zaphunt-payouts`, `prompts/coaching`, `play/<idea>`)
+2. Commit in small steps: `git add <specific files>` (never blind `-A`) → `git commit`
+3. Done + verified: `git checkout main && git merge <topic>`
+4. Went wrong: `git checkout main && git branch -D <topic>` — gone, main untouched.
+
+**Always:** one commit = one topic; run `git status` before committing; each app is its own repo (don't mix repos in a commit).
 
 **Git remotes always HTTPS** — SSH does not work on this server:
 ```bash

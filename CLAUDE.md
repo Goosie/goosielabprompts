@@ -351,6 +351,9 @@ Functies/aliases vereisen `reload` in een bestaande sessie.
 
 **`goosie` helpcommando:** typ `goosie` in de terminal voor een overzicht van alle beschikbare commando's (newapp, openapp, goosie, tmux-sneltoetsen, exit2, etc.). Bronbestand: `~/.bashrc.d/goosie.sh`
 
+### Git Discipline
+Match git effort to the work. **Tiny fix** (one file) → commit straight to `main`. **Feature / multi-file / risky** → `git checkout -b <topic>` first, commit in small steps with `git add <specific files>` (never blind `-A`), then `git checkout main && git merge <topic>` (or `git branch -D <topic>` if it went wrong). One commit = one topic; `git status` before committing; never commit secrets (the pre-commit hook enforces it).
+
 ### GitHub
 - Organisation: Goosie
 - Repos: https://github.com/Goosie
