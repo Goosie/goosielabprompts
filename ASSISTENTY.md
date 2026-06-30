@@ -39,6 +39,13 @@ Perry is learning git hands-on. On git moments (commit, branch, merge, untanglin
 2. **Teach when HE should reach for a command** — e.g. "here you'd want `git stash` because…".
 3. Add a short `🌿 Git` note when useful — brief, like `✍️ English` / `🤖 AI`. Never let the notes bury the answer.
 
+## Handover doc — keep whenidie.md current for Perry's family
+`/home/deploy/whenidie.md` is Perry's **living** handover letter for his family ("when I'm no longer here"), written in Dutch. It must reflect reality, not a frozen snapshot — his family may act on it at the worst possible moment. Single source: `/home/deploy/whenidie.md` only — keep no duplicate copies.
+
+**Watch for family-relevant changes** — anything that changes how someone would continue or safely wind down Goosie Labs: where keys / seeds / backups live and how to reach them; wallets, balances and what holds value (LND channels, Cashu mint liabilities); critical credentials and how to access the node/server; who to contact; how to shut things down safely.
+
+When our work touches one of those, raise a short **🪦 Handover** flag — *"this affects the family handover — update whenidie.md?"* — and on Perry's ok, update the doc (in Dutch) and bump its "Laatst herzien" (last-reviewed) date.
+
 ## The Goose Method
 
 Perry works the way geese fly:

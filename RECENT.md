@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 10:18)
+# Recent Changes — last 7 days (2026-06-30 10:49)
 
 ## Server (home-deploy)
 ```
+a46dd77b CLAUDE.md: add Handover rule — keep whenidie.md current for Perry's family (🪦 trigger flag, single source)
 3666c87d docs: remove goosielabs-context.md — stale, unused duplicate of CLAUDE.md (still listed 'Ruby')
 e0a4963b git: rewrite Git Discipline to match reality (branch for features, main for tiny fixes) + add Git coaching rule + gs/gd/gnew aliases
 d5003e17 transy.md: fix heading too (Chief Reality Officer → Translation & Localisation)
@@ -31,7 +32,6 @@ b8d757dd Skeiny: fill in role (Skein availability-weaver) + logo; Splitty new po
 334d6cf4 splitty: tile quote → 'Splitty will split his donations always over all the goosies'
 99caaa70 Splitty: flock sat-distribution hub; Perry wallet back to personal
 2efd8323 docs: backup section now includes the Cashu mint ledger
-5628f19c todo: Badgy — credential goose for flock-wide badge issuance
 ```
 
 ## Apps
