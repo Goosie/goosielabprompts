@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 17:58)
+# Recent Changes — last 7 days (2026-06-30 17:59)
 
 ## Server (home-deploy)
 ```
+9ca5bf6b memory: Perry welcomes proactive advice to prune/merge goosies toward a leaner professional setup
 7d8bf79b prompts: mechanical sweep across all goosie bodies — @<goose>→>><goose>, Assistenty(orchestrator)→the Conductor (body-only; flock tables + assistenty/toddy/transy/nosty preserved); agents.json about aligned
 01d55a98 prompts: review Directory's body — @→>>, Assistenty→Conductor, align mission to 'undismissible demos', Directory advises (Perry decides), Thinky owns the new-idea gate
 dd78b562 todo: queue a proper nosty.md body review (fabricated AWS-signing architecture → real key model)
@@ -31,7 +32,6 @@ dd626e3a prompts: fix + regenerate the flock tables — add Humany 'flock' comma
 4d6f0372 CLAUDE.md: translate the full root prompt to English (faithful translation; paths/commands/tables/npubs unchanged)
 e70e21dd CLAUDE.md: switch to English + add 'English coaching' rule (act on intent, then a short ✍️ English note)
 2c1aa123 CLAUDE.md: add Mission & Purpose at the top (undismissible working demos; learn-by-doing KPI)
-0f8010b8 memory: record decision to keep Healthy's RAM alarm sensitive (don't relax it)
 ```
 
 ## Apps
