@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 17:31)
+# Recent Changes — last 7 days (2026-06-30 17:35)
 
 ## Server (home-deploy)
 ```
+0a6e03d4 whenidie.md: add real family-recovery section (Rens & Mart authorized; 3 options; built on existing access procedures; one blank for key-custody only Perry knows)
 8754aab7 prompts: Assistenty subagent → synthesis & continuity specialist (drop stale orchestrator/Formations/registry/placeholder family-recovery); regen flock tables; record architecture in memory
 2486ecd3 prompts: reframe root as Conductor (main session) + Orchestra (shared context); Assistenty demoted to a peer goosie; naming convention (function-roles vs -y goosies)
 71030c92 CLAUDE.md: add 'Core rules (always)' anchor near the top — surfaces the load-bearing rules (Thinky gate, nsec security, no-hardcode, Blocky, local node, git, Q:) with pointers
@@ -31,7 +32,6 @@ fd09efcf memory: log decision to park the roster manifest-generator (detection-f
 b39cd9da icons: add gitea/gitty/humany goose icons (close roster drift-detector gaps)
 f13c17be gitignore: de-dupe (drop double strfry/ + redundant lnbits glob; collapse go/pkg+go/bin → go/)
 9f4d782f docs: add git-secrets security rules to CLAUDE.md (never commit wallet/nsec keys; pre-commit hook; private origin)
-a9d17e3b memory: correct /home/deploy git note (has private GitHub origin; never commit secrets)
 ```
 
 ## Apps

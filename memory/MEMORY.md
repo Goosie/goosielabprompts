@@ -27,3 +27,4 @@
 - [Roster manifest parked](project_roster_manifest_parked.md) — chose detection (drift-detector via Ay) over a single-manifest generator; don't build generation until drift proves recurring
 - [Healthy RAM alarm](feedback_healthy_ram_alarm.md) — leave RAM check sensitive, never relax it (RAM is the real constraint); load/swap were tuned, RAM stays
 - [AI coaching](feedback_ai_coaching.md) — Perry's 2nd mission: become a strong AI manager; teach AI in context + coach his instructions with a 🤖 AI tip
+- [Conductor architecture](project_conductor_architecture.md) — main session = Conductor, CLAUDE.md = Orchestra, -y goosies = peer subagents; Assistenty = synthesis goosie, not orchestrator; naming convention
