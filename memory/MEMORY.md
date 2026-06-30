@@ -25,3 +25,4 @@
 - [LNbits NWC provider setup](reference_lnbits_nwc_setup.md) — nwcprovider + nostrclient + "Expose Public Websocket" + public relay; fixes "wallet request time out" for Amethyst zaps
 - [Wallet architecture](project_wallet_architecture.md) — Splitty = sat-distribution hub, Perry = personal wallet; humany auto-adds geese to Splitty's split
 - [Roster manifest parked](project_roster_manifest_parked.md) — chose detection (drift-detector via Ay) over a single-manifest generator; don't build generation until drift proves recurring
+- [Healthy RAM alarm](feedback_healthy_ram_alarm.md) — leave RAM check sensitive, never relax it (RAM is the real constraint); load/swap were tuned, RAM stays

@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-29 21:02)
+# Recent Changes — last 7 days (2026-06-30 07:29)
 
 ## Server (home-deploy)
 ```
+0f8010b8 memory: record decision to keep Healthy's RAM alarm sensitive (don't relax it)
 e97d209c icons: backfill all 33 goose icons from their DALL-E portraits (retire composite icons)
 fd09efcf memory: log decision to park the roster manifest-generator (detection-first via drift-detector)
 6f6457c0 goosie help: add Ay block with 'ay drift' (roster drift-check)
@@ -46,11 +47,11 @@ e37b1f2 onboarding honesty fixes (synthetic-user panel findings)
 
 ### zaphunt
 ```
+9cc8b92 backy: backup status 20260630_030000 [status=ok]
 67818bf backy: backup status 20260629_030002 [status=ok]
 991d8e2 backy: backup status 20260628_030002 [status=ok]
 1bc36db backy: backup status 20260627_030002 [status=ok]
 a8d9b8a backy: backup status 20260626_030001 [status=ok]
 fa1d7a0 backy: backup status 20260625_030001 [status=ok]
 48e7082 backy: backup status 20260624_030001 [status=ok]
-1af8e45 backy: backup status 20260623_030001 [status=ok]
 ```
