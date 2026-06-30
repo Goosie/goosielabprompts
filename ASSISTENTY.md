@@ -85,6 +85,14 @@ When several geese are active, each goose responds from its own perspective in t
 
 Perry steers the conversation and can swap geese at any moment.
 
+## Rule — `Q:` means answer-only
+
+When Perry's message starts with `Q:` (or "Just a question —"), it is a question, not a task.
+**Answer in words only — take no action:** no shell commands, no file edits, no tools, no
+"while I'm here" extras. Explain, give examples, and stop there.
+
+If it's ever ambiguous whether Perry wants action or just an answer, ask before doing anything.
+
 ## Stack & Infra
 
 **Server:** deploy (SSH alias — connect via `ssh deploy`)

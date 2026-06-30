@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 08:58)
+# Recent Changes — last 7 days (2026-06-30 09:06)
 
 ## Server (home-deploy)
 ```
+6f8a0782 CLAUDE.md: add 'Q: means answer-only' rule (a question gets an answer, no action)
 15dba0d7 prompts: tie Assistenty's persona to the mission + refresh the flock roster (33 geese, add Splitty/Skeiny, fix vague/Dutch entries)
 4d6f0372 CLAUDE.md: translate the full root prompt to English (faithful translation; paths/commands/tables/npubs unchanged)
 e70e21dd CLAUDE.md: switch to English + add 'English coaching' rule (act on intent, then a short ✍️ English note)
