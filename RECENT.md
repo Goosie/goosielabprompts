@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 13:18)
+# Recent Changes — last 7 days (2026-06-30 13:26)
 
 ## Server (home-deploy)
 ```
+9d78c71a whenidie.md: reframe homepage WordPress→nsite/Blossom + sweep Astrid→Assistenty + drop dead IDidHere subdomain
 e054ba0a whenidie.md: reconcile app list with reality — add Iris/gameofthegoose/proofofread/bookwriter/honkference/skein, drop discontinued (CatchZaps/IDidHere/Weddendat/Sofia)
 005c439f whenidie.md: fix funding chain — LNbits talks to LND directly via Tailscale (LndRestWallet), no NWC→Alby
 584c1f34 whenidie.md: refresh high-confidence stale facts (Transy=translation, Astrid→Assistenty, Healthy ~40min, relay URL, reviewed date) — keep personal wording
@@ -31,7 +32,6 @@ c97b2c0d chore: stop tracking go/ GOPATH cache (go/pkg + go/bin) — 27.8k files
 f3fdad6c agents.json: replace 'role to be defined' with real descriptions (welcome, toddy, linky)
 59056971 agents.json: backfill welcome + linky npub/pubkey (roster now complete, 0 null npubs)
 bfb9f202 docs: drop removed apps from project lists (vformation/swarm/catchzaps/sofia/test/ididhere/mobile/testtrip/rotterdam)
-b8d757dd Skeiny: fill in role (Skein availability-weaver) + logo; Splitty new portrait
 ```
 
 ## Apps
