@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 08:55)
+# Recent Changes — last 7 days (2026-06-30 08:58)
 
 ## Server (home-deploy)
 ```
+15dba0d7 prompts: tie Assistenty's persona to the mission + refresh the flock roster (33 geese, add Splitty/Skeiny, fix vague/Dutch entries)
 4d6f0372 CLAUDE.md: translate the full root prompt to English (faithful translation; paths/commands/tables/npubs unchanged)
 e70e21dd CLAUDE.md: switch to English + add 'English coaching' rule (act on intent, then a short ✍️ English note)
 2c1aa123 CLAUDE.md: add Mission & Purpose at the top (undismissible working demos; learn-by-doing KPI)
