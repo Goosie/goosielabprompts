@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 10:03)
+# Recent Changes — last 7 days (2026-06-30 10:18)
 
 ## Server (home-deploy)
 ```
+3666c87d docs: remove goosielabs-context.md — stale, unused duplicate of CLAUDE.md (still listed 'Ruby')
 e0a4963b git: rewrite Git Discipline to match reality (branch for features, main for tiny fixes) + add Git coaching rule + gs/gd/gnew aliases
 d5003e17 transy.md: fix heading too (Chief Reality Officer → Translation & Localisation)
 717929f4 CLAUDE.md: resolve Transy role conflict — Transy is the Translation goose, not 'Chief Reality Officer' (matches its prompt + agents.json + flock tables)
@@ -31,7 +32,6 @@ b8d757dd Skeiny: fill in role (Skein availability-weaver) + logo; Splitty new po
 99caaa70 Splitty: flock sat-distribution hub; Perry wallet back to personal
 2efd8323 docs: backup section now includes the Cashu mint ledger
 5628f19c todo: Badgy — credential goose for flock-wide badge issuance
-c8b962cf docs: sync Healthy interval to reality (4 blocks / ~40 min)
 ```
 
 ## Apps
