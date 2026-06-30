@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 17:35)
+# Recent Changes — last 7 days (2026-06-30 17:39)
 
 ## Server (home-deploy)
 ```
+b69a838e prompts: review Ay's body — Assistenty→Conductor (4 spots), align 'vision' to the real Mission & Purpose (undismissible demos), drop conflicting vision.md reference
 0a6e03d4 whenidie.md: add real family-recovery section (Rens & Mart authorized; 3 options; built on existing access procedures; one blank for key-custody only Perry knows)
 8754aab7 prompts: Assistenty subagent → synthesis & continuity specialist (drop stale orchestrator/Formations/registry/placeholder family-recovery); regen flock tables; record architecture in memory
 2486ecd3 prompts: reframe root as Conductor (main session) + Orchestra (shared context); Assistenty demoted to a peer goosie; naming convention (function-roles vs -y goosies)
@@ -31,7 +32,6 @@ fd09efcf memory: log decision to park the roster manifest-generator (detection-f
 6f6457c0 goosie help: add Ay block with 'ay drift' (roster drift-check)
 b39cd9da icons: add gitea/gitty/humany goose icons (close roster drift-detector gaps)
 f13c17be gitignore: de-dupe (drop double strfry/ + redundant lnbits glob; collapse go/pkg+go/bin → go/)
-9f4d782f docs: add git-secrets security rules to CLAUDE.md (never commit wallet/nsec keys; pre-commit hook; private origin)
 ```
 
 ## Apps
