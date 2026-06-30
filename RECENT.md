@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 17:46)
+# Recent Changes — last 7 days (2026-06-30 17:52)
 
 ## Server (home-deploy)
 ```
+01d55a98 prompts: review Directory's body — @→>>, Assistenty→Conductor, align mission to 'undismissible demos', Directory advises (Perry decides), Thinky owns the new-idea gate
 dd78b562 todo: queue a proper nosty.md body review (fabricated AWS-signing architecture → real key model)
 6038ba4b vision.md: align to the Mission as NOW-vs-horizon (vision = horizon, demos = the seed); soften 'not to demonstrate tech' contradiction
 ff33f6d1 prompts: humany — alert Assistenty → the Conductor (last orchestrator-ref ripple)
@@ -31,7 +32,6 @@ e70e21dd CLAUDE.md: switch to English + add 'English coaching' rule (act on inte
 2c1aa123 CLAUDE.md: add Mission & Purpose at the top (undismissible working demos; learn-by-doing KPI)
 0f8010b8 memory: record decision to keep Healthy's RAM alarm sensitive (don't relax it)
 e97d209c icons: backfill all 33 goose icons from their DALL-E portraits (retire composite icons)
-fd09efcf memory: log decision to park the roster manifest-generator (detection-first via drift-detector)
 ```
 
 ## Apps
