@@ -375,7 +375,7 @@ Full description per goose: `agents/<name>/<name>.md`
 | Thinky | Creative sparring partner — challenges ideas before they become tasks. Invoke before building anything new. | Role |
 | Blocky | Bitcoin block scheduler — triggers other geese via NIP-90 on the relay | Daemon (systemd) |
 | Devy | DevOps Goose — git, backup, updates | Role |
-| Transy | Chief Reality Officer — hard questions | Role |
+| Transy | Translation & localisation — NL/DE/ES, i18n infrastructure | Role |
 | Finny | Chief Financial Goose — guard the sats | Role |
 | Testy | QA Goose — test everything, seed data per app | Script (per app) |
 | Jurry | Legal Advisor — licenses, privacy, liability | Script (server) |

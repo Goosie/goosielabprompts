@@ -619,7 +619,7 @@ The session-id is shown in the output when you exit Claude Code.
 | Jurry        | legal agent; licenses, privacy, payment regulation, liability         | LIVE    | /home/deploy/scripts/jurry/   |
 | Ay           | AI config specialist; checks goose configurations; proactive advice   | LIVE        | /home/deploy/scripts/ay/      |
 | Devy         | Developer Goose — git, backup, updates, server maintenance            | ROLE        | V-Formation                   |
-| Transy       | Chief Reality Officer — critical questions                            | ROLE        | V-Formation                   |
+| Transy       | Translation & localisation — NL/DE/ES, i18n, cultural adaptation     | ROLE        | V-Formation                   |
 | Finny        | Chief Financial Goose — income, expenses, satoshis                    | ROLE        | V-Formation                   |
 | **Thinky**   | **Sparring gate** — challenges ideas before implementation. Asks sharp questions, does pre-mortems, thinks from the person. Never builds, only sharpens. | ROLE | V-Formation |
 | Checky       | Quality coordinator — new app ideas, anomalies, agent audits; routes to specialists | ROLE | V-Formation |
