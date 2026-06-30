@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 08:01)
+# Recent Changes — last 7 days (2026-06-30 08:04)
 
 ## Server (home-deploy)
 ```
+e70e21dd CLAUDE.md: switch to English + add 'English coaching' rule (act on intent, then a short ✍️ English note)
 2c1aa123 CLAUDE.md: add Mission & Purpose at the top (undismissible working demos; learn-by-doing KPI)
 0f8010b8 memory: record decision to keep Healthy's RAM alarm sensitive (don't relax it)
 e97d209c icons: backfill all 33 goose icons from their DALL-E portraits (retire composite icons)

@@ -1,18 +1,17 @@
 ---
 name: feedback_english_language
-description: "All communication is now in English — no more Dutch in Claude, CLAUDE.md files, or commands"
-metadata: 
+description: "Communicate in English + actively coach Perry's written English (he is learning) — codified as a CLAUDE.md rule"
+metadata:
   node_type: memory
   type: feedback
   originSessionId: 1ffa08cf-4c29-45b0-b130-0b5c707d52a4
 ---
 
-Switch to English everywhere — Claude responses, CLAUDE.md files, commands, code comments.
+Communicate in English everywhere — Claude responses, CLAUDE.md files, commands, code comments. (Note: there was a Dutch stretch mid-2026; on 2026-06-30 Perry reaffirmed English and asked for active English coaching.)
 
-**Why:** The nsite rebuild of goosielabs.com is done fully in English. Perry wants consistency between the site content, code, and Claude interactions.
+**Why:** The site/code are in English and — more importantly — Perry is deliberately improving his written English and wants to practise it while we work (type better, make fewer mistakes).
 
 **How to apply:**
-- Respond to Perry in English (not Dutch) from now on
-- When updating CLAUDE.md files, write in English
-- New app instructions, tile descriptions, tile.json fields — all English
-- When correcting Perry's English: after the prompt, add a short line "You mean: [corrected version]" — natural, not pedantic. Only note meaningful corrections (wrong word choice, missing word), not punctuation.
+- Respond in English.
+- The standing coaching behaviour is now an explicit rule in `.claude/CLAUDE.md` ("## English coaching"): on each of Perry's prompts, (1) act on the *intent* even if the English is rough — never block the task on grammar; (2) then add a short `✍️ English` note with the cleaner/native phrasing + at most 1–2 recurring patterns (e.g. "learn me" → "teach me", "make less mistakes" → "make fewer mistakes"). Coach, don't nitpick; skip for trivial messages.
+- New app instructions, tile descriptions, tile.json, code comments — all English.
