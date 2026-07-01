@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-07-01 11:07)
+# Recent Changes — last 7 days (2026-07-01 12:41)
 
 ## Server (home-deploy)
 ```
+4ac78917 todo: log 3-stage Start here → Bookwriter → ProofOfRead roadmap; tick nosty.md review done
 be080b06 Mission: raise the 'undismissible' bar from demo-applause to one real returning user
 60843ea4 Nosty: real per-goosie key model, not fabricated AWS-signing; park Docy idea
 d4862847 flock: rename Docy → Admitty (the admission gatekeeper) — identity, prompt, flock tables, agents.json
@@ -31,7 +32,6 @@ e054ba0a whenidie.md: reconcile app list with reality — add Iris/gameofthegoos
 005c439f whenidie.md: fix funding chain — LNbits talks to LND directly via Tailscale (LndRestWallet), no NWC→Alby
 584c1f34 whenidie.md: refresh high-confidence stale facts (Transy=translation, Astrid→Assistenty, Healthy ~40min, relay URL, reviewed date) — keep personal wording
 a46dd77b CLAUDE.md: add Handover rule — keep whenidie.md current for Perry's family (🪦 trigger flag, single source)
-3666c87d docs: remove goosielabs-context.md — stale, unused duplicate of CLAUDE.md (still listed 'Ruby')
 ```
 
 ## Apps
@@ -44,6 +44,8 @@ c1c6544 gooseAgents: complete the flock roster — refresh descriptions + add we
 
 ### proofofread
 ```
+f1c6212 Merge: badge pass-gate fix
+772d187 Gate badge + certificate on a pass, for every book
 28ca777 journey redesign — Rungs A & B (give-first, panel fixes)
 7a92072 hook: handle the returning user (don't say "earn 11 more" to someone at 21)
 2713f2b hook: 60-second magic — 10 sats instant, then earn 11 more (with fogged path)
@@ -52,8 +54,6 @@ e37b1f2 onboarding honesty fixes (synthetic-user panel findings)
 65bdd37 start done screen: show the badge + self-hosted verify + Step 3 (keep in wallet)
 39abe05 onboarding: friendly, time-aware rate-limit message (no futile retry)
 29fa594 ratelimit: env-based IP exempt list (ONBOARD_RATELIMIT_EXEMPT_IPS)
-21d5550 start quiz: 5/5 no longer shows "Almost!" (passed lost on resubmit + reward bounce)
-82abf57 badge: self-hosted badge page, no third-party viewer
 ```
 
 ### zaphunt

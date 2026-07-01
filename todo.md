@@ -8,7 +8,18 @@
 
 ## Open
 
-- [ ] [2026-06-30] `#server` **Review nosty.md body** — its prompt describes a *fabricated* AWS-signing architecture ("…uses AWS to sign events / coordinates signing"). Rewrite to the real key model: per-goosie `nostr-key.json`, `sync-configs` (derived files), `rotatekey` (rotation), `bunker.env`. Part of the per-goosie prompt-body review.
+- [ ] [2026-07-01] `#app:start` `#app:bookwriter` `#app:proofofread` `#idea` **3-stage onboarding → reading-proof roadmap** — Mission bar (CLAUDE.md): *undismissible = one real person who isn't Perry comes back a second time.* Architecture (Thinky-gated): **ProofOfRead = pure verifier · Bookwriter = author · joined by a Nostr book event (kind 30023).** The apps compose, they don't merge; content lives on Nostr, not hardcoded.
+  - **Stage 1 — "Start here" (onboarding front door).** A stranger walks away with a Nostr identity + Lightning wallet + 21 sats, easily, then discovers the other apps.
+    - [x] Tested `/start` with AI personas (pass + fail) against the live API — money logic solid + idempotent (no double-pay).
+    - [x] Fixed the badge pass-gate bug — badge + certificate were issued even on a fail; now gated on a pass for *every* book (Honk = all 3, core books = 60%).
+    - [x] "Start here" tile live, first on the board (`order:0` → start.goosielabs.com).
+    - [ ] **Real friend test** — the one signal AI personas can't give: does a human find it obvious? (This is the mission bar.)
+    - [ ] Optional polish: custom "Start here" icon (currently 🪿-on-amber fallback).
+    - [ ] Later: extract into a standalone `/apps/start` app **only if the tile earns it** (don't scaffold prematurely).
+  - **Stage 2 — Bookwriter as second tile.** Write book #2, publish to Nostr (kind 30023). Add the Bookwriter tile. Add a "create a reading proof" handoff after publish (registers the book's naddr with ProofOfRead).
+  - **Stage 3 — ProofOfRead consumes a Nostr book.** Given a book naddr: fetch chapters, render as reading content, generate the quiz **from the real text** (fixes today's metadata-only quiz), issue badge. Remove hardcoded `HonkStandardContent`. Open decisions: (a) quiz source — hand-written for onboarding vs AI for library books; (b) approved-books trust registry (who is badge-worthy). Payoff: retention becomes measurable — one npub with 2+ books/badges = a returning reader.
+
+- [x] [2026-06-30] `#server` **Review nosty.md body** — its prompt describes a *fabricated* AWS-signing architecture ("…uses AWS to sign events / coordinates signing"). Rewrite to the real key model: per-goosie `nostr-key.json`, `sync-configs` (derived files), `rotatekey` (rotation), `bunker.env`. Part of the per-goosie prompt-body review.
 - [ ] [2026-06-26] `#idee` `#app:proofofread` **Badgy — credential-gans** — Maak een eigen gans die NIP-58 badges uitreikt voor de hele formatie (ProofOfRead, ididhere, toekomstige apps), i.p.v. een anonieme app-key. Tijdelijke fix nu: `proofofread_badge_issuer` (bb540ab1…) staat in `WHITELIST_PERMANENT` in `sync-configs`. Bij bouw van Badgy: die regel verwijderen en ProofOfRead laten signen met Badgy's sleutel. **Ontwerpkeuze eerst via Thinky:** Badgy als losse identiteit (nsec verspreidt over alle apps — sleutel-proliferatie) vs. Badgy als signing-service (apps vragen een badge aan, Badgy tekent centraal — schoner maar meer werk).
 - [ ] [2026-06-16] `#app:skein` NIP-17 upgrade — booking + callback berichten als gift-wrapped DM (kind 14 in kind 1059) i.p.v. publiek `kind:1`. Nu lekt elk slot/contact via de relay. Vereist nostrify NIP-44/NIP-59 helpers in de visitor flow.
 
