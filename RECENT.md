@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-07-01 12:41)
+# Recent Changes — last 7 days (2026-07-01 12:43)
 
 ## Server (home-deploy)
 ```
+053580b9 todo: freshen header (English, Conductor, put on #todo) + normalize tags (#idee→#idea, #tessa→#testy, #juridisch→#legal)
 4ac78917 todo: log 3-stage Start here → Bookwriter → ProofOfRead roadmap; tick nosty.md review done
 be080b06 Mission: raise the 'undismissible' bar from demo-applause to one real returning user
 60843ea4 Nosty: real per-goosie key model, not fabricated AWS-signing; park Docy idea
@@ -31,7 +32,6 @@ a2fc4a0a whenidie.md: V-formatie table — keep curated 9 (now accurate) + add '
 e054ba0a whenidie.md: reconcile app list with reality — add Iris/gameofthegoose/proofofread/bookwriter/honkference/skein, drop discontinued (CatchZaps/IDidHere/Weddendat/Sofia)
 005c439f whenidie.md: fix funding chain — LNbits talks to LND directly via Tailscale (LndRestWallet), no NWC→Alby
 584c1f34 whenidie.md: refresh high-confidence stale facts (Transy=translation, Astrid→Assistenty, Healthy ~40min, relay URL, reviewed date) — keep personal wording
-a46dd77b CLAUDE.md: add Handover rule — keep whenidie.md current for Perry's family (🪦 trigger flag, single source)
 ```
 
 ## Apps
