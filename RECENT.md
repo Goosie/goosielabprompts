@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-07-01 18:30)
+# Recent Changes — last 7 days (2026-07-01 18:51)
 
 ## Server (home-deploy)
 ```
+f96a506a todo: resolve Gitea token — refreshed + verified, mirror working (nosterin created), fallback aligned
 df3af7f3 todo: close #27 (old pubkey retired), #21 (mijnapp removed), #11 (Phoenix 1500 sats)
 e0f027a5 Version-control ~/.local/bin scripts (17 files)
 6d2376cb todo: close #29 (relay whitelist) — agent fixed, policy tested, sync-configs preserves admissions
@@ -31,7 +32,6 @@ dd78b562 todo: queue a proper nosty.md body review (fabricated AWS-signing archi
 ff33f6d1 prompts: humany — alert Assistenty → the Conductor (last orchestrator-ref ripple)
 b69a838e prompts: review Ay's body — Assistenty→Conductor (4 spots), align 'vision' to the real Mission & Purpose (undismissible demos), drop conflicting vision.md reference
 0a6e03d4 whenidie.md: add real family-recovery section (Rens & Mart authorized; 3 options; built on existing access procedures; one blank for key-custody only Perry knows)
-8754aab7 prompts: Assistenty subagent → synthesis & continuity specialist (drop stale orchestrator/Formations/registry/placeholder family-recovery); regen flock tables; record architecture in memory
 ```
 
 ## Apps
