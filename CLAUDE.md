@@ -294,12 +294,6 @@ Script for sending NIP-17 DMs: `/home/deploy/scripts/astrid-dm.mjs`
 - **Software:** strfry 1.1.0
 - **Supported NIPs:** 1, 2, 4, 9, 11, 28, 40, 45, 70, 77
 
-### WordPress
-- Location: /var/www/goosielabs
-- WP-CLI: `wp --path=/var/www/goosielabs`
-- DB name: wp_identity_demo
-- DB user: wp_identity_user
-
 ### Backup
 
 **Daily (Blocky ~144 blocks) — LND + LNbits + Cashu mint:**

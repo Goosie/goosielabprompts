@@ -136,7 +136,7 @@ If it's ever ambiguous whether Perry wants action or just an answer, ask before 
 **Webroot:** /var/www/goosielabs
 **Apps:** /var/www/goosielabs/apps/
 **Node.js:** v20.20.2, Ubuntu 24.04
-**Homepage:** goosielabs.com — hosted via nsite on Blossom (no more WordPress)
+**Homepage:** goosielabs.com — hosted via nsite on Blossom
 **Nostr relay:** wss://relay.goosielabs.com (strfry 1.1.0)
 **Cashu mint:** mint.goosielabs.com (Nutshell, port 3338)
 **LNbits:** lnbits.goosielabs.com (port 5000)
@@ -327,7 +327,7 @@ When building a new app that needs goose information:
 
 ## Workflow Rules
 
-**MCP servers per app:** nostrbook, nostr, goosielabs
+**MCP servers per app:** nostrbook, nostr
 
 **After MCP changes:** fully restart Claude Code
 

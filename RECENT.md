@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-07-01 13:57)
+# Recent Changes — last 7 days (2026-07-01 14:57)
 
 ## Server (home-deploy)
 ```
+61781f69 docs: remove WordPress — decommissioned (no files, no DB, no services)
 db178ba9 docs: App Icons section now documents the AERIAL pipeline as standard; flat-glyph generate-icons.mjs marked deprecated
 053580b9 todo: freshen header (English, Conductor, put on #todo) + normalize tags (#idee→#idea, #tessa→#testy, #juridisch→#legal)
 4ac78917 todo: log 3-stage Start here → Bookwriter → ProofOfRead roadmap; tick nosty.md review done
@@ -31,7 +32,6 @@ b69a838e prompts: review Ay's body — Assistenty→Conductor (4 spots), align '
 a2fc4a0a whenidie.md: V-formatie table — keep curated 9 (now accurate) + add '~33 total' count note
 9d78c71a whenidie.md: reframe homepage WordPress→nsite/Blossom + sweep Astrid→Assistenty + drop dead IDidHere subdomain
 e054ba0a whenidie.md: reconcile app list with reality — add Iris/gameofthegoose/proofofread/bookwriter/honkference/skein, drop discontinued (CatchZaps/IDidHere/Weddendat/Sofia)
-005c439f whenidie.md: fix funding chain — LNbits talks to LND directly via Tailscale (LndRestWallet), no NWC→Alby
 ```
 
 ## Apps
@@ -40,6 +40,11 @@ e054ba0a whenidie.md: reconcile app list with reality — add Iris/gameofthegoos
 ```
 c1c6544 gooseAgents: complete the flock roster — refresh descriptions + add welcome, linky, Splitty, Skeiny
 23bb2ed board: repoint removed-app squares — CatchZaps→Welcome, Sofia→Skein
+```
+
+### nosterin
+```
+18364b7 Initial commit — NosterIn app
 ```
 
 ### proofofread
