@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-07-01 14:57)
+# Recent Changes — last 7 days (2026-07-01 15:07)
 
 ## Server (home-deploy)
 ```
+81dbbbbf whenidie: WordPress fully decommissioned — drop the two WP mentions, bump review date to 2026-07-01
 61781f69 docs: remove WordPress — decommissioned (no files, no DB, no services)
 db178ba9 docs: App Icons section now documents the AERIAL pipeline as standard; flat-glyph generate-icons.mjs marked deprecated
 053580b9 todo: freshen header (English, Conductor, put on #todo) + normalize tags (#idee→#idea, #tessa→#testy, #juridisch→#legal)
@@ -31,20 +32,81 @@ b69a838e prompts: review Ay's body — Assistenty→Conductor (4 spots), align '
 334d9fa1 whenidie.md: sweep discontinued apps from the rest of the doc — service example, file tree, juridical list, and fix broken catchzaps→skein code-import paths
 a2fc4a0a whenidie.md: V-formatie table — keep curated 9 (now accurate) + add '~33 total' count note
 9d78c71a whenidie.md: reframe homepage WordPress→nsite/Blossom + sweep Astrid→Assistenty + drop dead IDidHere subdomain
-e054ba0a whenidie.md: reconcile app list with reality — add Iris/gameofthegoose/proofofread/bookwriter/honkference/skein, drop discontinued (CatchZaps/IDidHere/Weddendat/Sofia)
 ```
 
 ## Apps
 
+### bookwriter
+```
+6ed6891 Remove dead WordPress MCP server
+```
+
+### dilemma
+```
+9cc0432 Remove dead WordPress MCP server
+```
+
+### feedback
+```
+51d6e7a Remove dead WordPress MCP server
+```
+
 ### gameofthegoose
 ```
+6fabc9e Remove dead WordPress MCP server
 c1c6544 gooseAgents: complete the flock roster — refresh descriptions + add welcome, linky, Splitty, Skeiny
 23bb2ed board: repoint removed-app squares — CatchZaps→Welcome, Sofia→Skein
 ```
 
+### georgie
+```
+c56091c Remove dead WordPress MCP server
+```
+
+### honkbadge
+```
+a97c625 Remove dead WordPress MCP server
+```
+
+### honkensus
+```
+9b7a236 Remove dead WordPress MCP server
+```
+
+### honkference
+```
+66ba97d Remove dead WordPress MCP server
+```
+
+### honkstation
+```
+8d30813 Remove dead WordPress MCP server
+```
+
+### lastwill
+```
+9cf748b Remove dead WordPress MCP server
+```
+
+### mijnapp
+```
+6635c2f Remove dead WordPress MCP server
+```
+
+### newapp
+```
+76c10b9 Remove dead WordPress MCP server
+```
+
 ### nosterin
 ```
+015824a Remove dead WordPress MCP server
 18364b7 Initial commit — NosterIn app
+```
+
+### proofofmove
+```
+6ba61f1 Remove dead WordPress MCP server
 ```
 
 ### proofofread
@@ -61,8 +123,19 @@ e37b1f2 onboarding honesty fixes (synthetic-user panel findings)
 29fa594 ratelimit: env-based IP exempt list (ONBOARD_RATELIMIT_EXEMPT_IPS)
 ```
 
+### satquiz
+```
+aa5c198 Remove dead WordPress MCP server
+```
+
+### skein
+```
+0869027 Remove dead WordPress MCP server
+```
+
 ### zaphunt
 ```
+ef25b17 Remove dead WordPress MCP server
 3b6e1b7 backy: backup status 20260701_030000 [status=ok]
 9cc8b92 backy: backup status 20260630_030000 [status=ok]
 67818bf backy: backup status 20260629_030002 [status=ok]
