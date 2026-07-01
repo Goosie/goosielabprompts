@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-07-01 17:48)
+# Recent Changes — last 7 days (2026-07-01 18:21)
 
 ## Server (home-deploy)
 ```
+01fffd1c Version-control ~/.local/bin scripts (19 files)
 6d2376cb todo: close #29 (relay whitelist) — agent fixed, policy tested, sync-configs preserves admissions
 da41dae4 todo: tick Start here icon sub-item (AERIAL archway shipped)
 d091885a todo: log stale GITEA_TOKEN / broken Gitea mirror (surfaced during NosterIn baseline)
@@ -31,7 +32,6 @@ b69a838e prompts: review Ay's body — Assistenty→Conductor (4 spots), align '
 0a6e03d4 whenidie.md: add real family-recovery section (Rens & Mart authorized; 3 options; built on existing access procedures; one blank for key-custody only Perry knows)
 8754aab7 prompts: Assistenty subagent → synthesis & continuity specialist (drop stale orchestrator/Formations/registry/placeholder family-recovery); regen flock tables; record architecture in memory
 2486ecd3 prompts: reframe root as Conductor (main session) + Orchestra (shared context); Assistenty demoted to a peer goosie; naming convention (function-roles vs -y goosies)
-71030c92 CLAUDE.md: add 'Core rules (always)' anchor near the top — surfaces the load-bearing rules (Thinky gate, nsec security, no-hardcode, Blocky, local node, git, Q:) with pointers
 ```
 
 ## Apps
