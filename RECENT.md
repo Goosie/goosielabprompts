@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-06-30 20:47)
+# Recent Changes — last 7 days (2026-07-01 11:07)
 
 ## Server (home-deploy)
 ```
+be080b06 Mission: raise the 'undismissible' bar from demo-applause to one real returning user
 60843ea4 Nosty: real per-goosie key model, not fabricated AWS-signing; park Docy idea
 d4862847 flock: rename Docy → Admitty (the admission gatekeeper) — identity, prompt, flock tables, agents.json
 406b209d docs: GitHub auth is now via the gh CLI (gh auth setup-git), not ~/.git-credentials — update CLAUDE.md + whenidie.md; removed the empty credentials file + store helper
@@ -31,7 +32,6 @@ e054ba0a whenidie.md: reconcile app list with reality — add Iris/gameofthegoos
 584c1f34 whenidie.md: refresh high-confidence stale facts (Transy=translation, Astrid→Assistenty, Healthy ~40min, relay URL, reviewed date) — keep personal wording
 a46dd77b CLAUDE.md: add Handover rule — keep whenidie.md current for Perry's family (🪦 trigger flag, single source)
 3666c87d docs: remove goosielabs-context.md — stale, unused duplicate of CLAUDE.md (still listed 'Ruby')
-e0a4963b git: rewrite Git Discipline to match reality (branch for features, main for tiny fixes) + add Git coaching rule + gs/gd/gnew aliases
 ```
 
 ## Apps
@@ -58,11 +58,11 @@ e37b1f2 onboarding honesty fixes (synthetic-user panel findings)
 
 ### zaphunt
 ```
+3b6e1b7 backy: backup status 20260701_030000 [status=ok]
 9cc8b92 backy: backup status 20260630_030000 [status=ok]
 67818bf backy: backup status 20260629_030002 [status=ok]
 991d8e2 backy: backup status 20260628_030002 [status=ok]
 1bc36db backy: backup status 20260627_030002 [status=ok]
 a8d9b8a backy: backup status 20260626_030001 [status=ok]
 fa1d7a0 backy: backup status 20260625_030001 [status=ok]
-48e7082 backy: backup status 20260624_030001 [status=ok]
 ```

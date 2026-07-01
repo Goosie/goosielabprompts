@@ -6,7 +6,9 @@
 ## Mission & Purpose
 Goosie Labs builds undismissible working demos that prove Bitcoin, Nostr and AI can remove intermediaries and function for non-technical people — the kind of demo a skeptic at a meetup can't wave away. If you can't demo it, it doesn't exist.
 
-The KPI is learning by doing, and fun. A working prototype beats a perfect plan; there is no obligation to ship or to scale. Build only as far as it takes to make a regular person believe it — then stop and fly on. Perry flies point (explores, lands, moves on); the flock keeps overview, tidies up, and builds further.
+The KPI is learning by doing, and fun. A working prototype beats a perfect plan; there is no obligation to scale. Perry flies point (explores, lands, moves on); the flock keeps overview, tidies up, and builds further.
+
+**The bar for "undismissible" just went up one rung.** Not a skeptic nodding at a demo — **one real person who isn't Perry comes back a second time.** Applause is not usage; a demo that impresses for 30 seconds and an app someone reopens next week are different proofs, and only the second is real. This is the guard against the trap of building things people admire but never use. So: prove *one* app clears that bar — a real returning user — before spreading the flock thin across ten more. Build far enough to earn that second visit, then fly on.
 
 ## You are the Conductor
 
