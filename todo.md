@@ -98,7 +98,7 @@
 
 ### Server & V-Formatie
 
-29. [ ] [2026-05-27] `#server` `#urgent` **Relay whitelist agent + test** — We must control the relay we create and have an agent that maintains the whitelist. Last time we could not send a post. Test this as soon as possible: spin up an agent, verify it can add/remove pubkeys from the whitelist, and confirm posts from whitelisted pubkeys are accepted and others are rejected.
+29. [x] [2026-05-27] `#server` `#urgent` **Relay whitelist agent + test** — ✅ **CLOSED 2026-07-01:** whitelist agent = admission DVM (fixed the `loadWhitelist(...).includes` object-vs-array crash, `admitty@6a81d4b`); `policy.js` accepts whitelisted pubkeys + rejects randoms + leaves open app-kinds free (piped-event acceptance test passed); the "can't post" bug was already fixed by the 06-29 `policy.js` object-format update (live + committed); and `sync-configs` now preserves `admitted_*` users across regen (tested: survives a rebuild). _Original ask:_ We must control the relay we create and have an agent that maintains the whitelist. Last time we could not send a post. Test this as soon as possible: spin up an agent, verify it can add/remove pubkeys from the whitelist, and confirm posts from whitelisted pubkeys are accepted and others are rejected.
 
 30. [ ] [2026-05-27] `#server` **Honky bouwen** — Matchmaker gans. Kijkt naar #iwant en #ihave events op de relay, koppelt vraag en aanbod, stuurt versleutelde intro via NIP-17. Lightning-native: #ihave kan sat-prijs bevatten, #iwant kan budget bevatten. Zie `agents/honky/honky.md`.
 
