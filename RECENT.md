@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-07-01 19:02)
+# Recent Changes — last 7 days (2026-07-01 19:13)
 
 ## Server (home-deploy)
 ```
+0896af08 todo: close #4 (login-wall sweep) — verified already progressive (LoginGate pass-through) across all 11 apps
 e5ca8db9 Track add-lnbitsapi (no hardcoded secret — keys are runtime-generated; earlier exclusion was a false-positive)
 5eb464de todo: Gitea mirror fully closed — branch-detect fix, newapp SSH push, stale mijnapp deleted
 f96a506a todo: resolve Gitea token — refreshed + verified, mirror working (nosterin created), fallback aligned
@@ -31,7 +32,6 @@ f4fe2a6f flock: retire Weathery, Linky, Supporty (right-sizing no-brainers) — 
 01d55a98 prompts: review Directory's body — @→>>, Assistenty→Conductor, align mission to 'undismissible demos', Directory advises (Perry decides), Thinky owns the new-idea gate
 dd78b562 todo: queue a proper nosty.md body review (fabricated AWS-signing architecture → real key model)
 6038ba4b vision.md: align to the Mission as NOW-vs-horizon (vision = horizon, demos = the seed); soften 'not to demonstrate tech' contradiction
-ff33f6d1 prompts: humany — alert Assistenty → the Conductor (last orchestrator-ref ripple)
 ```
 
 ## Apps
