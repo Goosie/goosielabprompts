@@ -450,13 +450,16 @@ After an `npm run build` the dist changes are temporary. Copy files that must be
 
 **Never use emoji in SVG text** — librsvg (sharp) and Cairo (node-canvas) do not render color emoji.
 
-### Generating
+App icons use the **AERIAL diorama** style — a flat 2D cartoon bird's-eye scene (thick black outlines, cel shading, warm cream background, a faint three-goose V-formation shadow in a corner, **no goose as the subject, no text**), generated with gpt-image-1. Every app icon must match this family (Goosie Mint, ProofOfMove, "Start here").
+
+### Generating (the standard)
 ```bash
-cd /var/www/goosielabs
-node generate-icons.mjs
+source /home/deploy/.env.services && export OPENAI_API_KEY
+node /home/deploy/systemsetup/scripts/generate-app-icons-ai.mjs --name <app> --scene "<one-line bird's-eye scene, no text>"
 ```
-Generates per app: colored background + 🪿 goose (center) + app symbol (bottom right).
-Sources: `generate-icons.mjs` (compositing) + `extract-emoji.py` (pulls the PNG from NotoColorEmoji.ttf).
+The script prepends the shared `AERIAL` style — you supply only the *scene* (what the app is, seen from above). It writes `icon-192.png` + `icon-512.png` to the app's served `icons/` path. **Always Read the generated PNG before wiring it in** — gpt-image-1 sometimes writes forbidden text; if so, regenerate with a simpler scene. Recipe + per-app scene list: memory `project-app-icons-aerial`.
+
+> ⛔ Deprecated: the old flat-glyph compositor `generate-icons.mjs` (colored bg + 🪿 + emoji glyph). Do NOT use it for new app icons — it produces off-style icons.
 
 ### After generation (Vite apps)
 ```bash
