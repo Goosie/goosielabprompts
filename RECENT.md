@@ -1,8 +1,8 @@
-# Recent Changes — last 7 days (2026-07-01 18:21)
+# Recent Changes — last 7 days (2026-07-01 18:24)
 
 ## Server (home-deploy)
 ```
-01fffd1c Version-control ~/.local/bin scripts (19 files)
+e0f027a5 Version-control ~/.local/bin scripts (17 files)
 6d2376cb todo: close #29 (relay whitelist) — agent fixed, policy tested, sync-configs preserves admissions
 da41dae4 todo: tick Start here icon sub-item (AERIAL archway shipped)
 d091885a todo: log stale GITEA_TOKEN / broken Gitea mirror (surfaced during NosterIn baseline)
