@@ -58,7 +58,7 @@
 
 10. [ ] [2026-06-08] `#app:bookwriter` **Bookwriter: Nostr event materials** — Boeken kunnen materiaal importeren van de relay (kind:30023 fragmenten van een specifiek pubkey). Dan kan "Zet lessons learned in book X" van relay direct in Bookwriter verschijnen.
 
-11. [ ] [2026-06-08] `#finance` **Send 1500 sats back to Phoenix wallet**
+11. [x] [2026-06-08] `#finance` **Send 1500 sats back to Phoenix wallet** — ✅ done 2026-07-01 (Perry).
 
 12. [ ] [2026-06-08] `#server` **Source code on Git** — Make sure all app repos are pushed and up to date on GitHub. Add links to source code from the homepage tiles or a dedicated page.
 
@@ -78,7 +78,7 @@
 
 20. [ ] [2026-06-07] `#idea` **Welfare goosies** — Special Nostr identities for good causes. Apps split a % of their sat income to selected welfare goosies via Lightning/Cashu. Users see which goosies benefit when they pay.
 
-21. [ ] [2026-06-06] `#server` `#app:mijnapp` **mijnapp verwijderen** — test app, niet nodig meer. Directory verwijderen + nginx block opruimen.
+21. [x] [2026-06-06] `#server` `#app:mijnapp` **mijnapp verwijderen** — ✅ DONE 2026-07-01: dir + nginx location block + webroot gitlink removed. (GitHub repo Goosie/mijnapp still exists — archive separately if wanted.)
 
 22. [ ] [2026-06-06] `#idea` **Ganzenbord game** — Build a Goosie Labs version of the classic board game Ganzenbord (Game of the Goose), with sats, Nostr and geese.
 
@@ -92,7 +92,7 @@
 
 26. [x] [2026-05-28] `#server` **Manny — manager agent for the Goosie Labs org key** — Create agent Manny who owns and manages the `manager@goosielabs.com` org key. Manny controls nsite publishing, relay whitelist, Blossom config. Keypair already exists (`4735e38a...`). Needs: agents/manny/ directory, manny.md role description, profile picture, kind 0 published.
 
-27. [ ] [2026-06-04] `#server` **Remove old Perry pubkey from server configs** — After one week of stable operation with new org key (`4735e38a...`), remove `a80398e86c03ff...` from whitelist.json, blossom/config.yml. Keep it in nostr.json (perry/goosie/zoomer entries) until new personal key is set up.
+27. [x] [2026-06-04] `#server` **Remove old Perry pubkey from server configs** — ✅ **DONE 2026-07-01:** removed from whitelist.json, nostr.json, blossom/config.yml + migrated the admission `PERRY_PUBKEY` → active key `a8364bf8`. Gone from every live config. _Original:_ After one week of stable operation with new org key (`4735e38a...`), remove `a80398e86c03ff...` from whitelist.json, blossom/config.yml. Keep it in nostr.json (perry/goosie/zoomer entries) until new personal key is set up.
 
 28. [ ] [2026-05-28] `#server` **sync-owner-key script** — Create `scripts/sync-owner-key.mjs` with single source of truth at `/home/deploy/owner.json`. Script updates server.js, whitelist.json, blossom/config.yml and nostr.json in one run, restarts services, then prompts for nsec and republishes the nsite. Three steps becomes one command.
 
