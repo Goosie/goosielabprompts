@@ -14,7 +14,7 @@
     - [x] Fixed the badge pass-gate bug — badge + certificate were issued even on a fail; now gated on a pass for *every* book (Honk = all 3, core books = 60%).
     - [x] "Start here" tile live, first on the board (`order:0` → start.goosielabs.com).
     - [ ] **Real friend test** — the one signal AI personas can't give: does a human find it obvious? (This is the mission bar.)
-    - [ ] Optional polish: custom "Start here" icon (currently 🪿-on-amber fallback).
+    - [x] Custom "Start here" icon — AERIAL archway diorama (matches Mint/ProofOfMove).
     - [ ] Later: extract into a standalone `/apps/start` app **only if the tile earns it** (don't scaffold prematurely).
   - **Stage 2 — Bookwriter as second tile.** Write book #2, publish to Nostr (kind 30023). Add the Bookwriter tile. Add a "create a reading proof" handoff after publish (registers the book's naddr with ProofOfRead).
   - **Stage 3 — ProofOfRead consumes a Nostr book.** Given a book naddr: fetch chapters, render as reading content, generate the quiz **from the real text** (fixes today's metadata-only quiz), issue badge. Remove hardcoded `HonkStandardContent`. Open decisions: (a) quiz source — hand-written for onboarding vs AI for library books; (b) approved-books trust registry (who is badge-worthy). Payoff: retention becomes measurable — one npub with 2+ books/badges = a returning reader.

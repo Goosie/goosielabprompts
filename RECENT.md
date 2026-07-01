@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-07-01 15:11)
+# Recent Changes — last 7 days (2026-07-01 15:19)
 
 ## Server (home-deploy)
 ```
+da41dae4 todo: tick Start here icon sub-item (AERIAL archway shipped)
 d091885a todo: log stale GITEA_TOKEN / broken Gitea mirror (surfaced during NosterIn baseline)
 81dbbbbf whenidie: WordPress fully decommissioned — drop the two WP mentions, bump review date to 2026-07-01
 61781f69 docs: remove WordPress — decommissioned (no files, no DB, no services)
@@ -31,23 +32,25 @@ b69a838e prompts: review Ay's body — Assistenty→Conductor (4 spots), align '
 2486ecd3 prompts: reframe root as Conductor (main session) + Orchestra (shared context); Assistenty demoted to a peer goosie; naming convention (function-roles vs -y goosies)
 71030c92 CLAUDE.md: add 'Core rules (always)' anchor near the top — surfaces the load-bearing rules (Thinky gate, nsec security, no-hardcode, Blocky, local node, git, Q:) with pointers
 334d9fa1 whenidie.md: sweep discontinued apps from the rest of the doc — service example, file tree, juridical list, and fix broken catchzaps→skein code-import paths
-a2fc4a0a whenidie.md: V-formatie table — keep curated 9 (now accurate) + add '~33 total' count note
 ```
 
 ## Apps
 
 ### bookwriter
 ```
+4d50e1a tile: add GitHub source link
 6ed6891 Remove dead WordPress MCP server
 ```
 
 ### dilemma
 ```
+c787269 tile: add GitHub source link
 9cc0432 Remove dead WordPress MCP server
 ```
 
 ### feedback
 ```
+9b6afeb tile: add GitHub source link
 51d6e7a Remove dead WordPress MCP server
 ```
 
@@ -85,12 +88,8 @@ a97c625 Remove dead WordPress MCP server
 
 ### lastwill
 ```
+b762dfc tile: add GitHub source link
 9cf748b Remove dead WordPress MCP server
-```
-
-### mijnapp
-```
-6635c2f Remove dead WordPress MCP server
 ```
 
 ### newapp

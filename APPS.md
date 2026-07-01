@@ -1,4 +1,4 @@
-# Apps — 2026-07-01 15:10
+# Apps — 2026-07-01 15:19
 
 | App | URL | Git |
 |-----|-----|-----|
@@ -15,7 +15,6 @@
 | honkstation | https://goosielabs.com/apps/honkstation | yes |
 | iris | https://goosielabs.com/apps/iris | yes |
 | lastwill | https://goosielabs.com/apps/lastwill | yes |
-| mijnapp | https://goosielabs.com/apps/mijnapp | yes |
 | mint | https://goosielabs.com/apps/mint | yes |
 | newapp | https://goosielabs.com/apps/newapp | yes |
 | nospass | https://goosielabs.com/apps/nospass | no |
