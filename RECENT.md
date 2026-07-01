@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-07-01 15:07)
+# Recent Changes — last 7 days (2026-07-01 15:11)
 
 ## Server (home-deploy)
 ```
+d091885a todo: log stale GITEA_TOKEN / broken Gitea mirror (surfaced during NosterIn baseline)
 81dbbbbf whenidie: WordPress fully decommissioned — drop the two WP mentions, bump review date to 2026-07-01
 61781f69 docs: remove WordPress — decommissioned (no files, no DB, no services)
 db178ba9 docs: App Icons section now documents the AERIAL pipeline as standard; flat-glyph generate-icons.mjs marked deprecated
@@ -31,7 +32,6 @@ b69a838e prompts: review Ay's body — Assistenty→Conductor (4 spots), align '
 71030c92 CLAUDE.md: add 'Core rules (always)' anchor near the top — surfaces the load-bearing rules (Thinky gate, nsec security, no-hardcode, Blocky, local node, git, Q:) with pointers
 334d9fa1 whenidie.md: sweep discontinued apps from the rest of the doc — service example, file tree, juridical list, and fix broken catchzaps→skein code-import paths
 a2fc4a0a whenidie.md: V-formatie table — keep curated 9 (now accurate) + add '~33 total' count note
-9d78c71a whenidie.md: reframe homepage WordPress→nsite/Blossom + sweep Astrid→Assistenty + drop dead IDidHere subdomain
 ```
 
 ## Apps
