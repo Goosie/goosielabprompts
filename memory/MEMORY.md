@@ -1,6 +1,7 @@
 # Memory Index
 
 - [Perry Smit profiel](user_perry.md) — werkwijze, stack, overtuigingen en voorkeuren
+- [Manifest announcement parked](project_manifest_announcement.md) — manifest is live at /manifest; hold the Commy announcement until Start Here onboarding is finished
 
 - [Tile updates workflow](feedback_tile_updates.md) — bij tile-omschrijving wijzigen altijd ook CLAUDE.md updaten en committen
 - [Jurry juridische status](project_jurry_status.md) — risicoclassificatie alle apps, opgeloste bevindingen, openstaande actiepunten per app
@@ -29,3 +30,4 @@
 - [AI coaching](feedback_ai_coaching.md) — Perry's 2nd mission: become a strong AI manager; teach AI in context + coach his instructions with a 🤖 AI tip
 - [Conductor architecture](project_conductor_architecture.md) — main session = Conductor, CLAUDE.md = Orchestra, -y goosies = peer subagents; Assistenty = synthesis goosie, not orchestrator; naming convention
 - [Prune goosies](feedback_prune_goosies.md) — Perry welcomes proactive advice to delete/merge goosies toward a leaner pro setup; a goosie earns its keep only with a real, distinct, invoked job
+- [Start Here depth pivot](project_start_here_depth_pivot.md) — onboarding → user installs a real client + makes own key + posts #goosielabs + Welcome tips 21 sats; NIP-60 build parked; proof-of-read returns to ProofOfRead

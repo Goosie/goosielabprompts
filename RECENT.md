@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-07-01 19:13)
+# Recent Changes — last 7 days (2026-07-04 08:15)
 
 ## Server (home-deploy)
 ```
+06f544ff welcome: description reflects the public honk-back (no more voucher DM)
 0896af08 todo: close #4 (login-wall sweep) — verified already progressive (LoginGate pass-through) across all 11 apps
 e5ca8db9 Track add-lnbitsapi (no hardcoded secret — keys are runtime-generated; earlier exclusion was a false-positive)
 5eb464de todo: Gitea mirror fully closed — branch-detect fix, newapp SSH push, stale mijnapp deleted
@@ -31,7 +32,6 @@ f4fe2a6f flock: retire Weathery, Linky, Supporty (right-sizing no-brainers) — 
 7d8bf79b prompts: mechanical sweep across all goosie bodies — @<goose>→>><goose>, Assistenty(orchestrator)→the Conductor (body-only; flock tables + assistenty/toddy/transy/nosty preserved); agents.json about aligned
 01d55a98 prompts: review Directory's body — @→>>, Assistenty→Conductor, align mission to 'undismissible demos', Directory advises (Perry decides), Thinky owns the new-idea gate
 dd78b562 todo: queue a proper nosty.md body review (fabricated AWS-signing architecture → real key model)
-6038ba4b vision.md: align to the Mission as NOW-vs-horizon (vision = horizon, demos = the seed); soften 'not to demonstrate tech' contradiction
 ```
 
 ## Apps
@@ -110,16 +110,16 @@ b762dfc tile: add GitHub source link
 
 ### proofofread
 ```
+deeaaa1 Start Here recap: quiet manifest footnote (Phase 8d)
+f111043 proofofread: reframe Start Here identity as a KEY, save 12 words up front
+1a70e75 proofofread: slice 2 — guided intro that teaches the identity/key before the read
+72964ca proofofread: turn onboarding done screen into a "three things you own" recap
+ee6842f onboard: gate reward on actual pool balance, not just program cap
+aa805a1 Merge: non-custodial onboarding reward (Cashu token on pass, no pool custody)
+8dbe3d1 Non-custodial onboarding frontend: ownership-first copy + Cashu token delivery
+0c18d3c Non-custodial onboarding reward: mint a Cashu bearer token on quiz-pass
+fa5d67b legal: ProofOfRead onboarding reward risk assessment (MiCA/Wwft/tax)
 f1c6212 Merge: badge pass-gate fix
-772d187 Gate badge + certificate on a pass, for every book
-28ca777 journey redesign — Rungs A & B (give-first, panel fixes)
-7a92072 hook: handle the returning user (don't say "earn 11 more" to someone at 21)
-2713f2b hook: 60-second magic — 10 sats instant, then earn 11 more (with fogged path)
-e37b1f2 onboarding honesty fixes (synthetic-user panel findings)
-2e525f9 backup: show nsec alongside the 12 words + explain the difference
-65bdd37 start done screen: show the badge + self-hosted verify + Step 3 (keep in wallet)
-39abe05 onboarding: friendly, time-aware rate-limit message (no futile retry)
-29fa594 ratelimit: env-based IP exempt list (ONBOARD_RATELIMIT_EXEMPT_IPS)
 ```
 
 ### satquiz
@@ -134,12 +134,12 @@ aa5c198 Remove dead WordPress MCP server
 
 ### zaphunt
 ```
+74534d3 backy: backup status 20260704_030001 [status=ok]
+7608535 backy: backup status 20260703_030004 [status=ok]
+008d3a0 backy: backup status 20260702_030000 [status=ok]
 ef25b17 Remove dead WordPress MCP server
 3b6e1b7 backy: backup status 20260701_030000 [status=ok]
 9cc8b92 backy: backup status 20260630_030000 [status=ok]
 67818bf backy: backup status 20260629_030002 [status=ok]
 991d8e2 backy: backup status 20260628_030002 [status=ok]
-1bc36db backy: backup status 20260627_030002 [status=ok]
-a8d9b8a backy: backup status 20260626_030001 [status=ok]
-fa1d7a0 backy: backup status 20260625_030001 [status=ok]
 ```
