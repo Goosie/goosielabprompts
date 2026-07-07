@@ -116,8 +116,8 @@ For scripts run via systemd (daemons), the `EnvironmentFile=` in the service han
 | `OPENAI_API_KEY` | OpenAI | platform.openai.com | generate-agent-portraits, humany portrait generation | Portrait/image generation |
 | `DO_API_TOKEN` | DigitalOcean | cloud.digitalocean.com | backy (weekly snapshots) | Server snapshot automation |
 | `DO_DROPLET_ID` | DigitalOcean | cloud.digitalocean.com | backy | ID of the VPS droplet |
-| `GITEA_TOKEN` | Self-hosted | git.goosielabs.com (Perry's Gitea) | gitty, gitea goose | Repo management |
-| `GITEA_HOST/PORT/USER` | Self-hosted | git.goosielabs.com | gitty, gitea goose | Gitea connection config |
+| `GITEA_TOKEN` | Self-hosted | umbrel.eland-kettle.ts.net:8085 (Perry's Gitea, Tailscale) | gitty, gitea goose | Repo management |
+| `GITEA_HOST/PORT/USER` | Self-hosted | umbrel.eland-kettle.ts.net:8085 | gitty, gitea goose | Gitea connection config |
 | `OPENROUTER_API_KEY` | OpenRouter | openrouter.ai | onboarding backend | AI model routing — in `apps/onboarding/backend/.env` |
 | `LNBITS_ADMIN_KEY` | Self-hosted | lnbits.goosielabs.com | zaphunt, satquiz backends | Per-app wallet keys — stay in app `.env` |
 | `ENCRYPTION_KEY` | Generated | — | zap-hunt APIs | Per-app — stay in app `.env` |

@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-07-07 13:09)
+# Recent Changes — last 7 days (2026-07-07 13:40)
 
 ## Server (home-deploy)
 ```
+81df73ef docs: Gitea web URL → umbrel.eland-kettle.ts.net:8085 (MagicDNS)
 3bdf58f0 config-nudge: in-session ⚙️ Config detector + inbox
 06f544ff welcome: description reflects the public honk-back (no more voucher DM)
 0896af08 todo: close #4 (login-wall sweep) — verified already progressive (LoginGate pass-through) across all 11 apps
@@ -31,7 +32,6 @@ ed8afba1 flock: merge Checky into the Conductor — coordination/routing/triage 
 f4fe2a6f flock: retire Weathery, Linky, Supporty (right-sizing no-brainers) — remove identities, regen flock tables (33→30)
 9ca5bf6b memory: Perry welcomes proactive advice to prune/merge goosies toward a leaner professional setup
 7d8bf79b prompts: mechanical sweep across all goosie bodies — @<goose>→>><goose>, Assistenty(orchestrator)→the Conductor (body-only; flock tables + assistenty/toddy/transy/nosty preserved); agents.json about aligned
-01d55a98 prompts: review Directory's body — @→>>, Assistenty→Conductor, align mission to 'undismissible demos', Directory advises (Perry decides), Thinky owns the new-idea gate
 ```
 
 ## Apps

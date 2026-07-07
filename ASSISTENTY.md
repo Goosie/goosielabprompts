@@ -210,7 +210,7 @@ Edit the file: `nano /home/deploy/.env.services`
 | `OPENAI_API_KEY` | OpenAI | platform.openai.com | Portrait and icon generation for geese |
 | `DO_API_TOKEN` | DigitalOcean | cloud.digitalocean.com | Server snapshots via Backy |
 | `DO_DROPLET_ID` | DigitalOcean | cloud.digitalocean.com | ID of the VPS (alongside DO_API_TOKEN) |
-| `GITEA_TOKEN` | Self-hosted | git.goosielabs.com | Repo management via the Gitty/Gitea goose |
+| `GITEA_TOKEN` | Self-hosted | umbrel.eland-kettle.ts.net:8085 | Repo management via the Gitty/Gitea goose |
 | `OPENROUTER_API_KEY` | OpenRouter | openrouter.ai | AI model routing |
 
 **Emergency access:** server runs on DigitalOcean, SSH as `deploy`. DigitalOcean console via Perry's account. All services in `/etc/systemd/system/`.
