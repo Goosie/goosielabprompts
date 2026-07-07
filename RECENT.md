@@ -1,8 +1,8 @@
-# Recent Changes — last 7 days (2026-07-07 13:40)
+# Recent Changes — last 7 days (2026-07-07 13:43)
 
 ## Server (home-deploy)
 ```
-81df73ef docs: Gitea web URL → umbrel.eland-kettle.ts.net:8085 (MagicDNS)
+1a984866 docs: Gitea web URL → umbrel.eland-kettle.ts.net:8085 (MagicDNS)
 3bdf58f0 config-nudge: in-session ⚙️ Config detector + inbox
 06f544ff welcome: description reflects the public honk-back (no more voucher DM)
 0896af08 todo: close #4 (login-wall sweep) — verified already progressive (LoginGate pass-through) across all 11 apps

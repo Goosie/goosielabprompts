@@ -663,7 +663,6 @@ The session-id is shown in the output when you exit Claude Code.
 | Skein        | Privacy-preserving availability matcher — intersect calendars + bookable resources (bike, room) into shared free moments. Only free/busy crosses the wire, the agenda stays edge-side. Agent: Skeiny. | IN PROGRESS | /apps/skein |
 | georgie | — description to be added — | IN PROGRESS | /apps/georgie |
 | honkbadge | — description to be added — | IN PROGRESS | /apps/honkbadge |
-| **BlindGate** | Blind-signature attestations ("check, don't store") — prove a fact (over-18, registered business) without revealing identity; issuer & verifier logs share no join key. Live age-gate + entrepreneur survey, 3 explainers. Issuer :3401 + verifier :3402 (systemd), nginx allow-list proxy (/verify never exposed). Spec: BAT-01. | LIVE | /apps/blindgate |
 | Conductor + Orchestra | The main session (orchestrator) + this shared-context file | LIVE | ~/.claude/CLAUDE.md           |
 | **Blocky**   | **The clock of the V-Formation** — triggers all geese on Bitcoin blocks via NIP-90. Use `goosie blocky schedule` for an overview. | LIVE | /home/deploy/scripts/blocky/  |
 | **Healthy**  | Server health monitor — checks every ~40 min (4 blocks via Blocky), sends Perry a DM + public note on status change | LIVE | /home/deploy/scripts/healthy/ |
