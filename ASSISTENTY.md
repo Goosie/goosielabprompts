@@ -49,6 +49,15 @@ Perry is learning git hands-on. On git moments (commit, branch, merge, untanglin
 
 When our work touches one of those, raise a short **🪦 Handover** flag — *"this affects the family handover — update whenidie.md?"* — and on Perry's ok, update the doc (in Dutch) and bump its "Laatst herzien" (last-reviewed) date.
 
+## ⚙️ Config — self-flag settings that would help Claude operate better
+Perry's Claude settings (the claude.ai web preferences and the CLAUDE.md files) improve only when someone notices a gap. You are the in-session detector. On a prompt where **either** of these happened:
+1. Perry corrected you on a *preference or standing fact* (not a one-off), or
+2. you had to ask for context that a setting could have pre-loaded,
+
+end the turn with a short **⚙️ Config** footer proposing the exact addition/change — **and** append the same one-liner to `/home/deploy/config-suggestions.md` under `## Inbox`, format `- [YYYY-MM-DD] <change> — <why>` (skip the append if a near-identical line already exists there).
+
+**Fire sparingly — signal, not noise:** only on real, repeatable friction, at most once per turn. Never for one-off, session-specific facts — those go to memory or `~/todo.md`, not settings. The inbox is synthesized into a weekly Nostr DM by `goosie ay config-nudge` (folded into `goosie ay check`); `--dry-run` previews it.
+
 ## Core rules (always) — the non-negotiables
 The load-bearing rules in one place; each links to its full section below.
 
@@ -61,7 +70,7 @@ The load-bearing rules in one place; each links to its full section below.
 - **Bitcoin / Lightning data → always the local Umbrel node** (Tailscale `100.111.14.11`); external services are fallback only. → *Rule — always the local node*
 - **Git: branch for features / risky work, `main` for tiny fixes; one commit = one topic.** Claude runs git, Perry signals intent. → *Git Discipline*
 - **`Q:` (or "Just a question —") = answer only, take no action.** → *Rule — `Q:` means answer-only*
-- **Coaching is always on** — act on intent first, then a short note: `✍️ English` · `🤖 AI` · `🌿 Git` · `🪦 Handover`. → *the coaching rules above*
+- **Coaching is always on** — act on intent first, then a short note: `✍️ English` · `🤖 AI` · `🌿 Git` · `🪦 Handover` · `⚙️ Config`. → *the coaching rules above*
 
 ## The Goose Method
 
@@ -654,6 +663,7 @@ The session-id is shown in the output when you exit Claude Code.
 | Skein        | Privacy-preserving availability matcher — intersect calendars + bookable resources (bike, room) into shared free moments. Only free/busy crosses the wire, the agenda stays edge-side. Agent: Skeiny. | IN PROGRESS | /apps/skein |
 | georgie | — description to be added — | IN PROGRESS | /apps/georgie |
 | honkbadge | — description to be added — | IN PROGRESS | /apps/honkbadge |
+| **BlindGate** | Blind-signature attestations ("check, don't store") — prove a fact (over-18, registered business) without revealing identity; issuer & verifier logs share no join key. Live age-gate + entrepreneur survey, 3 explainers. Issuer :3401 + verifier :3402 (systemd), nginx allow-list proxy (/verify never exposed). Spec: BAT-01. | LIVE | /apps/blindgate |
 | Conductor + Orchestra | The main session (orchestrator) + this shared-context file | LIVE | ~/.claude/CLAUDE.md           |
 | **Blocky**   | **The clock of the V-Formation** — triggers all geese on Bitcoin blocks via NIP-90. Use `goosie blocky schedule` for an overview. | LIVE | /home/deploy/scripts/blocky/  |
 | **Healthy**  | Server health monitor — checks every ~40 min (4 blocks via Blocky), sends Perry a DM + public note on status change | LIVE | /home/deploy/scripts/healthy/ |

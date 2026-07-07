@@ -1,8 +1,9 @@
-# Apps — 2026-07-04 08:15
+# Apps — 2026-07-07 13:09
 
 | App | URL | Git |
 |-----|-----|-----|
 | backy | https://goosielabs.com/apps/backy | no |
+| blindgate | https://goosielabs.com/apps/blindgate | yes |
 | bookwriter | https://goosielabs.com/apps/bookwriter | yes |
 | dilemma | https://goosielabs.com/apps/dilemma | yes |
 | feedback | https://goosielabs.com/apps/feedback | yes |

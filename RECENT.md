@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-07-04 08:15)
+# Recent Changes — last 7 days (2026-07-07 13:09)
 
 ## Server (home-deploy)
 ```
+3bdf58f0 config-nudge: in-session ⚙️ Config detector + inbox
 06f544ff welcome: description reflects the public honk-back (no more voucher DM)
 0896af08 todo: close #4 (login-wall sweep) — verified already progressive (LoginGate pass-through) across all 11 apps
 e5ca8db9 Track add-lnbitsapi (no hardcoded secret — keys are runtime-generated; earlier exclusion was a false-positive)
@@ -31,10 +32,16 @@ f4fe2a6f flock: retire Weathery, Linky, Supporty (right-sizing no-brainers) — 
 9ca5bf6b memory: Perry welcomes proactive advice to prune/merge goosies toward a leaner professional setup
 7d8bf79b prompts: mechanical sweep across all goosie bodies — @<goose>→>><goose>, Assistenty(orchestrator)→the Conductor (body-only; flock tables + assistenty/toddy/transy/nosty preserved); agents.json about aligned
 01d55a98 prompts: review Directory's body — @→>>, Assistenty→Conductor, align mission to 'undismissible demos', Directory advises (Perry decides), Thinky owns the new-idea gate
-dd78b562 todo: queue a proper nosty.md body review (fabricated AWS-signing architecture → real key model)
 ```
 
 ## Apps
+
+### blindgate
+```
+106a461 docs: add printable live-demo cheat-sheet
+f551ef1 copy: clarify explainer CTA to "See the mechanism live"
+3b164fc Initial import: BlindGate — blind-signature attestations (BAT-01)
+```
 
 ### bookwriter
 ```
@@ -57,8 +64,6 @@ c787269 tile: add GitHub source link
 ### gameofthegoose
 ```
 6fabc9e Remove dead WordPress MCP server
-c1c6544 gooseAgents: complete the flock roster — refresh descriptions + add welcome, linky, Splitty, Skeiny
-23bb2ed board: repoint removed-app squares — CatchZaps→Welcome, Sofia→Skein
 ```
 
 ### georgie
@@ -134,12 +139,12 @@ aa5c198 Remove dead WordPress MCP server
 
 ### zaphunt
 ```
+ac1a40d backy: backup status 20260707_030001 [status=ok]
+f9ef839 backy: backup status 20260706_030001 [status=ok]
+ac0ee04 backy: backup status 20260705_030000 [status=ok]
 74534d3 backy: backup status 20260704_030001 [status=ok]
 7608535 backy: backup status 20260703_030004 [status=ok]
 008d3a0 backy: backup status 20260702_030000 [status=ok]
 ef25b17 Remove dead WordPress MCP server
 3b6e1b7 backy: backup status 20260701_030000 [status=ok]
-9cc8b92 backy: backup status 20260630_030000 [status=ok]
-67818bf backy: backup status 20260629_030002 [status=ok]
-991d8e2 backy: backup status 20260628_030002 [status=ok]
 ```
