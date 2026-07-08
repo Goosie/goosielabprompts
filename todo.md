@@ -8,6 +8,8 @@
 
 ## Open
 
+- [ ] [2026-07-08] `#app:eudiscorecard` **Take screenshots for the EUDI wallet** — first pick-it-up item after the break; fresh-mind, single target (one app deep, not the omni-scout). Nightly app-scout idea parked pending Thinky's 3 questions (cadence: nightly-omni vs single-triage; what forces action; does it point at one app or all).
+
 - [ ] [2026-07-01] `#app:start` `#app:bookwriter` `#app:proofofread` `#idea` **3-stage onboarding → reading-proof roadmap** — Mission bar (CLAUDE.md): *undismissible = one real person who isn't Perry comes back a second time.* Architecture (Thinky-gated): **ProofOfRead = pure verifier · Bookwriter = author · joined by a Nostr book event (kind 30023).** The apps compose, they don't merge; content lives on Nostr, not hardcoded.
   - **Stage 1 — "Start here" (onboarding front door).** A stranger walks away with a Nostr identity + Lightning wallet + 21 sats, easily, then discovers the other apps.
     - [x] Tested `/start` with AI personas (pass + fail) against the live API — money logic solid + idempotent (no double-pay).

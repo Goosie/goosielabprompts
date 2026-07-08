@@ -31,3 +31,4 @@
 - [Conductor architecture](project_conductor_architecture.md) — main session = Conductor, CLAUDE.md = Orchestra, -y goosies = peer subagents; Assistenty = synthesis goosie, not orchestrator; naming convention
 - [Prune goosies](feedback_prune_goosies.md) — Perry welcomes proactive advice to delete/merge goosies toward a leaner pro setup; a goosie earns its keep only with a real, distinct, invoked job
 - [Start Here depth pivot](project_start_here_depth_pivot.md) — onboarding → user installs a real client + makes own key + posts #goosielabs + Welcome tips 21 sats; NIP-60 build parked; proof-of-read returns to ProofOfRead
+- [Checkhealthy drift lesson](feedback_checkhealthy_drift.md) — live-vs-repo drift: check before re-patching a deployed file; checkhealthy now symlinked; RAM-aware swap alarm, 12h DM throttle, weekly session-cleanup

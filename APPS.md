@@ -1,11 +1,13 @@
-# Apps — 2026-07-07 13:43
+# Apps — 2026-07-08 20:38
 
 | App | URL | Git |
 |-----|-----|-----|
 | backy | https://goosielabs.com/apps/backy | no |
 | blindgate | https://goosielabs.com/apps/blindgate | yes |
 | bookwriter | https://goosielabs.com/apps/bookwriter | yes |
+| cantilloncockpit | https://goosielabs.com/apps/cantilloncockpit | yes |
 | dilemma | https://goosielabs.com/apps/dilemma | yes |
+| eudiscorecard | https://goosielabs.com/apps/eudiscorecard | yes |
 | feedback | https://goosielabs.com/apps/feedback | yes |
 | gameofthegoose | https://goosielabs.com/apps/gameofthegoose | yes |
 | georgie | https://goosielabs.com/apps/georgie | yes |
