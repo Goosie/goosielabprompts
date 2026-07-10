@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-07-10 15:10)
+# Recent Changes — last 7 days (2026-07-10 16:49)
 
 ## Server (home-deploy)
 ```
+1f8c6afe docs: add commy-traffic + commy-traction to CLAUDE.md schedule table
 4bfc95d9 gitignore: exclude data/geo/ (regenerable DB-IP country DB, 8MB binary)
 684edec4 todo: EUDI wallet screenshots — first item after break (one app deep, scout parked)
 1a984866 docs: Gitea web URL → umbrel.eland-kettle.ts.net:8085 (MagicDNS)

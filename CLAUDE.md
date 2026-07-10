@@ -405,6 +405,8 @@ Cron is only acceptable as a silent fallback for critical monitors (like Healthy
 | ay      | 2016 blocks | ~2 weeks   | check      |
 | backy   | 1000 blocks | ~1 week    | snapshot   |
 | healthy | 4 blocks    | ~40 min    | check      |
+| commy-traffic  | 144 blocks  | ~1 day  | traffic-pulse (private visitor DM to Perry) |
+| commy-traction | 1008 blocks | ~1 week | flock-traction (Nostr followers/reactions/zaps DM to Perry) |
 
 **Useful commands:**
 ```bash
