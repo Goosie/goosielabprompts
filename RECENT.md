@@ -1,7 +1,8 @@
-# Recent Changes — last 7 days (2026-07-08 20:38)
+# Recent Changes — last 7 days (2026-07-10 15:10)
 
 ## Server (home-deploy)
 ```
+4bfc95d9 gitignore: exclude data/geo/ (regenerable DB-IP country DB, 8MB binary)
 684edec4 todo: EUDI wallet screenshots — first item after break (one app deep, scout parked)
 1a984866 docs: Gitea web URL → umbrel.eland-kettle.ts.net:8085 (MagicDNS)
 3bdf58f0 config-nudge: in-session ⚙️ Config detector + inbox
@@ -20,6 +21,7 @@ f551ef1 copy: clarify explainer CTA to "See the mechanism live"
 
 ### eudiscorecard
 ```
+aeb9ddf Fix host image replace: write-through cache + surface errors
 51ef6b8 Add host "preview as visitor" toggle
 4663355 Make path-forward + funding copy editable
 7389dc2 Make heading intro paragraphs editable
@@ -30,25 +32,13 @@ a5aa978 Add Perry-only inline WYSIWYG editing (text + screenshots)
 c94ad70 Initial commit: EUDI Scorecard citizen-testing app
 ```
 
-### proofofread
-```
-deeaaa1 Start Here recap: quiet manifest footnote (Phase 8d)
-f111043 proofofread: reframe Start Here identity as a KEY, save 12 words up front
-1a70e75 proofofread: slice 2 — guided intro that teaches the identity/key before the read
-72964ca proofofread: turn onboarding done screen into a "three things you own" recap
-ee6842f onboard: gate reward on actual pool balance, not just program cap
-aa805a1 Merge: non-custodial onboarding reward (Cashu token on pass, no pool custody)
-8dbe3d1 Non-custodial onboarding frontend: ownership-first copy + Cashu token delivery
-0c18d3c Non-custodial onboarding reward: mint a Cashu bearer token on quiz-pass
-```
-
 ### zaphunt
 ```
+96ac7ca backy: backup status 20260710_030001 [status=ok]
+eaa797e backy: backup status 20260709_030001 [status=ok]
 8bb9edb backy: backup status 20260708_030001 [status=ok]
 ac1a40d backy: backup status 20260707_030001 [status=ok]
 f9ef839 backy: backup status 20260706_030001 [status=ok]
 ac0ee04 backy: backup status 20260705_030000 [status=ok]
 74534d3 backy: backup status 20260704_030001 [status=ok]
-7608535 backy: backup status 20260703_030004 [status=ok]
-008d3a0 backy: backup status 20260702_030000 [status=ok]
 ```
